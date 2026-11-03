@@ -4,11 +4,12 @@ import 'package:photo_view/photo_view_gallery.dart';
 import 'package:provider/provider.dart';
 
 import '../api/api_client.dart';
-import '../api/api_config.dart';
-import '../api/image_url.dart';
+import '../api/chapter_pages.dart';
 import '../api/models.dart';
+import '../state/downloads.dart';
 import '../state/library.dart';
 import '../state/settings.dart';
+import 'chapter_source.dart';
 import 'widgets/comic_card.dart';
 
 class ReaderPage extends StatefulWidget {
@@ -33,7 +34,7 @@ class ReaderPage extends StatefulWidget {
 
 class _ReaderPageState extends State<ReaderPage> {
   final GlobalKey<ScaffoldState> _scaffold = GlobalKey<ScaffoldState>();
-  final List<String> _urls = [];
+  ChapterSource? _source;
   PageController? _controller;
   bool _loading = true;
   String? _error;
@@ -41,6 +42,10 @@ class _ReaderPageState extends State<ReaderPage> {
   bool _chrome = true;
   late bool _vertical;
   late Library _library;
+
+  int get _count => _source?.length ?? 0;
+
+  bool get _offline => _source?.isLocal ?? false;
 
   @override
   void initState() {
@@ -54,6 +59,7 @@ class _ReaderPageState extends State<ReaderPage> {
   @override
   void dispose() {
     _saveProgress();
+    _source?.dispose();
     _controller?.dispose();
     super.dispose();
   }
@@ -63,29 +69,38 @@ class _ReaderPageState extends State<ReaderPage> {
       _loading = true;
       _error = null;
     });
+
+    final downloads = context.read<DownloadManager>();
+    final api = context.read<ApiClient>();
+    final previous = _source;
+    _source = null;
+    previous?.dispose();
+
     try {
-      final api = context.read<ApiClient>();
-      final urls = <String>[];
-      var page = 1;
-      while (true) {
-        final paged = await api.chapterPages(widget.comicId, widget.episode.order, page: page);
-        for (final item in paged.docs) {
-          final url = buildImageUrl(
-            fileServer: item.media.fileServer,
-            path: item.media.path,
-          );
-          if (url.isNotEmpty) urls.add(url);
+      // A downloaded chapter opens instantly and works without a network.
+      ChapterSource? source;
+      final localPath = downloads.localPathOf(widget.comicId, widget.episode.order);
+      if (localPath != null) {
+        try {
+          source = LocalChapter.open(localPath);
+        } on FormatException {
+          // Damaged archive: fall back to streaming instead of showing an error
+          // the user cannot act on.
+          source = null;
         }
-        final hasMore = paged.docs.isNotEmpty && (paged.pages == 0 || page < paged.pages);
-        if (!hasMore) break;
-        page += 1;
       }
-      if (!mounted) return;
-      final start = widget.initialPage.clamp(0, urls.isEmpty ? 0 : urls.length - 1);
+      source ??= RemoteChapter(await chapterImageUrls(
+        api,
+        widget.comicId,
+        widget.episode.order,
+      ));
+      if (!mounted) {
+        source.dispose();
+        return;
+      }
+      final start = widget.initialPage.clamp(0, source.length == 0 ? 0 : source.length - 1);
       setState(() {
-        _urls
-          ..clear()
-          ..addAll(urls);
+        _source = source;
         _index = start;
         _controller = PageController(initialPage: start);
       });
@@ -99,26 +114,25 @@ class _ReaderPageState extends State<ReaderPage> {
   }
 
   void _precache(int index) {
+    final source = _source;
+    if (source == null) return;
     for (final offset in [1, 2]) {
       final next = index + offset;
-      if (next >= _urls.length) break;
-      precacheImage(
-        NetworkImage(_urls[next], headers: const {'User-Agent': ApiConfig.userAgent}),
-        context,
-        onError: (_, _) {},
-      );
+      if (next >= source.length) break;
+      precacheImage(source.imageAt(next), context, onError: (_, _) {});
     }
   }
 
   void _saveProgress() {
-    if (_urls.isEmpty) return;
+    final source = _source;
+    if (source == null || source.length == 0) return;
     _library.record(
       comicId: widget.comicId,
       comicTitle: widget.comicTitle,
       thumb: widget.thumb,
       order: widget.episode.order,
       page: _index,
-      totalPages: _urls.length,
+      totalPages: source.length,
     );
   }
 
@@ -144,6 +158,7 @@ class _ReaderPageState extends State<ReaderPage> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final source = _source;
     return Scaffold(
       key: _scaffold,
       backgroundColor: Colors.black,
@@ -153,11 +168,11 @@ class _ReaderPageState extends State<ReaderPage> {
             const Center(child: CircularProgressIndicator())
           else if (_error != null)
             ErrorRetry(message: _error!, onRetry: _load)
-          else if (_urls.isEmpty)
+          else if (source == null || source.length == 0)
             const EmptyState(message: '这一话没有图片')
           else
             PhotoViewGallery.builder(
-              itemCount: _urls.length,
+              itemCount: source.length,
               pageController: _controller,
               scrollDirection: _vertical ? Axis.vertical : Axis.horizontal,
               backgroundDecoration: const BoxDecoration(color: Colors.black),
@@ -166,10 +181,7 @@ class _ReaderPageState extends State<ReaderPage> {
               ),
               onPageChanged: _onPageChanged,
               builder: (context, index) => PhotoViewGalleryPageOptions(
-                imageProvider: NetworkImage(
-                  _urls[index],
-                  headers: const {'User-Agent': ApiConfig.userAgent},
-                ),
+                imageProvider: source.imageAt(index),
                 minScale: PhotoViewComputedScale.contained,
                 maxScale: PhotoViewComputedScale.contained * 3,
                 onTapUp: (_, _, _) => _toggleChrome(),
@@ -199,11 +211,21 @@ class _ReaderPageState extends State<ReaderPage> {
                       icon: const Icon(Icons.arrow_back, color: Colors.white),
                     ),
                     Expanded(
-                      child: Text(
-                        '${widget.comicTitle} · ${widget.episode.title}',
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: theme.textTheme.titleSmall?.copyWith(color: Colors.white),
+                      child: Row(
+                        children: [
+                          Flexible(
+                            child: Text(
+                              '${widget.comicTitle} · ${widget.episode.title}',
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: theme.textTheme.titleSmall?.copyWith(color: Colors.white),
+                            ),
+                          ),
+                          if (_offline) ...[
+                            const SizedBox(width: 8),
+                            const Icon(Icons.offline_pin, size: 16, color: Colors.greenAccent),
+                          ],
+                        ],
                       ),
                     ),
                     IconButton(
@@ -245,8 +267,8 @@ class _ReaderPageState extends State<ReaderPage> {
                     Expanded(
                       child: Slider(
                         value: _index.toDouble(),
-                        max: (_urls.length - 1).clamp(1, double.infinity).toDouble(),
-                        onChanged: _urls.length < 2
+                        max: (_count - 1).clamp(1, double.infinity).toDouble(),
+                        onChanged: _count < 2
                             ? null
                             : (value) {
                                 final target = value.round();
@@ -256,7 +278,7 @@ class _ReaderPageState extends State<ReaderPage> {
                       ),
                     ),
                     Text(
-                      '${_urls.length}',
+                      '$_count',
                       style: const TextStyle(color: Colors.white, fontSize: 13),
                     ),
                   ],

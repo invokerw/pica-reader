@@ -77,6 +77,9 @@ class ApiClient {
       nonce: _nonce,
       method: options.method,
     );
+    // A caller may ask for one request at a different quality (downloads want
+    // the originals) without touching the global setting the reader uses.
+    final quality = options.headers['image-quality'] as String? ?? _imageQuality;
     options.headers.addAll({
       'accept': ApiConfig.accept,
       'api-key': ApiConfig.apiKey,
@@ -85,7 +88,7 @@ class ApiClient {
       'app-build-version': ApiConfig.appBuildVersion,
       'app-platform': ApiConfig.appPlatform,
       'app-uuid': _deviceUuid,
-      'image-quality': _imageQuality,
+      'image-quality': quality,
       'time': '$time',
       'nonce': _nonce,
       'signature': signature,
@@ -111,6 +114,7 @@ class ApiClient {
     String path, {
     Map<String, String>? query,
     Object? body,
+    Map<String, String>? headers,
   }) async {
     await init();
     final qs = _queryString(query);
@@ -120,7 +124,7 @@ class ApiClient {
       response = await _dio.request<dynamic>(
         target,
         data: body == null ? null : jsonEncode(body),
-        options: Options(method: method),
+        options: Options(method: method, headers: headers),
       );
     } on DioException catch (error) {
       throw ApiException(switch (error.type) {
@@ -173,8 +177,9 @@ class ApiClient {
     String path, {
     Map<String, String>? query,
     Object? body,
+    Map<String, String>? headers,
   }) async {
-    final data = await _send(method, path, query: query, body: body);
+    final data = await _send(method, path, query: query, body: body, headers: headers);
     return asMap(data);
   }
 
@@ -245,11 +250,13 @@ class ApiClient {
     String comicId,
     int order, {
     int page = 1,
+    String? imageQuality,
   }) async {
     final data = await _asMapRequest(
       'GET',
       '/comics/$comicId/order/$order/pages',
       query: {'page': '$page'},
+      headers: imageQuality == null ? null : {'image-quality': imageQuality},
     );
     return Paged.parse<ComicPage>(data['pages'], ComicPage.fromJson);
   }

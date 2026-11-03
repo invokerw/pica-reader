@@ -9,12 +9,20 @@ class Settings extends ChangeNotifier {
   String _sort = 'dd';
   int _columns = 0;
   bool _verticalReader = false;
+  String _downloadRoot = '';
+  int _downloadPages = 4;
   bool _loaded = false;
 
   String get imageQuality => _imageQuality;
   String get sort => _sort;
   int get columns => _columns;
   bool get verticalReader => _verticalReader;
+
+  /// Empty means "the platform default" (`LibraryPaths.defaultRoot`).
+  String get downloadRoot => _downloadRoot;
+
+  /// Page requests running in parallel inside one chapter.
+  int get downloadPages => _downloadPages;
   bool get loaded => _loaded;
 
   Future<void> load() async {
@@ -25,6 +33,9 @@ class Settings extends ChangeNotifier {
     if (sort.isNotEmpty) _sort = sort;
     _columns = asInt(stored['columns']);
     _verticalReader = asBool(stored['verticalReader']);
+    _downloadRoot = asString(stored['downloadRoot']);
+    final pages = asInt(stored['downloadPages'], 4);
+    _downloadPages = pages < 1 ? 4 : pages.clamp(1, 8);
     _loaded = true;
     notifyListeners();
   }
@@ -34,6 +45,8 @@ class Settings extends ChangeNotifier {
         'sort': _sort,
         'columns': _columns,
         'verticalReader': _verticalReader,
+        'downloadRoot': _downloadRoot,
+        'downloadPages': _downloadPages,
       });
 
   void setImageQuality(String value) {
@@ -60,6 +73,22 @@ class Settings extends ChangeNotifier {
   void setVerticalReader(bool value) {
     if (value == _verticalReader) return;
     _verticalReader = value;
+    notifyListeners();
+    _persist();
+  }
+
+  void setDownloadRoot(String value) {
+    final trimmed = value.trim();
+    if (trimmed == _downloadRoot) return;
+    _downloadRoot = trimmed;
+    notifyListeners();
+    _persist();
+  }
+
+  void setDownloadPages(int value) {
+    final clamped = value.clamp(1, 8);
+    if (clamped == _downloadPages) return;
+    _downloadPages = clamped;
     notifyListeners();
     _persist();
   }

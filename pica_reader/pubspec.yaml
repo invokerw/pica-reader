@@ -20,6 +20,9 @@ dependencies:
   crypto: ^3.0.6
   uuid: ^4.5.1
   photo_view: ^0.15.0
+  # Pure-Dart zip writer/reader for the CBZ offline library (needs only crypto
+  # and path, both already in the tree).
+  archive: ^3.6.1
 
 dev_dependencies:
   flutter_test:

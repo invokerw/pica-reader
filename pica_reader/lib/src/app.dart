@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import 'state/downloads.dart';
 import 'state/library.dart';
 import 'state/session.dart';
 import 'state/settings.dart';
@@ -63,12 +64,16 @@ class _RootState extends State<_Root> {
     final settings = context.read<Settings>();
     final library = context.read<Library>();
     final session = context.read<SessionController>();
+    final downloads = context.read<DownloadManager>();
     try {
       await Future.wait([
         settings.load(),
         library.load(),
         session.api.init(),
       ]);
+      // The manifest lives in the download folder, which settings decide on,
+      // so this has to wait for settings.load().
+      await downloads.load();
       await session.restore();
     } catch (error) {
       // Storage problems must not leave the app on a spinner forever.

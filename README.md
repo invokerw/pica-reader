@@ -2,6 +2,8 @@
 
 一个 Flutter（Windows + Android）客户端，以及支撑它的**可复现 APK 静态分析流水线**。
 
+客户端除浏览与阅读外，还能把当前账号可读的章节下载成本地 **CBZ**（含 `ComicInfo.xml`），Mihon/Tachiyomi 本地源、Komga、Kavita 等本地漫画库可直接识别；格式、目录布局与限制见 `pica_reader/README.md`。
+
 仓库里没有 APK、没有 SDK、没有构建产物：所有工具链由 `tools/versions.json` 钉版本、`tools/bootstrap.ps1` 重建，
 所有分析结果由 `analysis/pipeline.py` 从 APK 重新推导。换台机器 clone 下来，两条命令就能继续干活。
 
@@ -25,7 +27,7 @@ powershell -File tools\bootstrap.ps1 -Profile build
 # 之后
 cmd /c 'tools\flutter.cmd pub get'
 cmd /c 'tools\flutter.cmd analyze'
-cmd /c 'tools\flutter.cmd test'                        # 离线：签名向量、URL 拼接
+cmd /c 'tools\flutter.cmd test'                        # 离线：签名向量、URL 拼接、CBZ 打包、下载队列
 cmd /c 'tools\flutter.cmd build windows --release'
 cmd /c 'tools\flutter.cmd build apk --release'
 ```

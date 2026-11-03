@@ -1,9 +1,15 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import '../api/api_client.dart';
 import '../api/models.dart';
+import '../platform/export_service.dart';
+import '../state/downloads.dart';
 import '../state/library.dart';
+import '../storage/library_paths.dart';
 import 'reader_page.dart';
 import 'widgets/comic_card.dart';
 import 'widgets/pica_image.dart';
@@ -96,10 +102,98 @@ class _ComicPageState extends State<ComicDetailPage> {
     return Episode(id: '', title: '第 ${progress.order} 话', order: progress.order);
   }
 
+  Future<void> _download(Episode episode) async {
+    await context.read<DownloadManager>().enqueue(comic: _comic, episode: episode);
+    if (!mounted) return;
+    _toast('已加入下载队列：${episode.title}');
+  }
+
+  Future<void> _downloadAll(DownloadManager downloads) async {
+    if (_episodes.isEmpty) return;
+    await downloads.enqueueAll(comic: _comic, episodes: _episodes);
+    if (!mounted) return;
+    final more = _episodes.length < _episodeTotal;
+    _toast(more
+        ? '已排队 ${_episodes.length} 话（还有章节未加载，可加载后再下载）'
+        : '已排队 ${_episodes.length} 话');
+  }
+
+  Future<void> _openDownloadedMenu(Episode episode) async {
+    final downloads = context.read<DownloadManager>();
+    final action = await showModalBottomSheet<String>(
+      context: context,
+      builder: (sheet) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: const Icon(Icons.menu_book),
+              title: const Text('阅读（离线）'),
+              onTap: () => Navigator.of(sheet).pop('read'),
+            ),
+            ListTile(
+              leading: const Icon(Icons.ios_share),
+              title: Text(Platform.isAndroid ? '导出到系统「下载」' : '导出到「下载」文件夹'),
+              onTap: () => Navigator.of(sheet).pop('export'),
+            ),
+            ListTile(
+              leading: const Icon(Icons.delete_outline),
+              title: const Text('删除下载'),
+              onTap: () => Navigator.of(sheet).pop('delete'),
+            ),
+          ],
+        ),
+      ),
+    );
+    if (!mounted || action == null) return;
+    switch (action) {
+      case 'read':
+        _open(episode);
+      case 'export':
+        await _export(episode, downloads);
+      case 'delete':
+        await downloads.removeChapter(_comic.id, episode.order);
+    }
+  }
+
+  Future<void> _export(Episode episode, DownloadManager downloads) async {
+    final path = downloads.localPathOf(_comic.id, episode.order);
+    if (path == null) {
+      _toast('本地文件不存在');
+      return;
+    }
+    final name = '${LibraryPaths.sanitizeSegment(_comic.title)}'
+        '/${path.split(Platform.pathSeparator).last}';
+    try {
+      final result = await ExportService.exportChapter(path: path, relativeName: name);
+      if (!mounted) return;
+      if (result.isEmpty) {
+        _toast('导出失败');
+        return;
+      }
+      _toast(Platform.isAndroid ? '已导出到系统「下载」目录' : '已导出到 $result');
+      if (!Platform.isAndroid && !Platform.isIOS) {
+        await ExportService.revealInExplorer(result);
+      }
+    } on PlatformException catch (error) {
+      if (mounted) _toast('导出失败：${error.message ?? error.code}');
+    } on FileSystemException catch (error) {
+      if (mounted) _toast('导出失败：${error.message}');
+    }
+  }
+
+  void _toast(String message) {
+    if (!mounted) return;
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(SnackBar(content: Text(message)));
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final progress = context.watch<Library>().progressOf(_comic.id);
+    final downloads = context.watch<DownloadManager>();
     final resume = _resumeEpisode(progress);
 
     return Scaffold(
@@ -202,6 +296,12 @@ class _ComicPageState extends State<ComicDetailPage> {
                           ),
                         ),
                       ),
+                      const SizedBox(width: 8),
+                      OutlinedButton.icon(
+                        onPressed: () => _downloadAll(downloads),
+                        icon: const Icon(Icons.download_for_offline_outlined),
+                        label: const Text('全部下载'),
+                      ),
                     ],
                   ),
                 ),
@@ -248,6 +348,20 @@ class _ComicPageState extends State<ComicDetailPage> {
                                 ),
                               ),
                               if (current) const Icon(Icons.play_arrow, size: 16),
+                              _ChapterAction(
+                                chapter: downloads.chapterOf(_comic.id, episode.order),
+                                onDownload: () => _download(episode),
+                                onPause: () => downloads.pauseChapter(
+                                  downloads.chapterOf(_comic.id, episode.order)!,
+                                ),
+                                onResume: () => downloads.resumeChapter(
+                                  downloads.chapterOf(_comic.id, episode.order)!,
+                                ),
+                                onRetry: () => downloads.retry(
+                                  downloads.chapterOf(_comic.id, episode.order)!,
+                                ),
+                                onMenu: () => _openDownloadedMenu(episode),
+                              ),
                             ],
                           ),
                         ),
@@ -275,6 +389,87 @@ class _ComicPageState extends State<ComicDetailPage> {
           ],
         ],
       ),
+    );
+  }
+}
+
+/// Download state of one chapter, sized to sit inside a 46 px grid cell.
+class _ChapterAction extends StatelessWidget {
+  const _ChapterAction({
+    required this.chapter,
+    required this.onDownload,
+    required this.onPause,
+    required this.onResume,
+    required this.onRetry,
+    required this.onMenu,
+  });
+
+  final ChapterDownload? chapter;
+  final VoidCallback onDownload;
+  final VoidCallback onPause;
+  final VoidCallback onResume;
+  final VoidCallback onRetry;
+  final VoidCallback onMenu;
+
+  @override
+  Widget build(BuildContext context) {
+    final chapter = this.chapter;
+    if (chapter == null) {
+      return _button(
+        icon: const Icon(Icons.download_outlined),
+        tooltip: '下载这一话',
+        onPressed: onDownload,
+      );
+    }
+    return switch (chapter.state) {
+      ChapterState.done => _button(
+          icon: Icon(Icons.offline_pin, color: Theme.of(context).colorScheme.primary),
+          tooltip: '已下载',
+          onPressed: onMenu,
+        ),
+      ChapterState.failed => _button(
+          icon: Icon(Icons.error_outline, color: Theme.of(context).colorScheme.error),
+          tooltip: chapter.error.isEmpty ? '下载失败' : chapter.error,
+          onPressed: onRetry,
+        ),
+      ChapterState.paused => _button(
+          icon: const Icon(Icons.play_circle_outline),
+          tooltip: '继续下载',
+          onPressed: onResume,
+        ),
+      ChapterState.queued => _button(
+          icon: const Icon(Icons.schedule),
+          tooltip: '排队中',
+          onPressed: onPause,
+        ),
+      ChapterState.running => _button(
+          icon: SizedBox(
+            width: 16,
+            height: 16,
+            child: CircularProgressIndicator(
+              value: chapter.totalPages > 0 ? chapter.progress : null,
+              strokeWidth: 2,
+            ),
+          ),
+          tooltip: '下载中，点击暂停',
+          onPressed: onPause,
+        ),
+    };
+  }
+
+  Widget _button({
+    required Widget icon,
+    required String tooltip,
+    required VoidCallback onPressed,
+  }) {
+    return IconButton(
+      icon: icon,
+      iconSize: 18,
+      padding: EdgeInsets.zero,
+      visualDensity: VisualDensity.compact,
+      constraints: const BoxConstraints.tightFor(width: 32, height: 32),
+      tooltip: tooltip,
+      onPressed: onPressed,
     );
   }
 }

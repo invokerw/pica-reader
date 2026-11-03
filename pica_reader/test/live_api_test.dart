@@ -5,6 +5,7 @@ import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pica_reader/src/api/api_client.dart';
+import 'package:pica_reader/src/api/chapter_pages.dart';
 import 'package:pica_reader/src/api/image_url.dart';
 
 /// Live end-to-end check of the app's own network layer against the real API.
@@ -91,5 +92,15 @@ void main() {
     } finally {
       http.close(force: true);
     }
+
+    // Downloads ask for `original`, which the server turns into a different URL
+    // than the resized one the reader sees. If this ever stops differing, the
+    // archive silently keeps downscaled pages.
+    final medium = await chapterImageUrls(api, comic.id, order);
+    final original = await chapterImageUrls(api, comic.id, order, quality: 'original');
+    expect(original, hasLength(medium.length));
+    print('medium page 1:   ${medium.first}');
+    print('original page 1: ${original.first}');
+    expect(original.first, isNot(medium.first));
   }, skip: skipReason, timeout: const Timeout(Duration(minutes: 5)));
 }

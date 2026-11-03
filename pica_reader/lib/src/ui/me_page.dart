@@ -1,11 +1,16 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../api/api_config.dart';
 import '../api/models.dart';
+import '../platform/export_service.dart';
+import '../state/downloads.dart';
 import '../state/library.dart';
 import '../state/session.dart';
 import '../state/settings.dart';
+import 'downloads_page.dart';
 import 'reader_page.dart';
 import 'widgets/pica_image.dart';
 
@@ -16,6 +21,7 @@ class MePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final session = context.watch<SessionController>();
     final settings = context.watch<Settings>();
+    final downloads = context.watch<DownloadManager>();
     final theme = Theme.of(context);
     final user = session.user;
 
@@ -110,6 +116,55 @@ class MePage extends StatelessWidget {
                 ),
                 const Divider(height: 1),
               ],
+              const _SectionTitle('离线'),
+              ListTile(
+                leading: const Icon(Icons.download_done_outlined),
+                title: const Text('离线漫画'),
+                subtitle: Text(downloads.comics.isEmpty
+                    ? '还没有下载的章节'
+                    : '${downloads.totalChapters} 话 · ${formatBytes(downloads.totalBytes)}'),
+                trailing: const Icon(Icons.chevron_right),
+                onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => const DownloadsPage()),
+                ),
+              ),
+              ListTile(
+                title: const Text('保存位置'),
+                subtitle: Text(
+                  downloads.rootPath.isEmpty
+                      ? '未找到可写目录'
+                      : '${downloads.rootPath}\n点击修改（留空恢复默认）',
+                  maxLines: 3,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                onTap: () => _editDownloadRoot(context),
+                trailing: IconButton(
+                  tooltip: '打开文件夹',
+                  onPressed: downloads.rootPath.isEmpty
+                      ? null
+                      : () => ExportService.openFolder(downloads.rootPath),
+                  icon: const Icon(Icons.folder_open),
+                ),
+              ),
+              ListTile(
+                title: const Text('同时下载页数'),
+                subtitle: Text('${settings.downloadPages} 页（每话内并发，重新开始时生效）'),
+                trailing: DropdownButton<int>(
+                  value: settings.downloadPages,
+                  underline: const SizedBox.shrink(),
+                  items: const [
+                    DropdownMenuItem(value: 1, child: Text('1')),
+                    DropdownMenuItem(value: 2, child: Text('2')),
+                    DropdownMenuItem(value: 4, child: Text('4')),
+                    DropdownMenuItem(value: 6, child: Text('6')),
+                    DropdownMenuItem(value: 8, child: Text('8')),
+                  ],
+                  onChanged: (value) {
+                    if (value != null) context.read<Settings>().setDownloadPages(value);
+                  },
+                ),
+              ),
+              const Divider(height: 1),
               const _SectionTitle('阅读设置'),
               SwitchListTile(
                 title: const Text('纵向翻页'),
@@ -153,6 +208,55 @@ class MePage extends StatelessWidget {
         },
       ),
     );
+  }
+
+  /// Lets the user move the library. There is no file picker (it would need a
+  /// plugin), so the path is typed; an unusable path falls back to the default
+  /// instead of silently failing every download.
+  Future<void> _editDownloadRoot(BuildContext context) async {
+    final settings = context.read<Settings>();
+    final downloads = context.read<DownloadManager>();
+    final controller = TextEditingController(text: settings.downloadRoot);
+    final value = await showDialog<String>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        title: const Text('下载保存位置'),
+        content: TextField(
+          controller: controller,
+          autofocus: true,
+          decoration: InputDecoration(
+            hintText: downloads.rootPath.isEmpty ? r'D:\comics' : '留空恢复默认',
+            helperText: Platform.isAndroid
+                ? 'Android 受系统限制只能存在应用私有目录，留空即可'
+                : '填写完整文件夹路径，例如 D:\\comics',
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(),
+            child: const Text('取消'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.of(dialogContext).pop(controller.text),
+            child: const Text('保存'),
+          ),
+        ],
+      ),
+    );
+    controller.dispose();
+    if (value == null || !context.mounted) return;
+    settings.setDownloadRoot(value);
+    await downloads.reload();
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(SnackBar(
+        content: Text(
+          downloads.rootPath.isEmpty
+              ? '没有可写目录，下载功能暂时不可用'
+              : '下载目录：${downloads.rootPath}',
+        ),
+      ));
   }
 }
 
