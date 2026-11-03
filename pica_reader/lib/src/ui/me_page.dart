@@ -10,8 +10,10 @@ import '../state/downloads.dart';
 import '../state/library.dart';
 import '../state/session.dart';
 import '../state/settings.dart';
+import '../theme/app_themes.dart';
 import 'downloads_page.dart';
 import 'reader_page.dart';
+import 'theme_page.dart';
 import 'widgets/pica_image.dart';
 
 class MePage extends StatelessWidget {
@@ -162,6 +164,20 @@ class MePage extends StatelessWidget {
                   onChanged: (value) {
                     if (value != null) context.read<Settings>().setDownloadPages(value);
                   },
+                ),
+              ),
+              const Divider(height: 1),
+              const _SectionTitle('外观'),
+              ListTile(
+                leading: const Icon(Icons.palette_outlined),
+                title: const Text('主题'),
+                subtitle: Text(
+                  '${appThemeById(settings.themeId).name} · '
+                  '${kThemeModeLabels[settings.themeMode]}',
+                ),
+                trailing: const Icon(Icons.chevron_right),
+                onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => const ThemePage()),
                 ),
               ),
               const Divider(height: 1),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../api/models.dart';
+import '../../theme/theme_builder.dart';
 import 'pica_image.dart';
 
 class ComicCard extends StatelessWidget {
@@ -13,9 +14,11 @@ class ComicCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final tokens = PicaTokens.of(context);
+    final coverRadius = BorderRadius.circular(tokens.coverRadius);
     return InkWell(
       onTap: onTap,
-      borderRadius: BorderRadius.circular(12),
+      borderRadius: BorderRadius.circular(tokens.radius),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -26,7 +29,7 @@ class ComicCard extends StatelessWidget {
                 PicaImage(
                   url: comic.thumb,
                   cacheWidth: 480,
-                  borderRadius: BorderRadius.circular(12),
+                  borderRadius: coverRadius,
                 ),
                 if (progress != null && progress! > 0)
                   Positioned(
@@ -34,7 +37,9 @@ class ComicCard extends StatelessWidget {
                     right: 0,
                     bottom: 0,
                     child: ClipRRect(
-                      borderRadius: const BorderRadius.vertical(bottom: Radius.circular(12)),
+                      borderRadius: BorderRadius.vertical(
+                        bottom: Radius.circular(tokens.coverRadius),
+                      ),
                       child: LinearProgressIndicator(
                         value: progress,
                         minHeight: 3,
@@ -90,6 +95,7 @@ class ComicTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final tokens = PicaTokens.of(context);
     return InkWell(
       onTap: onTap,
       child: Padding(
@@ -113,7 +119,9 @@ class ComicTile extends StatelessWidget {
               child: PicaImage(
                 url: comic.thumb,
                 cacheWidth: 240,
-                borderRadius: BorderRadius.circular(8),
+                borderRadius: BorderRadius.circular(
+                  tokens.coverRadius.clamp(4.0, 10.0),
+                ),
               ),
             ),
             const SizedBox(width: 12),

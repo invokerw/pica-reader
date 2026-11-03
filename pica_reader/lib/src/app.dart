@@ -5,6 +5,8 @@ import 'state/downloads.dart';
 import 'state/library.dart';
 import 'state/session.dart';
 import 'state/settings.dart';
+import 'theme/app_themes.dart';
+import 'theme/theme_builder.dart';
 import 'ui/home_shell.dart';
 import 'ui/login_page.dart';
 
@@ -13,32 +15,17 @@ class PicaReaderApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Watching settings here (not in _Root) keeps the whole app theme-switchable
+    // without rebuilding the bootstrap state.
+    final settings = context.watch<Settings>();
+    final theme = appThemeById(settings.themeId);
     return MaterialApp(
       title: '哔咔阅读器',
       debugShowCheckedModeBanner: false,
-      theme: _theme(Brightness.light),
-      darkTheme: _theme(Brightness.dark),
-      themeMode: ThemeMode.system,
+      theme: buildAppTheme(theme, Brightness.light),
+      darkTheme: buildAppTheme(theme, Brightness.dark),
+      themeMode: settings.themeMode,
       home: const _Root(),
-    );
-  }
-
-  ThemeData _theme(Brightness brightness) {
-    final scheme = ColorScheme.fromSeed(
-      seedColor: const Color(0xFFE0537B),
-      brightness: brightness,
-    );
-    return ThemeData(
-      colorScheme: scheme,
-      useMaterial3: true,
-      visualDensity: VisualDensity.adaptivePlatformDensity,
-      appBarTheme: AppBarTheme(
-        centerTitle: false,
-        elevation: 0,
-        scrolledUnderElevation: 1,
-        backgroundColor: scheme.surface,
-      ),
-      cardTheme: const CardThemeData(clipBehavior: Clip.antiAlias),
     );
   }
 }

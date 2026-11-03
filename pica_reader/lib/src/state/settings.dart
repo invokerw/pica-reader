@@ -1,8 +1,9 @@
-import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 
 import '../api/api_config.dart';
 import '../api/models.dart';
 import '../storage/app_paths.dart';
+import '../theme/app_themes.dart';
 
 class Settings extends ChangeNotifier {
   String _imageQuality = ApiConfig.defaultImageQuality;
@@ -11,6 +12,8 @@ class Settings extends ChangeNotifier {
   bool _verticalReader = false;
   String _downloadRoot = '';
   int _downloadPages = 4;
+  String _themeId = kDefaultThemeId;
+  ThemeMode _themeMode = ThemeMode.system;
   bool _loaded = false;
 
   String get imageQuality => _imageQuality;
@@ -25,6 +28,9 @@ class Settings extends ChangeNotifier {
   int get downloadPages => _downloadPages;
   bool get loaded => _loaded;
 
+  String get themeId => _themeId;
+  ThemeMode get themeMode => _themeMode;
+
   Future<void> load() async {
     final stored = await AppPaths.readJson('settings.json');
     final quality = asString(stored['imageQuality']);
@@ -36,6 +42,16 @@ class Settings extends ChangeNotifier {
     _downloadRoot = asString(stored['downloadRoot']);
     final pages = asInt(stored['downloadPages'], 4);
     _downloadPages = pages < 1 ? 4 : pages.clamp(1, 8);
+    final themeId = asString(stored['themeId']);
+    if (themeId.isNotEmpty) _themeId = themeId;
+    final mode = asString(stored['themeMode']);
+    if (mode.isNotEmpty) {
+      _themeMode = switch (mode) {
+        'light' => ThemeMode.light,
+        'dark' => ThemeMode.dark,
+        _ => ThemeMode.system,
+      };
+    }
     _loaded = true;
     notifyListeners();
   }
@@ -47,6 +63,12 @@ class Settings extends ChangeNotifier {
         'verticalReader': _verticalReader,
         'downloadRoot': _downloadRoot,
         'downloadPages': _downloadPages,
+        'themeId': _themeId,
+        'themeMode': switch (_themeMode) {
+          ThemeMode.light => 'light',
+          ThemeMode.dark => 'dark',
+          _ => 'system',
+        },
       });
 
   void setImageQuality(String value) {
@@ -89,6 +111,20 @@ class Settings extends ChangeNotifier {
     final clamped = value.clamp(1, 8);
     if (clamped == _downloadPages) return;
     _downloadPages = clamped;
+    notifyListeners();
+    _persist();
+  }
+
+  void setTheme(String value) {
+    if (value == _themeId) return;
+    _themeId = value;
+    notifyListeners();
+    _persist();
+  }
+
+  void setThemeMode(ThemeMode value) {
+    if (value == _themeMode) return;
+    _themeMode = value;
     notifyListeners();
     _persist();
   }
