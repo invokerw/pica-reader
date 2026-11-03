@@ -1,0 +1,30 @@
+name: pica_reader
+description: "A third-party PicACG reader for Windows and Android."
+publish_to: 'none'
+version: 0.1.1+2
+
+environment:
+  sdk: ^3.13.7
+
+# Pure-Dart dependency set on purpose: this machine cannot create the plugin
+# symlinks Flutter needs (no SeCreateSymbolicLinkPrivilege / Developer Mode), so
+# any package with native plugin code would break `flutter run`. Storage and
+# secure values are therefore implemented in lib/ with dart:io + a tiny
+# MethodChannel for the Android app-private directory.
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  dio: ^5.7.0
+  crypto: ^3.0.6
+  uuid: ^4.5.1
+  photo_view: ^0.15.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

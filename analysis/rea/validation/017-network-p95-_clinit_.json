@@ -1,0 +1,133 @@
+{
+  "evidence_id": "ev_06c23d83a1a078560ef9d32faafbd988a680f071da3ee863013474d283f2a039",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "p95",
+    "method_name": "<clinit>",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "p95"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(android.content.Context): void\",\"dex_descriptor\":\"(Landroid/content/Context;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"a(pe1): java.lang.Object\",\"dex_descriptor\":\"(Lpe1;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0}],\"fields\":[{\"name\":\"a\",\"def_pos\":0,\"type\":\"android.content.Context\"},{\"name\":\"b\",\"def_pos\":0,\"type\":\"ir4\"},{\"name\":\"c\",\"def_pos\":0,\"type\":\"ba3[]\"},{\"name\":\"d\",\"def_pos\":0,\"type\":\"androidx.datastore.preferences.core.Preferences$Key\"},{\"name\":\"e\",\"def_pos\":0,\"type\":\"androidx.datastore.preferences.core.Preferences$Key\"}],\"raw_name\":\"p95\",\"method_count\":3,\"full_name\":\"defpackage.p95\",\"field_count\":5,\"name\":\"p95\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "p95",
+          "method_name": "<clinit>",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[\"static_initializer_disassembly\"],\"body\":\".method static constructor \\u003cclinit\\u003e()V\\n    .registers 4\\n\\n    .line 1\\n    new-instance v0, Lap4;\\n\\n    .line 2\\n    .line 3\\n    const-string v1, \\\"dataStore\\\"\\n\\n    .line 4\\n    .line 5\\n    const-string v2, \\\"getDataStore(Landroid/content/Context;)Landroidx/datastore/core/DataStore;\\\"\\n\\n    .line 6\\n    .line 7\\n    const-class v3, Lp95;\\n\\n    .line 8\\n    .line 9\\n    invoke-direct {v0, v3, v1, v2}, Lap4;-\\u003e\\u003cinit\\u003e(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V\\n\\n    .line 10\\n    .line 11\\n    .line 12\\n    sget-object v1, Lg35;-\\u003ea:Lh35;\\n\\n    .line 13\\n    .line 14\\n    invoke-virtual {v1}, Ljava/lang/Object;-\\u003egetClass()Ljava/lang/Class;\\n\\n    .line 15\\n    .line 16\\n    .line 17\\n    const/4 v1, 0x1\\n\\n    .line 18\\n    new-array v1, v1, [Lba3;\\n\\n    .line 19\\n    .line 20\\n    const/4 v2, 0x0\\n\\n    .line 21\\n    aput-object v0, v1, v2\\n\\n    .line 22\\n    .line 23\\n    sput-object v1, Lp95;-\\u003ec:[Lba3;\\n\\n    .line 24\\n    .line 25\\n    const-string v0, \\\"request_mode_id\\\"\\n\\n    .line 26\\n    .line 27\\n    invoke-static {v0}, Landroidx/datastore/preferences/core/PreferencesKeys;-\\u003estringKey(Ljava/lang/String;)Landroidx/datastore/preferences/core/Preferences$Key;\\n\\n    .line 28\\n    .line 29\\n    .line 30\\n    move-result-object v0\\n\\n    .line 31\\n    sput-object v0, Lp95;-\\u003ed:Landroidx/datastore/preferences/core/Preferences$Key;\\n\\n    .line 32\\n    .line 33\\n    const-string v0, \\\"selected_dns_line_key\\\"\\n\\n    .line 34\\n    .line 35\\n    invoke-static {v0}, Landroidx/datastore/preferences/core/PreferencesKeys;-\\u003estringKey(Ljava/lang/String;)Landroidx/datastore/preferences/core/Preferences$Key;\\n\\n    .line 36\\n    .line 37\\n    .line 38\\n    move-result-object v0\\n\\n    .line 39\\n    sput-object v0, Lp95;-\\u003ee:Landroidx/datastore/preferences/core/Preferences$Key;\\n\\n    .line 40\\n    .line 41\\n    return-void\\n.end method\",\"mode\":\"smali\",\"class_name\":\"defpackage.p95\",\"dex_descriptor\":\"()V\",\"overload_count\":1,\"method_name\":\"\\u003cclinit\\u003e\",\"overload_index\":0,\"full_name\":\"p95.\\u003cclinit\\u003e\",\"fell_back\":true}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.p95",
+    "method": {
+      "name": "<clinit>",
+      "reported_signature": "<clinit>(): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()V"
+    },
+    "overload_count": 1,
+    "representation": "smali",
+    "body_status": "available",
+    "fell_back": true,
+    "markers": [
+      "static_initializer_disassembly"
+    ],
+    "source": {
+      "status": "complete",
+      "text": ".method static constructor <clinit>()V\n    .registers 4\n\n    .line 1\n    new-instance v0, Lap4;\n\n    .line 2\n    .line 3\n    const-string v1, \"dataStore\"\n\n    .line 4\n    .line 5\n    const-string v2, \"getDataStore(Landroid/content/Context;)Landroidx/datastore/core/DataStore;\"\n\n    .line 6\n    .line 7\n    const-class v3, Lp95;\n\n    .line 8\n    .line 9\n    invoke-direct {v0, v3, v1, v2}, Lap4;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V\n\n    .line 10\n    .line 11\n    .line 12\n    sget-object v1, Lg35;->a:Lh35;\n\n    .line 13\n    .line 14\n    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;\n\n    .line 15\n    .line 16\n    .line 17\n    const/4 v1, 0x1\n\n    .line 18\n    new-array v1, v1, [Lba3;\n\n    .line 19\n    .line 20\n    const/4 v2, 0x0\n\n    .line 21\n    aput-object v0, v1, v2\n\n    .line 22\n    .line 23\n    sput-object v1, Lp95;->c:[Lba3;\n\n    .line 24\n    .line 25\n    const-string v0, \"request_mode_id\"\n\n    .line 26\n    .line 27\n    invoke-static {v0}, Landroidx/datastore/preferences/core/PreferencesKeys;->stringKey(Ljava/lang/String;)Landroidx/datastore/preferences/core/Preferences$Key;\n\n    .line 28\n    .line 29\n    .line 30\n    move-result-object v0\n\n    .line 31\n    sput-object v0, Lp95;->d:Landroidx/datastore/preferences/core/Preferences$Key;\n\n    .line 32\n    .line 33\n    const-string v0, \"selected_dns_line_key\"\n\n    .line 34\n    .line 35\n    invoke-static {v0}, Landroidx/datastore/preferences/core/PreferencesKeys;->stringKey(Ljava/lang/String;)Landroidx/datastore/preferences/core/Preferences$Key;\n\n    .line 36\n    .line 37\n    .line 38\n    move-result-object v0\n\n    .line 39\n    sput-object v0, Lp95;->e:Landroidx/datastore/preferences/core/Preferences$Key;\n\n    .line 40\n    .line 41\n    return-void\n.end method",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

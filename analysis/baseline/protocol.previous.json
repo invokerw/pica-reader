@@ -1,0 +1,1120 @@
+{
+  "schema": 1,
+  "apk": {
+    "name": "picacg-v2.6.73.apk",
+    "size": 8646353,
+    "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+  },
+  "extracted_at": "2026-11-03T06:57:27Z",
+  "constants": {
+    "base_url": "https://picaapi.picacomic.com",
+    "api_key": "C69BAF41DA5ABD1FFEDC6D2FEA56B",
+    "api_secret": "~d}$Q7$eIni=V)9\\RK/P.RM4;9[7|@/CA}b~OW!3?EV`:<>M7pddUBL5n|0/*Cn",
+    "accept": "application/vnd.picacomic.com.v1+json",
+    "app_version": "2.3.1.20241111",
+    "app_build_version": "20250144",
+    "app_channel": "1",
+    "app_platform": "android",
+    "user_agent": "okhttp/3.8.1"
+  },
+  "headers": [
+    {
+      "name": "accept",
+      "value": "application/vnd.picacomic.com.v1+json",
+      "dynamic": false
+    },
+    {
+      "name": "api-key",
+      "value": null,
+      "dynamic": true
+    },
+    {
+      "name": "app-channel",
+      "value": "1",
+      "dynamic": false
+    },
+    {
+      "name": "app-version",
+      "value": "2.3.1.20241111",
+      "dynamic": false
+    },
+    {
+      "name": "app-build-version",
+      "value": "20250144",
+      "dynamic": false
+    },
+    {
+      "name": "app-platform",
+      "value": "android",
+      "dynamic": false
+    },
+    {
+      "name": "app-uuid",
+      "value": null,
+      "dynamic": true
+    },
+    {
+      "name": "image-quality",
+      "value": null,
+      "dynamic": true
+    },
+    {
+      "name": "User-Agent",
+      "value": "okhttp/3.8.1",
+      "dynamic": false
+    },
+    {
+      "name": "authorization",
+      "value": null,
+      "dynamic": true
+    },
+    {
+      "name": "time",
+      "value": null,
+      "dynamic": true
+    },
+    {
+      "name": "nonce",
+      "value": null,
+      "dynamic": true
+    },
+    {
+      "name": "signature",
+      "value": null,
+      "dynamic": true
+    }
+  ],
+  "signer": {
+    "method_id": "Lfg4;->a(Lhe3;)Ls65;",
+    "dex": "classes3.dex",
+    "code_offset": 1118496,
+    "canonical": "lower(path_without_one_leading_slash + ('?'+query if query) + t + nonce + METHOD + api_key) -> HMAC-SHA256(secret) -> lowercase hex",
+    "fingerprint": "a50477945a29c4c7f204f0787df4cfe09889ddcd33000e7c2e170e51c987933e",
+    "string_sequence": [
+      {
+        "pc": 66,
+        "value": "/"
+      },
+      {
+        "pc": 89,
+        "value": "?"
+      },
+      {
+        "pc": 117,
+        "value": "C69BAF41DA5ABD1FFEDC6D2FEA56B"
+      },
+      {
+        "pc": 132,
+        "value": "HmacSHA256"
+      },
+      {
+        "pc": 142,
+        "value": "~d}$Q7$eIni=V)9\\RK/P.RM4;9[7|@/CA}b~OW!3?EV`:<>M7pddUBL5n|0/*Cn"
+      },
+      {
+        "pc": 180,
+        "value": ""
+      },
+      {
+        "pc": 190,
+        "value": "auth_token"
+      },
+      {
+        "pc": 222,
+        "value": "accept"
+      },
+      {
+        "pc": 224,
+        "value": "application/vnd.picacomic.com.v1+json"
+      },
+      {
+        "pc": 240,
+        "value": "time"
+      },
+      {
+        "pc": 249,
+        "value": "nonce"
+      },
+      {
+        "pc": 258,
+        "value": "signature"
+      },
+      {
+        "pc": 267,
+        "value": "api-key"
+      },
+      {
+        "pc": 276,
+        "value": "app-channel"
+      },
+      {
+        "pc": 278,
+        "value": "1"
+      },
+      {
+        "pc": 287,
+        "value": "app-version"
+      },
+      {
+        "pc": 289,
+        "value": "2.3.1.20241111"
+      },
+      {
+        "pc": 298,
+        "value": "app-uuid"
+      },
+      {
+        "pc": 307,
+        "value": "app-platform"
+      },
+      {
+        "pc": 309,
+        "value": "android"
+      },
+      {
+        "pc": 318,
+        "value": "app-build-version"
+      },
+      {
+        "pc": 320,
+        "value": "20250144"
+      },
+      {
+        "pc": 329,
+        "value": "User-Agent"
+      },
+      {
+        "pc": 331,
+        "value": "okhttp/3.8.1"
+      },
+      {
+        "pc": 343,
+        "value": "image-quality"
+      },
+      {
+        "pc": 354,
+        "value": "authorization"
+      },
+      {
+        "pc": 374,
+        "value": "PicaAuthInterceptor"
+      },
+      {
+        "pc": 376,
+        "value": "intercept: 收到401响应，清除Token"
+      },
+      {
+        "pc": 395,
+        "value": "refresh_token"
+      }
+    ]
+  },
+  "verb_annotations": {
+    "Lfn2;": "GET",
+    "Ln94;": "POST",
+    "Lo94;": "PUT"
+  },
+  "param_annotations": {
+    "Ljd4;": "Path",
+    "Lqq4;": "Query",
+    "Lrq4;": "QueryMap",
+    "Lz90;": "Body",
+    "Lb26;": "Tag"
+  },
+  "unclassified_annotations": [],
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": ".",
+      "annotation": "Lfn2;",
+      "class": "Ljp3;",
+      "name": "a",
+      "method_id": "Ljp3;->a(Ljava/lang/String;Ljava/lang/String;Lne1;)Ljava/lang/Object;",
+      "dex": "classes.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Query",
+          "name": "ac"
+        },
+        {
+          "slot": 1,
+          "role": "Query",
+          "name": "ids"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": ".",
+      "annotation": "Lfn2;",
+      "class": "Ljp3;",
+      "name": "b",
+      "method_id": "Ljp3;->b(Ljava/lang/String;Lne1;)Ljava/lang/Object;",
+      "dex": "classes.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Query",
+          "name": "ac"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": ".",
+      "annotation": "Lfn2;",
+      "class": "Ljp3;",
+      "name": "c",
+      "method_id": "Ljp3;->c(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lne1;)Ljava/lang/Object;",
+      "dex": "classes.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Query",
+          "name": "ac"
+        },
+        {
+          "slot": 1,
+          "role": "Query",
+          "name": "t"
+        },
+        {
+          "slot": 2,
+          "role": "Query",
+          "name": "pg"
+        },
+        {
+          "slot": 3,
+          "role": "Query",
+          "name": "wd"
+        },
+        {
+          "slot": 4,
+          "role": "Query",
+          "name": "h"
+        },
+        {
+          "slot": 5,
+          "role": "Query",
+          "name": "ids"
+        },
+        {
+          "slot": 6,
+          "role": "Query",
+          "name": "level"
+        },
+        {
+          "slot": 7,
+          "role": "Query",
+          "name": "area"
+        },
+        {
+          "slot": 8,
+          "role": "Query",
+          "name": "year"
+        },
+        {
+          "slot": 9,
+          "role": "Query",
+          "name": "lang"
+        },
+        {
+          "slot": 10,
+          "role": "Query",
+          "name": "letter"
+        },
+        {
+          "slot": 11,
+          "role": "Query",
+          "name": "by"
+        },
+        {
+          "slot": 12,
+          "role": "Query",
+          "name": "sort"
+        },
+        {
+          "slot": 13,
+          "role": "Query",
+          "name": "random"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": ".",
+      "annotation": "Lfn2;",
+      "class": "Ljp3;",
+      "name": "d",
+      "method_id": "Ljp3;->d(Ljava/lang/String;IILne1;)Ljava/lang/Object;",
+      "dex": "classes.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Query",
+          "name": "ac"
+        },
+        {
+          "slot": 1,
+          "role": "Query",
+          "name": "t"
+        },
+        {
+          "slot": 2,
+          "role": "Query",
+          "name": "pg"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": ".",
+      "annotation": "Lfn2;",
+      "class": "Ljp3;",
+      "name": "e",
+      "method_id": "Ljp3;->e(Ljava/lang/String;ILne1;)Ljava/lang/Object;",
+      "dex": "classes.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Query",
+          "name": "ac"
+        },
+        {
+          "slot": 1,
+          "role": "Query",
+          "name": "ids"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "announcements",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "j",
+      "method_id": "Leg4;->j(ILjava/lang/String;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Query",
+          "name": "page"
+        },
+        {
+          "slot": 1,
+          "role": "Query",
+          "name": "platform"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "api/gva/characterExternalMapping/checkMappingMulti",
+      "annotation": "Lfn2;",
+      "class": "Lo8;",
+      "name": "a",
+      "method_id": "Lo8;->a(Ljava/lang/String;Lne1;)Ljava/lang/Object;",
+      "dex": "classes.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Query",
+          "name": "externalId"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "app/picacomic/dns/resolve",
+      "annotation": "Lfn2;",
+      "class": "Ltr5;",
+      "name": "a",
+      "method_id": "Ltr5;->a(Ljava/lang/String;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Query",
+          "name": "domain"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "banners",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "z",
+      "method_id": "Leg4;->z(Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": []
+    },
+    {
+      "method": "GET",
+      "path": "categories",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "c",
+      "method_id": "Leg4;->c(Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": []
+    },
+    {
+      "method": "GET",
+      "path": "collections",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "y",
+      "method_id": "Leg4;->y(Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": []
+    },
+    {
+      "method": "GET",
+      "path": "comics",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "d",
+      "method_id": "Leg4;->d(Ljava/util/Map;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "QueryMap",
+          "name": null
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "comics/leaderboard",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "o",
+      "method_id": "Leg4;->o(Ljava/lang/String;Ljava/lang/String;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Query",
+          "name": "tt"
+        },
+        {
+          "slot": 1,
+          "role": "Query",
+          "name": "ct"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "comics/random",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "i",
+      "method_id": "Leg4;->i(Lq14;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Tag",
+          "name": null
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "comics/{comicId}",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "t",
+      "method_id": "Leg4;->t(Ljava/lang/String;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Path",
+          "name": "comicId"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "comics/{comicId}/comments",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "s",
+      "method_id": "Leg4;->s(Ljava/lang/String;ILne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Path",
+          "name": "comicId"
+        },
+        {
+          "slot": 1,
+          "role": "Query",
+          "name": "page"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "comics/{comicId}/eps",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "u",
+      "method_id": "Leg4;->u(Ljava/lang/String;ILne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Path",
+          "name": "comicId"
+        },
+        {
+          "slot": 1,
+          "role": "Query",
+          "name": "page"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "comics/{comicId}/order/{order}/pages",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "v",
+      "method_id": "Leg4;->v(Ljava/lang/String;Ljava/lang/String;ILne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Path",
+          "name": "comicId"
+        },
+        {
+          "slot": 1,
+          "role": "Path",
+          "name": "order"
+        },
+        {
+          "slot": 2,
+          "role": "Query",
+          "name": "page"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "comments/{commentId}/childrens",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "B",
+      "method_id": "Leg4;->B(Ljava/lang/String;ILne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Path",
+          "name": "commentId"
+        },
+        {
+          "slot": 1,
+          "role": "Query",
+          "name": "page"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "games",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "x",
+      "method_id": "Leg4;->x(ILne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Query",
+          "name": "page"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "games/{gameId}",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "a",
+      "method_id": "Leg4;->a(Ljava/lang/String;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Path",
+          "name": "gameId"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "games/{gameId}/comments",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "A",
+      "method_id": "Leg4;->A(Ljava/lang/String;ILne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Path",
+          "name": "gameId"
+        },
+        {
+          "slot": 1,
+          "role": "Query",
+          "name": "page"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "keywords",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "m",
+      "method_id": "Leg4;->m(Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": []
+    },
+    {
+      "method": "GET",
+      "path": "picacomic/rec/{comicId}",
+      "annotation": "Lfn2;",
+      "class": "Lx05;",
+      "name": "b",
+      "method_id": "Lx05;->b(Ljava/lang/String;ILne1;)Ljava/lang/Object;",
+      "dex": "classes.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Path",
+          "name": "comicId"
+        },
+        {
+          "slot": 1,
+          "role": "Query",
+          "name": "limit"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "users/favourite",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "D",
+      "method_id": "Leg4;->D(ILjava/lang/String;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Query",
+          "name": "page"
+        },
+        {
+          "slot": 1,
+          "role": "Query",
+          "name": "s"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "users/my-comments",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "E",
+      "method_id": "Leg4;->E(ILne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Query",
+          "name": "page"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "users/profile",
+      "annotation": "Lfn2;",
+      "class": "Leg4;",
+      "name": "f",
+      "method_id": "Leg4;->f(Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": []
+    },
+    {
+      "method": "POST",
+      "path": "auth/register",
+      "annotation": "Ln94;",
+      "class": "Leg4;",
+      "name": "p",
+      "method_id": "Leg4;->p(Lcom/picacg/network/pica/api/RegisterRequest;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Body",
+          "name": null
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "auth/sign-in",
+      "annotation": "Ln94;",
+      "class": "Leg4;",
+      "name": "h",
+      "method_id": "Leg4;->h(Lcom/picacg/network/pica/api/SignInRequest;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Body",
+          "name": null
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "comics/advanced-search",
+      "annotation": "Ln94;",
+      "class": "Leg4;",
+      "name": "e",
+      "method_id": "Leg4;->e(ILcom/picacg/network/pica/api/AdvancedSearchBody;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Query",
+          "name": "page"
+        },
+        {
+          "slot": 1,
+          "role": "Body",
+          "name": null
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "comics/{comicId}/comments",
+      "annotation": "Ln94;",
+      "class": "Leg4;",
+      "name": "n",
+      "method_id": "Leg4;->n(Ljava/lang/String;Lcom/picacg/network/pica/api/ContentBody;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Path",
+          "name": "comicId"
+        },
+        {
+          "slot": 1,
+          "role": "Body",
+          "name": null
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "comics/{comicId}/favourite",
+      "annotation": "Ln94;",
+      "class": "Leg4;",
+      "name": "k",
+      "method_id": "Leg4;->k(Ljava/lang/String;Ljava/util/Map;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Path",
+          "name": "comicId"
+        },
+        {
+          "slot": 1,
+          "role": "Body",
+          "name": null
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "comics/{comicId}/like",
+      "annotation": "Ln94;",
+      "class": "Leg4;",
+      "name": "l",
+      "method_id": "Leg4;->l(Ljava/lang/String;Ljava/util/Map;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Path",
+          "name": "comicId"
+        },
+        {
+          "slot": 1,
+          "role": "Body",
+          "name": null
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "comments/{commentId}",
+      "annotation": "Ln94;",
+      "class": "Leg4;",
+      "name": "w",
+      "method_id": "Leg4;->w(Ljava/lang/String;Lcom/picacg/network/pica/api/ContentBody;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Path",
+          "name": "commentId"
+        },
+        {
+          "slot": 1,
+          "role": "Body",
+          "name": null
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "comments/{commentId}/like",
+      "annotation": "Ln94;",
+      "class": "Leg4;",
+      "name": "b",
+      "method_id": "Leg4;->b(Ljava/lang/String;Ljava/util/Map;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Path",
+          "name": "commentId"
+        },
+        {
+          "slot": 1,
+          "role": "Body",
+          "name": null
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "comments/{commentId}/report",
+      "annotation": "Ln94;",
+      "class": "Leg4;",
+      "name": "F",
+      "method_id": "Leg4;->F(Ljava/lang/String;Ljava/util/Map;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Path",
+          "name": "commentId"
+        },
+        {
+          "slot": 1,
+          "role": "Body",
+          "name": null
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "games/{gameId}/comments",
+      "annotation": "Ln94;",
+      "class": "Leg4;",
+      "name": "g",
+      "method_id": "Leg4;->g(Ljava/lang/String;Lcom/picacg/network/pica/api/ContentBody;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Path",
+          "name": "gameId"
+        },
+        {
+          "slot": 1,
+          "role": "Body",
+          "name": null
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "games/{gameId}/like",
+      "annotation": "Ln94;",
+      "class": "Leg4;",
+      "name": "q",
+      "method_id": "Leg4;->q(Ljava/lang/String;Ljava/util/Map;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Path",
+          "name": "gameId"
+        },
+        {
+          "slot": 1,
+          "role": "Body",
+          "name": null
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "picacomic/rec/track",
+      "annotation": "Ln94;",
+      "class": "Lx05;",
+      "name": "a",
+      "method_id": "Lx05;->a(Lcom/picacg/network/maccms/rec/RecTrackRequest;Lne1;)Ljava/lang/Object;",
+      "dex": "classes.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Body",
+          "name": null
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "users/punch-in",
+      "annotation": "Ln94;",
+      "class": "Leg4;",
+      "name": "r",
+      "method_id": "Leg4;->r(Ljava/util/Map;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Body",
+          "name": null
+        }
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "users/avatar",
+      "annotation": "Lo94;",
+      "class": "Leg4;",
+      "name": "G",
+      "method_id": "Leg4;->G(Lcom/picacg/network/pica/model/AvatarUpdateRequest;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Body",
+          "name": null
+        }
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "users/profile",
+      "annotation": "Lo94;",
+      "class": "Leg4;",
+      "name": "C",
+      "method_id": "Leg4;->C(Lcom/picacg/network/pica/model/SloganUpdateRequest;Lne1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "code_offset": 0,
+      "params": [
+        {
+          "slot": 0,
+          "role": "Body",
+          "name": null
+        }
+      ]
+    }
+  ],
+  "vectors": [
+    {
+      "path": "/auth/sign-in",
+      "query": null,
+      "time": 1700000000,
+      "nonce": "0123456789abcdefghijklmnopqrstuv",
+      "method": "POST",
+      "canonical": "auth/sign-in17000000000123456789abcdefghijklmnopqrstuvpostc69baf41da5abd1ffedc6d2fea56b",
+      "signature": "728cf13eb37668cffb9c307b2ce4d44367318dc3b97e1e11d729f44b3c57b5d8"
+    },
+    {
+      "path": "/comics",
+      "query": "page=1&s=dd",
+      "time": 1700000001,
+      "nonce": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "method": "GET",
+      "canonical": "comics?page=1&s=dd1700000001zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzgetc69baf41da5abd1ffedc6d2fea56b",
+      "signature": "e5e7269cc7c398b4f5de91a10d07a10e6feb4ab9216e6c3ad1c83d5d33a55f2d"
+    },
+    {
+      "path": "/comics",
+      "query": "b=2&a=1",
+      "time": 1700000002,
+      "nonce": "0123456789abcdefghijklmnopqrstuv",
+      "method": "GET",
+      "canonical": "comics?b=2&a=117000000020123456789abcdefghijklmnopqrstuvgetc69baf41da5abd1ffedc6d2fea56b",
+      "signature": "0daaf24f2530661c8b3dc7bb392ac5133cdcefd66bd28ea78c7901ead5ae13aa"
+    }
+  ]
+}

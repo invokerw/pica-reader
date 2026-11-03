@@ -1,0 +1,8 @@
+version: 2.6.73
+apk: picacg-v2.6.73.apk
+sha256: 68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e
+size: 8646353
+extracted_at: 2026-11-03T06:58:02Z
+signer: Lfg4;->a(Lhe3;)Ls65;
+signer_fingerprint: a50477945a29c4c7f204f0787df4cfe09889ddcd33000e7c2e170e51c987933e
+endpoints: 42

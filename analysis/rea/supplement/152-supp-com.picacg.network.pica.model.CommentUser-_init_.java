@@ -1,0 +1,3 @@
+    public /* synthetic */ CommentUser(String str, String str2, String str3, String str4, boolean z, int i, int i2, List list, String str5, ImageInfo imageInfo, String str6, String str7, int i3, jo1 jo1Var) {
+        this(str, str2, str3, (i3 & 8) != 0 ? null : str4, (i3 & 16) != 0 ? false : z, (i3 & 32) != 0 ? 0 : i, (i3 & 64) != 0 ? 0 : i2, (i3 & 128) != 0 ? b42.i : list, (i3 & 256) != 0 ? null : str5, (i3 & 512) != 0 ? null : imageInfo, (i3 & 1024) != 0 ? null : str6, (i3 & 2048) != 0 ? null : str7);
+    }

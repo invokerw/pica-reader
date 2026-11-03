@@ -1,0 +1,30 @@
+{
+  "output_directory": "analysis/rea/config",
+  "scope": "Actual PICA shared JSON config/defaults; no target execution",
+  "tasks": [
+    {
+      "id": "000-config-fs2-d",
+      "operation": "inspect_android_method",
+      "class_name": "fs2",
+      "method_name": "d",
+      "dex_descriptor": "(Llm2;)Lx83;",
+      "original_method_id": "Lfs2;->d(Llm2;)Lx83;"
+    },
+    {
+      "id": "001-config-i83-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "i83",
+      "method_name": "<init>",
+      "dex_descriptor": "(ZZZZLjava/lang/String;Ljava/lang/String;ZLzp0;)V",
+      "original_method_id": "Li83;-><init>(ZZZZLjava/lang/String;Ljava/lang/String;ZLzp0;)V"
+    },
+    {
+      "id": "002-config-i83-toString",
+      "operation": "inspect_android_method",
+      "class_name": "i83",
+      "method_name": "toString",
+      "dex_descriptor": "()Ljava/lang/String;",
+      "original_method_id": "Li83;->toString()Ljava/lang/String;"
+    }
+  ]
+}

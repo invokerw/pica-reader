@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_99f85e6749362278554a943592717abd3eb173ad56a9289cb3fa4b3201c7aff5",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "v55",
+    "method_name": "<init>",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "v55"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(p95, p54, hg1): void\",\"dex_descriptor\":\"(Lp95;Lp54;Lhg1;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"a(pe1): java.lang.Object\",\"dex_descriptor\":\"(Lpe1;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0},{\"signature\":\"b(): com.picacg.domain.model.RequestMode\",\"dex_descriptor\":\"()Lcom/picacg/domain/model/RequestMode;\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0}],\"fields\":[{\"name\":\"a\",\"def_pos\":0,\"type\":\"p95\"},{\"name\":\"b\",\"def_pos\":0,\"type\":\"p54\"},{\"name\":\"c\",\"def_pos\":0,\"type\":\"hg1\"},{\"name\":\"d\",\"def_pos\":0,\"type\":\"jw5\"},{\"name\":\"e\",\"def_pos\":0,\"type\":\"vy4\"},{\"name\":\"f\",\"def_pos\":0,\"type\":\"h51\"}],\"raw_name\":\"v55\",\"method_count\":3,\"full_name\":\"defpackage.v55\",\"field_count\":6,\"name\":\"v55\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "v55",
+          "method_name": "<init>",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    public v55(p95 p95Var, p54 p54Var, hg1 hg1Var) {\\r\\n        this.a \\u003d p95Var;\\r\\n        this.b \\u003d p54Var;\\r\\n        this.c \\u003d hg1Var;\\r\\n        jw5 jw5VarH \\u003d jb5.h(RequestMode.Companion.getDEFAULT());\\r\\n        this.d \\u003d jw5VarH;\\r\\n        this.e \\u003d new vy4(jw5VarH);\\r\\n        this.f \\u003d ll0.e();\\r\\n        k64.I(hg1Var, null, null, new mx4(this, null, 6), 3);\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"defpackage.v55\",\"dex_descriptor\":\"(Lp95;Lp54;Lhg1;)V\",\"overload_count\":1,\"method_name\":\"\\u003cinit\\u003e\",\"overload_index\":0,\"full_name\":\"v55.\\u003cinit\\u003e\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.v55",
+    "method": {
+      "name": "<init>",
+      "reported_signature": "<init>(p95, p54, hg1): void",
+      "overload_index": 0,
+      "is_constructor": true,
+      "dex_descriptor": "(Lp95;Lp54;Lhg1;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public v55(p95 p95Var, p54 p54Var, hg1 hg1Var) {\r\n        this.a = p95Var;\r\n        this.b = p54Var;\r\n        this.c = hg1Var;\r\n        jw5 jw5VarH = jb5.h(RequestMode.Companion.getDEFAULT());\r\n        this.d = jw5VarH;\r\n        this.e = new vy4(jw5VarH);\r\n        this.f = ll0.e();\r\n        k64.I(hg1Var, null, null, new mx4(this, null, 6), 3);\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

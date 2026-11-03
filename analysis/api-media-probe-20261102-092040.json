@@ -1,0 +1,139 @@
+{
+  "host": "picaapi.picacomic.com",
+  "started_at_utc": "Mon, 02 Nov 2026 09:20:35 GMT",
+  "scope": "Category filter by real comic category; image host access mode",
+  "credentials_saved": false,
+  "token_saved": false,
+  "images_downloaded": false,
+  "steps": [
+    {
+      "method": "POST",
+      "path": "/auth/sign-in",
+      "query": null,
+      "http_status": 200,
+      "elapsed_ms": 312,
+      "response_bytes": 418,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "sign-in",
+      "token_received": true
+    },
+    {
+      "method": "GET",
+      "path": "/comics",
+      "query": "page=1&s=dd",
+      "http_status": 200,
+      "elapsed_ms": 297,
+      "response_bytes": 24117,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "comics",
+      "item_count": 20,
+      "comic_categories_type": "list",
+      "comic_category_available": true
+    },
+    {
+      "method": "GET",
+      "path": "/comics",
+      "query": "page=1&c=全彩&s=dd",
+      "error_type": "UnicodeEncodeError",
+      "business_success": false,
+      "step": "comics-category-filter",
+      "item_count": 0
+    },
+    {
+      "method": "GET",
+      "path": "/comics/693443bc2e97f82d662bee0c/eps",
+      "query": "page=1",
+      "http_status": 200,
+      "elapsed_ms": 281,
+      "response_bytes": 9025,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "comic-eps",
+      "episode_count": 40
+    },
+    {
+      "method": "GET",
+      "path": "/comics/693443bc2e97f82d662bee0c/order/5/pages",
+      "query": "page=1",
+      "http_status": 200,
+      "elapsed_ms": 282,
+      "response_bytes": 18539,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "comic-pages",
+      "page_count": 40,
+      "media_keys": [
+        "fileServer",
+        "originalName",
+        "path"
+      ]
+    },
+    {
+      "method": "HEAD",
+      "host": "storage-b.picacomic.com",
+      "path_segments": 5,
+      "path_prefix": "tobeimg/HQWwayr2SVFimIinW5dcO4GPxBTitrPmHDxzi6tjy0Q",
+      "extension": "jpg",
+      "http_status": 401,
+      "elapsed_ms": 391,
+      "content_type": "application/json; charset=utf-8",
+      "bytes_read": 0,
+      "auth_challenge": "",
+      "step": "media-head-bare"
+    },
+    {
+      "method": "HEAD",
+      "host": "storage-b.picacomic.com",
+      "path_segments": 5,
+      "path_prefix": "tobeimg/HQWwayr2SVFimIinW5dcO4GPxBTitrPmHDxzi6tjy0Q",
+      "extension": "jpg",
+      "http_status": 401,
+      "elapsed_ms": 375,
+      "content_type": "application/json; charset=utf-8",
+      "bytes_read": 0,
+      "auth_challenge": "",
+      "step": "media-head-ua-referer"
+    },
+    {
+      "method": "HEAD",
+      "host": "storage-b.picacomic.com",
+      "path_segments": 5,
+      "path_prefix": "tobeimg/HQWwayr2SVFimIinW5dcO4GPxBTitrPmHDxzi6tjy0Q",
+      "extension": "jpg",
+      "http_status": 401,
+      "elapsed_ms": 391,
+      "content_type": "application/json; charset=utf-8",
+      "bytes_read": 0,
+      "auth_challenge": "",
+      "step": "media-head-token"
+    },
+    {
+      "method": "GET",
+      "host": "storage-b.picacomic.com",
+      "path_segments": 5,
+      "path_prefix": "tobeimg/HQWwayr2SVFimIinW5dcO4GPxBTitrPmHDxzi6tjy0Q",
+      "extension": "jpg",
+      "http_status": 401,
+      "elapsed_ms": 359,
+      "content_type": "application/json; charset=utf-8",
+      "bytes_read": 2,
+      "auth_challenge": "",
+      "step": "media-get-range"
+    }
+  ],
+  "read_count": 8,
+  "failed_steps": [
+    "comics-category-filter",
+    "media-head-bare",
+    "media-head-ua-referer",
+    "media-head-token",
+    "media-get-range"
+  ],
+  "outcome": "some_checks_failed"
+}

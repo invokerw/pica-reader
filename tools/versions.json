@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "note": "工具链的唯一真源。改版本就改这里，然后重跑 tools/bootstrap.ps1；sha256 不匹配会直接失败，不会悄悄换版本。",
+  "env": {
+    "pub_hosted_url": "https://pub.flutter-io.cn",
+    "flutter_storage_base_url": "https://storage.flutter-io.cn",
+    "jdk_home": ".rea-tools/jdk/jdk-21.0.13+9",
+    "android_sdk": ".tools/android-sdk",
+    "ndk_version": "28.2.13676358",
+    "compile_sdk": "36",
+    "build_tools": "36.0.0"
+  },
+  "artifacts": [
+    {
+      "id": "flutter",
+      "kind": "zip",
+      "profiles": ["build"],
+      "dest": ".tools/flutter",
+      "verify": ".tools/flutter/bin/flutter.bat",
+      "sha256": "d8e2b5977e09082c6440f89dc1aa887b94c8fbcc3b39222797046295a3f68a9e",
+      "size": 1939451626,
+      "urls": [
+        "https://storage.flutter-io.cn/flutter_infra_release/releases/stable/windows/flutter_windows_3.47.9-stable.zip",
+        "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.47.9-stable.zip"
+      ]
+    },
+    {
+      "id": "jdk",
+      "kind": "zip",
+      "profiles": ["build", "analyze"],
+      "dest": ".rea-tools/jdk",
+      "verify": ".rea-tools/jdk/jdk-21.0.13+9/bin/java.exe",
+      "sha256": "a4dbaa05fca4bd89d84584e58c459bd732efebb1722af80ab13c6516832004f9",
+      "size": 205421281,
+      "urls": [
+        "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_x64_windows_hotspot_21.0.13_9.zip",
+        "https://mirrors.tuna.tsinghua.edu.cn/Adoptium/21/jdk/x64/windows/OpenJDK21U-jdk_x64_windows_hotspot_21.0.13_9.zip"
+      ]
+    },
+    {
+      "id": "platform-tools",
+      "kind": "zip",
+      "profiles": ["build"],
+      "dest": ".tools/android-sdk/platform-tools",
+      "verify": ".tools/android-sdk/platform-tools/adb.exe",
+      "sha256": "45f4d63113e895ebde0c90f194099a4676b6ac653bd28d54314a9e022bbc1a99",
+      "size": 8044989,
+      "urls": [
+        "https://mirrors.cloud.tencent.com/AndroidSDK/platform-tools_r37.0.1-win.zip",
+        "https://dl.google.com/android/repository/platform-tools_r37.0.1-win.zip"
+      ]
+    },
+    {
+      "id": "platform-36",
+      "kind": "zip",
+      "profiles": ["build"],
+      "dest": ".tools/android-sdk/platforms/android-36",
+      "verify": ".tools/android-sdk/platforms/android-36/android.jar",
+      "sha256": "37607369a28c5b640b3a7998868d45898ebcb777565a0e85f9acf36f29631d2e",
+      "size": 65878410,
+      "urls": [
+        "https://mirrors.cloud.tencent.com/AndroidSDK/platform-36_r02.zip",
+        "https://dl.google.com/android/repository/platform-36_r02.zip"
+      ]
+    },
+    {
+      "id": "build-tools-36",
+      "kind": "zip",
+      "profiles": ["build"],
+      "dest": ".tools/android-sdk/build-tools/36.0.0",
+      "verify": ".tools/android-sdk/build-tools/36.0.0/aapt2.exe",
+      "sha256": "aa1095cb14d83e483818a748a2c06faaeb8e601561b06a356a119a1b2ca280d3",
+      "size": 58699878,
+      "urls": [
+        "https://mirrors.cloud.tencent.com/AndroidSDK/build-tools_r36_windows.zip",
+        "https://dl.google.com/android/repository/build-tools_r36_windows.zip"
+      ]
+    },
+    {
+      "id": "ndk-28c",
+      "kind": "zip",
+      "profiles": ["build"],
+      "dest": ".tools/android-sdk/ndk/28.2.13676358",
+      "verify": ".tools/android-sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-strip.exe",
+      "sha256": "6bec98ac2354d8a919760889a1a41d020132e5e8cfa1b1fe51610a72c36a466b",
+      "size": 748118221,
+      "urls": [
+        "https://mirrors.cloud.tencent.com/AndroidSDK/android-ndk-r28c-windows.zip",
+        "https://dl.google.com/android/repository/android-ndk-r28c-windows.zip"
+      ]
+    },
+    {
+      "id": "jadx-headless-mcp",
+      "kind": "file",
+      "profiles": ["analyze"],
+      "dest": ".rea-tools/jadx-headless-mcp-0.7.1-all.jar",
+      "verify": ".rea-tools/jadx-headless-mcp-0.7.1-all.jar",
+      "sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "size": 42619858,
+      "urls": [
+        "https://github.com/1013503897/jadx-headless-mcp/releases/download/v0.7.1/jadx-headless-mcp-0.7.1-all.jar"
+      ]
+    }
+  ],
+  "npm": {
+    "profile": "analyze",
+    "packages": ["rea-agents@6.8.0"]
+  }
+}

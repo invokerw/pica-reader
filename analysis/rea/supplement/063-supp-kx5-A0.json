@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_308bfccb0098ee4471b329faac1c35ac60db5df5b66bc9fb29bacc603f7a2ea0",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "kx5",
+    "method_name": "A0",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-7802ea5287a189237b935c294ddb9235\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":2,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "kx5"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"kx5\",\"fields\":[],\"methods\":[{\"name\":\"A0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;\",\"signature\":\"A0(java.lang.String, java.lang.String): java.lang.String\",\"def_pos\":0},{\"name\":\"B0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;\",\"signature\":\"B0(java.lang.String, java.lang.String): java.lang.String\",\"def_pos\":0},{\"name\":\"C0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/CharSequence;Ljava/lang/String;)Ljava/util/List;\",\"signature\":\"C0(java.lang.CharSequence, java.lang.String): java.util.List\",\"def_pos\":0},{\"name\":\"D0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/CharSequence;[C)Ljava/util/List;\",\"signature\":\"D0(java.lang.CharSequence, char[]): java.util.List\",\"def_pos\":0},{\"name\":\"E0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;\",\"signature\":\"E0(java.lang.CharSequence, java.lang.String[]): java.util.List\",\"def_pos\":0},{\"name\":\"F0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;C)Z\",\"signature\":\"F0(java.lang.String, char): boolean\",\"def_pos\":0},{\"name\":\"G0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;\",\"signature\":\"G0(java.lang.String, java.lang.String, java.lang.String): java.lang.String\",\"def_pos\":0},{\"name\":\"H0\",\"is_constructor\":false,\"dex_descriptor\":\"(CLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;\",\"signature\":\"H0(char, java.lang.String, java.lang.String): java.lang.String\",\"def_pos\":0},{\"name\":\"I0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;C)Ljava/lang/String;\",\"signature\":\"I0(java.lang.String, char): java.lang.String\",\"def_pos\":0},{\"name\":\"J0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;C)Ljava/lang/String;\",\"signature\":\"J0(java.lang.String, char): java.lang.String\",\"def_pos\":0},{\"name\":\"K0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;\",\"signature\":\"K0(java.lang.String, java.lang.String): java.lang.String\",\"def_pos\":0},{\"name\":\"L0\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/lang/String;)Ljava/lang/String;\",\"signature\":\"L0(int, java.lang.String): java.lang.String\",\"def_pos\":0},{\"name\":\"M0\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/lang/String;)Ljava/lang/String;\",\"signature\":\"M0(int, java.lang.String): java.lang.String\",\"def_pos\":0},{\"name\":\"N0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;\",\"signature\":\"N0(java.lang.CharSequence): java.lang.CharSequence\",\"def_pos\":0},{\"name\":\"O0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;[C)Ljava/lang/String;\",\"signature\":\"O0(java.lang.String, char[]): java.lang.String\",\"def_pos\":0},{\"name\":\"P0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/lang/CharSequence;\",\"signature\":\"P0(java.lang.String): java.lang.CharSequence\",\"def_pos\":0},{\"name\":\"Q0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;[C)Ljava/lang/String;\",\"signature\":\"Q0(java.lang.String, char[]): java.lang.String\",\"def_pos\":0},{\"name\":\"i0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z\",\"signature\":\"i0(java.lang.CharSequence, java.lang.CharSequence, boolean): boolean\",\"def_pos\":0},{\"name\":\"j0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/CharSequence;C)Z\",\"signature\":\"j0(java.lang.CharSequence, char): boolean\",\"def_pos\":0},{\"name\":\"k0\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/lang/String;)Ljava/lang/String;\",\"signature\":\"k0(int, java.lang.String): java.lang.String\",\"def_pos\":0},{\"name\":\"l0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/lang/String;\",\"signature\":\"l0(java.lang.String): java.lang.String\",\"def_pos\":0},{\"name\":\"m0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/CharSequence;Ljava/lang/String;)Z\",\"signature\":\"m0(java.lang.CharSequence, java.lang.String): boolean\",\"def_pos\":0},{\"name\":\"n0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;C)Z\",\"signature\":\"n0(java.lang.String, char): boolean\",\"def_pos\":0},{\"name\":\"o0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/CharSequence;Ljava/lang/String;IZ)I\",\"signature\":\"o0(java.lang.CharSequence, java.lang.String, int, boolean): int\",\"def_pos\":0},{\"name\":\"p0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/CharSequence;Ljava/lang/CharSequence;IIZZ)I\",\"signature\":\"p0(java.lang.CharSequence, java.lang.CharSequence, int, int, boolean, boolean): int\",\"def_pos\":0},{\"name\":\"q0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/CharSequence;CII)I\",\"signature\":\"q0(java.lang.CharSequence, char, int, int): int\",\"def_pos\":0},{\"name\":\"r0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/CharSequence;Ljava/lang/String;IZI)I\",\"signature\":\"r0(java.lang.CharSequence, java.lang.String, int, boolean, int): int\",\"def_pos\":0},{\"name\":\"s0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/CharSequence;[CIZ)I\",\"signature\":\"s0(java.lang.CharSequence, char[], int, boolean): int\",\"def_pos\":0},{\"name\":\"t0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/CharSequence;)Z\",\"signature\":\"t0(java.lang.CharSequence): boolean\",\"def_pos\":0},{\"name\":\"u0\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/lang/String;Ljava/lang/String;)I\",\"signature\":\"u0(int, java.lang.String, java.lang.String): int\",\"def_pos\":0},{\"name\":\"v0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/CharSequence;CII)I\",\"signature\":\"v0(java.lang.CharSequence, char, int, int): int\",\"def_pos\":0},{\"name\":\"w0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/CharSequence;)Ljava/util/List;\",\"signature\":\"w0(java.lang.CharSequence): java.util.List\",\"def_pos\":0},{\"name\":\"x0\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/lang/String;)Ljava/lang/String;\",\"signature\":\"x0(int, java.lang.String): java.lang.String\",\"def_pos\":0},{\"name\":\"y0\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/lang/String;)Ljava/lang/String;\",\"signature\":\"y0(int, java.lang.String): java.lang.String\",\"def_pos\":0},{\"name\":\"z0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/CharSequence;ILjava/lang/CharSequence;IIZ)Z\",\"signature\":\"z0(java.lang.CharSequence, int, java.lang.CharSequence, int, int, boolean): boolean\",\"def_pos\":0}],\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"kx5\",\"field_count\":0,\"full_name\":\"defpackage.kx5\",\"method_count\":35}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "kx5",
+          "method_name": "A0",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_index\":0,\"method_name\":\"A0\",\"overload_count\":1,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;\",\"class_name\":\"defpackage.kx5\",\"mode\":\"java\",\"body\":\"/* JADX INFO: loaded from: classes.dex */\\r\\npublic abstract class kx5 extends rx5 {\\r\\n    public static String A0(String str, String str2) {\\r\\n        str.getClass();\\r\\n        return rx5.f0(str, str2, false) ? str.substring(str2.length()) : str;\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"kx5.A0\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.kx5",
+    "method": {
+      "name": "A0",
+      "reported_signature": "A0(java.lang.String, java.lang.String): java.lang.String",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "/* JADX INFO: loaded from: classes.dex */\r\npublic abstract class kx5 extends rx5 {\r\n    public static String A0(String str, String str2) {\r\n        str.getClass();\r\n        return rx5.f0(str, str2, false) ? str.substring(str2.length()) : str;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_5cb30ad97c12705e9f3894c05dfdf23301e5d6846ef1c5dd670c34e6a480a284",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "m54",
+    "method_name": "<init>",
+    "overload_index": 1
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "m54"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(l54): void\",\"dex_descriptor\":\"(Ll54;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"a(zx): bz4\",\"dex_descriptor\":\"(Lzx;)Lbz4;\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0},{\"signature\":\"b(): l54\",\"dex_descriptor\":\"()Ll54;\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0}],\"fields\":[{\"name\":\"A\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"B\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"C\",\"def_pos\":0,\"type\":\"oh3\"},{\"name\":\"D\",\"def_pos\":0,\"type\":\"h36\"},{\"name\":\"E\",\"def_pos\":0,\"type\":\"up2\"},{\"name\":\"F\",\"def_pos\":0,\"type\":\"java.util.List\"},{\"name\":\"G\",\"def_pos\":0,\"type\":\"java.util.List\"},{\"name\":\"a\",\"def_pos\":0,\"type\":\"p34\"},{\"name\":\"b\",\"def_pos\":0,\"type\":\"java.util.List\"},{\"name\":\"c\",\"def_pos\":0,\"type\":\"java.util.List\"},{\"name\":\"d\",\"def_pos\":0,\"type\":\"m72\"},{\"name\":\"e\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"f\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"g\",\"def_pos\":0,\"type\":\"bt2\"},{\"name\":\"h\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"i\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"j\",\"def_pos\":0,\"type\":\"bt2\"},{\"name\":\"k\",\"def_pos\":0,\"type\":\"mh0\"},{\"name\":\"l\",\"def_pos\":0,\"type\":\"fv1\"},{\"name\":\"m\",\"def_pos\":0,\"type\":\"java.net.ProxySelector\"},{\"name\":\"n\",\"def_pos\":0,\"type\":\"bt2\"},{\"name\":\"o\",\"def_pos\":0,\"type\":\"javax.net.SocketFactory\"},{\"name\":\"p\",\"def_pos\":0,\"type\":\"javax.net.ssl.SSLSocketFactory\"},{\"name\":\"q\",\"def_pos\":0,\"type\":\"javax.net.ssl.X509TrustManager\"},{\"name\":\"r\",\"def_pos\":0,\"type\":\"java.util.List\"},{\"name\":\"s\",\"def_pos\":0,\"type\":\"java.util.List\"},{\"name\":\"t\",\"def_pos\":0,\"type\":\"h54\"},{\"name\":\"u\",\"def_pos\":0,\"type\":\"sl0\"},{\"name\":\"v\",\"def_pos\":0,\"type\":\"rl0\"},{\"name\":\"w\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"x\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"y\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"z\",\"def_pos\":0,\"type\":\"int\"}],\"raw_name\":\"m54\",\"method_count\":5,\"full_name\":\"defpackage.m54\",\"field_count\":33,\"name\":\"m54\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "m54",
+          "method_name": "<init>",
+          "overload_index": 1,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    public m54(l54 l54Var) throws NoSuchAlgorithmException, KeyStoreException {\\r\\n        this.a \\u003d l54Var.a;\\r\\n        this.b \\u003d bs6.j(l54Var.c);\\r\\n        this.c \\u003d bs6.j(l54Var.d);\\r\\n        this.d \\u003d l54Var.e;\\r\\n        this.e \\u003d l54Var.f;\\r\\n        this.f \\u003d l54Var.g;\\r\\n        this.g \\u003d l54Var.h;\\r\\n        this.h \\u003d l54Var.i;\\r\\n        this.i \\u003d l54Var.j;\\r\\n        this.j \\u003d l54Var.k;\\r\\n        this.k \\u003d l54Var.l;\\r\\n        this.l \\u003d l54Var.m;\\r\\n        ProxySelector proxySelector \\u003d l54Var.n;\\r\\n        if (proxySelector \\u003d\\u003d null \\u0026\\u0026 (proxySelector \\u003d ProxySelector.getDefault()) \\u003d\\u003d null) {\\r\\n            proxySelector \\u003d v34.a;\\r\\n        }\\r\\n        this.m \\u003d proxySelector;\\r\\n        this.n \\u003d l54Var.o;\\r\\n        this.o \\u003d l54Var.p;\\r\\n        List list \\u003d l54Var.s;\\r\\n        this.r \\u003d list;\\r\\n        this.s \\u003d l54Var.t;\\r\\n        this.t \\u003d l54Var.u;\\r\\n        this.w \\u003d l54Var.x;\\r\\n        this.x \\u003d l54Var.y;\\r\\n        this.y \\u003d l54Var.z;\\r\\n        this.z \\u003d l54Var.A;\\r\\n        this.A \\u003d l54Var.B;\\r\\n        this.B \\u003d l54Var.C;\\r\\n        oh3 oh3Var \\u003d l54Var.D;\\r\\n        this.C \\u003d oh3Var \\u003d\\u003d null ? new oh3(16, false) : oh3Var;\\r\\n        h36 h36Var \\u003d l54Var.E;\\r\\n        this.D \\u003d h36Var \\u003d\\u003d null ? h36.l : h36Var;\\r\\n        up2 up2Var \\u003d l54Var.b;\\r\\n        if (up2Var \\u003d\\u003d null) {\\r\\n            up2Var \\u003d new up2(5, 5L, TimeUnit.MINUTES);\\r\\n            l54Var.b \\u003d up2Var;\\r\\n        }\\r\\n        this.E \\u003d up2Var;\\r\\n        if (list !\\u003d null \\u0026\\u0026 list.isEmpty()) {\\r\\n            this.p \\u003d null;\\r\\n            this.v \\u003d null;\\r\\n            this.q \\u003d null;\\r\\n            this.u \\u003d sl0.c;\\r\\n            break;\\r\\n        }\\r\\n        Iterator it \\u003d list.iterator();\\r\\n        while (true) {\\r\\n            if (!it.hasNext()) {\\r\\n                this.p \\u003d null;\\r\\n                this.v \\u003d null;\\r\\n                this.q \\u003d null;\\r\\n                this.u \\u003d sl0.c;\\r\\n                break;\\r\\n            }\\r\\n            if (((fb1) it.next()).a) {\\r\\n                SSLSocketFactory sSLSocketFactory \\u003d l54Var.q;\\r\\n                if (sSLSocketFactory !\\u003d null) {\\r\\n                    this.p \\u003d sSLSocketFactory;\\r\\n                    rl0 rl0Var \\u003d l54Var.w;\\r\\n                    rl0Var.getClass();\\r\\n                    this.v \\u003d rl0Var;\\r\\n                    X509TrustManager x509TrustManager \\u003d l54Var.r;\\r\\n                    x509TrustManager.getClass();\\r\\n                    this.q \\u003d x509TrustManager;\\r\\n                    sl0 sl0Var \\u003d l54Var.v;\\r\\n                    sl0Var.getClass();\\r\\n                    this.u \\u003d j63.u(sl0Var.b, rl0Var) ? sl0Var : new sl0(sl0Var.a, rl0Var);\\r\\n                    break;\\r\\n                }\\r\\n                bi4 bi4Var \\u003d bi4.a;\\r\\n                bi4.a.getClass();\\r\\n                TrustManagerFactory trustManagerFactory \\u003d TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());\\r\\n                trustManagerFactory.init((KeyStore) null);\\r\\n                TrustManager[] trustManagers \\u003d trustManagerFactory.getTrustManagers();\\r\\n                trustManagers.getClass();\\r\\n                if (trustManagers.length \\u003d\\u003d 1) {\\r\\n                    TrustManager trustManager \\u003d trustManagers[0];\\r\\n                    if (trustManager instanceof X509TrustManager) {\\r\\n                        X509TrustManager x509TrustManager2 \\u003d (X509TrustManager) trustManager;\\r\\n                        this.q \\u003d x509TrustManager2;\\r\\n                        bi4 bi4Var2 \\u003d bi4.a;\\r\\n                        bi4Var2.getClass();\\r\\n                        try {\\r\\n                            SSLContext sSLContextK \\u003d bi4Var2.k();\\r\\n                            sSLContextK.init(null, new TrustManager[]{x509TrustManager2}, null);\\r\\n                            SSLSocketFactory socketFactory \\u003d sSLContextK.getSocketFactory();\\r\\n                            socketFactory.getClass();\\r\\n                            this.p \\u003d socketFactory;\\r\\n                            rl0 rl0VarC \\u003d bi4.a.c(x509TrustManager2);\\r\\n                            this.v \\u003d rl0VarC;\\r\\n                            sl0 sl0Var2 \\u003d l54Var.v;\\r\\n                            sl0Var2.getClass();\\r\\n                            this.u \\u003d j63.u(sl0Var2.b, rl0VarC) ? sl0Var2 : new sl0(sl0Var2.a, rl0VarC);\\r\\n                            break;\\r\\n                        } catch (GeneralSecurityException e) {\\r\\n                            throw new AssertionError(\\\"No System TLS: \\\" + e, e);\\r\\n                        }\\r\\n                    }\\r\\n                }\\r\\n                String string \\u003d Arrays.toString(trustManagers);\\r\\n                string.getClass();\\r\\n                nr3.i(\\\"Unexpected default trust managers: \\\".concat(string));\\r\\n                throw null;\\r\\n            }\\r\\n        }\\r\\n        X509TrustManager x509TrustManager3 \\u003d this.q;\\r\\n        rl0 rl0Var2 \\u003d this.v;\\r\\n        SSLSocketFactory sSLSocketFactory2 \\u003d this.p;\\r\\n        List list2 \\u003d this.c;\\r\\n        List list3 \\u003d this.b;\\r\\n        list3.getClass();\\r\\n        if (list3.contains(null)) {\\r\\n            nr3.j(list3, \\\"Null interceptor: \\\");\\r\\n            throw null;\\r\\n        }\\r\\n        list2.getClass();\\r\\n        if (list2.contains(null)) {\\r\\n            nr3.j(list2, \\\"Null network interceptor: \\\");\\r\\n            throw null;\\r\\n        }\\r\\n        List list4 \\u003d this.r;\\r\\n        if (list4 \\u003d\\u003d null || !list4.isEmpty()) {\\r\\n            Iterator it2 \\u003d list4.iterator();\\r\\n            while (it2.hasNext()) {\\r\\n                if (((fb1) it2.next()).a) {\\r\\n                    if (sSLSocketFactory2 \\u003d\\u003d null) {\\r\\n                        mz.h(\\\"sslSocketFactory \\u003d\\u003d null\\\");\\r\\n                        throw null;\\r\\n                    }\\r\\n                    if (rl0Var2 \\u003d\\u003d null) {\\r\\n                        mz.h(\\\"certificateChainCleaner \\u003d\\u003d null\\\");\\r\\n                        throw null;\\r\\n                    }\\r\\n                    if (x509TrustManager3 !\\u003d null) {\\r\\n                        return;\\r\\n                    }\\r\\n                    mz.h(\\\"x509TrustManager \\u003d\\u003d null\\\");\\r\\n                    throw null;\\r\\n                }\\r\\n            }\\r\\n        }\\r\\n        if (sSLSocketFactory2 !\\u003d null) {\\r\\n            mz.h(\\\"Check failed.\\\");\\r\\n            throw null;\\r\\n        }\\r\\n        if (rl0Var2 !\\u003d null) {\\r\\n            mz.h(\\\"Check failed.\\\");\\r\\n            throw null;\\r\\n        }\\r\\n        if (x509TrustManager3 !\\u003d null) {\\r\\n            mz.h(\\\"Check failed.\\\");\\r\\n            throw null;\\r\\n        }\\r\\n        if (j63.u(this.u, sl0.c)) {\\r\\n            return;\\r\\n        }\\r\\n        mz.h(\\\"Check failed.\\\");\\r\\n        throw null;\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"defpackage.m54\",\"dex_descriptor\":\"(Ll54;)V\",\"overload_count\":2,\"method_name\":\"\\u003cinit\\u003e\",\"overload_index\":1,\"full_name\":\"m54.\\u003cinit\\u003e\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.m54",
+    "method": {
+      "name": "<init>",
+      "reported_signature": "<init>(l54): void",
+      "overload_index": 1,
+      "is_constructor": true,
+      "dex_descriptor": "(Ll54;)V"
+    },
+    "overload_count": 2,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public m54(l54 l54Var) throws NoSuchAlgorithmException, KeyStoreException {\r\n        this.a = l54Var.a;\r\n        this.b = bs6.j(l54Var.c);\r\n        this.c = bs6.j(l54Var.d);\r\n        this.d = l54Var.e;\r\n        this.e = l54Var.f;\r\n        this.f = l54Var.g;\r\n        this.g = l54Var.h;\r\n        this.h = l54Var.i;\r\n        this.i = l54Var.j;\r\n        this.j = l54Var.k;\r\n        this.k = l54Var.l;\r\n        this.l = l54Var.m;\r\n        ProxySelector proxySelector = l54Var.n;\r\n        if (proxySelector == null && (proxySelector = ProxySelector.getDefault()) == null) {\r\n            proxySelector = v34.a;\r\n        }\r\n        this.m = proxySelector;\r\n        this.n = l54Var.o;\r\n        this.o = l54Var.p;\r\n        List list = l54Var.s;\r\n        this.r = list;\r\n        this.s = l54Var.t;\r\n        this.t = l54Var.u;\r\n        this.w = l54Var.x;\r\n        this.x = l54Var.y;\r\n        this.y = l54Var.z;\r\n        this.z = l54Var.A;\r\n        this.A = l54Var.B;\r\n        this.B = l54Var.C;\r\n        oh3 oh3Var = l54Var.D;\r\n        this.C = oh3Var == null ? new oh3(16, false) : oh3Var;\r\n        h36 h36Var = l54Var.E;\r\n        this.D = h36Var == null ? h36.l : h36Var;\r\n        up2 up2Var = l54Var.b;\r\n        if (up2Var == null) {\r\n            up2Var = new up2(5, 5L, TimeUnit.MINUTES);\r\n            l54Var.b = up2Var;\r\n        }\r\n        this.E = up2Var;\r\n        if (list != null && list.isEmpty()) {\r\n            this.p = null;\r\n            this.v = null;\r\n            this.q = null;\r\n            this.u = sl0.c;\r\n            break;\r\n        }\r\n        Iterator it = list.iterator();\r\n        while (true) {\r\n            if (!it.hasNext()) {\r\n                this.p = null;\r\n                this.v = null;\r\n                this.q = null;\r\n                this.u = sl0.c;\r\n                break;\r\n            }\r\n            if (((fb1) it.next()).a) {\r\n                SSLSocketFactory sSLSocketFactory = l54Var.q;\r\n                if (sSLSocketFactory != null) {\r\n                    this.p = sSLSocketFactory;\r\n                    rl0 rl0Var = l54Var.w;\r\n                    rl0Var.getClass();\r\n                    this.v = rl0Var;\r\n                    X509TrustManager x509TrustManager = l54Var.r;\r\n                    x509TrustManager.getClass();\r\n                    this.q = x509TrustManager;\r\n                    sl0 sl0Var = l54Var.v;\r\n                    sl0Var.getClass();\r\n                    this.u = j63.u(sl0Var.b, rl0Var) ? sl0Var : new sl0(sl0Var.a, rl0Var);\r\n                    break;\r\n                }\r\n                bi4 bi4Var = bi4.a;\r\n                bi4.a.getClass();\r\n                TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());\r\n                trustManagerFactory.init((KeyStore) null);\r\n                TrustManager[] trustManagers = trustManagerFactory.getTrustManagers();\r\n                trustManagers.getClass();\r\n                if (trustManagers.length == 1) {\r\n                    TrustManager trustManager = trustManagers[0];\r\n                    if (trustManager instanceof X509TrustManager) {\r\n                        X509TrustManager x509TrustManager2 = (X509TrustManager) trustManager;\r\n                        this.q = x509TrustManager2;\r\n                        bi4 bi4Var2 = bi4.a;\r\n                        bi4Var2.getClass();\r\n                        try {\r\n                            SSLContext sSLContextK = bi4Var2.k();\r\n                            sSLContextK.init(null, new TrustManager[]{x509TrustManager2}, null);\r\n                            SSLSocketFactory socketFactory = sSLContextK.getSocketFactory();\r\n                            socketFactory.getClass();\r\n                            this.p = socketFactory;\r\n                            rl0 rl0VarC = bi4.a.c(x509TrustManager2);\r\n                            this.v = rl0VarC;\r\n                            sl0 sl0Var2 = l54Var.v;\r\n                            sl0Var2.getClass();\r\n                            this.u = j63.u(sl0Var2.b, rl0VarC) ? sl0Var2 : new sl0(sl0Var2.a, rl0VarC);\r\n                            break;\r\n                        } catch (GeneralSecurityException e) {\r\n                            throw new AssertionError(\"No System TLS: \" + e, e);\r\n                        }\r\n                    }\r\n                }\r\n                String string = Arrays.toString(trustManagers);\r\n                string.getClass();\r\n                nr3.i(\"Unexpected default trust managers: \".concat(string));\r\n                throw null;\r\n            }\r\n        }\r\n        X509TrustManager x509TrustManager3 = this.q;\r\n        rl0 rl0Var2 = this.v;\r\n        SSLSocketFactory sSLSocketFactory2 = this.p;\r\n        List list2 = this.c;\r\n        List list3 = this.b;\r\n        list3.getClass();\r\n        if (list3.contains(null)) {\r\n            nr3.j(list3, \"Null interceptor: \");\r\n            throw null;\r\n        }\r\n        list2.getClass();\r\n        if (list2.contains(null)) {\r\n            nr3.j(list2, \"Null network interceptor: \");\r\n            throw null;\r\n        }\r\n        List list4 = this.r;\r\n        if (list4 == null || !list4.isEmpty()) {\r\n            Iterator it2 = list4.iterator();\r\n            while (it2.hasNext()) {\r\n                if (((fb1) it2.next()).a) {\r\n                    if (sSLSocketFactory2 == null) {\r\n                        mz.h(\"sslSocketFactory == null\");\r\n                        throw null;\r\n                    }\r\n                    if (rl0Var2 == null) {\r\n                        mz.h(\"certificateChainCleaner == null\");\r\n                        throw null;\r\n                    }\r\n                    if (x509TrustManager3 != null) {\r\n                        return;\r\n                    }\r\n                    mz.h(\"x509TrustManager == null\");\r\n                    throw null;\r\n                }\r\n            }\r\n        }\r\n        if (sSLSocketFactory2 != null) {\r\n            mz.h(\"Check failed.\");\r\n            throw null;\r\n        }\r\n        if (rl0Var2 != null) {\r\n            mz.h(\"Check failed.\");\r\n            throw null;\r\n        }\r\n        if (x509TrustManager3 != null) {\r\n            mz.h(\"Check failed.\");\r\n            throw null;\r\n        }\r\n        if (j63.u(this.u, sl0.c)) {\r\n            return;\r\n        }\r\n        mz.h(\"Check failed.\");\r\n        throw null;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

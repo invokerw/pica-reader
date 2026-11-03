@@ -1,0 +1,36 @@
+    public ComicDetail(String str, Creator creator, String str2, String str3, ImageInfo imageInfo, String str4, String str5, List<String> list, List<String> list2, int i, int i2, boolean z, String str6, String str7, boolean z2, boolean z3, Integer num, Integer num2, Integer num3, Integer num4, Integer num5, Integer num6, boolean z4, boolean z5) {
+        str.getClass();
+        creator.getClass();
+        str2.getClass();
+        str3.getClass();
+        imageInfo.getClass();
+        str4.getClass();
+        list.getClass();
+        list2.getClass();
+        str6.getClass();
+        str7.getClass();
+        this.id = str;
+        this.creator = creator;
+        this.title = str2;
+        this.description = str3;
+        this.thumb = imageInfo;
+        this.author = str4;
+        this.chineseTeam = str5;
+        this.categories = list;
+        this.tags = list2;
+        this.pagesCount = i;
+        this.epsCount = i2;
+        this.finished = z;
+        this.updatedAt = str6;
+        this.createdAt = str7;
+        this.allowDownload = z2;
+        this.allowComment = z3;
+        this.totalLikes = num;
+        this.totalViews = num2;
+        this.totalComments = num3;
+        this.viewsCount = num4;
+        this.likesCount = num5;
+        this.commentsCount = num6;
+        this.isFavourite = z4;
+        this.isLiked = z5;
+    }

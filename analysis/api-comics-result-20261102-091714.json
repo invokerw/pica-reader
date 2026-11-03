@@ -1,0 +1,292 @@
+{
+  "host": "picaapi.picacomic.com",
+  "started_at_utc": "Mon, 02 Nov 2026 09:17:05 GMT",
+  "scope": "Read-only comics endpoints; no likes/favourites/comments",
+  "credentials_saved": false,
+  "token_saved": false,
+  "images_downloaded": false,
+  "steps": [
+    {
+      "method": "HEAD",
+      "path": "/",
+      "query": null,
+      "http_status": 200,
+      "elapsed_ms": 265,
+      "response_bytes": 0,
+      "business_success": false,
+      "step": "probe"
+    },
+    {
+      "method": "POST",
+      "path": "/auth/sign-in",
+      "query": null,
+      "http_status": 200,
+      "elapsed_ms": 313,
+      "response_bytes": 418,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "sign-in",
+      "data_keys": [
+        "token"
+      ],
+      "token_received": true
+    },
+    {
+      "method": "GET",
+      "path": "/comics",
+      "query": "page=1&s=dd",
+      "http_status": 200,
+      "elapsed_ms": 265,
+      "response_bytes": 24117,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "comics-page1-default",
+      "item_count": 0,
+      "item_keys": [],
+      "data_keys": [
+        "comics"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/comics",
+      "query": "page=2&s=dd",
+      "http_status": 200,
+      "elapsed_ms": 532,
+      "response_bytes": 23533,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "comics-page2-default",
+      "item_count": 0,
+      "item_keys": [],
+      "data_keys": [
+        "comics"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/comics",
+      "query": "page=1&s=vd",
+      "http_status": 200,
+      "elapsed_ms": 265,
+      "response_bytes": 22372,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "comics-page1-views",
+      "item_count": 0,
+      "item_keys": [],
+      "data_keys": [
+        "comics"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/comics/leaderboard",
+      "query": "tt=H24&ct=VC",
+      "http_status": 200,
+      "elapsed_ms": 328,
+      "response_bytes": 42646,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "leaderboard-H24",
+      "item_count": 40,
+      "item_keys": [
+        "_id",
+        "author",
+        "categories",
+        "epsCount",
+        "finished",
+        "leaderboardCount",
+        "pagesCount",
+        "tags",
+        "thumb",
+        "title",
+        "totalLikes",
+        "totalViews",
+        "viewsCount"
+      ],
+      "data_keys": [
+        "comics"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/comics/leaderboard",
+      "query": "tt=D7&ct=VC",
+      "http_status": 200,
+      "elapsed_ms": 313,
+      "response_bytes": 42606,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "leaderboard-D7",
+      "item_count": 40,
+      "item_keys": [
+        "_id",
+        "author",
+        "categories",
+        "epsCount",
+        "finished",
+        "leaderboardCount",
+        "pagesCount",
+        "tags",
+        "thumb",
+        "title",
+        "totalLikes",
+        "totalViews",
+        "viewsCount"
+      ],
+      "data_keys": [
+        "comics"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/comics/leaderboard",
+      "query": "tt=D30&ct=VC",
+      "http_status": 200,
+      "elapsed_ms": 312,
+      "response_bytes": 42025,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "leaderboard-D30",
+      "item_count": 40,
+      "item_keys": [
+        "_id",
+        "author",
+        "categories",
+        "epsCount",
+        "finished",
+        "leaderboardCount",
+        "pagesCount",
+        "tags",
+        "thumb",
+        "title",
+        "totalLikes",
+        "totalViews",
+        "viewsCount"
+      ],
+      "data_keys": [
+        "comics"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/comics/random",
+      "query": null,
+      "http_status": 200,
+      "elapsed_ms": 313,
+      "response_bytes": 18229,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "comics-random",
+      "item_count": 20,
+      "item_keys": [
+        "_id",
+        "author",
+        "categories",
+        "epsCount",
+        "finished",
+        "likesCount",
+        "pagesCount",
+        "tags",
+        "thumb",
+        "title",
+        "totalLikes",
+        "totalViews"
+      ],
+      "data_keys": [
+        "comics"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/collections",
+      "query": null,
+      "http_status": 200,
+      "elapsed_ms": 265,
+      "response_bytes": 158,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "collections",
+      "item_count": 1,
+      "item_keys": [
+        "comics",
+        "title"
+      ],
+      "data_keys": [
+        "collections"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/banners",
+      "query": null,
+      "http_status": 200,
+      "elapsed_ms": 297,
+      "response_bytes": 3216,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "banners",
+      "item_count": 8,
+      "item_keys": [
+        "_id",
+        "link",
+        "shortDescription",
+        "thumb",
+        "title",
+        "type"
+      ],
+      "data_keys": [
+        "banners"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/keywords",
+      "query": null,
+      "http_status": 200,
+      "elapsed_ms": 266,
+      "response_bytes": 355,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "keywords",
+      "item_count": 15,
+      "item_keys": [],
+      "data_keys": [
+        "keywords"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/announcements",
+      "query": "page=1&platform=android",
+      "http_status": 200,
+      "elapsed_ms": 281,
+      "response_bytes": 15677,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "announcements",
+      "item_count": 0,
+      "item_keys": [],
+      "data_keys": [
+        "announcements"
+      ]
+    }
+  ],
+  "comic_id_available": false,
+  "read_count": 11,
+  "failed_steps": [],
+  "outcome": "all_reads_passed"
+}

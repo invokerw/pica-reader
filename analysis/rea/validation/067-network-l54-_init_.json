@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_e3041438c05cecb9f85b6aa64513cfe48a3d9e0d1b6eb4cb34ce0a5ba4eccf49",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "l54",
+    "method_name": "<init>",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "l54"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"a(long): void\",\"dex_descriptor\":\"(J)V\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0},{\"signature\":\"b(fv1): void\",\"dex_descriptor\":\"(Lfv1;)V\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0},{\"signature\":\"c(long): void\",\"dex_descriptor\":\"(J)V\",\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0},{\"signature\":\"d(long): void\",\"dex_descriptor\":\"(J)V\",\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0}],\"fields\":[{\"name\":\"A\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"B\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"C\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"D\",\"def_pos\":0,\"type\":\"oh3\"},{\"name\":\"E\",\"def_pos\":0,\"type\":\"h36\"},{\"name\":\"a\",\"def_pos\":0,\"type\":\"p34\"},{\"name\":\"b\",\"def_pos\":0,\"type\":\"up2\"},{\"name\":\"c\",\"def_pos\":0,\"type\":\"java.util.ArrayList\"},{\"name\":\"d\",\"def_pos\":0,\"type\":\"java.util.ArrayList\"},{\"name\":\"e\",\"def_pos\":0,\"type\":\"m72\"},{\"name\":\"f\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"g\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"h\",\"def_pos\":0,\"type\":\"bt2\"},{\"name\":\"i\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"j\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"k\",\"def_pos\":0,\"type\":\"bt2\"},{\"name\":\"l\",\"def_pos\":0,\"type\":\"mh0\"},{\"name\":\"m\",\"def_pos\":0,\"type\":\"fv1\"},{\"name\":\"n\",\"def_pos\":0,\"type\":\"java.net.ProxySelector\"},{\"name\":\"o\",\"def_pos\":0,\"type\":\"bt2\"},{\"name\":\"p\",\"def_pos\":0,\"type\":\"javax.net.SocketFactory\"},{\"name\":\"q\",\"def_pos\":0,\"type\":\"javax.net.ssl.SSLSocketFactory\"},{\"name\":\"r\",\"def_pos\":0,\"type\":\"javax.net.ssl.X509TrustManager\"},{\"name\":\"s\",\"def_pos\":0,\"type\":\"java.util.List\"},{\"name\":\"t\",\"def_pos\":0,\"type\":\"java.util.List\"},{\"name\":\"u\",\"def_pos\":0,\"type\":\"h54\"},{\"name\":\"v\",\"def_pos\":0,\"type\":\"sl0\"},{\"name\":\"w\",\"def_pos\":0,\"type\":\"rl0\"},{\"name\":\"x\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"y\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"z\",\"def_pos\":0,\"type\":\"int\"}],\"raw_name\":\"l54\",\"method_count\":5,\"full_name\":\"defpackage.l54\",\"field_count\":31,\"name\":\"l54\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "l54",
+          "method_name": "<init>",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    public l54() {\\r\\n        TimeZone timeZone \\u003d bs6.a;\\r\\n        this.e \\u003d new t06(o72.a, 4);\\r\\n        this.f \\u003d true;\\r\\n        this.g \\u003d true;\\r\\n        bt2 bt2Var \\u003d bt2.k;\\r\\n        this.h \\u003d bt2Var;\\r\\n        this.i \\u003d true;\\r\\n        this.j \\u003d true;\\r\\n        this.k \\u003d bt2.w;\\r\\n        this.m \\u003d fv1.e;\\r\\n        this.o \\u003d bt2Var;\\r\\n        SocketFactory socketFactory \\u003d SocketFactory.getDefault();\\r\\n        socketFactory.getClass();\\r\\n        this.p \\u003d socketFactory;\\r\\n        this.s \\u003d m54.G;\\r\\n        this.t \\u003d m54.F;\\r\\n        this.u \\u003d h54.a;\\r\\n        this.v \\u003d sl0.c;\\r\\n        this.y \\u003d 10000;\\r\\n        this.z \\u003d 10000;\\r\\n        this.A \\u003d 10000;\\r\\n        this.B \\u003d ExoPlayer.DEFAULT_STUCK_PLAYING_NOT_ENDING_TIMEOUT_MS;\\r\\n        this.C \\u003d 1024L;\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"defpackage.l54\",\"dex_descriptor\":\"()V\",\"overload_count\":1,\"method_name\":\"\\u003cinit\\u003e\",\"overload_index\":0,\"full_name\":\"l54.\\u003cinit\\u003e\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.l54",
+    "method": {
+      "name": "<init>",
+      "reported_signature": "<init>(): void",
+      "overload_index": 0,
+      "is_constructor": true,
+      "dex_descriptor": "()V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public l54() {\r\n        TimeZone timeZone = bs6.a;\r\n        this.e = new t06(o72.a, 4);\r\n        this.f = true;\r\n        this.g = true;\r\n        bt2 bt2Var = bt2.k;\r\n        this.h = bt2Var;\r\n        this.i = true;\r\n        this.j = true;\r\n        this.k = bt2.w;\r\n        this.m = fv1.e;\r\n        this.o = bt2Var;\r\n        SocketFactory socketFactory = SocketFactory.getDefault();\r\n        socketFactory.getClass();\r\n        this.p = socketFactory;\r\n        this.s = m54.G;\r\n        this.t = m54.F;\r\n        this.u = h54.a;\r\n        this.v = sl0.c;\r\n        this.y = 10000;\r\n        this.z = 10000;\r\n        this.A = 10000;\r\n        this.B = ExoPlayer.DEFAULT_STUCK_PLAYING_NOT_ENDING_TIMEOUT_MS;\r\n        this.C = 1024L;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

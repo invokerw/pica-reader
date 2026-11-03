@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_4dfb76711d75f5f8fccf815090b48eed6b3c19a32753a799926278ae137fefb6",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "i83",
+    "method_name": "<init>",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-5673413fc23e3236e21c79b2a56c3117\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"21.0.13\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "i83"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"full_name\":\"defpackage.i83\",\"method_count\":2,\"raw_name\":\"i83\",\"fields\":[{\"def_pos\":0,\"name\":\"a\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"b\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"c\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"d\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"e\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"f\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"g\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"h\",\"type\":\"zp0\"}],\"methods\":[{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(ZZZZLjava/lang/String;Ljava/lang/String;ZLzp0;)V\",\"signature\":\"\\u003cinit\\u003e(boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, boolean, zp0): void\"},{\"def_pos\":0,\"name\":\"toString\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"toString(): java.lang.String\"}],\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"i83\",\"field_count\":8}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "i83",
+          "method_name": "<init>",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"full_name\":\"i83.\\u003cinit\\u003e\",\"overload_index\":0,\"method_name\":\"\\u003cinit\\u003e\",\"overload_count\":1,\"dex_descriptor\":\"(ZZZZLjava/lang/String;Ljava/lang/String;ZLzp0;)V\",\"class_name\":\"defpackage.i83\",\"mode\":\"java\",\"body\":\"    public i83(boolean z, boolean z2, boolean z3, boolean z4, String str, String str2, boolean z5, zp0 zp0Var) {\\r\\n        str.getClass();\\r\\n        str2.getClass();\\r\\n        zp0Var.getClass();\\r\\n        this.a \\u003d z;\\r\\n        this.b \\u003d z2;\\r\\n        this.c \\u003d z3;\\r\\n        this.d \\u003d z4;\\r\\n        this.e \\u003d str;\\r\\n        this.f \\u003d str2;\\r\\n        this.g \\u003d z5;\\r\\n        this.h \\u003d zp0Var;\\r\\n    }\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.i83",
+    "method": {
+      "name": "<init>",
+      "reported_signature": "<init>(boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, boolean, zp0): void",
+      "overload_index": 0,
+      "is_constructor": true,
+      "dex_descriptor": "(ZZZZLjava/lang/String;Ljava/lang/String;ZLzp0;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public i83(boolean z, boolean z2, boolean z3, boolean z4, String str, String str2, boolean z5, zp0 zp0Var) {\r\n        str.getClass();\r\n        str2.getClass();\r\n        zp0Var.getClass();\r\n        this.a = z;\r\n        this.b = z2;\r\n        this.c = z3;\r\n        this.d = z4;\r\n        this.e = str;\r\n        this.f = str2;\r\n        this.g = z5;\r\n        this.h = zp0Var;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

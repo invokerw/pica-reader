@@ -1,0 +1,2 @@
+    private GamesResponse$$serializer() {
+    }

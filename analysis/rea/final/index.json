@@ -1,0 +1,203 @@
+[
+  {
+    "id": "class-tt3",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "tt3"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\final\\class-tt3.json",
+    "elapsed_ms": 16497,
+    "evidence_id": "ev_d2ac4e5cddc8815f81d5950ab8222058afde601a5e5897fdc31a0828325c96a8",
+    "original_task": {
+      "id": "000-final-tt3-p",
+      "operation": "inspect_android_method",
+      "class_name": "tt3",
+      "method_name": "p",
+      "dex_descriptor": "(Lzi5;ILca3;Ljava/lang/Object;)V",
+      "original_method_id": "Ltt3;->p(Lzi5;ILca3;Ljava/lang/Object;)V"
+    }
+  },
+  {
+    "id": "000-final-tt3-p",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "tt3",
+      "method_name": "p",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\final\\000-final-tt3-p.json",
+    "elapsed_ms": 6643,
+    "evidence_id": "ev_ff9f6da8df577904b3a36a671759f730b214fe6082b3980c8af1d2fc5638a965",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\final\\000-final-tt3-p.java",
+    "original_task": {
+      "id": "000-final-tt3-p",
+      "operation": "inspect_android_method",
+      "class_name": "tt3",
+      "method_name": "p",
+      "dex_descriptor": "(Lzi5;ILca3;Ljava/lang/Object;)V",
+      "original_method_id": "Ltt3;->p(Lzi5;ILca3;Ljava/lang/Object;)V"
+    }
+  },
+  {
+    "id": "class-dc5",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "dc5"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\final\\class-dc5.json",
+    "elapsed_ms": 224,
+    "evidence_id": "ev_6e676757b3be9d31bb3074557c1a8980bd3b2232b2b703b650e2c13005d2d186",
+    "original_task": {
+      "id": "001-final-dc5-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "dc5",
+      "method_name": "<init>",
+      "dex_descriptor": "(I)V",
+      "original_method_id": "Ldc5;-><init>(I)V"
+    }
+  },
+  {
+    "id": "001-final-dc5-_init_",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "dc5",
+      "method_name": "<init>",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\final\\001-final-dc5-_init_.json",
+    "elapsed_ms": 365,
+    "evidence_id": "ev_88befd4147465bdf8e0135521ffd910f67f90ba89f1ae9a85ea48711cb6f5a59",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\final\\001-final-dc5-_init_.java",
+    "original_task": {
+      "id": "001-final-dc5-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "dc5",
+      "method_name": "<init>",
+      "dex_descriptor": "(I)V",
+      "original_method_id": "Ldc5;-><init>(I)V"
+    }
+  },
+  {
+    "id": "002-final-dc5-invoke",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "dc5",
+      "method_name": "invoke",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\final\\002-final-dc5-invoke.json",
+    "elapsed_ms": 281,
+    "evidence_id": "ev_a9d49f4bf1fd952c50cac2c7105fdcec1692c3fdefa2298075329483bb94f7ab",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\final\\002-final-dc5-invoke.java",
+    "original_task": {
+      "id": "002-final-dc5-invoke",
+      "operation": "inspect_android_method",
+      "class_name": "dc5",
+      "method_name": "invoke",
+      "dex_descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+      "original_method_id": "Ldc5;->invoke(Ljava/lang/Object;)Ljava/lang/Object;"
+    }
+  },
+  {
+    "id": "class-hj5",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "hj5"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\final\\class-hj5.json",
+    "elapsed_ms": 216,
+    "evidence_id": "ev_2e828f48ec8bf4bfec4f1224148e0f551cb872019b1a66e2339e58d35393bd55",
+    "original_task": {
+      "id": "003-final-hj5-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "hj5",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lhj5;-><clinit>()V"
+    }
+  },
+  {
+    "id": "003-final-hj5-_clinit_",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "hj5",
+      "method_name": "<clinit>",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\final\\003-final-hj5-_clinit_.json",
+    "elapsed_ms": 300,
+    "evidence_id": "ev_0c094968195ac2cebda441163ebeade2ee86af6f9c373aae46cf6dbd069b7bdc",
+    "representation": "smali",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\final\\003-final-hj5-_clinit_.smali",
+    "original_task": {
+      "id": "003-final-hj5-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "hj5",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lhj5;-><clinit>()V"
+    }
+  },
+  {
+    "id": "class-qj4",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "qj4"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\final\\class-qj4.json",
+    "elapsed_ms": 224,
+    "evidence_id": "ev_4b8ffd23160ee688594f949883297e7dbda34c1c121fb65678a989a18c6c2ae6",
+    "original_task": {
+      "id": "004-final-qj4-f",
+      "operation": "inspect_android_method",
+      "class_name": "qj4",
+      "method_name": "f",
+      "dex_descriptor": "(I)Ljava/lang/String;",
+      "original_method_id": "Lqj4;->f(I)Ljava/lang/String;"
+    }
+  },
+  {
+    "id": "004-final-qj4-f",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "qj4",
+      "method_name": "f",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\final\\004-final-qj4-f.json",
+    "elapsed_ms": 312,
+    "evidence_id": "ev_ef27a03d65d848f85f9e3438dfa62a71100da9e13191046814f3e87a778cc887",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\final\\004-final-qj4-f.java",
+    "original_task": {
+      "id": "004-final-qj4-f",
+      "operation": "inspect_android_method",
+      "class_name": "qj4",
+      "method_name": "f",
+      "dex_descriptor": "(I)Ljava/lang/String;",
+      "original_method_id": "Lqj4;->f(I)Ljava/lang/String;"
+    }
+  }
+]

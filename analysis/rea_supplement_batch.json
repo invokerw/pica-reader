@@ -1,0 +1,1838 @@
+{
+  "output_directory": "analysis/rea/supplement",
+  "scope": "REA supplemental helper, TLS defaults, nested constructor static verification",
+  "tasks": [
+    {
+      "id": "000-supp-c31-n",
+      "operation": "inspect_android_method",
+      "class_name": "c31",
+      "method_name": "n",
+      "dex_descriptor": "(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+      "original_method_id": "Lc31;->n(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+    },
+    {
+      "id": "001-supp-c31-x",
+      "operation": "inspect_android_method",
+      "class_name": "c31",
+      "method_name": "x",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+      "original_method_id": "Lc31;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+    },
+    {
+      "id": "002-supp-com.picacg.domain.model.RequestMode_Companion-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode$Companion",
+      "method_name": "<init>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode$Companion;-><init>()V"
+    },
+    {
+      "id": "003-supp-com.picacg.domain.model.RequestMode_Companion-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode$Companion",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljo1;)V",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode$Companion;-><init>(Ljo1;)V"
+    },
+    {
+      "id": "004-supp-com.picacg.domain.model.RequestMode_Companion-fromId",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode$Companion",
+      "method_name": "fromId",
+      "dex_descriptor": "(Ljava/lang/String;)Lcom/picacg/domain/model/RequestMode;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode$Companion;->fromId(Ljava/lang/String;)Lcom/picacg/domain/model/RequestMode;"
+    },
+    {
+      "id": "005-supp-com.picacg.domain.model.RequestMode_Companion-getALL",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode$Companion",
+      "method_name": "getALL",
+      "dex_descriptor": "()Ljava/util/List;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode$Companion;->getALL()Ljava/util/List;"
+    },
+    {
+      "id": "006-supp-com.picacg.domain.model.RequestMode_Companion-getDEFAULT",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode$Companion",
+      "method_name": "getDEFAULT",
+      "dex_descriptor": "()Lcom/picacg/domain/model/RequestMode;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode$Companion;->getDEFAULT()Lcom/picacg/domain/model/RequestMode;"
+    },
+    {
+      "id": "007-supp-com.picacg.domain.model.RequestMode_Companion-getOFFICIAL_DIRECT",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode$Companion",
+      "method_name": "getOFFICIAL_DIRECT",
+      "dex_descriptor": "()Lcom/picacg/domain/model/RequestMode;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode$Companion;->getOFFICIAL_DIRECT()Lcom/picacg/domain/model/RequestMode;"
+    },
+    {
+      "id": "008-supp-com.picacg.domain.model.RequestMode_Companion-getOFFICIAL_ENHANCED",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode$Companion",
+      "method_name": "getOFFICIAL_ENHANCED",
+      "dex_descriptor": "()Lcom/picacg/domain/model/RequestMode;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode$Companion;->getOFFICIAL_ENHANCED()Lcom/picacg/domain/model/RequestMode;"
+    },
+    {
+      "id": "009-supp-com.picacg.domain.model.RequestMode_Companion-getPROXY_1_DIRECT",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode$Companion",
+      "method_name": "getPROXY_1_DIRECT",
+      "dex_descriptor": "()Lcom/picacg/domain/model/RequestMode;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode$Companion;->getPROXY_1_DIRECT()Lcom/picacg/domain/model/RequestMode;"
+    },
+    {
+      "id": "010-supp-com.picacg.domain.model.RequestMode_Companion-getSMART_POOL",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode$Companion",
+      "method_name": "getSMART_POOL",
+      "dex_descriptor": "()Lcom/picacg/domain/model/RequestMode;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode$Companion;->getSMART_POOL()Lcom/picacg/domain/model/RequestMode;"
+    },
+    {
+      "id": "011-supp-com.picacg.domain.model.RequestMode_Companion-getSPEED_TESTED",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode$Companion",
+      "method_name": "getSPEED_TESTED",
+      "dex_descriptor": "()Ljava/util/List;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode$Companion;->getSPEED_TESTED()Ljava/util/List;"
+    },
+    {
+      "id": "012-supp-com.picacg.domain.model.RequestMode-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;-><clinit>()V"
+    },
+    {
+      "id": "013-supp-com.picacg.domain.model.RequestMode-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/domain/model/RouteTarget;Lcom/picacg/domain/model/ResolveStrategy;)V",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/domain/model/RouteTarget;Lcom/picacg/domain/model/ResolveStrategy;)V"
+    },
+    {
+      "id": "014-supp-com.picacg.domain.model.RequestMode-access_getALL_cp",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "access$getALL$cp",
+      "dex_descriptor": "()Ljava/util/List;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->access$getALL$cp()Ljava/util/List;"
+    },
+    {
+      "id": "015-supp-com.picacg.domain.model.RequestMode-access_getDEFAULT_cp",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "access$getDEFAULT$cp",
+      "dex_descriptor": "()Lcom/picacg/domain/model/RequestMode;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->access$getDEFAULT$cp()Lcom/picacg/domain/model/RequestMode;"
+    },
+    {
+      "id": "016-supp-com.picacg.domain.model.RequestMode-access_getOFFICIAL_DIRECT_cp",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "access$getOFFICIAL_DIRECT$cp",
+      "dex_descriptor": "()Lcom/picacg/domain/model/RequestMode;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->access$getOFFICIAL_DIRECT$cp()Lcom/picacg/domain/model/RequestMode;"
+    },
+    {
+      "id": "017-supp-com.picacg.domain.model.RequestMode-access_getOFFICIAL_ENHANCED_cp",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "access$getOFFICIAL_ENHANCED$cp",
+      "dex_descriptor": "()Lcom/picacg/domain/model/RequestMode;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->access$getOFFICIAL_ENHANCED$cp()Lcom/picacg/domain/model/RequestMode;"
+    },
+    {
+      "id": "018-supp-com.picacg.domain.model.RequestMode-access_getPROXY_1_DIRECT_cp",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "access$getPROXY_1_DIRECT$cp",
+      "dex_descriptor": "()Lcom/picacg/domain/model/RequestMode;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->access$getPROXY_1_DIRECT$cp()Lcom/picacg/domain/model/RequestMode;"
+    },
+    {
+      "id": "019-supp-com.picacg.domain.model.RequestMode-access_getSMART_POOL_cp",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "access$getSMART_POOL$cp",
+      "dex_descriptor": "()Lcom/picacg/domain/model/RequestMode;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->access$getSMART_POOL$cp()Lcom/picacg/domain/model/RequestMode;"
+    },
+    {
+      "id": "020-supp-com.picacg.domain.model.RequestMode-access_getSPEED_TESTED_cp",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "access$getSPEED_TESTED$cp",
+      "dex_descriptor": "()Ljava/util/List;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->access$getSPEED_TESTED$cp()Ljava/util/List;"
+    },
+    {
+      "id": "021-supp-com.picacg.domain.model.RequestMode-copy_default",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "copy$default",
+      "dex_descriptor": "(Lcom/picacg/domain/model/RequestMode;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/domain/model/RouteTarget;Lcom/picacg/domain/model/ResolveStrategy;ILjava/lang/Object;)Lcom/picacg/domain/model/RequestMode;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->copy$default(Lcom/picacg/domain/model/RequestMode;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/domain/model/RouteTarget;Lcom/picacg/domain/model/ResolveStrategy;ILjava/lang/Object;)Lcom/picacg/domain/model/RequestMode;"
+    },
+    {
+      "id": "022-supp-com.picacg.domain.model.RequestMode-component1",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "component1",
+      "dex_descriptor": "()Ljava/lang/String;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->component1()Ljava/lang/String;"
+    },
+    {
+      "id": "023-supp-com.picacg.domain.model.RequestMode-component2",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "component2",
+      "dex_descriptor": "()Ljava/lang/String;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->component2()Ljava/lang/String;"
+    },
+    {
+      "id": "024-supp-com.picacg.domain.model.RequestMode-component3",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "component3",
+      "dex_descriptor": "()Lcom/picacg/domain/model/RouteTarget;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->component3()Lcom/picacg/domain/model/RouteTarget;"
+    },
+    {
+      "id": "025-supp-com.picacg.domain.model.RequestMode-component4",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "component4",
+      "dex_descriptor": "()Lcom/picacg/domain/model/ResolveStrategy;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->component4()Lcom/picacg/domain/model/ResolveStrategy;"
+    },
+    {
+      "id": "026-supp-com.picacg.domain.model.RequestMode-copy",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "copy",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/domain/model/RouteTarget;Lcom/picacg/domain/model/ResolveStrategy;)Lcom/picacg/domain/model/RequestMode;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->copy(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/domain/model/RouteTarget;Lcom/picacg/domain/model/ResolveStrategy;)Lcom/picacg/domain/model/RequestMode;"
+    },
+    {
+      "id": "027-supp-com.picacg.domain.model.RequestMode-equals",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "equals",
+      "dex_descriptor": "(Ljava/lang/Object;)Z",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->equals(Ljava/lang/Object;)Z"
+    },
+    {
+      "id": "028-supp-com.picacg.domain.model.RequestMode-getDisplayName",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "getDisplayName",
+      "dex_descriptor": "()Ljava/lang/String;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->getDisplayName()Ljava/lang/String;"
+    },
+    {
+      "id": "029-supp-com.picacg.domain.model.RequestMode-getDomain",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "getDomain",
+      "dex_descriptor": "()Ljava/lang/String;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->getDomain()Ljava/lang/String;"
+    },
+    {
+      "id": "030-supp-com.picacg.domain.model.RequestMode-getId",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "getId",
+      "dex_descriptor": "()Ljava/lang/String;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->getId()Ljava/lang/String;"
+    },
+    {
+      "id": "031-supp-com.picacg.domain.model.RequestMode-getResolveStrategy",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "getResolveStrategy",
+      "dex_descriptor": "()Lcom/picacg/domain/model/ResolveStrategy;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->getResolveStrategy()Lcom/picacg/domain/model/ResolveStrategy;"
+    },
+    {
+      "id": "032-supp-com.picacg.domain.model.RequestMode-getTarget",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "getTarget",
+      "dex_descriptor": "()Lcom/picacg/domain/model/RouteTarget;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->getTarget()Lcom/picacg/domain/model/RouteTarget;"
+    },
+    {
+      "id": "033-supp-com.picacg.domain.model.RequestMode-getUseCustomDns",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "getUseCustomDns",
+      "dex_descriptor": "()Z",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->getUseCustomDns()Z"
+    },
+    {
+      "id": "034-supp-com.picacg.domain.model.RequestMode-getUsesPool",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "getUsesPool",
+      "dex_descriptor": "()Z",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->getUsesPool()Z"
+    },
+    {
+      "id": "035-supp-com.picacg.domain.model.RequestMode-hashCode",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "hashCode",
+      "dex_descriptor": "()I",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->hashCode()I"
+    },
+    {
+      "id": "036-supp-com.picacg.domain.model.RequestMode-toString",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.RequestMode",
+      "method_name": "toString",
+      "dex_descriptor": "()Ljava/lang/String;",
+      "original_method_id": "Lcom/picacg/domain/model/RequestMode;->toString()Ljava/lang/String;"
+    },
+    {
+      "id": "037-supp-com.picacg.domain.model.ResolveStrategy-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy",
+      "method_name": "<init>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy;-><init>()V"
+    },
+    {
+      "id": "038-supp-com.picacg.domain.model.ResolveStrategy-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljo1;)V",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy;-><init>(Ljo1;)V"
+    },
+    {
+      "id": "039-supp-com.picacg.domain.model.ResolveStrategy_FixedIps-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy$FixedIps",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy$FixedIps;-><clinit>()V"
+    },
+    {
+      "id": "040-supp-com.picacg.domain.model.ResolveStrategy_FixedIps-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy$FixedIps",
+      "method_name": "<init>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy$FixedIps;-><init>()V"
+    },
+    {
+      "id": "041-supp-com.picacg.domain.model.ResolveStrategy_FixedIps-equals",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy$FixedIps",
+      "method_name": "equals",
+      "dex_descriptor": "(Ljava/lang/Object;)Z",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy$FixedIps;->equals(Ljava/lang/Object;)Z"
+    },
+    {
+      "id": "042-supp-com.picacg.domain.model.ResolveStrategy_FixedIps-hashCode",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy$FixedIps",
+      "method_name": "hashCode",
+      "dex_descriptor": "()I",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy$FixedIps;->hashCode()I"
+    },
+    {
+      "id": "043-supp-com.picacg.domain.model.ResolveStrategy_FixedIps-toString",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy$FixedIps",
+      "method_name": "toString",
+      "dex_descriptor": "()Ljava/lang/String;",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy$FixedIps;->toString()Ljava/lang/String;"
+    },
+    {
+      "id": "044-supp-com.picacg.domain.model.ResolveStrategy_MeasuredPool-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy$MeasuredPool",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy$MeasuredPool;-><clinit>()V"
+    },
+    {
+      "id": "045-supp-com.picacg.domain.model.ResolveStrategy_MeasuredPool-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy$MeasuredPool",
+      "method_name": "<init>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy$MeasuredPool;-><init>()V"
+    },
+    {
+      "id": "046-supp-com.picacg.domain.model.ResolveStrategy_MeasuredPool-equals",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy$MeasuredPool",
+      "method_name": "equals",
+      "dex_descriptor": "(Ljava/lang/Object;)Z",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy$MeasuredPool;->equals(Ljava/lang/Object;)Z"
+    },
+    {
+      "id": "047-supp-com.picacg.domain.model.ResolveStrategy_MeasuredPool-hashCode",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy$MeasuredPool",
+      "method_name": "hashCode",
+      "dex_descriptor": "()I",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy$MeasuredPool;->hashCode()I"
+    },
+    {
+      "id": "048-supp-com.picacg.domain.model.ResolveStrategy_MeasuredPool-toString",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy$MeasuredPool",
+      "method_name": "toString",
+      "dex_descriptor": "()Ljava/lang/String;",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy$MeasuredPool;->toString()Ljava/lang/String;"
+    },
+    {
+      "id": "049-supp-com.picacg.domain.model.ResolveStrategy_SystemDns-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy$SystemDns",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy$SystemDns;-><clinit>()V"
+    },
+    {
+      "id": "050-supp-com.picacg.domain.model.ResolveStrategy_SystemDns-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy$SystemDns",
+      "method_name": "<init>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy$SystemDns;-><init>()V"
+    },
+    {
+      "id": "051-supp-com.picacg.domain.model.ResolveStrategy_SystemDns-equals",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy$SystemDns",
+      "method_name": "equals",
+      "dex_descriptor": "(Ljava/lang/Object;)Z",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy$SystemDns;->equals(Ljava/lang/Object;)Z"
+    },
+    {
+      "id": "052-supp-com.picacg.domain.model.ResolveStrategy_SystemDns-hashCode",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy$SystemDns",
+      "method_name": "hashCode",
+      "dex_descriptor": "()I",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy$SystemDns;->hashCode()I"
+    },
+    {
+      "id": "053-supp-com.picacg.domain.model.ResolveStrategy_SystemDns-toString",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.ResolveStrategy$SystemDns",
+      "method_name": "toString",
+      "dex_descriptor": "()Ljava/lang/String;",
+      "original_method_id": "Lcom/picacg/domain/model/ResolveStrategy$SystemDns;->toString()Ljava/lang/String;"
+    },
+    {
+      "id": "054-supp-dz0-invoke",
+      "operation": "inspect_android_method",
+      "class_name": "dz0",
+      "method_name": "invoke",
+      "dex_descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+      "original_method_id": "Ldz0;->invoke(Ljava/lang/Object;)Ljava/lang/Object;"
+    },
+    {
+      "id": "055-supp-k30-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "k30",
+      "method_name": "<init>",
+      "dex_descriptor": "(I)V",
+      "original_method_id": "Lk30;-><init>(I)V"
+    },
+    {
+      "id": "056-supp-k30-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "k30",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ley3;)V",
+      "original_method_id": "Lk30;-><init>(Ley3;)V"
+    },
+    {
+      "id": "057-supp-k30-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "k30",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/util/Map;)V",
+      "original_method_id": "Lk30;-><init>(Ljava/util/Map;)V"
+    },
+    {
+      "id": "058-supp-k30-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "k30",
+      "method_name": "<init>",
+      "dex_descriptor": "(Lrt;Li76;Ljava/util/List;Lhs1;Lqj2;)V",
+      "original_method_id": "Lk30;-><init>(Lrt;Li76;Ljava/util/List;Lhs1;Lqj2;)V"
+    },
+    {
+      "id": "059-supp-k30-q",
+      "operation": "inspect_android_method",
+      "class_name": "k30",
+      "method_name": "q",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;)V",
+      "original_method_id": "Lk30;->q(Ljava/lang/String;Ljava/lang/String;)V"
+    },
+    {
+      "id": "060-supp-k30-s",
+      "operation": "inspect_android_method",
+      "class_name": "k30",
+      "method_name": "s",
+      "dex_descriptor": "(Ljava/lang/String;Lo55;)V",
+      "original_method_id": "Lk30;->s(Ljava/lang/String;Lo55;)V"
+    },
+    {
+      "id": "061-supp-kx3-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "kx3",
+      "method_name": "<init>",
+      "dex_descriptor": "(I)V",
+      "original_method_id": "Lkx3;-><init>(I)V"
+    },
+    {
+      "id": "062-supp-kx3-invoke",
+      "operation": "inspect_android_method",
+      "class_name": "kx3",
+      "method_name": "invoke",
+      "dex_descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+      "original_method_id": "Lkx3;->invoke(Ljava/lang/Object;)Ljava/lang/Object;"
+    },
+    {
+      "id": "063-supp-kx5-A0",
+      "operation": "inspect_android_method",
+      "class_name": "kx5",
+      "method_name": "A0",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+      "original_method_id": "Lkx5;->A0(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+    },
+    {
+      "id": "064-supp-kx5-O0",
+      "operation": "inspect_android_method",
+      "class_name": "kx5",
+      "method_name": "O0",
+      "dex_descriptor": "(Ljava/lang/String;[C)Ljava/lang/String;",
+      "original_method_id": "Lkx5;->O0(Ljava/lang/String;[C)Ljava/lang/String;"
+    },
+    {
+      "id": "065-supp-kx5-Q0",
+      "operation": "inspect_android_method",
+      "class_name": "kx5",
+      "method_name": "Q0",
+      "dex_descriptor": "(Ljava/lang/String;[C)Ljava/lang/String;",
+      "original_method_id": "Lkx5;->Q0(Ljava/lang/String;[C)Ljava/lang/String;"
+    },
+    {
+      "id": "066-supp-lx2-b",
+      "operation": "inspect_android_method",
+      "class_name": "lx2",
+      "method_name": "b",
+      "dex_descriptor": "()Ljava/lang/String;",
+      "original_method_id": "Llx2;->b()Ljava/lang/String;"
+    },
+    {
+      "id": "067-supp-lx2-d",
+      "operation": "inspect_android_method",
+      "class_name": "lx2",
+      "method_name": "d",
+      "dex_descriptor": "()Ljava/lang/String;",
+      "original_method_id": "Llx2;->d()Ljava/lang/String;"
+    },
+    {
+      "id": "068-supp-lx2-g",
+      "operation": "inspect_android_method",
+      "class_name": "lx2",
+      "method_name": "g",
+      "dex_descriptor": "()Loa1;",
+      "original_method_id": "Llx2;->g()Loa1;"
+    },
+    {
+      "id": "069-supp-nr0-J0",
+      "operation": "inspect_android_method",
+      "class_name": "nr0",
+      "method_name": "J0",
+      "dex_descriptor": "(Ljava/util/List;)Ljava/lang/Object;",
+      "original_method_id": "Lnr0;->J0(Ljava/util/List;)Ljava/lang/Object;"
+    },
+    {
+      "id": "070-supp-s42-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "s42",
+      "method_name": "<init>",
+      "dex_descriptor": "(Landroid/content/Context;)V",
+      "original_method_id": "Ls42;-><init>(Landroid/content/Context;)V"
+    },
+    {
+      "id": "071-supp-s42-c",
+      "operation": "inspect_android_method",
+      "class_name": "s42",
+      "method_name": "c",
+      "dex_descriptor": "()Ljavax/crypto/SecretKey;",
+      "original_method_id": "Ls42;->c()Ljavax/crypto/SecretKey;"
+    },
+    {
+      "id": "072-supp-s42-a",
+      "operation": "inspect_android_method",
+      "class_name": "s42",
+      "method_name": "a",
+      "dex_descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+      "original_method_id": "Ls42;->a(Ljava/lang/String;)Ljava/lang/String;"
+    },
+    {
+      "id": "073-supp-s42-b",
+      "operation": "inspect_android_method",
+      "class_name": "s42",
+      "method_name": "b",
+      "dex_descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+      "original_method_id": "Ls42;->b(Ljava/lang/String;)Ljava/lang/String;"
+    },
+    {
+      "id": "074-supp-s42-d",
+      "operation": "inspect_android_method",
+      "class_name": "s42",
+      "method_name": "d",
+      "dex_descriptor": "()Ljavax/crypto/SecretKey;",
+      "original_method_id": "Ls42;->d()Ljavax/crypto/SecretKey;"
+    },
+    {
+      "id": "075-supp-s42-e",
+      "operation": "inspect_android_method",
+      "class_name": "s42",
+      "method_name": "e",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;)V",
+      "original_method_id": "Ls42;->e(Ljava/lang/String;Ljava/lang/String;)V"
+    },
+    {
+      "id": "076-supp-s42-f",
+      "operation": "inspect_android_method",
+      "class_name": "s42",
+      "method_name": "f",
+      "dex_descriptor": "()Ljavax/crypto/SecretKey;",
+      "original_method_id": "Ls42;->f()Ljavax/crypto/SecretKey;"
+    },
+    {
+      "id": "077-supp-sx-i0",
+      "operation": "inspect_android_method",
+      "class_name": "sx",
+      "method_name": "i0",
+      "dex_descriptor": "([BLjava/lang/String;Llm2;I)Ljava/lang/String;",
+      "original_method_id": "Lsx;->i0([BLjava/lang/String;Llm2;I)Ljava/lang/String;"
+    },
+    {
+      "id": "078-supp-ys2-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "<init>",
+      "dex_descriptor": "(I)V",
+      "original_method_id": "Lys2;-><init>(I)V"
+    },
+    {
+      "id": "079-supp-ys2-a",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "a",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;)V",
+      "original_method_id": "Lys2;->a(Ljava/lang/String;Ljava/lang/String;)V"
+    },
+    {
+      "id": "080-supp-ys2-b",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "b",
+      "dex_descriptor": "(Ljava/lang/String;)V",
+      "original_method_id": "Lys2;->b(Ljava/lang/String;)V"
+    },
+    {
+      "id": "081-supp-ys2-c",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "c",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;)V",
+      "original_method_id": "Lys2;->c(Ljava/lang/String;Ljava/lang/String;)V"
+    },
+    {
+      "id": "082-supp-ys2-d",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "d",
+      "dex_descriptor": "()Lat2;",
+      "original_method_id": "Lys2;->d()Lat2;"
+    },
+    {
+      "id": "083-supp-ys2-e",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "e",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lys2;->e()V"
+    },
+    {
+      "id": "084-supp-ys2-f",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "f",
+      "dex_descriptor": "(FFFFFF)V",
+      "original_method_id": "Lys2;->f(FFFFFF)V"
+    },
+    {
+      "id": "085-supp-ys2-g",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "g",
+      "dex_descriptor": "(FFFFFF)V",
+      "original_method_id": "Lys2;->g(FFFFFF)V"
+    },
+    {
+      "id": "086-supp-ys2-h",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "h",
+      "dex_descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+      "original_method_id": "Lys2;->h(Ljava/lang/String;)Ljava/lang/String;"
+    },
+    {
+      "id": "087-supp-ys2-i",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "i",
+      "dex_descriptor": "(F)V",
+      "original_method_id": "Lys2;->i(F)V"
+    },
+    {
+      "id": "088-supp-ys2-j",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "j",
+      "dex_descriptor": "(F)V",
+      "original_method_id": "Lys2;->j(F)V"
+    },
+    {
+      "id": "089-supp-ys2-k",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "k",
+      "dex_descriptor": "(FF)V",
+      "original_method_id": "Lys2;->k(FF)V"
+    },
+    {
+      "id": "090-supp-ys2-l",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "l",
+      "dex_descriptor": "(FF)V",
+      "original_method_id": "Lys2;->l(FF)V"
+    },
+    {
+      "id": "091-supp-ys2-m",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "m",
+      "dex_descriptor": "(FF)V",
+      "original_method_id": "Lys2;->m(FF)V"
+    },
+    {
+      "id": "092-supp-ys2-n",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "n",
+      "dex_descriptor": "(FF)V",
+      "original_method_id": "Lys2;->n(FF)V"
+    },
+    {
+      "id": "093-supp-ys2-o",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "o",
+      "dex_descriptor": "(FFFF)V",
+      "original_method_id": "Lys2;->o(FFFF)V"
+    },
+    {
+      "id": "094-supp-ys2-p",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "p",
+      "dex_descriptor": "(FFFF)V",
+      "original_method_id": "Lys2;->p(FFFF)V"
+    },
+    {
+      "id": "095-supp-ys2-q",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "q",
+      "dex_descriptor": "(Ljava/lang/String;)V",
+      "original_method_id": "Lys2;->q(Ljava/lang/String;)V"
+    },
+    {
+      "id": "096-supp-ys2-r",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "r",
+      "dex_descriptor": "(F)V",
+      "original_method_id": "Lys2;->r(F)V"
+    },
+    {
+      "id": "097-supp-ys2-s",
+      "operation": "inspect_android_method",
+      "class_name": "ys2",
+      "method_name": "s",
+      "dex_descriptor": "(F)V",
+      "original_method_id": "Lys2;->s(F)V"
+    },
+    {
+      "id": "098-supp-zx-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "zx",
+      "method_name": "<init>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lzx;-><init>()V"
+    },
+    {
+      "id": "099-supp-zx-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "zx",
+      "method_name": "<init>",
+      "dex_descriptor": "(Lcg1;Llg2;Lme1;Lh7;)V",
+      "original_method_id": "Lzx;-><init>(Lcg1;Llg2;Lme1;Lh7;)V"
+    },
+    {
+      "id": "100-supp-zx-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "zx",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;)V",
+      "original_method_id": "Lzx;-><init>(Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;)V"
+    },
+    {
+      "id": "101-supp-zx-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "zx",
+      "method_name": "<init>",
+      "dex_descriptor": "(Lk30;)V",
+      "original_method_id": "Lzx;-><init>(Lk30;)V"
+    },
+    {
+      "id": "102-supp-zx-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "zx",
+      "method_name": "<init>",
+      "dex_descriptor": "(Lw51;Ln61;)V",
+      "original_method_id": "Lzx;-><init>(Lw51;Ln61;)V"
+    },
+    {
+      "id": "103-supp-zx-k",
+      "operation": "inspect_android_method",
+      "class_name": "zx",
+      "method_name": "k",
+      "dex_descriptor": "()Lk30;",
+      "original_method_id": "Lzx;->k()Lk30;"
+    },
+    {
+      "id": "104-supp-zx-toString",
+      "operation": "inspect_android_method",
+      "class_name": "zx",
+      "method_name": "toString",
+      "dex_descriptor": "()Ljava/lang/String;",
+      "original_method_id": "Lzx;->toString()Ljava/lang/String;"
+    },
+    {
+      "id": "105-supp-ag4-invokeSuspend",
+      "operation": "inspect_android_method",
+      "class_name": "ag4",
+      "method_name": "invokeSuspend",
+      "dex_descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+      "original_method_id": "Lag4;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;"
+    },
+    {
+      "id": "106-supp-ai-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "ai",
+      "method_name": "<init>",
+      "dex_descriptor": "(Lcg2;I)V",
+      "original_method_id": "Lai;-><init>(Lcg2;I)V"
+    },
+    {
+      "id": "107-supp-com.picacg.domain.model.Subdomain-_values",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.Subdomain",
+      "method_name": "$values",
+      "dex_descriptor": "()[Lcom/picacg/domain/model/Subdomain;",
+      "original_method_id": "Lcom/picacg/domain/model/Subdomain;->$values()[Lcom/picacg/domain/model/Subdomain;"
+    },
+    {
+      "id": "108-supp-com.picacg.domain.model.Subdomain-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.Subdomain",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lcom/picacg/domain/model/Subdomain;-><clinit>()V"
+    },
+    {
+      "id": "109-supp-com.picacg.domain.model.Subdomain-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.Subdomain",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;ILjava/lang/String;)V",
+      "original_method_id": "Lcom/picacg/domain/model/Subdomain;-><init>(Ljava/lang/String;ILjava/lang/String;)V"
+    },
+    {
+      "id": "110-supp-com.picacg.domain.model.Subdomain-getEntries",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.Subdomain",
+      "method_name": "getEntries",
+      "dex_descriptor": "()Lu52;",
+      "original_method_id": "Lcom/picacg/domain/model/Subdomain;->getEntries()Lu52;"
+    },
+    {
+      "id": "111-supp-com.picacg.domain.model.Subdomain-valueOf",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.Subdomain",
+      "method_name": "valueOf",
+      "dex_descriptor": "(Ljava/lang/String;)Lcom/picacg/domain/model/Subdomain;",
+      "original_method_id": "Lcom/picacg/domain/model/Subdomain;->valueOf(Ljava/lang/String;)Lcom/picacg/domain/model/Subdomain;"
+    },
+    {
+      "id": "112-supp-com.picacg.domain.model.Subdomain-values",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.Subdomain",
+      "method_name": "values",
+      "dex_descriptor": "()[Lcom/picacg/domain/model/Subdomain;",
+      "original_method_id": "Lcom/picacg/domain/model/Subdomain;->values()[Lcom/picacg/domain/model/Subdomain;"
+    },
+    {
+      "id": "113-supp-com.picacg.domain.model.Subdomain-getPrefix",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.domain.model.Subdomain",
+      "method_name": "getPrefix",
+      "dex_descriptor": "()Ljava/lang/String;",
+      "original_method_id": "Lcom/picacg/domain/model/Subdomain;->getPrefix()Ljava/lang/String;"
+    },
+    {
+      "id": "114-supp-com.picacg.network.pica.model.Announcement-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.Announcement",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/Announcement;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Lfj5;)V"
+    },
+    {
+      "id": "115-supp-com.picacg.network.pica.model.Announcement-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.Announcement",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/Announcement;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;)V"
+    },
+    {
+      "id": "116-supp-com.picacg.network.pica.model.AnnouncementsData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.AnnouncementsData",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/util/List;IILjava/lang/String;ILfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/AnnouncementsData;-><init>(ILjava/util/List;IILjava/lang/String;ILfj5;)V"
+    },
+    {
+      "id": "117-supp-com.picacg.network.pica.model.AnnouncementsData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.AnnouncementsData",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/util/List;IILjava/lang/String;I)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/AnnouncementsData;-><init>(Ljava/util/List;IILjava/lang/String;I)V"
+    },
+    {
+      "id": "118-supp-com.picacg.network.pica.model.AvatarUpdateData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.AvatarUpdateData",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILcom/picacg/network/pica/model/ImageInfo;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/AvatarUpdateData;-><init>(ILcom/picacg/network/pica/model/ImageInfo;Lfj5;)V"
+    },
+    {
+      "id": "119-supp-com.picacg.network.pica.model.AvatarUpdateData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.AvatarUpdateData",
+      "method_name": "<init>",
+      "dex_descriptor": "(Lcom/picacg/network/pica/model/ImageInfo;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/AvatarUpdateData;-><init>(Lcom/picacg/network/pica/model/ImageInfo;)V"
+    },
+    {
+      "id": "120-supp-com.picacg.network.pica.model.BannerData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.BannerData",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/BannerData;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Lfj5;)V"
+    },
+    {
+      "id": "121-supp-com.picacg.network.pica.model.BannerData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.BannerData",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/BannerData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;)V"
+    },
+    {
+      "id": "122-supp-com.picacg.network.pica.model.BannerData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.BannerData",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/BannerData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ILjo1;)V"
+    },
+    {
+      "id": "123-supp-com.picacg.network.pica.model.CategoryItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.CategoryItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/lang/String;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/CategoryItem;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/lang/String;Lfj5;)V"
+    },
+    {
+      "id": "124-supp-com.picacg.network.pica.model.CategoryItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.CategoryItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/lang/String;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/CategoryItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/lang/String;)V"
+    },
+    {
+      "id": "125-supp-com.picacg.network.pica.model.CategoryItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.CategoryItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/lang/String;ILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/CategoryItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/lang/String;ILjo1;)V"
+    },
+    {
+      "id": "126-supp-com.picacg.network.pica.model.CollectionComicItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.CollectionComicItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;Ljava/util/List;ZIIIILfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/CollectionComicItem;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;Ljava/util/List;ZIIIILfj5;)V"
+    },
+    {
+      "id": "127-supp-com.picacg.network.pica.model.CollectionComicItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.CollectionComicItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;Ljava/util/List;ZIIII)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/CollectionComicItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;Ljava/util/List;ZIIII)V"
+    },
+    {
+      "id": "128-supp-com.picacg.network.pica.model.CollectionComicItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.CollectionComicItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;Ljava/util/List;ZIIIIILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/CollectionComicItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;Ljava/util/List;ZIIIIILjo1;)V"
+    },
+    {
+      "id": "129-supp-com.picacg.network.pica.model.CollectionGroup-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.CollectionGroup",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/util/List;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/CollectionGroup;-><init>(ILjava/lang/String;Ljava/util/List;Lfj5;)V"
+    },
+    {
+      "id": "130-supp-com.picacg.network.pica.model.CollectionGroup-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.CollectionGroup",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/util/List;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/CollectionGroup;-><init>(Ljava/lang/String;Ljava/util/List;)V"
+    },
+    {
+      "id": "131-supp-com.picacg.network.pica.model.ComicDetail-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ComicDetail",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Lcom/picacg/network/pica/model/Creator;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;IIZLjava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;ZZLfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ComicDetail;-><init>(ILjava/lang/String;Lcom/picacg/network/pica/model/Creator;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;IIZLjava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;ZZLfj5;)V"
+    },
+    {
+      "id": "132-supp-com.picacg.network.pica.model.ComicDetail-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ComicDetail",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Lcom/picacg/network/pica/model/Creator;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;IIZLjava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;ZZ)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ComicDetail;-><init>(Ljava/lang/String;Lcom/picacg/network/pica/model/Creator;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;IIZLjava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;ZZ)V"
+    },
+    {
+      "id": "133-supp-com.picacg.network.pica.model.ComicDetail-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ComicDetail",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Lcom/picacg/network/pica/model/Creator;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;IIZLjava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;ZZILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ComicDetail;-><init>(Ljava/lang/String;Lcom/picacg/network/pica/model/Creator;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;IIZLjava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;ZZILjo1;)V"
+    },
+    {
+      "id": "134-supp-com.picacg.network.pica.model.ComicItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ComicItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ComicItem;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;Lfj5;)V"
+    },
+    {
+      "id": "135-supp-com.picacg.network.pica.model.ComicItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ComicItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ComicItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;)V"
+    },
+    {
+      "id": "136-supp-com.picacg.network.pica.model.ComicItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ComicItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;ILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ComicItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;ILjo1;)V"
+    },
+    {
+      "id": "137-supp-com.picacg.network.pica.model.ComicItemData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ComicItemData",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIZLjava/util/List;Ljava/util/List;Lcom/picacg/network/pica/model/ImageInfo;ILfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ComicItemData;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIZLjava/util/List;Ljava/util/List;Lcom/picacg/network/pica/model/ImageInfo;ILfj5;)V"
+    },
+    {
+      "id": "138-supp-com.picacg.network.pica.model.ComicItemData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ComicItemData",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIZLjava/util/List;Ljava/util/List;Lcom/picacg/network/pica/model/ImageInfo;I)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ComicItemData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIZLjava/util/List;Ljava/util/List;Lcom/picacg/network/pica/model/ImageInfo;I)V"
+    },
+    {
+      "id": "139-supp-com.picacg.network.pica.model.ComicItemData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ComicItemData",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIZLjava/util/List;Ljava/util/List;Lcom/picacg/network/pica/model/ImageInfo;IILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ComicItemData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIZLjava/util/List;Ljava/util/List;Lcom/picacg/network/pica/model/ImageInfo;IILjo1;)V"
+    },
+    {
+      "id": "140-supp-com.picacg.network.pica.model.ComicListData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ComicListData",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILcom/picacg/network/pica/model/ComicsData;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ComicListData;-><init>(ILcom/picacg/network/pica/model/ComicsData;Lfj5;)V"
+    },
+    {
+      "id": "141-supp-com.picacg.network.pica.model.ComicListData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ComicListData",
+      "method_name": "<init>",
+      "dex_descriptor": "(Lcom/picacg/network/pica/model/ComicsData;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ComicListData;-><init>(Lcom/picacg/network/pica/model/ComicsData;)V"
+    },
+    {
+      "id": "142-supp-com.picacg.network.pica.model.ComicsData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ComicsData",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/util/List;IIILfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ComicsData;-><init>(ILjava/util/List;IIILfj5;)V"
+    },
+    {
+      "id": "143-supp-com.picacg.network.pica.model.ComicsData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ComicsData",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/util/List;III)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ComicsData;-><init>(Ljava/util/List;III)V"
+    },
+    {
+      "id": "144-supp-com.picacg.network.pica.model.ComicsPageData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ComicsPageData",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/util/List;IIIILfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ComicsPageData;-><init>(ILjava/util/List;IIIILfj5;)V"
+    },
+    {
+      "id": "145-supp-com.picacg.network.pica.model.ComicsPageData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ComicsPageData",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/util/List;IIII)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ComicsPageData;-><init>(Ljava/util/List;IIII)V"
+    },
+    {
+      "id": "146-supp-com.picacg.network.pica.model.ComicsPageData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ComicsPageData",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/util/List;IIIIILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ComicsPageData;-><init>(Ljava/util/List;IIIIILjo1;)V"
+    },
+    {
+      "id": "147-supp-com.picacg.network.pica.model.Comment-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.Comment",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZLfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/Comment;-><init>(ILjava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZLfj5;)V"
+    },
+    {
+      "id": "148-supp-com.picacg.network.pica.model.Comment-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.Comment",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZ)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/Comment;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZ)V"
+    },
+    {
+      "id": "149-supp-com.picacg.network.pica.model.Comment-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.Comment",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/Comment;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZILjo1;)V"
+    },
+    {
+      "id": "150-supp-com.picacg.network.pica.model.CommentUser-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.CommentUser",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIILjava/util/List;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/lang/String;Ljava/lang/String;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/CommentUser;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIILjava/util/List;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/lang/String;Ljava/lang/String;Lfj5;)V"
+    },
+    {
+      "id": "151-supp-com.picacg.network.pica.model.CommentUser-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.CommentUser",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIILjava/util/List;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/lang/String;Ljava/lang/String;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/CommentUser;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIILjava/util/List;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/lang/String;Ljava/lang/String;)V"
+    },
+    {
+      "id": "152-supp-com.picacg.network.pica.model.CommentUser-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.CommentUser",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIILjava/util/List;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/lang/String;Ljava/lang/String;ILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/CommentUser;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIILjava/util/List;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/lang/String;Ljava/lang/String;ILjo1;)V"
+    },
+    {
+      "id": "153-supp-com.picacg.network.pica.model.CommentsPageData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.CommentsPageData",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/util/List;IIIILfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/CommentsPageData;-><init>(ILjava/util/List;IIIILfj5;)V"
+    },
+    {
+      "id": "154-supp-com.picacg.network.pica.model.CommentsPageData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.CommentsPageData",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/util/List;IIII)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/CommentsPageData;-><init>(Ljava/util/List;IIII)V"
+    },
+    {
+      "id": "155-supp-com.picacg.network.pica.model.Creator-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.Creator",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIILjava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/Creator;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIILjava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Lfj5;)V"
+    },
+    {
+      "id": "156-supp-com.picacg.network.pica.model.Creator-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.Creator",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIILjava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/Creator;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIILjava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;)V"
+    },
+    {
+      "id": "157-supp-com.picacg.network.pica.model.Creator-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.Creator",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIILjava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/Creator;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIILjava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ILjo1;)V"
+    },
+    {
+      "id": "158-supp-com.picacg.network.pica.model.Episode-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.Episode",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;ILjava/lang/String;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/Episode;-><init>(ILjava/lang/String;Ljava/lang/String;ILjava/lang/String;Lfj5;)V"
+    },
+    {
+      "id": "159-supp-com.picacg.network.pica.model.Episode-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.Episode",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/Episode;-><init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V"
+    },
+    {
+      "id": "160-supp-com.picacg.network.pica.model.EpisodeInfo-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.EpisodeInfo",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/EpisodeInfo;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lfj5;)V"
+    },
+    {
+      "id": "161-supp-com.picacg.network.pica.model.EpisodeInfo-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.EpisodeInfo",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/EpisodeInfo;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;)V"
+    },
+    {
+      "id": "162-supp-com.picacg.network.pica.model.EpisodeInfo-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.EpisodeInfo",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/EpisodeInfo;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ILjo1;)V"
+    },
+    {
+      "id": "163-supp-com.picacg.network.pica.model.EpisodesInfo-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.EpisodesInfo",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/util/List;IIIILfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/EpisodesInfo;-><init>(ILjava/util/List;IIIILfj5;)V"
+    },
+    {
+      "id": "164-supp-com.picacg.network.pica.model.EpisodesInfo-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.EpisodesInfo",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/util/List;IIII)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/EpisodesInfo;-><init>(Ljava/util/List;IIII)V"
+    },
+    {
+      "id": "165-supp-com.picacg.network.pica.model.GameComment-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.GameComment",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZLfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/GameComment;-><init>(ILjava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZLfj5;)V"
+    },
+    {
+      "id": "166-supp-com.picacg.network.pica.model.GameComment-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.GameComment",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZ)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/GameComment;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZ)V"
+    },
+    {
+      "id": "167-supp-com.picacg.network.pica.model.GameComment-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.GameComment",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/GameComment;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZILjo1;)V"
+    },
+    {
+      "id": "168-supp-com.picacg.network.pica.model.GameCommentsPageData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.GameCommentsPageData",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/util/List;IILjava/lang/String;ILfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/GameCommentsPageData;-><init>(ILjava/util/List;IILjava/lang/String;ILfj5;)V"
+    },
+    {
+      "id": "169-supp-com.picacg.network.pica.model.GameCommentsPageData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.GameCommentsPageData",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/util/List;IILjava/lang/String;I)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/GameCommentsPageData;-><init>(Ljava/util/List;IILjava/lang/String;I)V"
+    },
+    {
+      "id": "170-supp-com.picacg.network.pica.model.GameDetail-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.GameDetail",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZIIIZLjava/util/List;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/GameDetail;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZIIIZLjava/util/List;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lfj5;)V"
+    },
+    {
+      "id": "171-supp-com.picacg.network.pica.model.GameDetail-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.GameDetail",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZIIIZLjava/util/List;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/GameDetail;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZIIIZLjava/util/List;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+    },
+    {
+      "id": "172-supp-com.picacg.network.pica.model.GameDetail-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.GameDetail",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZIIIZLjava/util/List;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/GameDetail;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZIIIZLjava/util/List;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjo1;)V"
+    },
+    {
+      "id": "173-supp-com.picacg.network.pica.model.GameItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.GameItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZLfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/GameItem;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZLfj5;)V"
+    },
+    {
+      "id": "174-supp-com.picacg.network.pica.model.GameItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.GameItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZ)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/GameItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZ)V"
+    },
+    {
+      "id": "175-supp-com.picacg.network.pica.model.GameItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.GameItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/GameItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZILjo1;)V"
+    },
+    {
+      "id": "176-supp-com.picacg.network.pica.model.GamesPageData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.GamesPageData",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/util/List;IIIILfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/GamesPageData;-><init>(ILjava/util/List;IIIILfj5;)V"
+    },
+    {
+      "id": "177-supp-com.picacg.network.pica.model.GamesPageData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.GamesPageData",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/util/List;IIII)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/GamesPageData;-><init>(Ljava/util/List;IIII)V"
+    },
+    {
+      "id": "178-supp-com.picacg.network.pica.model.ImageInfo-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ImageInfo",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ImageInfo;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lfj5;)V"
+    },
+    {
+      "id": "179-supp-com.picacg.network.pica.model.ImageInfo-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ImageInfo",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ImageInfo;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+    },
+    {
+      "id": "180-supp-com.picacg.network.pica.model.ImageInfo-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.ImageInfo",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/ImageInfo;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjo1;)V"
+    },
+    {
+      "id": "181-supp-com.picacg.network.pica.model.LeaderboardCategory-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.LeaderboardCategory",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/LeaderboardCategory;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V"
+    },
+    {
+      "id": "182-supp-com.picacg.network.pica.model.LeaderboardComic-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.LeaderboardComic",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIZLjava/util/List;Ljava/util/List;Lcom/picacg/network/pica/model/ImageInfo;ILfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/LeaderboardComic;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIZLjava/util/List;Ljava/util/List;Lcom/picacg/network/pica/model/ImageInfo;ILfj5;)V"
+    },
+    {
+      "id": "183-supp-com.picacg.network.pica.model.LeaderboardComic-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.LeaderboardComic",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIZLjava/util/List;Ljava/util/List;Lcom/picacg/network/pica/model/ImageInfo;I)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/LeaderboardComic;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIZLjava/util/List;Ljava/util/List;Lcom/picacg/network/pica/model/ImageInfo;I)V"
+    },
+    {
+      "id": "184-supp-com.picacg.network.pica.model.LeaderboardComic-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.LeaderboardComic",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIZLjava/util/List;Ljava/util/List;Lcom/picacg/network/pica/model/ImageInfo;IILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/LeaderboardComic;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIZLjava/util/List;Ljava/util/List;Lcom/picacg/network/pica/model/ImageInfo;IILjo1;)V"
+    },
+    {
+      "id": "185-supp-com.picacg.network.pica.model.MyCommentComicRef-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.MyCommentComicRef",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/MyCommentComicRef;-><init>(ILjava/lang/String;Ljava/lang/String;Lfj5;)V"
+    },
+    {
+      "id": "186-supp-com.picacg.network.pica.model.MyCommentComicRef-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.MyCommentComicRef",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/MyCommentComicRef;-><init>(Ljava/lang/String;Ljava/lang/String;)V"
+    },
+    {
+      "id": "187-supp-com.picacg.network.pica.model.MyCommentItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.MyCommentItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/MyCommentComicRef;IZLjava/lang/String;IIZLfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/MyCommentItem;-><init>(ILjava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/MyCommentComicRef;IZLjava/lang/String;IIZLfj5;)V"
+    },
+    {
+      "id": "188-supp-com.picacg.network.pica.model.MyCommentItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.MyCommentItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/MyCommentComicRef;IZLjava/lang/String;IIZ)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/MyCommentItem;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/MyCommentComicRef;IZLjava/lang/String;IIZ)V"
+    },
+    {
+      "id": "189-supp-com.picacg.network.pica.model.MyCommentItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.MyCommentItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/MyCommentComicRef;IZLjava/lang/String;IIZILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/MyCommentItem;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/MyCommentComicRef;IZLjava/lang/String;IIZILjo1;)V"
+    },
+    {
+      "id": "190-supp-com.picacg.network.pica.model.MyCommentsPageData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.MyCommentsPageData",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/util/List;IILjava/lang/String;ILfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/MyCommentsPageData;-><init>(ILjava/util/List;IILjava/lang/String;ILfj5;)V"
+    },
+    {
+      "id": "191-supp-com.picacg.network.pica.model.MyCommentsPageData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.MyCommentsPageData",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/util/List;IILjava/lang/String;I)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/MyCommentsPageData;-><init>(Ljava/util/List;IILjava/lang/String;I)V"
+    },
+    {
+      "id": "192-supp-com.picacg.network.pica.model.PageItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.PageItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/PageItem;-><init>(ILjava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Lfj5;)V"
+    },
+    {
+      "id": "193-supp-com.picacg.network.pica.model.PageItem-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.PageItem",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/PageItem;-><init>(Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;)V"
+    },
+    {
+      "id": "194-supp-com.picacg.network.pica.model.PagesInfo-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.PagesInfo",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/util/List;IIIILfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/PagesInfo;-><init>(ILjava/util/List;IIIILfj5;)V"
+    },
+    {
+      "id": "195-supp-com.picacg.network.pica.model.PagesInfo-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.PagesInfo",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/util/List;IIII)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/PagesInfo;-><init>(Ljava/util/List;IIII)V"
+    },
+    {
+      "id": "196-supp-com.picacg.network.pica.model.PunchInData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.PunchInData",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/PunchInData;-><init>(ILjava/lang/String;Ljava/lang/String;Lfj5;)V"
+    },
+    {
+      "id": "197-supp-com.picacg.network.pica.model.PunchInData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.PunchInData",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/PunchInData;-><init>(Ljava/lang/String;Ljava/lang/String;)V"
+    },
+    {
+      "id": "198-supp-com.picacg.network.pica.model.PunchInData-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.PunchInData",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;ILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/PunchInData;-><init>(Ljava/lang/String;Ljava/lang/String;ILjo1;)V"
+    },
+    {
+      "id": "199-supp-com.picacg.network.pica.model.UserProfile-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.UserProfile",
+      "method_name": "<init>",
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;IILjava/lang/String;ZZLjava/util/List;Ljava/lang/String;Ljava/lang/String;Lfj5;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/UserProfile;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;IILjava/lang/String;ZZLjava/util/List;Ljava/lang/String;Ljava/lang/String;Lfj5;)V"
+    },
+    {
+      "id": "200-supp-com.picacg.network.pica.model.UserProfile-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.UserProfile",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;IILjava/lang/String;ZZLjava/util/List;Ljava/lang/String;Ljava/lang/String;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/UserProfile;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;IILjava/lang/String;ZZLjava/util/List;Ljava/lang/String;Ljava/lang/String;)V"
+    },
+    {
+      "id": "201-supp-com.picacg.network.pica.model.UserProfile-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "com.picacg.network.pica.model.UserProfile",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;IILjava/lang/String;ZZLjava/util/List;Ljava/lang/String;Ljava/lang/String;ILjo1;)V",
+      "original_method_id": "Lcom/picacg/network/pica/model/UserProfile;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;IILjava/lang/String;ZZLjava/util/List;Ljava/lang/String;Ljava/lang/String;ILjo1;)V"
+    },
+    {
+      "id": "202-supp-dg4-c",
+      "operation": "inspect_android_method",
+      "class_name": "dg4",
+      "method_name": "c",
+      "dex_descriptor": "(Lcom/picacg/network/pica/model/PicaResponse;)V",
+      "original_method_id": "Ldg4;->c(Lcom/picacg/network/pica/model/PicaResponse;)V"
+    },
+    {
+      "id": "203-supp-dh4-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "dh4",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Ldh4;-><clinit>()V"
+    },
+    {
+      "id": "204-supp-dh4-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "dh4",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/lang/String;)V",
+      "original_method_id": "Ldh4;-><init>(Ljava/lang/String;)V"
+    },
+    {
+      "id": "205-supp-dh4-a",
+      "operation": "inspect_android_method",
+      "class_name": "dh4",
+      "method_name": "a",
+      "dex_descriptor": "(Lbz4;Ljava/io/IOException;)V",
+      "original_method_id": "Ldh4;->a(Lbz4;Ljava/io/IOException;)V"
+    },
+    {
+      "id": "206-supp-dh4-b",
+      "operation": "inspect_android_method",
+      "class_name": "dh4",
+      "method_name": "b",
+      "dex_descriptor": "(Lbz4;Ljava/net/InetSocketAddress;Ljava/net/Proxy;Ljava/io/IOException;)V",
+      "original_method_id": "Ldh4;->b(Lbz4;Ljava/net/InetSocketAddress;Ljava/net/Proxy;Ljava/io/IOException;)V"
+    },
+    {
+      "id": "207-supp-dh4-c",
+      "operation": "inspect_android_method",
+      "class_name": "dh4",
+      "method_name": "c",
+      "dex_descriptor": "(Lbz4;Ljava/net/InetSocketAddress;Ljava/net/Proxy;)V",
+      "original_method_id": "Ldh4;->c(Lbz4;Ljava/net/InetSocketAddress;Ljava/net/Proxy;)V"
+    },
+    {
+      "id": "208-supp-dh4-e",
+      "operation": "inspect_android_method",
+      "class_name": "dh4",
+      "method_name": "e",
+      "dex_descriptor": "(Lbz4;Ljava/lang/String;Ljava/util/List;)V",
+      "original_method_id": "Ldh4;->e(Lbz4;Ljava/lang/String;Ljava/util/List;)V"
+    },
+    {
+      "id": "209-supp-dh4-f",
+      "operation": "inspect_android_method",
+      "class_name": "dh4",
+      "method_name": "f",
+      "dex_descriptor": "(Lbz4;Ljava/io/IOException;Z)V",
+      "original_method_id": "Ldh4;->f(Lbz4;Ljava/io/IOException;Z)V"
+    },
+    {
+      "id": "210-supp-do0-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "do0",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Ldo0;-><clinit>()V"
+    },
+    {
+      "id": "211-supp-l54-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "l54",
+      "method_name": "<init>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Ll54;-><init>()V"
+    },
+    {
+      "id": "212-supp-l54-a",
+      "operation": "inspect_android_method",
+      "class_name": "l54",
+      "method_name": "a",
+      "dex_descriptor": "(J)V",
+      "original_method_id": "Ll54;->a(J)V"
+    },
+    {
+      "id": "213-supp-l54-b",
+      "operation": "inspect_android_method",
+      "class_name": "l54",
+      "method_name": "b",
+      "dex_descriptor": "(Lfv1;)V",
+      "original_method_id": "Ll54;->b(Lfv1;)V"
+    },
+    {
+      "id": "214-supp-l54-c",
+      "operation": "inspect_android_method",
+      "class_name": "l54",
+      "method_name": "c",
+      "dex_descriptor": "(J)V",
+      "original_method_id": "Ll54;->c(J)V"
+    },
+    {
+      "id": "215-supp-l54-d",
+      "operation": "inspect_android_method",
+      "class_name": "l54",
+      "method_name": "d",
+      "dex_descriptor": "(J)V",
+      "original_method_id": "Ll54;->d(J)V"
+    },
+    {
+      "id": "216-supp-qy2-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "qy2",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lqy2;-><clinit>()V"
+    },
+    {
+      "id": "217-supp-qy2-b",
+      "operation": "inspect_android_method",
+      "class_name": "qy2",
+      "method_name": "b",
+      "dex_descriptor": "(Ls65;)Ljava/lang/String;",
+      "original_method_id": "Lqy2;->b(Ls65;)Ljava/lang/String;"
+    },
+    {
+      "id": "218-supp-qy2-c",
+      "operation": "inspect_android_method",
+      "class_name": "qy2",
+      "method_name": "c",
+      "dex_descriptor": "(Ls65;)Ljava/lang/String;",
+      "original_method_id": "Lqy2;->c(Ls65;)Ljava/lang/String;"
+    },
+    {
+      "id": "219-supp-qy2-d",
+      "operation": "inspect_android_method",
+      "class_name": "qy2",
+      "method_name": "d",
+      "dex_descriptor": "(Lhe3;)Ljava/lang/String;",
+      "original_method_id": "Lqy2;->d(Lhe3;)Ljava/lang/String;"
+    },
+    {
+      "id": "220-supp-qy2-e",
+      "operation": "inspect_android_method",
+      "class_name": "qy2",
+      "method_name": "e",
+      "dex_descriptor": "(Ljava/lang/String;Ls65;JLjava/lang/String;)V",
+      "original_method_id": "Lqy2;->e(Ljava/lang/String;Ls65;JLjava/lang/String;)V"
+    },
+    {
+      "id": "221-supp-qy2-f",
+      "operation": "inspect_android_method",
+      "class_name": "qy2",
+      "method_name": "f",
+      "dex_descriptor": "(IJLjava/lang/String;Ljava/lang/String;)V",
+      "original_method_id": "Lqy2;->f(IJLjava/lang/String;Ljava/lang/String;)V"
+    },
+    {
+      "id": "222-supp-qy2-a",
+      "operation": "inspect_android_method",
+      "class_name": "qy2",
+      "method_name": "a",
+      "dex_descriptor": "(Lhe3;)Ls65;",
+      "original_method_id": "Lqy2;->a(Lhe3;)Ls65;"
+    },
+    {
+      "id": "223-supp-rx5-d0",
+      "operation": "inspect_android_method",
+      "class_name": "rx5",
+      "method_name": "d0",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;",
+      "original_method_id": "Lrx5;->d0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;"
+    },
+    {
+      "id": "224-supp-rx5-f0",
+      "operation": "inspect_android_method",
+      "class_name": "rx5",
+      "method_name": "f0",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Z)Z",
+      "original_method_id": "Lrx5;->f0(Ljava/lang/String;Ljava/lang/String;Z)Z"
+    },
+    {
+      "id": "225-supp-sl0-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "sl0",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lsl0;-><clinit>()V"
+    },
+    {
+      "id": "226-supp-sl0-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "sl0",
+      "method_name": "<init>",
+      "dex_descriptor": "(Ljava/util/Set;Lrl0;)V",
+      "original_method_id": "Lsl0;-><init>(Ljava/util/Set;Lrl0;)V"
+    },
+    {
+      "id": "227-supp-sl0-equals",
+      "operation": "inspect_android_method",
+      "class_name": "sl0",
+      "method_name": "equals",
+      "dex_descriptor": "(Ljava/lang/Object;)Z",
+      "original_method_id": "Lsl0;->equals(Ljava/lang/Object;)Z"
+    },
+    {
+      "id": "228-supp-sl0-hashCode",
+      "operation": "inspect_android_method",
+      "class_name": "sl0",
+      "method_name": "hashCode",
+      "dex_descriptor": "()I",
+      "original_method_id": "Lsl0;->hashCode()I"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "host": "picaapi.picacomic.com",
+  "started_at_utc": "Mon, 02 Nov 2026 09:20:04 GMT",
+  "scope": "Category filter, keyword search, one media HEAD; no writes",
+  "credentials_saved": false,
+  "token_saved": false,
+  "images_downloaded": false,
+  "steps": [
+    {
+      "method": "POST",
+      "path": "/auth/sign-in",
+      "query": null,
+      "http_status": 200,
+      "elapsed_ms": 281,
+      "response_bytes": 418,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "sign-in",
+      "token_received": true
+    },
+    {
+      "method": "GET",
+      "path": "/categories",
+      "query": null,
+      "http_status": 200,
+      "elapsed_ms": 281,
+      "response_bytes": 14934,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "categories",
+      "category_count": 47,
+      "category_sample_keys": [
+        "active",
+        "isWeb",
+        "link",
+        "thumb",
+        "title"
+      ],
+      "filter_id_available": true
+    },
+    {
+      "method": "GET",
+      "path": "/comics",
+      "query": "page=1&c=5821859b5f6b9a4f93dbf6e9&s=dd",
+      "http_status": 200,
+      "elapsed_ms": 297,
+      "response_bytes": 169,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "comics-category-filter",
+      "item_count": 0
+    },
+    {
+      "method": "GET",
+      "path": "/keywords",
+      "query": null,
+      "http_status": 200,
+      "elapsed_ms": 266,
+      "response_bytes": 355,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "keywords",
+      "keyword_count": 15,
+      "keyword_available": true
+    },
+    {
+      "method": "POST",
+      "path": "/comics/advanced-search",
+      "query": "page=1",
+      "http_status": 200,
+      "elapsed_ms": 312,
+      "response_bytes": 24892,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "advanced-search",
+      "item_count": 20
+    },
+    {
+      "method": "GET",
+      "path": "/comics",
+      "query": "page=1&s=dd",
+      "http_status": 200,
+      "elapsed_ms": 297,
+      "response_bytes": 24117,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "comics-for-media"
+    },
+    {
+      "method": "GET",
+      "path": "/comics/{id}/eps",
+      "query": "page=1",
+      "http_status": 200,
+      "elapsed_ms": 297,
+      "response_bytes": 9025,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "comic-eps",
+      "episode_count": 40
+    },
+    {
+      "method": "GET",
+      "path": "/comics/{id}/order/44/pages",
+      "query": "page=1",
+      "http_status": 200,
+      "elapsed_ms": 328,
+      "response_bytes": 19616,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "comic-pages",
+      "page_count": 40,
+      "page_sample_keys": [
+        "_id",
+        "id",
+        "media"
+      ]
+    },
+    {
+      "media_host": "storage-b.picacomic.com",
+      "http_status": 401,
+      "elapsed_ms": 422,
+      "content_type": "application/json; charset=utf-8",
+      "content_length": "65",
+      "step": "media-head"
+    }
+  ],
+  "read_count": 8,
+  "failed_steps": [
+    "media-head"
+  ],
+  "outcome": "some_checks_failed"
+}

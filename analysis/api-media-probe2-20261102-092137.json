@@ -1,0 +1,109 @@
+{
+  "host": "picaapi.picacomic.com",
+  "started_at_utc": "Mon, 02 Nov 2026 09:21:32 GMT",
+  "scope": "Category title filter; corrected image URL; headers only",
+  "credentials_saved": false,
+  "token_saved": false,
+  "images_downloaded": false,
+  "steps": [
+    {
+      "method": "POST",
+      "path": "/auth/sign-in",
+      "query": null,
+      "http_status": 200,
+      "elapsed_ms": 328,
+      "response_bytes": 418,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "sign-in",
+      "token_received": true
+    },
+    {
+      "method": "GET",
+      "path": "/comics",
+      "query": "page=1&s=dd",
+      "http_status": 200,
+      "elapsed_ms": 453,
+      "response_bytes": 24117,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "comics",
+      "item_count": 20,
+      "comic_category_title_available": true
+    },
+    {
+      "method": "GET",
+      "path": "/comics",
+      "query": "page=1&c=%E5%85%A8%E5%BD%A9&s=dd",
+      "http_status": 200,
+      "elapsed_ms": 282,
+      "response_bytes": 26220,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "comics-category-title-filter",
+      "encoded_category": "%E5%85%A8%E5%BD%A9",
+      "item_count": 20
+    },
+    {
+      "method": "GET",
+      "path": "/comics/693443bc2e97f82d662bee0c/eps",
+      "query": "page=1",
+      "http_status": 200,
+      "elapsed_ms": 265,
+      "response_bytes": 9025,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "comic-eps",
+      "episode_count": 40
+    },
+    {
+      "method": "GET",
+      "path": "/comics/693443bc2e97f82d662bee0c/order/5/pages",
+      "query": "page=1",
+      "http_status": 200,
+      "elapsed_ms": 281,
+      "response_bytes": 18539,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "comic-pages",
+      "page_count": 40
+    },
+    {
+      "method": "HEAD",
+      "host": "storage-b.picacomic.com",
+      "path_segments": 6,
+      "path_prefix": "static/tobeimg",
+      "extension": "jpg",
+      "http_status": 301,
+      "elapsed_ms": 516,
+      "content_type": "text/html",
+      "content_length": "194",
+      "bytes_read": 0,
+      "step": "media-head"
+    },
+    {
+      "method": "GET",
+      "host": "storage-b.picacomic.com",
+      "path_segments": 6,
+      "path_prefix": "static/tobeimg",
+      "extension": "jpg",
+      "http_status": 301,
+      "elapsed_ms": 188,
+      "content_type": "text/html",
+      "content_length": "194",
+      "bytes_read": 2,
+      "step": "media-get-range"
+    }
+  ],
+  "read_count": 6,
+  "failed_steps": [
+    "media-head",
+    "media-get-range"
+  ],
+  "outcome": "some_checks_failed"
+}

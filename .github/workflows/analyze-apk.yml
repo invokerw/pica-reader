@@ -1,0 +1,83 @@
+name: Analyze APK
+
+on:
+  workflow_dispatch:
+    inputs:
+      apk_url:
+        description: '新版本 APK 的下载地址（或 Release 资产 URL）'
+        required: true
+      version:
+        description: '版本号，例如 2.6.80；留空则从文件名推断'
+        required: false
+        default: ''
+      run_rea:
+        description: '同时跑 REA 反编译（慢，约 10-20 分钟）'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  analyze:
+    name: 新 APK 协议差异
+    runs-on: windows-latest
+    env:
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 准备分析工具链（REA）
+        if: ${{ inputs.run_rea }}
+        shell: pwsh
+        run: powershell -NoProfile -ExecutionPolicy Bypass -File tools/bootstrap.ps1 -Profile analyze
+
+      - name: 下载样本
+        shell: pwsh
+        run: |
+          $name = [System.IO.Path]::GetFileName(([uri]$env:APK_URL).AbsolutePath)
+          if (-not $name) { $name = 'sample.apk' }
+          New-Item -ItemType Directory -Force .cache/apk | Out-Null
+          $out = Join-Path '.cache/apk' $name
+          curl.exe -L --fail --retry 2 -o $out $env:APK_URL
+          $hash = (Get-FileHash $out -Algorithm SHA256).Hash.ToLower()
+          "APK=$out" | Out-File $env:GITHUB_ENV -Append -Encoding utf8
+          "样本：$out`nSHA256：$hash" | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+        env:
+          APK_URL: ${{ inputs.apk_url }}
+
+      - name: 检查生成文件是否已与基线同步
+        run: python analysis/pipeline.py gen --protocol analysis/baseline --check
+
+      - name: 提取协议并与基线比较
+        shell: pwsh
+        run: |
+          $cli = @('analysis/pipeline.py', 'new', '--apk', $env:APK)
+          if ('${{ inputs.version }}') { $cli += @('--version', '${{ inputs.version }}') }
+          if ('${{ inputs.run_rea }}' -eq 'true') { $cli += '--rea' }
+          python @cli
+        # 退出码 2 = 存在 BREAKING 差异，让 job 红掉，避免误发布
+
+      - name: 汇总报告
+        if: always()
+        shell: pwsh
+        run: |
+          $report = Get-ChildItem analysis/runs -Recurse -Filter REPORT.md -ErrorAction SilentlyContinue |
+            Sort-Object LastWriteTime -Descending | Select-Object -First 1
+          if ($report) {
+            Get-Content $report.FullName -Encoding UTF8 | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+          } else {
+            '没有生成报告，看上面的日志。' | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+          }
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: analysis-report
+          path: |
+            analysis/runs/**
+          if-no-files-found: warn

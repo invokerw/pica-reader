@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_dc50598ecb95df1b9f7fcd0520c20340da7f25e3510e55ca1903011176c8d8be",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "nr0",
+    "method_name": "J0",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-7802ea5287a189237b935c294ddb9235\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":2,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "nr0"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"nr0\",\"fields\":[],\"methods\":[{\"name\":\"A0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;Ljava/lang/StringBuilder;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Llm2;)V\",\"signature\":\"A0(java.lang.Iterable, java.lang.StringBuilder, java.lang.CharSequence, java.lang.CharSequence, java.lang.CharSequence, java.lang.CharSequence, lm2): void\",\"def_pos\":0},{\"name\":\"B0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;Ljava/lang/StringBuilder;Lt0;I)V\",\"signature\":\"B0(java.util.List, java.lang.StringBuilder, t0, int): void\",\"def_pos\":0},{\"name\":\"C0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Llm2;I)Ljava/lang/String;\",\"signature\":\"C0(java.lang.Iterable, java.lang.String, java.lang.String, java.lang.String, lm2, int): java.lang.String\",\"def_pos\":0},{\"name\":\"D0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;)Ljava/lang/Object;\",\"signature\":\"D0(java.util.List): java.lang.Object\",\"def_pos\":0},{\"name\":\"E0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;)Ljava/lang/Object;\",\"signature\":\"E0(java.util.List): java.lang.Object\",\"def_pos\":0},{\"name\":\"F0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/ArrayList;)Ljava/lang/Comparable;\",\"signature\":\"F0(java.util.ArrayList): java.lang.Comparable\",\"def_pos\":0},{\"name\":\"G0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;Ljava/lang/Object;)Ljava/util/ArrayList;\",\"signature\":\"G0(java.lang.Iterable, java.lang.Object): java.util.ArrayList\",\"def_pos\":0},{\"name\":\"H0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/ArrayList;\",\"signature\":\"H0(java.lang.Iterable, java.util.Collection): java.util.ArrayList\",\"def_pos\":0},{\"name\":\"I0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/ArrayList;\",\"signature\":\"I0(java.util.Collection, java.lang.Object): java.util.ArrayList\",\"def_pos\":0},{\"name\":\"J0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;)Ljava/lang/Object;\",\"signature\":\"J0(java.util.List): java.lang.Object\",\"def_pos\":0},{\"name\":\"K0\",\"is_constructor\":false,\"dex_descriptor\":\"(Llm2;Ljava/util/List;)V\",\"signature\":\"K0(lm2, java.util.List): void\",\"def_pos\":0},{\"name\":\"L0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/ArrayList;)Ljava/lang/Object;\",\"signature\":\"L0(java.util.ArrayList): java.lang.Object\",\"def_pos\":0},{\"name\":\"M0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;)Ljava/lang/Object;\",\"signature\":\"M0(java.util.List): java.lang.Object\",\"def_pos\":0},{\"name\":\"N0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/AbstractList;)Ljava/lang/Object;\",\"signature\":\"N0(java.util.AbstractList): java.lang.Object\",\"def_pos\":0},{\"name\":\"O0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;)Ljava/util/List;\",\"signature\":\"O0(java.lang.Iterable): java.util.List\",\"def_pos\":0},{\"name\":\"P0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;)Ljava/lang/Object;\",\"signature\":\"P0(java.util.List): java.lang.Object\",\"def_pos\":0},{\"name\":\"Q0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;)Ljava/util/List;\",\"signature\":\"Q0(java.lang.Iterable): java.util.List\",\"def_pos\":0},{\"name\":\"R0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;\",\"signature\":\"R0(java.lang.Iterable, java.util.Comparator): java.util.List\",\"def_pos\":0},{\"name\":\"S0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;I)Ljava/util/List;\",\"signature\":\"S0(java.lang.Iterable, int): java.util.List\",\"def_pos\":0},{\"name\":\"T0\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/util/List;)Ljava/util/List;\",\"signature\":\"T0(int, java.util.List): java.util.List\",\"def_pos\":0},{\"name\":\"U0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;)[Z\",\"signature\":\"U0(java.util.List): boolean[]\",\"def_pos\":0},{\"name\":\"V0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;Ljava/util/AbstractCollection;)V\",\"signature\":\"V0(java.lang.Iterable, java.util.AbstractCollection): void\",\"def_pos\":0},{\"name\":\"W0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;)Ljava/util/HashSet;\",\"signature\":\"W0(java.lang.Iterable): java.util.HashSet\",\"def_pos\":0},{\"name\":\"X0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;)[I\",\"signature\":\"X0(java.util.List): int[]\",\"def_pos\":0},{\"name\":\"Y0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;)Ljava/util/List;\",\"signature\":\"Y0(java.lang.Iterable): java.util.List\",\"def_pos\":0},{\"name\":\"Z0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Collection;)Ljava/util/ArrayList;\",\"signature\":\"Z0(java.util.Collection): java.util.ArrayList\",\"def_pos\":0},{\"name\":\"a1\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;)Ljava/util/List;\",\"signature\":\"a1(java.lang.Iterable): java.util.List\",\"def_pos\":0},{\"name\":\"b1\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;)Ljava/util/Set;\",\"signature\":\"b1(java.lang.Iterable): java.util.Set\",\"def_pos\":0},{\"name\":\"c1\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;)Ljava/util/Set;\",\"signature\":\"c1(java.lang.Iterable): java.util.Set\",\"def_pos\":0},{\"name\":\"i0\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/util/List;)I\",\"signature\":\"i0(int, java.util.List): int\",\"def_pos\":0},{\"name\":\"j0\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/util/List;)I\",\"signature\":\"j0(int, java.util.List): int\",\"def_pos\":0},{\"name\":\"k0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;Ljava/util/Collection;)V\",\"signature\":\"k0(java.lang.Iterable, java.util.Collection): void\",\"def_pos\":0},{\"name\":\"l0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;)Lrr0;\",\"signature\":\"l0(java.lang.Iterable): rr0\",\"def_pos\":0},{\"name\":\"m0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/ArrayList;)D\",\"signature\":\"m0(java.util.ArrayList): double\",\"def_pos\":0},{\"name\":\"n0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;I)Ljava/util/ArrayList;\",\"signature\":\"n0(java.lang.Iterable, int): java.util.ArrayList\",\"def_pos\":0},{\"name\":\"o0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;Ljava/lang/Object;)Z\",\"signature\":\"o0(java.lang.Iterable, java.lang.Object): boolean\",\"def_pos\":0},{\"name\":\"p0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;)Ljava/util/Collection;\",\"signature\":\"p0(java.lang.Iterable): java.util.Collection\",\"def_pos\":0},{\"name\":\"q0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;)Ljava/util/List;\",\"signature\":\"q0(java.util.List): java.util.List\",\"def_pos\":0},{\"name\":\"r0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;I)Ljava/util/List;\",\"signature\":\"r0(java.lang.Iterable, int): java.util.List\",\"def_pos\":0},{\"name\":\"s0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;)Ljava/util/List;\",\"signature\":\"s0(java.util.List): java.util.List\",\"def_pos\":0},{\"name\":\"t0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;)Ljava/util/ArrayList;\",\"signature\":\"t0(java.lang.Iterable): java.util.ArrayList\",\"def_pos\":0},{\"name\":\"u0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;)Ljava/lang/Object;\",\"signature\":\"u0(java.lang.Iterable): java.lang.Object\",\"def_pos\":0},{\"name\":\"v0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;)Ljava/lang/Object;\",\"signature\":\"v0(java.util.List): java.lang.Object\",\"def_pos\":0},{\"name\":\"w0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;)Ljava/lang/Object;\",\"signature\":\"w0(java.util.List): java.lang.Object\",\"def_pos\":0},{\"name\":\"x0\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/util/List;)Ljava/lang/Object;\",\"signature\":\"x0(int, java.util.List): java.lang.Object\",\"def_pos\":0},{\"name\":\"y0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;Ljava/lang/Object;)I\",\"signature\":\"y0(java.lang.Iterable, java.lang.Object): int\",\"def_pos\":0},{\"name\":\"z0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/util/LinkedHashSet;\",\"signature\":\"z0(java.lang.Iterable, java.lang.Iterable): java.util.LinkedHashSet\",\"def_pos\":0}],\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"nr0\",\"field_count\":0,\"full_name\":\"defpackage.nr0\",\"method_count\":47}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "nr0",
+          "method_name": "J0",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_index\":0,\"method_name\":\"J0\",\"overload_count\":1,\"dex_descriptor\":\"(Ljava/util/List;)Ljava/lang/Object;\",\"class_name\":\"defpackage.nr0\",\"mode\":\"java\",\"body\":\"    public static Object J0(List list) {\\r\\n        f3 f3Var \\u003d dr4.i;\\r\\n        if (list.isEmpty()) {\\r\\n            d66.j(\\\"Collection is empty.\\\");\\r\\n            return null;\\r\\n        }\\r\\n        return list.get(dr4.i.g(list.size()));\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"nr0.J0\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.nr0",
+    "method": {
+      "name": "J0",
+      "reported_signature": "J0(java.util.List): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/util/List;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public static Object J0(List list) {\r\n        f3 f3Var = dr4.i;\r\n        if (list.isEmpty()) {\r\n            d66.j(\"Collection is empty.\");\r\n            return null;\r\n        }\r\n        return list.get(dr4.i.g(list.size()));\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

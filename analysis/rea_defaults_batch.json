@@ -1,0 +1,29 @@
+{
+  "output_directory": "analysis/rea/defaults",
+  "tasks": [
+    {
+      "id": "000-defaults-b83-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "b83",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lb83;-><clinit>()V"
+    },
+    {
+      "id": "001-defaults-dx5-d",
+      "operation": "inspect_android_method",
+      "class_name": "dx5",
+      "method_name": "d",
+      "dex_descriptor": "()V",
+      "original_method_id": "Ldx5;->d()V"
+    },
+    {
+      "id": "002-defaults-dx5-e",
+      "operation": "inspect_android_method",
+      "class_name": "dx5",
+      "method_name": "e",
+      "dex_descriptor": "(Lzi5;)Z",
+      "original_method_id": "Ldx5;->e(Lzi5;)Z"
+    }
+  ]
+}

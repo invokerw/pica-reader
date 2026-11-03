@@ -1,0 +1,37 @@
+{
+  "host": "picaapi.picacomic.com",
+  "started_at_utc": "Mon, 02 Nov 2026 09:16:53 GMT",
+  "scope": "Read-only comics endpoints; no likes/favourites/comments",
+  "credentials_saved": false,
+  "token_saved": false,
+  "images_downloaded": false,
+  "steps": [
+    {
+      "method": "HEAD",
+      "path": "/",
+      "query": null,
+      "http_status": 200,
+      "elapsed_ms": 281,
+      "response_bytes": 0,
+      "business_success": false,
+      "step": "probe"
+    },
+    {
+      "method": "POST",
+      "path": "/auth/sign-in",
+      "query": null,
+      "http_status": 200,
+      "elapsed_ms": 297,
+      "response_bytes": 418,
+      "api_code": 200,
+      "message_is_success": true,
+      "business_success": true,
+      "step": "sign-in",
+      "data_keys": [
+        "token"
+      ],
+      "token_received": false
+    }
+  ],
+  "outcome": "login_failed_no_comics_calls"
+}

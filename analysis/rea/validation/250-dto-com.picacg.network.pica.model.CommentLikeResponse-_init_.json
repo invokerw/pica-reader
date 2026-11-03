@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_21b155577d8450e4ba5a1258a0aff3de8d052beb58f489ea6973828b0fd826a9",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "com.picacg.network.pica.model.CommentLikeResponse",
+    "method_name": "<init>",
+    "overload_index": 1
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.picacg.network.pica.model.CommentLikeResponse"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":1,\"inner_classes\":[\"com.picacg.network.pica.model.CommentLikeResponse.Companion\"],\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(int, java.lang.String, fj5): void\",\"dex_descriptor\":\"(ILjava/lang/String;Lfj5;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(java.lang.String): void\",\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"component1(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"component1\",\"def_pos\":0},{\"signature\":\"copy(java.lang.String): com.picacg.network.pica.model.CommentLikeResponse\",\"dex_descriptor\":\"(Ljava/lang/String;)Lcom/picacg/network/pica/model/CommentLikeResponse;\",\"is_constructor\":false,\"name\":\"copy\",\"def_pos\":0},{\"signature\":\"copy$default(com.picacg.network.pica.model.CommentLikeResponse, java.lang.String, int, java.lang.Object): com.picacg.network.pica.model.CommentLikeResponse\",\"dex_descriptor\":\"(Lcom/picacg/network/pica/model/CommentLikeResponse;Ljava/lang/String;ILjava/lang/Object;)Lcom/picacg/network/pica/model/CommentLikeResponse;\",\"is_constructor\":false,\"name\":\"copy$default\",\"def_pos\":0},{\"signature\":\"equals(java.lang.Object): boolean\",\"dex_descriptor\":\"(Ljava/lang/Object;)Z\",\"is_constructor\":false,\"name\":\"equals\",\"def_pos\":0},{\"signature\":\"getAction(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"getAction\",\"def_pos\":0},{\"signature\":\"hashCode(): int\",\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"hashCode\",\"def_pos\":0},{\"signature\":\"toString(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"toString\",\"def_pos\":0},{\"signature\":\"write$Self$app(com.picacg.network.pica.model.CommentLikeResponse, u91, zi5): void\",\"dex_descriptor\":\"(Lcom/picacg/network/pica/model/CommentLikeResponse;Lu91;Lzi5;)V\",\"is_constructor\":false,\"name\":\"write$Self$app\",\"def_pos\":0}],\"fields\":[{\"name\":\"$stable\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"Companion\",\"def_pos\":0,\"type\":\"com.picacg.network.pica.model.CommentLikeResponse$Companion\"},{\"name\":\"action\",\"def_pos\":0,\"type\":\"java.lang.String\"}],\"raw_name\":\"com.picacg.network.pica.model.CommentLikeResponse\",\"method_count\":11,\"full_name\":\"com.picacg.network.pica.model.CommentLikeResponse\",\"field_count\":3,\"name\":\"CommentLikeResponse\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.picacg.network.pica.model.CommentLikeResponse",
+          "method_name": "<init>",
+          "overload_index": 1,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    public CommentLikeResponse(String str) {\\r\\n        str.getClass();\\r\\n        this.action \\u003d str;\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"com.picacg.network.pica.model.CommentLikeResponse\",\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"overload_count\":2,\"method_name\":\"\\u003cinit\\u003e\",\"overload_index\":1,\"full_name\":\"com.picacg.network.pica.model.CommentLikeResponse.\\u003cinit\\u003e\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "com.picacg.network.pica.model.CommentLikeResponse",
+    "method": {
+      "name": "<init>",
+      "reported_signature": "<init>(java.lang.String): void",
+      "overload_index": 1,
+      "is_constructor": true,
+      "dex_descriptor": "(Ljava/lang/String;)V"
+    },
+    "overload_count": 2,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public CommentLikeResponse(String str) {\r\n        str.getClass();\r\n        this.action = str;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

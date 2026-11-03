@@ -1,0 +1,12 @@
+{
+  "status": "available",
+  "code": null,
+  "reason": null,
+  "diagnostics": {
+    "configured": true,
+    "java_executable": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\jdk\\jdk-21.0.13+9\\bin\\java.exe",
+    "jdk_compiler": true,
+    "jar_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\jadx-headless-mcp-0.7.1-all.jar",
+    "operation_timeout_ms": 600000
+  }
+}

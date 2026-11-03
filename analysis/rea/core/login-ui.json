@@ -1,0 +1,133 @@
+{
+  "evidence_id": "ev_8ef0ad7dd5047fc3fde26a8c9299fb4520b327fa95a7c52c37fd1f21af7df711",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "eo3",
+    "method_name": "c",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-fad178ded1fb46219c4ee95fb763dfad\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "eo3"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"eo3\",\"field_count\":9,\"full_name\":\"defpackage.eo3\",\"method_count\":7,\"raw_name\":\"eo3\",\"fields\":[{\"type\":\"hi6\",\"def_pos\":0,\"name\":\"a\"},{\"type\":\"s42\",\"def_pos\":0,\"name\":\"b\"},{\"type\":\"fq2\",\"def_pos\":0,\"name\":\"c\"},{\"type\":\"jw5\",\"def_pos\":0,\"name\":\"d\"},{\"type\":\"vy4\",\"def_pos\":0,\"name\":\"e\"},{\"type\":\"jw5\",\"def_pos\":0,\"name\":\"f\"},{\"type\":\"vy4\",\"def_pos\":0,\"name\":\"g\"},{\"type\":\"eg0\",\"def_pos\":0,\"name\":\"h\"},{\"type\":\"xl0\",\"def_pos\":0,\"name\":\"i\"}],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(hi6, nz, s42, fq2): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Lhi6;Lnz;Ls42;Lfq2;)V\"},{\"signature\":\"a(eo3, java.lang.Throwable): boolean\",\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"(Leo3;Ljava/lang/Throwable;)Z\"},{\"signature\":\"b(eo3): void\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"dex_descriptor\":\"(Leo3;)V\"},{\"signature\":\"c(eo3, vn3, pe1): java.lang.Object\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"dex_descriptor\":\"(Leo3;Lvn3;Lpe1;)Ljava/lang/Object;\"},{\"signature\":\"d(): void\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"e(java.lang.Throwable): void\",\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Throwable;)V\"},{\"signature\":\"f(java.lang.String, java.lang.String, boolean, sf6, pe1): java.lang.Object\",\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;ZLsf6;Lpe1;)Ljava/lang/Object;\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "eo3",
+          "method_name": "c",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"body\":\".method public static final c(Leo3;Lvn3;Lpe1;)Ljava/lang/Object;\\n    .registers 23\\n\\n    .line 1\\n    move-object/from16 v1, p0\\n\\n    .line 2\\n    .line 3\\n    move-object/from16 v0, p1\\n\\n    .line 4\\n    .line 5\\n    move-object/from16 v2, p2\\n\\n    .line 6\\n    .line 7\\n    invoke-virtual {v1}, Ljava/lang/Object;-\\u003egetClass()Ljava/lang/Class;\\n\\n    .line 8\\n    .line 9\\n    .line 10\\n    instance-of v3, v2, Ldo3;\\n\\n    .line 11\\n    .line 12\\n    if-eqz v3, :cond_1d\\n\\n    .line 13\\n    .line 14\\n    move-object v3, v2\\n\\n    .line 15\\n    check-cast v3, Ldo3;\\n\\n    .line 16\\n    .line 17\\n    iget v4, v3, Ldo3;-\\u003em:I\\n\\n    .line 18\\n    .line 19\\n    const/high16 v5, -0x80000000\\n\\n    .line 20\\n    .line 21\\n    and-int v6, v4, v5\\n\\n    .line 22\\n    .line 23\\n    if-eqz v6, :cond_1d\\n\\n    .line 24\\n    .line 25\\n    sub-int/2addr v4, v5\\n\\n    .line 26\\n    iput v4, v3, Ldo3;-\\u003em:I\\n\\n    .line 27\\n    .line 28\\n    :goto_1b\\n    move-object v6, v3\\n\\n    .line 29\\n    goto :goto_23\\n\\n    .line 30\\n    :cond_1d\\n    new-instance v3, Ldo3;\\n\\n    .line 31\\n    .line 32\\n    invoke-direct {v3, v1, v2}, Ldo3;-\\u003e\\u003cinit\\u003e(Leo3;Lpe1;)V\\n\\n    .line 33\\n    .line 34\\n    .line 35\\n    goto :goto_1b\\n\\n    .line 36\\n    :goto_23\\n    iget-object v2, v6, Ldo3;-\\u003ek:Ljava/lang/Object;\\n\\n    .line 37\\n    .line 38\\n    iget v3, v6, Ldo3;-\\u003em:I\\n\\n    .line 39\\n    .line 40\\n    const/4 v4, 0x1\\n\\n    .line 41\\n    const/4 v5, 0x2\\n\\n    .line 42\\n    const/4 v7, 0x0\\n\\n    .line 43\\n    sget-object v8, Ljg1;-\\u003ei:Ljg1;\\n\\n    .line 44\\n    .line 45\\n    if-eqz v3, :cond_52\\n\\n    .line 46\\n    .line 47\\n    if-eq v3, v4, :cond_40\\n\\n    .line 48\\n    .line 49\\n    if-ne v3, v5, :cond_3a\\n\\n    .line 50\\n    .line 51\\n    :try_start_32\\n    invoke-static {v2}, Lsl4;-\\u003eN(Ljava/lang/Object;)V\\n    :try_end_35\\n    .catch Ljava/lang/Exception; {:try_start_32 .. :try_end_35} :catch_37\\n\\n    .line 52\\n    .line 53\\n    .line 54\\n    goto/16 :goto_c2\\n\\n    .line 55\\n    .line 56\\n    :catch_37\\n    move-exception v0\\n\\n    .line 57\\n    goto/16 :goto_bf\\n\\n    .line 58\\n    .line 59\\n    :cond_3a\\n    const-string v0, \\\"call to \\\\\\u0027resume\\\\\\u0027 before \\\\\\u0027invoke\\\\\\u0027 with coroutine\\\"\\n\\n    .line 60\\n    .line 61\\n    invoke-static {v0}, Lmz;-\\u003eh(Ljava/lang/String;)V\\n\\n    .line 62\\n    .line 63\\n    .line 64\\n    return-object v7\\n\\n    .line 65\\n    :cond_40\\n    iget-object v0, v6, Ldo3;-\\u003ej:Ljava/lang/String;\\n\\n    .line 66\\n    .line 67\\n    iget-object v3, v6, Ldo3;-\\u003ei:Lvn3;\\n\\n    .line 68\\n    .line 69\\n    :try_start_44\\n    invoke-static {v2}, Lsl4;-\\u003eN(Ljava/lang/Object;)V\\n\\n    .line 70\\n    .line 71\\n    .line 72\\n    check-cast v2, Lz65;\\n\\n    .line 73\\n    .line 74\\n    iget-object v2, v2, Lz65;-\\u003ei:Ljava/lang/Object;\\n    :try_end_4b\\n    .catch Ljava/lang/Exception; {:try_start_44 .. :try_end_4b} :catch_37\\n\\n    .line 75\\n    .line 76\\n    move-object/from16 v19, v2\\n\\n    .line 77\\n    .line 78\\n    move-object v2, v0\\n\\n    .line 79\\n    move-object v0, v3\\n\\n    .line 80\\n    move-object/from16 v3, v19\\n\\n    .line 81\\n    .line 82\\n    goto :goto_71\\n\\n    .line 83\\n    :cond_52\\n    invoke-static {v2}, Lsl4;-\\u003eN(Ljava/lang/Object;)V\\n\\n    .line 84\\n    .line 85\\n    .line 86\\n    iget-object v2, v0, Lvn3;-\\u003ea:Ljava/lang/String;\\n\\n    .line 87\\n    .line 88\\n    const-string v3, \\\"\\\"\\n\\n    .line 89\\n    .line 90\\n    const/4 v9, 0x0\\n\\n    .line 91\\n    const-string v10, \\\"@\\\"\\n\\n    .line 92\\n    .line 93\\n    invoke-static {v2, v10, v3, v9}, Lrx5;-\\u003ed0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;\\n\\n    .line 94\\n    .line 95\\n    .line 96\\n    move-result-object v2\\n\\n    .line 97\\n    :try_start_60\\n    iget-object v3, v1, Leo3;-\\u003ea:Lhi6;\\n\\n    .line 98\\n    .line 99\\n    iget-object v9, v0, Lvn3;-\\u003eb:Ljava/lang/String;\\n\\n    .line 100\\n    .line 101\\n    iput-object v0, v6, Ldo3;-\\u003ei:Lvn3;\\n\\n    .line 102\\n    .line 103\\n    iput-object v2, v6, Ldo3;-\\u003ej:Ljava/lang/String;\\n\\n    .line 104\\n    .line 105\\n    iput v4, v6, Ldo3;-\\u003em:I\\n\\n    .line 106\\n    .line 107\\n    invoke-virtual {v3, v2, v9, v6}, Lhi6;-\\u003ec(Ljava/lang/String;Ljava/lang/String;Lpe1;)Ljava/lang/Object;\\n\\n    .line 108\\n    .line 109\\n    .line 110\\n    move-result-object v3\\n\\n    .line 111\\n    if-ne v3, v8, :cond_71\\n\\n    .line 112\\n    .line 113\\n    goto :goto_ad\\n\\n    .line 114\\n    :cond_71\\n    :goto_71\\n    instance-of v4, v3, Ly65;\\n\\n    .line 115\\n    .line 116\\n    if-nez v4, :cond_ae\\n\\n    .line 117\\n    .line 118\\n    iget-object v3, v1, Leo3;-\\u003ef:Ljw5;\\n\\n    .line 119\\n    .line 120\\n    :cond_77\\n    invoke-virtual {v3}, Ljw5;-\\u003egetValue()Ljava/lang/Object;\\n\\n    .line 121\\n    .line 122\\n    .line 123\\n    move-result-object v4\\n\\n    .line 124\\n    move-object v9, v4\\n\\n    .line 125\\n    check-cast v9, Lvn3;\\n\\n    .line 126\\n    .line 127\\n    const/16 v17, 0x0\\n\\n    .line 128\\n    .line 129\\n    const/16 v18, 0x7f\\n\\n    .line 130\\n    .line 131\\n    const/4 v10, 0x0\\n\\n    .line 132\\n    const/4 v11, 0x0\\n\\n    .line 133\\n    const/4 v12, 0x0\\n\\n    .line 134\\n    const/4 v13, 0x0\\n\\n    .line 135\\n    const/4 v14, 0x0\\n\\n    .line 136\\n    const/4 v15, 0x0\\n\\n    .line 137\\n    const/16 v16, 0x0\\n\\n    .line 138\\n    .line 139\\n    invoke-static/range {v9 .. v18}, Lvn3;-\\u003ea(Lvn3;Ljava/lang/String;Ljava/lang/String;Lsf6;Lsf6;ZZZZI)Lvn3;\\n\\n    .line 140\\n    .line 141\\n    .line 142\\n    move-result-object v9\\n\\n    .line 143\\n    invoke-virtual {v3, v4, v9}, Ljw5;-\\u003ej(Ljava/lang/Object;Ljava/lang/Object;)Z\\n\\n    .line 144\\n    .line 145\\n    .line 146\\n    move-result v4\\n\\n    .line 147\\n    if-eqz v4, :cond_77\\n\\n    .line 148\\n    .line 149\\n    iget-object v3, v0, Lvn3;-\\u003eb:Ljava/lang/String;\\n\\n    .line 150\\n    .line 151\\n    iget-boolean v4, v0, Lvn3;-\\u003eg:Z\\n\\n    .line 152\\n    .line 153\\n    new-instance v0, Lsf6;\\n\\n    .line 154\\n    .line 155\\n    const v9, 0x7f0f0472\\n\\n    .line 156\\n    .line 157\\n    .line 158\\n    invoke-direct {v0, v9}, Lsf6;-\\u003e\\u003cinit\\u003e(I)V\\n\\n    .line 159\\n    .line 160\\n    .line 161\\n    iput-object v7, v6, Ldo3;-\\u003ei:Lvn3;\\n\\n    .line 162\\n    .line 163\\n    iput-object v7, v6, Ldo3;-\\u003ej:Ljava/lang/String;\\n\\n    .line 164\\n    .line 165\\n    iput v5, v6, Ldo3;-\\u003em:I\\n\\n    .line 166\\n    .line 167\\n    move-object v5, v0\\n\\n    .line 168\\n    invoke-virtual/range {v1 .. v6}, Leo3;-\\u003ef(Ljava/lang/String;Ljava/lang/String;ZLsf6;Lpe1;)Ljava/lang/Object;\\n\\n    .line 169\\n    .line 170\\n    .line 171\\n    move-result-object v0\\n\\n    .line 172\\n    if-ne v0, v8, :cond_c2\\n\\n    .line 173\\n    .line 174\\n    :goto_ad\\n    return-object v8\\n\\n    .line 175\\n    :cond_ae\\n    invoke-static {v3}, Lz65;-\\u003ea(Ljava/lang/Object;)Ljava/lang/Throwable;\\n\\n    .line 176\\n    .line 177\\n    .line 178\\n    move-result-object v0\\n\\n    .line 179\\n    if-nez v0, :cond_bb\\n\\n    .line 180\\n    .line 181\\n    new-instance v0, Ljava/lang/Exception;\\n\\n    .line 182\\n    .line 183\\n    const-string v2, \\\"Unknown error\\\"\\n\\n    .line 184\\n    .line 185\\n    invoke-direct {v0, v2}, Ljava/lang/Exception;-\\u003e\\u003cinit\\u003e(Ljava/lang/String;)V\\n\\n    .line 186\\n    .line 187\\n    .line 188\\n    :cond_bb\\n    invoke-virtual {v1, v0}, Leo3;-\\u003ee(Ljava/lang/Throwable;)V\\n    :try_end_be\\n    .catch Ljava/lang/Exception; {:try_start_60 .. :try_end_be} :catch_37\\n\\n    .line 189\\n    .line 190\\n    .line 191\\n    goto :goto_c2\\n\\n    .line 192\\n    :goto_bf\\n    invoke-virtual {v1, v0}, Leo3;-\\u003ee(Ljava/lang/Throwable;)V\\n\\n    .line 193\\n    .line 194\\n    .line 195\\n    :cond_c2\\n    :goto_c2\\n    sget-object v0, Ldg6;-\\u003ea:Ldg6;\\n\\n    .line 196\\n    .line 197\\n    return-object v0\\n.end method\",\"markers\":[\"Code decompiled incorrectly, please refer to instructions dump\"],\"fell_back\":true,\"full_name\":\"eo3.c\",\"overload_index\":0,\"method_name\":\"c\",\"overload_count\":1,\"dex_descriptor\":\"(Leo3;Lvn3;Lpe1;)Ljava/lang/Object;\",\"class_name\":\"defpackage.eo3\",\"mode\":\"smali\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.eo3",
+    "method": {
+      "name": "c",
+      "reported_signature": "c(eo3, vn3, pe1): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Leo3;Lvn3;Lpe1;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "smali",
+    "body_status": "available",
+    "fell_back": true,
+    "markers": [
+      "Code decompiled incorrectly, please refer to instructions dump"
+    ],
+    "source": {
+      "status": "complete",
+      "text": ".method public static final c(Leo3;Lvn3;Lpe1;)Ljava/lang/Object;\n    .registers 23\n\n    .line 1\n    move-object/from16 v1, p0\n\n    .line 2\n    .line 3\n    move-object/from16 v0, p1\n\n    .line 4\n    .line 5\n    move-object/from16 v2, p2\n\n    .line 6\n    .line 7\n    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;\n\n    .line 8\n    .line 9\n    .line 10\n    instance-of v3, v2, Ldo3;\n\n    .line 11\n    .line 12\n    if-eqz v3, :cond_1d\n\n    .line 13\n    .line 14\n    move-object v3, v2\n\n    .line 15\n    check-cast v3, Ldo3;\n\n    .line 16\n    .line 17\n    iget v4, v3, Ldo3;->m:I\n\n    .line 18\n    .line 19\n    const/high16 v5, -0x80000000\n\n    .line 20\n    .line 21\n    and-int v6, v4, v5\n\n    .line 22\n    .line 23\n    if-eqz v6, :cond_1d\n\n    .line 24\n    .line 25\n    sub-int/2addr v4, v5\n\n    .line 26\n    iput v4, v3, Ldo3;->m:I\n\n    .line 27\n    .line 28\n    :goto_1b\n    move-object v6, v3\n\n    .line 29\n    goto :goto_23\n\n    .line 30\n    :cond_1d\n    new-instance v3, Ldo3;\n\n    .line 31\n    .line 32\n    invoke-direct {v3, v1, v2}, Ldo3;-><init>(Leo3;Lpe1;)V\n\n    .line 33\n    .line 34\n    .line 35\n    goto :goto_1b\n\n    .line 36\n    :goto_23\n    iget-object v2, v6, Ldo3;->k:Ljava/lang/Object;\n\n    .line 37\n    .line 38\n    iget v3, v6, Ldo3;->m:I\n\n    .line 39\n    .line 40\n    const/4 v4, 0x1\n\n    .line 41\n    const/4 v5, 0x2\n\n    .line 42\n    const/4 v7, 0x0\n\n    .line 43\n    sget-object v8, Ljg1;->i:Ljg1;\n\n    .line 44\n    .line 45\n    if-eqz v3, :cond_52\n\n    .line 46\n    .line 47\n    if-eq v3, v4, :cond_40\n\n    .line 48\n    .line 49\n    if-ne v3, v5, :cond_3a\n\n    .line 50\n    .line 51\n    :try_start_32\n    invoke-static {v2}, Lsl4;->N(Ljava/lang/Object;)V\n    :try_end_35\n    .catch Ljava/lang/Exception; {:try_start_32 .. :try_end_35} :catch_37\n\n    .line 52\n    .line 53\n    .line 54\n    goto/16 :goto_c2\n\n    .line 55\n    .line 56\n    :catch_37\n    move-exception v0\n\n    .line 57\n    goto/16 :goto_bf\n\n    .line 58\n    .line 59\n    :cond_3a\n    const-string v0, \"call to \\'resume\\' before \\'invoke\\' with coroutine\"\n\n    .line 60\n    .line 61\n    invoke-static {v0}, Lmz;->h(Ljava/lang/String;)V\n\n    .line 62\n    .line 63\n    .line 64\n    return-object v7\n\n    .line 65\n    :cond_40\n    iget-object v0, v6, Ldo3;->j:Ljava/lang/String;\n\n    .line 66\n    .line 67\n    iget-object v3, v6, Ldo3;->i:Lvn3;\n\n    .line 68\n    .line 69\n    :try_start_44\n    invoke-static {v2}, Lsl4;->N(Ljava/lang/Object;)V\n\n    .line 70\n    .line 71\n    .line 72\n    check-cast v2, Lz65;\n\n    .line 73\n    .line 74\n    iget-object v2, v2, Lz65;->i:Ljava/lang/Object;\n    :try_end_4b\n    .catch Ljava/lang/Exception; {:try_start_44 .. :try_end_4b} :catch_37\n\n    .line 75\n    .line 76\n    move-object/from16 v19, v2\n\n    .line 77\n    .line 78\n    move-object v2, v0\n\n    .line 79\n    move-object v0, v3\n\n    .line 80\n    move-object/from16 v3, v19\n\n    .line 81\n    .line 82\n    goto :goto_71\n\n    .line 83\n    :cond_52\n    invoke-static {v2}, Lsl4;->N(Ljava/lang/Object;)V\n\n    .line 84\n    .line 85\n    .line 86\n    iget-object v2, v0, Lvn3;->a:Ljava/lang/String;\n\n    .line 87\n    .line 88\n    const-string v3, \"\"\n\n    .line 89\n    .line 90\n    const/4 v9, 0x0\n\n    .line 91\n    const-string v10, \"@\"\n\n    .line 92\n    .line 93\n    invoke-static {v2, v10, v3, v9}, Lrx5;->d0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;\n\n    .line 94\n    .line 95\n    .line 96\n    move-result-object v2\n\n    .line 97\n    :try_start_60\n    iget-object v3, v1, Leo3;->a:Lhi6;\n\n    .line 98\n    .line 99\n    iget-object v9, v0, Lvn3;->b:Ljava/lang/String;\n\n    .line 100\n    .line 101\n    iput-object v0, v6, Ldo3;->i:Lvn3;\n\n    .line 102\n    .line 103\n    iput-object v2, v6, Ldo3;->j:Ljava/lang/String;\n\n    .line 104\n    .line 105\n    iput v4, v6, Ldo3;->m:I\n\n    .line 106\n    .line 107\n    invoke-virtual {v3, v2, v9, v6}, Lhi6;->c(Ljava/lang/String;Ljava/lang/String;Lpe1;)Ljava/lang/Object;\n\n    .line 108\n    .line 109\n    .line 110\n    move-result-object v3\n\n    .line 111\n    if-ne v3, v8, :cond_71\n\n    .line 112\n    .line 113\n    goto :goto_ad\n\n    .line 114\n    :cond_71\n    :goto_71\n    instance-of v4, v3, Ly65;\n\n    .line 115\n    .line 116\n    if-nez v4, :cond_ae\n\n    .line 117\n    .line 118\n    iget-object v3, v1, Leo3;->f:Ljw5;\n\n    .line 119\n    .line 120\n    :cond_77\n    invoke-virtual {v3}, Ljw5;->getValue()Ljava/lang/Object;\n\n    .line 121\n    .line 122\n    .line 123\n    move-result-object v4\n\n    .line 124\n    move-object v9, v4\n\n    .line 125\n    check-cast v9, Lvn3;\n\n    .line 126\n    .line 127\n    const/16 v17, 0x0\n\n    .line 128\n    .line 129\n    const/16 v18, 0x7f\n\n    .line 130\n    .line 131\n    const/4 v10, 0x0\n\n    .line 132\n    const/4 v11, 0x0\n\n    .line 133\n    const/4 v12, 0x0\n\n    .line 134\n    const/4 v13, 0x0\n\n    .line 135\n    const/4 v14, 0x0\n\n    .line 136\n    const/4 v15, 0x0\n\n    .line 137\n    const/16 v16, 0x0\n\n    .line 138\n    .line 139\n    invoke-static/range {v9 .. v18}, Lvn3;->a(Lvn3;Ljava/lang/String;Ljava/lang/String;Lsf6;Lsf6;ZZZZI)Lvn3;\n\n    .line 140\n    .line 141\n    .line 142\n    move-result-object v9\n\n    .line 143\n    invoke-virtual {v3, v4, v9}, Ljw5;->j(Ljava/lang/Object;Ljava/lang/Object;)Z\n\n    .line 144\n    .line 145\n    .line 146\n    move-result v4\n\n    .line 147\n    if-eqz v4, :cond_77\n\n    .line 148\n    .line 149\n    iget-object v3, v0, Lvn3;->b:Ljava/lang/String;\n\n    .line 150\n    .line 151\n    iget-boolean v4, v0, Lvn3;->g:Z\n\n    .line 152\n    .line 153\n    new-instance v0, Lsf6;\n\n    .line 154\n    .line 155\n    const v9, 0x7f0f0472\n\n    .line 156\n    .line 157\n    .line 158\n    invoke-direct {v0, v9}, Lsf6;-><init>(I)V\n\n    .line 159\n    .line 160\n    .line 161\n    iput-object v7, v6, Ldo3;->i:Lvn3;\n\n    .line 162\n    .line 163\n    iput-object v7, v6, Ldo3;->j:Ljava/lang/String;\n\n    .line 164\n    .line 165\n    iput v5, v6, Ldo3;->m:I\n\n    .line 166\n    .line 167\n    move-object v5, v0\n\n    .line 168\n    invoke-virtual/range {v1 .. v6}, Leo3;->f(Ljava/lang/String;Ljava/lang/String;ZLsf6;Lpe1;)Ljava/lang/Object;\n\n    .line 169\n    .line 170\n    .line 171\n    move-result-object v0\n\n    .line 172\n    if-ne v0, v8, :cond_c2\n\n    .line 173\n    .line 174\n    :goto_ad\n    return-object v8\n\n    .line 175\n    :cond_ae\n    invoke-static {v3}, Lz65;->a(Ljava/lang/Object;)Ljava/lang/Throwable;\n\n    .line 176\n    .line 177\n    .line 178\n    move-result-object v0\n\n    .line 179\n    if-nez v0, :cond_bb\n\n    .line 180\n    .line 181\n    new-instance v0, Ljava/lang/Exception;\n\n    .line 182\n    .line 183\n    const-string v2, \"Unknown error\"\n\n    .line 184\n    .line 185\n    invoke-direct {v0, v2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V\n\n    .line 186\n    .line 187\n    .line 188\n    :cond_bb\n    invoke-virtual {v1, v0}, Leo3;->e(Ljava/lang/Throwable;)V\n    :try_end_be\n    .catch Ljava/lang/Exception; {:try_start_60 .. :try_end_be} :catch_37\n\n    .line 189\n    .line 190\n    .line 191\n    goto :goto_c2\n\n    .line 192\n    :goto_bf\n    invoke-virtual {v1, v0}, Leo3;->e(Ljava/lang/Throwable;)V\n\n    .line 193\n    .line 194\n    .line 195\n    :cond_c2\n    :goto_c2\n    sget-object v0, Ldg6;->a:Ldg6;\n\n    .line 196\n    .line 197\n    return-object v0\n.end method",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

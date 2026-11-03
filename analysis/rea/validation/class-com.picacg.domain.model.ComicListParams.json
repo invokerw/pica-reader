@@ -1,0 +1,456 @@
+{
+  "evidence_id": "ev_6122ca43ffb403ca099e591050e1d47b9cc39aa629f61e6683ca91c6613d63d9",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "com.picacg.domain.model.ComicListParams"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.picacg.domain.model.ComicListParams",
+          "dex_static_values": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":2,\"inner_classes\":[\"com.picacg.domain.model.ComicListParams.Companion\",\"com.picacg.domain.model.ComicListParams.Creator\"],\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.util.List\\u003cjava.lang.String\\u003e, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.Long, int, java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e): void\",\"dex_descriptor\":\"(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Long;ILjava/util/Map;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.util.List, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.Long, int, java.util.Map, int, jo1): void\",\"dex_descriptor\":\"(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Long;ILjava/util/Map;ILjo1;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"component1(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"component1\",\"def_pos\":0},{\"signature\":\"component10(): boolean\",\"dex_descriptor\":\"()Z\",\"is_constructor\":false,\"name\":\"component10\",\"def_pos\":0},{\"signature\":\"component11(): java.lang.Long\",\"dex_descriptor\":\"()Ljava/lang/Long;\",\"is_constructor\":false,\"name\":\"component11\",\"def_pos\":0},{\"signature\":\"component12(): int\",\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"component12\",\"def_pos\":0},{\"signature\":\"component13(): java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e\",\"dex_descriptor\":\"()Ljava/util/Map;\",\"is_constructor\":false,\"name\":\"component13\",\"def_pos\":0},{\"signature\":\"component2(): java.util.List\\u003cjava.lang.String\\u003e\",\"dex_descriptor\":\"()Ljava/util/List;\",\"is_constructor\":false,\"name\":\"component2\",\"def_pos\":0},{\"signature\":\"component3(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"component3\",\"def_pos\":0},{\"signature\":\"component4(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"component4\",\"def_pos\":0},{\"signature\":\"component5(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"component5\",\"def_pos\":0},{\"signature\":\"component6(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"component6\",\"def_pos\":0},{\"signature\":\"component7(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"component7\",\"def_pos\":0},{\"signature\":\"component8(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"component8\",\"def_pos\":0},{\"signature\":\"component9(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"component9\",\"def_pos\":0},{\"signature\":\"copy(java.lang.String, java.util.List\\u003cjava.lang.String\\u003e, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.Long, int, java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e): com.picacg.domain.model.ComicListParams\",\"dex_descriptor\":\"(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Long;ILjava/util/Map;)Lcom/picacg/domain/model/ComicListParams;\",\"is_constructor\":false,\"name\":\"copy\",\"def_pos\":0},{\"signature\":\"copy$default(com.picacg.domain.model.ComicListParams, java.lang.String, java.util.List, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.Long, int, java.util.Map, int, java.lang.Object): com.picacg.domain.model.ComicListParams\",\"dex_descriptor\":\"(Lcom/picacg/domain/model/ComicListParams;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Long;ILjava/util/Map;ILjava/lang/Object;)Lcom/picacg/domain/model/ComicListParams;\",\"is_constructor\":false,\"name\":\"copy$default\",\"def_pos\":0},{\"signature\":\"describeContents(): int\",\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"describeContents\",\"def_pos\":0},{\"signature\":\"equals(java.lang.Object): boolean\",\"dex_descriptor\":\"(Ljava/lang/Object;)Z\",\"is_constructor\":false,\"name\":\"equals\",\"def_pos\":0},{\"signature\":\"getAuthor(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"getAuthor\",\"def_pos\":0},{\"signature\":\"getCategories(): java.util.List\\u003cjava.lang.String\\u003e\",\"dex_descriptor\":\"()Ljava/util/List;\",\"is_constructor\":false,\"name\":\"getCategories\",\"def_pos\":0},{\"signature\":\"getCategory(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"getCategory\",\"def_pos\":0},{\"signature\":\"getChineseTeam(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"getChineseTeam\",\"def_pos\":0},{\"signature\":\"getCreatorId(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"getCreatorId\",\"def_pos\":0},{\"signature\":\"getCreatorName(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"getCreatorName\",\"def_pos\":0},{\"signature\":\"getCustomParams(): java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e\",\"dex_descriptor\":\"()Ljava/util/Map;\",\"is_constructor\":false,\"name\":\"getCustomParams\",\"def_pos\":0},{\"signature\":\"getInitialPage(): int\",\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"getInitialPage\",\"def_pos\":0},{\"signature\":\"getKeyword(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"getKeyword\",\"def_pos\":0},{\"signature\":\"getSort(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"getSort\",\"def_pos\":0},{\"signature\":\"getTag(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"getTag\",\"def_pos\":0},{\"signature\":\"getTimestamp(): java.lang.Long\",\"dex_descriptor\":\"()Ljava/lang/Long;\",\"is_constructor\":false,\"name\":\"getTimestamp\",\"def_pos\":0},{\"signature\":\"hashCode(): int\",\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"hashCode\",\"def_pos\":0},{\"signature\":\"isRandom(): boolean\",\"dex_descriptor\":\"()Z\",\"is_constructor\":false,\"name\":\"isRandom\",\"def_pos\":0},{\"signature\":\"isRecentUpdates(): boolean\",\"dex_descriptor\":\"()Z\",\"is_constructor\":false,\"name\":\"isRecentUpdates\",\"def_pos\":0},{\"signature\":\"toQueryMap(): java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e\",\"dex_descriptor\":\"()Ljava/util/Map;\",\"is_constructor\":false,\"name\":\"toQueryMap\",\"def_pos\":0},{\"signature\":\"toString(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"toString\",\"def_pos\":0},{\"signature\":\"writeToParcel(android.os.Parcel, int): void\",\"dex_descriptor\":\"(Landroid/os/Parcel;I)V\",\"is_constructor\":false,\"name\":\"writeToParcel\",\"def_pos\":0}],\"fields\":[{\"name\":\"$stable\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"CREATOR\",\"def_pos\":0,\"type\":\"android.os.Parcelable$Creator\\u003ccom.picacg.domain.model.ComicListParams\\u003e\"},{\"name\":\"Companion\",\"def_pos\":0,\"type\":\"com.picacg.domain.model.ComicListParams$Companion\"},{\"name\":\"author\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"categories\",\"def_pos\":0,\"type\":\"java.util.List\\u003cjava.lang.String\\u003e\"},{\"name\":\"category\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"chineseTeam\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"creatorId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"creatorName\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"customParams\",\"def_pos\":0,\"type\":\"java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e\"},{\"name\":\"initialPage\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"isRandom\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"keyword\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"sort\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"tag\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"timestamp\",\"def_pos\":0,\"type\":\"java.lang.Long\"}],\"raw_name\":\"com.picacg.domain.model.ComicListParams\",\"method_count\":39,\"full_name\":\"com.picacg.domain.model.ComicListParams\",\"field_count\":16,\"name\":\"ComicListParams\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "com.picacg.domain.model.ComicListParams",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, java.util.List<java.lang.String>, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.Long, int, java.util.Map<java.lang.String, java.lang.String>): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Long;ILjava/util/Map;)V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, java.util.List, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.Long, int, java.util.Map, int, jo1): void",
+        "overload_index": 2,
+        "is_constructor": true,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Long;ILjava/util/Map;ILjo1;)V"
+      },
+      {
+        "name": "component1",
+        "reported_signature": "component1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "component10",
+        "reported_signature": "component10(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "component11",
+        "reported_signature": "component11(): java.lang.Long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/Long;"
+      },
+      {
+        "name": "component12",
+        "reported_signature": "component12(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "component13",
+        "reported_signature": "component13(): java.util.Map<java.lang.String, java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/Map;"
+      },
+      {
+        "name": "component2",
+        "reported_signature": "component2(): java.util.List<java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/List;"
+      },
+      {
+        "name": "component3",
+        "reported_signature": "component3(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "component4",
+        "reported_signature": "component4(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "component5",
+        "reported_signature": "component5(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "component6",
+        "reported_signature": "component6(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "component7",
+        "reported_signature": "component7(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "component8",
+        "reported_signature": "component8(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "component9",
+        "reported_signature": "component9(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "copy",
+        "reported_signature": "copy(java.lang.String, java.util.List<java.lang.String>, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.Long, int, java.util.Map<java.lang.String, java.lang.String>): com.picacg.domain.model.ComicListParams",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Long;ILjava/util/Map;)Lcom/picacg/domain/model/ComicListParams;"
+      },
+      {
+        "name": "copy$default",
+        "reported_signature": "copy$default(com.picacg.domain.model.ComicListParams, java.lang.String, java.util.List, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.Long, int, java.util.Map, int, java.lang.Object): com.picacg.domain.model.ComicListParams",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/picacg/domain/model/ComicListParams;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Long;ILjava/util/Map;ILjava/lang/Object;)Lcom/picacg/domain/model/ComicListParams;"
+      },
+      {
+        "name": "describeContents",
+        "reported_signature": "describeContents(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "equals",
+        "reported_signature": "equals(java.lang.Object): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "name": "getAuthor",
+        "reported_signature": "getAuthor(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getCategories",
+        "reported_signature": "getCategories(): java.util.List<java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/List;"
+      },
+      {
+        "name": "getCategory",
+        "reported_signature": "getCategory(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getChineseTeam",
+        "reported_signature": "getChineseTeam(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getCreatorId",
+        "reported_signature": "getCreatorId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getCreatorName",
+        "reported_signature": "getCreatorName(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getCustomParams",
+        "reported_signature": "getCustomParams(): java.util.Map<java.lang.String, java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/Map;"
+      },
+      {
+        "name": "getInitialPage",
+        "reported_signature": "getInitialPage(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "getKeyword",
+        "reported_signature": "getKeyword(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getSort",
+        "reported_signature": "getSort(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getTag",
+        "reported_signature": "getTag(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getTimestamp",
+        "reported_signature": "getTimestamp(): java.lang.Long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/Long;"
+      },
+      {
+        "name": "hashCode",
+        "reported_signature": "hashCode(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "isRandom",
+        "reported_signature": "isRandom(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "isRecentUpdates",
+        "reported_signature": "isRecentUpdates(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "toQueryMap",
+        "reported_signature": "toQueryMap(): java.util.Map<java.lang.String, java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/Map;"
+      },
+      {
+        "name": "toString",
+        "reported_signature": "toString(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "writeToParcel",
+        "reported_signature": "writeToParcel(android.os.Parcel, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroid/os/Parcel;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "name": "$stable",
+        "reported_type": "int",
+        "dex_static_value": null
+      },
+      {
+        "name": "CREATOR",
+        "reported_type": "android.os.Parcelable$Creator<com.picacg.domain.model.ComicListParams>",
+        "dex_static_value": null
+      },
+      {
+        "name": "Companion",
+        "reported_type": "com.picacg.domain.model.ComicListParams$Companion",
+        "dex_static_value": null
+      },
+      {
+        "name": "author",
+        "reported_type": "java.lang.String",
+        "dex_static_value": null
+      },
+      {
+        "name": "categories",
+        "reported_type": "java.util.List<java.lang.String>",
+        "dex_static_value": null
+      },
+      {
+        "name": "category",
+        "reported_type": "java.lang.String",
+        "dex_static_value": null
+      },
+      {
+        "name": "chineseTeam",
+        "reported_type": "java.lang.String",
+        "dex_static_value": null
+      },
+      {
+        "name": "creatorId",
+        "reported_type": "java.lang.String",
+        "dex_static_value": null
+      },
+      {
+        "name": "creatorName",
+        "reported_type": "java.lang.String",
+        "dex_static_value": null
+      },
+      {
+        "name": "customParams",
+        "reported_type": "java.util.Map<java.lang.String, java.lang.String>",
+        "dex_static_value": null
+      },
+      {
+        "name": "initialPage",
+        "reported_type": "int",
+        "dex_static_value": null
+      },
+      {
+        "name": "isRandom",
+        "reported_type": "boolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "keyword",
+        "reported_type": "java.lang.String",
+        "dex_static_value": null
+      },
+      {
+        "name": "sort",
+        "reported_type": "java.lang.String",
+        "dex_static_value": null
+      },
+      {
+        "name": "tag",
+        "reported_type": "java.lang.String",
+        "dex_static_value": null
+      },
+      {
+        "name": "timestamp",
+        "reported_type": "java.lang.Long",
+        "dex_static_value": null
+      }
+    ],
+    "inner_classes": [
+      "com.picacg.domain.model.ComicListParams.Companion",
+      "com.picacg.domain.model.ComicListParams.Creator"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_4533b418f1e2380ef9a73080a17856b9855a028b6ce1a6ec80c424e9ba67112c",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "com.picacg.network.pica.model.Comment",
+    "method_name": "<init>",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-7802ea5287a189237b935c294ddb9235\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":2,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.picacg.network.pica.model.Comment"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"com.picacg.network.pica.model.Comment\",\"fields\":[{\"def_pos\":0,\"name\":\"$stable\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"Companion\",\"type\":\"com.picacg.network.pica.model.Comment$Companion\"},{\"def_pos\":0,\"name\":\"comicId\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"commentsCount\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"content\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"createdAt\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"hide\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"id\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"isLiked\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"isTop\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"likesCount\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"totalComments\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"user\",\"type\":\"com.picacg.network.pica.model.CommentUser\"}],\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(ILjava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZLfj5;)V\",\"signature\":\"\\u003cinit\\u003e(int, java.lang.String, java.lang.String, com.picacg.network.pica.model.CommentUser, java.lang.String, int, boolean, boolean, java.lang.String, int, int, boolean, fj5): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZ)V\",\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, com.picacg.network.pica.model.CommentUser, java.lang.String, int, boolean, boolean, java.lang.String, int, int, boolean): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZILjo1;)V\",\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, com.picacg.network.pica.model.CommentUser, java.lang.String, int, boolean, boolean, java.lang.String, int, int, boolean, int, jo1): void\",\"def_pos\":0},{\"name\":\"component1\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"component1(): java.lang.String\",\"def_pos\":0},{\"name\":\"component10\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component10(): int\",\"def_pos\":0},{\"name\":\"component11\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"component11(): boolean\",\"def_pos\":0},{\"name\":\"component2\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"component2(): java.lang.String\",\"def_pos\":0},{\"name\":\"component3\",\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/picacg/network/pica/model/CommentUser;\",\"signature\":\"component3(): com.picacg.network.pica.model.CommentUser\",\"def_pos\":0},{\"name\":\"component4\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"component4(): java.lang.String\",\"def_pos\":0},{\"name\":\"component5\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component5(): int\",\"def_pos\":0},{\"name\":\"component6\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"component6(): boolean\",\"def_pos\":0},{\"name\":\"component7\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"component7(): boolean\",\"def_pos\":0},{\"name\":\"component8\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"component8(): java.lang.String\",\"def_pos\":0},{\"name\":\"component9\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component9(): int\",\"def_pos\":0},{\"name\":\"copy\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZ)Lcom/picacg/network/pica/model/Comment;\",\"signature\":\"copy(java.lang.String, java.lang.String, com.picacg.network.pica.model.CommentUser, java.lang.String, int, boolean, boolean, java.lang.String, int, int, boolean): com.picacg.network.pica.model.Comment\",\"def_pos\":0},{\"name\":\"copy$default\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/picacg/network/pica/model/Comment;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZILjava/lang/Object;)Lcom/picacg/network/pica/model/Comment;\",\"signature\":\"copy$default(com.picacg.network.pica.model.Comment, java.lang.String, java.lang.String, com.picacg.network.pica.model.CommentUser, java.lang.String, int, boolean, boolean, java.lang.String, int, int, boolean, int, java.lang.Object): com.picacg.network.pica.model.Comment\",\"def_pos\":0},{\"name\":\"equals\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Z\",\"signature\":\"equals(java.lang.Object): boolean\",\"def_pos\":0},{\"name\":\"getComicId\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getComicId(): java.lang.String\",\"def_pos\":0},{\"name\":\"getComicId$annotations\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"getComicId$annotations(): void\",\"def_pos\":0},{\"name\":\"getCommentsCount\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getCommentsCount(): int\",\"def_pos\":0},{\"name\":\"getContent\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getContent(): java.lang.String\",\"def_pos\":0},{\"name\":\"getCreatedAt\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getCreatedAt(): java.lang.String\",\"def_pos\":0},{\"name\":\"getCreatedAt$annotations\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"getCreatedAt$annotations(): void\",\"def_pos\":0},{\"name\":\"getHide\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"getHide(): boolean\",\"def_pos\":0},{\"name\":\"getId\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getId(): java.lang.String\",\"def_pos\":0},{\"name\":\"getId$annotations\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"getId$annotations(): void\",\"def_pos\":0},{\"name\":\"getLikesCount\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getLikesCount(): int\",\"def_pos\":0},{\"name\":\"getTotalComments\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getTotalComments(): int\",\"def_pos\":0},{\"name\":\"getUser\",\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/picacg/network/pica/model/CommentUser;\",\"signature\":\"getUser(): com.picacg.network.pica.model.CommentUser\",\"def_pos\":0},{\"name\":\"getUser$annotations\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"getUser$annotations(): void\",\"def_pos\":0},{\"name\":\"hashCode\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"hashCode(): int\",\"def_pos\":0},{\"name\":\"isLiked\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"isLiked(): boolean\",\"def_pos\":0},{\"name\":\"isTop\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"isTop(): boolean\",\"def_pos\":0},{\"name\":\"toString\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"toString(): java.lang.String\",\"def_pos\":0},{\"name\":\"write$Self$app\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/picacg/network/pica/model/Comment;Lu91;Lzi5;)V\",\"signature\":\"write$Self$app(com.picacg.network.pica.model.Comment, u91, zi5): void\",\"def_pos\":0}],\"inner_classes\":[\"com.picacg.network.pica.model.Comment.Companion\"],\"inner_class_count\":1,\"name\":\"Comment\",\"field_count\":13,\"full_name\":\"com.picacg.network.pica.model.Comment\",\"method_count\":36}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.picacg.network.pica.model.Comment",
+          "method_name": "<init>",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_index\":0,\"method_name\":\"\\u003cinit\\u003e\",\"overload_count\":3,\"dex_descriptor\":\"(ILjava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZLfj5;)V\",\"class_name\":\"com.picacg.network.pica.model.Comment\",\"mode\":\"java\",\"body\":\"    public /* synthetic */ Comment(int i, String str, String str2, CommentUser commentUser, String str3, int i2, boolean z, boolean z2, String str4, int i3, int i4, boolean z3, fj5 fj5Var) {\\r\\n        if (131 !\\u003d (i \\u0026 131)) {\\r\\n            pr2.D(i, 131, Comment$$serializer.INSTANCE.getDescriptor());\\r\\n            throw null;\\r\\n        }\\r\\n        this.id \\u003d str;\\r\\n        this.content \\u003d str2;\\r\\n        if ((i \\u0026 4) \\u003d\\u003d 0) {\\r\\n            this.user \\u003d null;\\r\\n        } else {\\r\\n            this.user \\u003d commentUser;\\r\\n        }\\r\\n        if ((i \\u0026 8) \\u003d\\u003d 0) {\\r\\n            this.comicId \\u003d \\\"\\\";\\r\\n        } else {\\r\\n            this.comicId \\u003d str3;\\r\\n        }\\r\\n        if ((i \\u0026 16) \\u003d\\u003d 0) {\\r\\n            this.totalComments \\u003d 0;\\r\\n        } else {\\r\\n            this.totalComments \\u003d i2;\\r\\n        }\\r\\n        if ((i \\u0026 32) \\u003d\\u003d 0) {\\r\\n            this.isTop \\u003d false;\\r\\n        } else {\\r\\n            this.isTop \\u003d z;\\r\\n        }\\r\\n        if ((i \\u0026 64) \\u003d\\u003d 0) {\\r\\n            this.hide \\u003d false;\\r\\n        } else {\\r\\n            this.hide \\u003d z2;\\r\\n        }\\r\\n        this.createdAt \\u003d str4;\\r\\n        if ((i \\u0026 256) \\u003d\\u003d 0) {\\r\\n            this.likesCount \\u003d 0;\\r\\n        } else {\\r\\n            this.likesCount \\u003d i3;\\r\\n        }\\r\\n        if ((i \\u0026 512) \\u003d\\u003d 0) {\\r\\n            this.commentsCount \\u003d 0;\\r\\n        } else {\\r\\n            this.commentsCount \\u003d i4;\\r\\n        }\\r\\n        if ((i \\u0026 1024) \\u003d\\u003d 0) {\\r\\n            this.isLiked \\u003d false;\\r\\n        } else {\\r\\n            this.isLiked \\u003d z3;\\r\\n        }\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"com.picacg.network.pica.model.Comment.\\u003cinit\\u003e\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "com.picacg.network.pica.model.Comment",
+    "method": {
+      "name": "<init>",
+      "reported_signature": "<init>(int, java.lang.String, java.lang.String, com.picacg.network.pica.model.CommentUser, java.lang.String, int, boolean, boolean, java.lang.String, int, int, boolean, fj5): void",
+      "overload_index": 0,
+      "is_constructor": true,
+      "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/CommentUser;Ljava/lang/String;IZZLjava/lang/String;IIZLfj5;)V"
+    },
+    "overload_count": 3,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public /* synthetic */ Comment(int i, String str, String str2, CommentUser commentUser, String str3, int i2, boolean z, boolean z2, String str4, int i3, int i4, boolean z3, fj5 fj5Var) {\r\n        if (131 != (i & 131)) {\r\n            pr2.D(i, 131, Comment$$serializer.INSTANCE.getDescriptor());\r\n            throw null;\r\n        }\r\n        this.id = str;\r\n        this.content = str2;\r\n        if ((i & 4) == 0) {\r\n            this.user = null;\r\n        } else {\r\n            this.user = commentUser;\r\n        }\r\n        if ((i & 8) == 0) {\r\n            this.comicId = \"\";\r\n        } else {\r\n            this.comicId = str3;\r\n        }\r\n        if ((i & 16) == 0) {\r\n            this.totalComments = 0;\r\n        } else {\r\n            this.totalComments = i2;\r\n        }\r\n        if ((i & 32) == 0) {\r\n            this.isTop = false;\r\n        } else {\r\n            this.isTop = z;\r\n        }\r\n        if ((i & 64) == 0) {\r\n            this.hide = false;\r\n        } else {\r\n            this.hide = z2;\r\n        }\r\n        this.createdAt = str4;\r\n        if ((i & 256) == 0) {\r\n            this.likesCount = 0;\r\n        } else {\r\n            this.likesCount = i3;\r\n        }\r\n        if ((i & 512) == 0) {\r\n            this.commentsCount = 0;\r\n        } else {\r\n            this.commentsCount = i4;\r\n        }\r\n        if ((i & 1024) == 0) {\r\n            this.isLiked = false;\r\n        } else {\r\n            this.isLiked = z3;\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

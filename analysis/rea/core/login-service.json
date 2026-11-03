@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_544eef6ddeaed601ae36cd84aa82b7a203edad4754d6f7747b6b52828a1c993b",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "bb3",
+    "method_name": "invokeSuspend",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-fad178ded1fb46219c4ee95fb763dfad\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "bb3"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"bb3\",\"field_count\":6,\"full_name\":\"defpackage.bb3\",\"method_count\":5,\"raw_name\":\"bb3\",\"fields\":[{\"type\":\"int\",\"def_pos\":0,\"name\":\"i\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"j\"},{\"type\":\"java.lang.Object\",\"def_pos\":0,\"name\":\"k\"},{\"type\":\"java.lang.Object\",\"def_pos\":0,\"name\":\"l\"},{\"type\":\"java.lang.Object\",\"def_pos\":0,\"name\":\"m\"},{\"type\":\"java.lang.Object\",\"def_pos\":0,\"name\":\"n\"}],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(cb3, ne1): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Lcb3;Lne1;)V\"},{\"signature\":\"\\u003cinit\\u003e(hi6, java.lang.String, java.lang.String, ne1): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Lhi6;Ljava/lang/String;Ljava/lang/String;Lne1;)V\"},{\"signature\":\"create(ne1): ne1\",\"def_pos\":0,\"name\":\"create\",\"is_constructor\":false,\"dex_descriptor\":\"(Lne1;)Lne1;\"},{\"signature\":\"invoke(java.lang.Object): java.lang.Object\",\"def_pos\":0,\"name\":\"invoke\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\"},{\"signature\":\"invokeSuspend(java.lang.Object): java.lang.Object\",\"def_pos\":0,\"name\":\"invokeSuspend\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "bb3",
+          "method_name": "invokeSuspend",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"body\":\"    @Override // defpackage.c50\\r\\n    public final Object invokeSuspend(Object obj) throws Throwable {\\r\\n        ix3 ix3Var;\\r\\n        List\\u003cString\\u003e list;\\r\\n        int i \\u003d this.i;\\r\\n        int i2 \\u003d 4;\\r\\n        Object obj2 \\u003d this.n;\\r\\n        jg1 jg1Var \\u003d jg1.i;\\r\\n        int i3 \\u003d 2;\\r\\n        ne1 ne1Var \\u003d null;\\r\\n        switch (i) {\\r\\n            case 0:\\r\\n                cb3 cb3Var \\u003d (cb3) obj2;\\r\\n                int i4 \\u003d this.j;\\r\\n                if (i4 !\\u003d 0) {\\r\\n                    if (i4 \\u003d\\u003d 1) {\\r\\n                        sl4.N(obj);\\r\\n                    } else {\\r\\n                        if (i4 !\\u003d 2) {\\r\\n                            mz.h(\\\"call to \\u0027resume\\u0027 before \\u0027invoke\\u0027 with coroutine\\\");\\r\\n                            return null;\\r\\n                        }\\r\\n                        cb3Var \\u003d (cb3) this.m;\\r\\n                        ix3Var \\u003d (ix3) this.l;\\r\\n                        List\\u003cString\\u003e list2 \\u003d (List) this.k;\\r\\n                        sl4.N(obj);\\r\\n                        list \\u003d list2;\\r\\n                    }\\r\\n                    try {\\r\\n                        cb3Var.d \\u003d list;\\r\\n                        cb3Var.e \\u003d System.currentTimeMillis();\\r\\n                        return list;\\r\\n                    } finally {\\r\\n                        ix3Var.l(null);\\r\\n                    }\\r\\n                }\\r\\n                sl4.N(obj);\\r\\n                dg4 dg4Var \\u003d cb3Var.a;\\r\\n                uk0 uk0Var \\u003d new uk0(i3, ne1Var, i2);\\r\\n                this.j \\u003d 1;\\r\\n                obj \\u003d dg4Var.a(uk0Var, this);\\r\\n                if (obj \\u003d\\u003d jg1Var) {\\r\\n                    return jg1Var;\\r\\n                }\\r\\n                List\\u003cString\\u003e keywords \\u003d ((KeywordsData) obj).getKeywords();\\r\\n                keywords.size();\\r\\n                ix3Var \\u003d cb3Var.c;\\r\\n                this.k \\u003d keywords;\\r\\n                this.l \\u003d ix3Var;\\r\\n                this.m \\u003d cb3Var;\\r\\n                this.j \\u003d 2;\\r\\n                if (ix3Var.g(this) \\u003d\\u003d jg1Var) {\\r\\n                    return jg1Var;\\r\\n                }\\r\\n                list \\u003d keywords;\\r\\n                cb3Var.d \\u003d list;\\r\\n                cb3Var.e \\u003d System.currentTimeMillis();\\r\\n                return list;\\r\\n            default:\\r\\n                hi6 hi6Var \\u003d (hi6) this.l;\\r\\n                int i5 \\u003d this.j;\\r\\n                if (i5 \\u003d\\u003d 0) {\\r\\n                    sl4.N(obj);\\r\\n                    dg4 dg4Var2 \\u003d hi6Var.a;\\r\\n                    l31 l31Var \\u003d new l31((String) this.m, (String) obj2, 4, null);\\r\\n                    this.j \\u003d 1;\\r\\n                    obj \\u003d dg4Var2.a(l31Var, this);\\r\\n                    if (obj \\u003d\\u003d jg1Var) {\\r\\n                        return jg1Var;\\r\\n                    }\\r\\n                } else {\\r\\n                    if (i5 !\\u003d 1) {\\r\\n                        if (i5 !\\u003d 2) {\\r\\n                            mz.h(\\\"call to \\u0027resume\\u0027 before \\u0027invoke\\u0027 with coroutine\\\");\\r\\n                            return null;\\r\\n                        }\\r\\n                        LoginData loginData \\u003d (LoginData) this.k;\\r\\n                        sl4.N(obj);\\r\\n                        return loginData;\\r\\n                    }\\r\\n                    sl4.N(obj);\\r\\n                }\\r\\n                LoginData loginData2 \\u003d (LoginData) obj;\\r\\n                nh4 nh4Var \\u003d hi6Var.b;\\r\\n                String token \\u003d loginData2.getToken();\\r\\n                this.k \\u003d loginData2;\\r\\n                this.j \\u003d 2;\\r\\n                return nh4Var.f(token, this) \\u003d\\u003d jg1Var ? jg1Var : loginData2;\\r\\n        }\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"bb3.invokeSuspend\",\"overload_index\":0,\"method_name\":\"invokeSuspend\",\"overload_count\":1,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\",\"class_name\":\"defpackage.bb3\",\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.bb3",
+    "method": {
+      "name": "invokeSuspend",
+      "reported_signature": "invokeSuspend(java.lang.Object): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // defpackage.c50\r\n    public final Object invokeSuspend(Object obj) throws Throwable {\r\n        ix3 ix3Var;\r\n        List<String> list;\r\n        int i = this.i;\r\n        int i2 = 4;\r\n        Object obj2 = this.n;\r\n        jg1 jg1Var = jg1.i;\r\n        int i3 = 2;\r\n        ne1 ne1Var = null;\r\n        switch (i) {\r\n            case 0:\r\n                cb3 cb3Var = (cb3) obj2;\r\n                int i4 = this.j;\r\n                if (i4 != 0) {\r\n                    if (i4 == 1) {\r\n                        sl4.N(obj);\r\n                    } else {\r\n                        if (i4 != 2) {\r\n                            mz.h(\"call to 'resume' before 'invoke' with coroutine\");\r\n                            return null;\r\n                        }\r\n                        cb3Var = (cb3) this.m;\r\n                        ix3Var = (ix3) this.l;\r\n                        List<String> list2 = (List) this.k;\r\n                        sl4.N(obj);\r\n                        list = list2;\r\n                    }\r\n                    try {\r\n                        cb3Var.d = list;\r\n                        cb3Var.e = System.currentTimeMillis();\r\n                        return list;\r\n                    } finally {\r\n                        ix3Var.l(null);\r\n                    }\r\n                }\r\n                sl4.N(obj);\r\n                dg4 dg4Var = cb3Var.a;\r\n                uk0 uk0Var = new uk0(i3, ne1Var, i2);\r\n                this.j = 1;\r\n                obj = dg4Var.a(uk0Var, this);\r\n                if (obj == jg1Var) {\r\n                    return jg1Var;\r\n                }\r\n                List<String> keywords = ((KeywordsData) obj).getKeywords();\r\n                keywords.size();\r\n                ix3Var = cb3Var.c;\r\n                this.k = keywords;\r\n                this.l = ix3Var;\r\n                this.m = cb3Var;\r\n                this.j = 2;\r\n                if (ix3Var.g(this) == jg1Var) {\r\n                    return jg1Var;\r\n                }\r\n                list = keywords;\r\n                cb3Var.d = list;\r\n                cb3Var.e = System.currentTimeMillis();\r\n                return list;\r\n            default:\r\n                hi6 hi6Var = (hi6) this.l;\r\n                int i5 = this.j;\r\n                if (i5 == 0) {\r\n                    sl4.N(obj);\r\n                    dg4 dg4Var2 = hi6Var.a;\r\n                    l31 l31Var = new l31((String) this.m, (String) obj2, 4, null);\r\n                    this.j = 1;\r\n                    obj = dg4Var2.a(l31Var, this);\r\n                    if (obj == jg1Var) {\r\n                        return jg1Var;\r\n                    }\r\n                } else {\r\n                    if (i5 != 1) {\r\n                        if (i5 != 2) {\r\n                            mz.h(\"call to 'resume' before 'invoke' with coroutine\");\r\n                            return null;\r\n                        }\r\n                        LoginData loginData = (LoginData) this.k;\r\n                        sl4.N(obj);\r\n                        return loginData;\r\n                    }\r\n                    sl4.N(obj);\r\n                }\r\n                LoginData loginData2 = (LoginData) obj;\r\n                nh4 nh4Var = hi6Var.b;\r\n                String token = loginData2.getToken();\r\n                this.k = loginData2;\r\n                this.j = 2;\r\n                return nh4Var.f(token, this) == jg1Var ? jg1Var : loginData2;\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

@@ -1,0 +1,457 @@
+{
+  "evidence_id": "ev_8b96e8c6acda3ba78e4f76c01f5782ca9f5b2b1f7526644b38e01d14932a065a",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "com.picacg.network.pica.model.GameItem"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-7802ea5287a189237b935c294ddb9235\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":2,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.picacg.network.pica.model.GameItem",
+          "dex_static_values": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"com.picacg.network.pica.model.GameItem\",\"fields\":[{\"def_pos\":0,\"name\":\"$childSerializers\",\"type\":\"kd3[]\"},{\"def_pos\":0,\"name\":\"$stable\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"Companion\",\"type\":\"com.picacg.network.pica.model.GameItem$Companion\"},{\"def_pos\":0,\"name\":\"adult\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"androidLinks\",\"type\":\"java.util.List\\u003cjava.lang.String\\u003e\"},{\"def_pos\":0,\"name\":\"f3android\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"icon\",\"type\":\"com.picacg.network.pica.model.ImageInfo\"},{\"def_pos\":0,\"name\":\"id\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"ios\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"iosLinks\",\"type\":\"java.util.List\\u003cjava.lang.String\\u003e\"},{\"def_pos\":0,\"name\":\"picaLink\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"publisher\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"suggest\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"title\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"version\",\"type\":\"java.lang.String\"}],\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZLfj5;)V\",\"signature\":\"\\u003cinit\\u003e(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.picacg.network.pica.model.ImageInfo, boolean, boolean, java.util.List, java.util.List, boolean, boolean, boolean, fj5): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZ)V\",\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.picacg.network.pica.model.ImageInfo, boolean, boolean, java.util.List\\u003cjava.lang.String\\u003e, java.util.List\\u003cjava.lang.String\\u003e, boolean, boolean, boolean): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZILjo1;)V\",\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.picacg.network.pica.model.ImageInfo, boolean, boolean, java.util.List, java.util.List, boolean, boolean, boolean, int, jo1): void\",\"def_pos\":0},{\"name\":\"_childSerializers$_anonymous_\",\"is_constructor\":false,\"dex_descriptor\":\"()Lca3;\",\"signature\":\"_childSerializers$_anonymous_(): ca3\",\"def_pos\":0},{\"name\":\"_childSerializers$_anonymous_$0\",\"is_constructor\":false,\"dex_descriptor\":\"()Lca3;\",\"signature\":\"_childSerializers$_anonymous_$0(): ca3\",\"def_pos\":0},{\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"()Lca3;\",\"signature\":\"a(): ca3\",\"def_pos\":0},{\"name\":\"access$get$childSerializers$cp\",\"is_constructor\":false,\"dex_descriptor\":\"()[Lkd3;\",\"signature\":\"access$get$childSerializers$cp(): kd3[]\",\"def_pos\":0},{\"name\":\"b\",\"is_constructor\":false,\"dex_descriptor\":\"()Lca3;\",\"signature\":\"b(): ca3\",\"def_pos\":0},{\"name\":\"component1\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"component1(): java.lang.String\",\"def_pos\":0},{\"name\":\"component10\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"component10(): boolean\",\"def_pos\":0},{\"name\":\"component11\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"component11(): boolean\",\"def_pos\":0},{\"name\":\"component12\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"component12(): boolean\",\"def_pos\":0},{\"name\":\"component2\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"component2(): java.lang.String\",\"def_pos\":0},{\"name\":\"component3\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"component3(): java.lang.String\",\"def_pos\":0},{\"name\":\"component4\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"component4(): java.lang.String\",\"def_pos\":0},{\"name\":\"component5\",\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/picacg/network/pica/model/ImageInfo;\",\"signature\":\"component5(): com.picacg.network.pica.model.ImageInfo\",\"def_pos\":0},{\"name\":\"component6\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"component6(): boolean\",\"def_pos\":0},{\"name\":\"component7\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"component7(): boolean\",\"def_pos\":0},{\"name\":\"component8\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/util/List;\",\"signature\":\"component8(): java.util.List\\u003cjava.lang.String\\u003e\",\"def_pos\":0},{\"name\":\"component9\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/util/List;\",\"signature\":\"component9(): java.util.List\\u003cjava.lang.String\\u003e\",\"def_pos\":0},{\"name\":\"copy\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZ)Lcom/picacg/network/pica/model/GameItem;\",\"signature\":\"copy(java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.picacg.network.pica.model.ImageInfo, boolean, boolean, java.util.List\\u003cjava.lang.String\\u003e, java.util.List\\u003cjava.lang.String\\u003e, boolean, boolean, boolean): com.picacg.network.pica.model.GameItem\",\"def_pos\":0},{\"name\":\"copy$default\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/picacg/network/pica/model/GameItem;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZILjava/lang/Object;)Lcom/picacg/network/pica/model/GameItem;\",\"signature\":\"copy$default(com.picacg.network.pica.model.GameItem, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.picacg.network.pica.model.ImageInfo, boolean, boolean, java.util.List, java.util.List, boolean, boolean, boolean, int, java.lang.Object): com.picacg.network.pica.model.GameItem\",\"def_pos\":0},{\"name\":\"equals\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Z\",\"signature\":\"equals(java.lang.Object): boolean\",\"def_pos\":0},{\"name\":\"getAdult\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"getAdult(): boolean\",\"def_pos\":0},{\"name\":\"getAndroid\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"getAndroid(): boolean\",\"def_pos\":0},{\"name\":\"getAndroidLinks\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/util/List;\",\"signature\":\"getAndroidLinks(): java.util.List\\u003cjava.lang.String\\u003e\",\"def_pos\":0},{\"name\":\"getIcon\",\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/picacg/network/pica/model/ImageInfo;\",\"signature\":\"getIcon(): com.picacg.network.pica.model.ImageInfo\",\"def_pos\":0},{\"name\":\"getId\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getId(): java.lang.String\",\"def_pos\":0},{\"name\":\"getId$annotations\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"getId$annotations(): void\",\"def_pos\":0},{\"name\":\"getIos\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"getIos(): boolean\",\"def_pos\":0},{\"name\":\"getIosLinks\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/util/List;\",\"signature\":\"getIosLinks(): java.util.List\\u003cjava.lang.String\\u003e\",\"def_pos\":0},{\"name\":\"getPicaLink\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"getPicaLink(): boolean\",\"def_pos\":0},{\"name\":\"getPublisher\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getPublisher(): java.lang.String\",\"def_pos\":0},{\"name\":\"getSuggest\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"getSuggest(): boolean\",\"def_pos\":0},{\"name\":\"getTitle\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getTitle(): java.lang.String\",\"def_pos\":0},{\"name\":\"getVersion\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getVersion(): java.lang.String\",\"def_pos\":0},{\"name\":\"hashCode\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"hashCode(): int\",\"def_pos\":0},{\"name\":\"toString\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"toString(): java.lang.String\",\"def_pos\":0},{\"name\":\"write$Self$app\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/picacg/network/pica/model/GameItem;Lu91;Lzi5;)V\",\"signature\":\"write$Self$app(com.picacg.network.pica.model.GameItem, u91, zi5): void\",\"def_pos\":0}],\"inner_classes\":[\"com.picacg.network.pica.model.GameItem.Companion\"],\"inner_class_count\":1,\"name\":\"GameItem\",\"field_count\":15,\"full_name\":\"com.picacg.network.pica.model.GameItem\",\"method_count\":40}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "com.picacg.network.pica.model.GameItem",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.picacg.network.pica.model.ImageInfo, boolean, boolean, java.util.List, java.util.List, boolean, boolean, boolean, fj5): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZLfj5;)V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.picacg.network.pica.model.ImageInfo, boolean, boolean, java.util.List<java.lang.String>, java.util.List<java.lang.String>, boolean, boolean, boolean): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZ)V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.picacg.network.pica.model.ImageInfo, boolean, boolean, java.util.List, java.util.List, boolean, boolean, boolean, int, jo1): void",
+        "overload_index": 2,
+        "is_constructor": true,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZILjo1;)V"
+      },
+      {
+        "name": "_childSerializers$_anonymous_",
+        "reported_signature": "_childSerializers$_anonymous_(): ca3",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lca3;"
+      },
+      {
+        "name": "_childSerializers$_anonymous_$0",
+        "reported_signature": "_childSerializers$_anonymous_$0(): ca3",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lca3;"
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(): ca3",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lca3;"
+      },
+      {
+        "name": "access$get$childSerializers$cp",
+        "reported_signature": "access$get$childSerializers$cp(): kd3[]",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()[Lkd3;"
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(): ca3",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lca3;"
+      },
+      {
+        "name": "component1",
+        "reported_signature": "component1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "component10",
+        "reported_signature": "component10(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "component11",
+        "reported_signature": "component11(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "component12",
+        "reported_signature": "component12(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "component2",
+        "reported_signature": "component2(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "component3",
+        "reported_signature": "component3(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "component4",
+        "reported_signature": "component4(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "component5",
+        "reported_signature": "component5(): com.picacg.network.pica.model.ImageInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lcom/picacg/network/pica/model/ImageInfo;"
+      },
+      {
+        "name": "component6",
+        "reported_signature": "component6(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "component7",
+        "reported_signature": "component7(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "component8",
+        "reported_signature": "component8(): java.util.List<java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/List;"
+      },
+      {
+        "name": "component9",
+        "reported_signature": "component9(): java.util.List<java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/List;"
+      },
+      {
+        "name": "copy",
+        "reported_signature": "copy(java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.picacg.network.pica.model.ImageInfo, boolean, boolean, java.util.List<java.lang.String>, java.util.List<java.lang.String>, boolean, boolean, boolean): com.picacg.network.pica.model.GameItem",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZ)Lcom/picacg/network/pica/model/GameItem;"
+      },
+      {
+        "name": "copy$default",
+        "reported_signature": "copy$default(com.picacg.network.pica.model.GameItem, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.picacg.network.pica.model.ImageInfo, boolean, boolean, java.util.List, java.util.List, boolean, boolean, boolean, int, java.lang.Object): com.picacg.network.pica.model.GameItem",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/picacg/network/pica/model/GameItem;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;ZZLjava/util/List;Ljava/util/List;ZZZILjava/lang/Object;)Lcom/picacg/network/pica/model/GameItem;"
+      },
+      {
+        "name": "equals",
+        "reported_signature": "equals(java.lang.Object): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "name": "getAdult",
+        "reported_signature": "getAdult(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "getAndroid",
+        "reported_signature": "getAndroid(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "getAndroidLinks",
+        "reported_signature": "getAndroidLinks(): java.util.List<java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/List;"
+      },
+      {
+        "name": "getIcon",
+        "reported_signature": "getIcon(): com.picacg.network.pica.model.ImageInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lcom/picacg/network/pica/model/ImageInfo;"
+      },
+      {
+        "name": "getId",
+        "reported_signature": "getId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getId$annotations",
+        "reported_signature": "getId$annotations(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "getIos",
+        "reported_signature": "getIos(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "getIosLinks",
+        "reported_signature": "getIosLinks(): java.util.List<java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/List;"
+      },
+      {
+        "name": "getPicaLink",
+        "reported_signature": "getPicaLink(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "getPublisher",
+        "reported_signature": "getPublisher(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getSuggest",
+        "reported_signature": "getSuggest(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "getTitle",
+        "reported_signature": "getTitle(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getVersion",
+        "reported_signature": "getVersion(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "hashCode",
+        "reported_signature": "hashCode(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "toString",
+        "reported_signature": "toString(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "write$Self$app",
+        "reported_signature": "write$Self$app(com.picacg.network.pica.model.GameItem, u91, zi5): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/picacg/network/pica/model/GameItem;Lu91;Lzi5;)V"
+      }
+    ],
+    "fields": [
+      {
+        "name": "$childSerializers",
+        "reported_type": "kd3[]",
+        "dex_static_value": null
+      },
+      {
+        "name": "$stable",
+        "reported_type": "int",
+        "dex_static_value": null
+      },
+      {
+        "name": "Companion",
+        "reported_type": "com.picacg.network.pica.model.GameItem$Companion",
+        "dex_static_value": null
+      },
+      {
+        "name": "adult",
+        "reported_type": "boolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "androidLinks",
+        "reported_type": "java.util.List<java.lang.String>",
+        "dex_static_value": null
+      },
+      {
+        "name": "f3android",
+        "reported_type": "boolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "icon",
+        "reported_type": "com.picacg.network.pica.model.ImageInfo",
+        "dex_static_value": null
+      },
+      {
+        "name": "id",
+        "reported_type": "java.lang.String",
+        "dex_static_value": null
+      },
+      {
+        "name": "ios",
+        "reported_type": "boolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "iosLinks",
+        "reported_type": "java.util.List<java.lang.String>",
+        "dex_static_value": null
+      },
+      {
+        "name": "picaLink",
+        "reported_type": "boolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "publisher",
+        "reported_type": "java.lang.String",
+        "dex_static_value": null
+      },
+      {
+        "name": "suggest",
+        "reported_type": "boolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "title",
+        "reported_type": "java.lang.String",
+        "dex_static_value": null
+      },
+      {
+        "name": "version",
+        "reported_type": "java.lang.String",
+        "dex_static_value": null
+      }
+    ],
+    "inner_classes": [
+      "com.picacg.network.pica.model.GameItem.Companion"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

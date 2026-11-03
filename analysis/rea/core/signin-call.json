@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_e7792f7e2e3a52409746e44be353d1621860024bda71ea03ac6022569f413142",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "l31",
+    "method_name": "invokeSuspend",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-fad178ded1fb46219c4ee95fb763dfad\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "l31"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"l31\",\"field_count\":5,\"full_name\":\"defpackage.l31\",\"method_count\":4,\"raw_name\":\"l31\",\"fields\":[{\"type\":\"int\",\"def_pos\":0,\"name\":\"i\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"j\"},{\"type\":\"java.lang.Object\",\"def_pos\":0,\"name\":\"k\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"l\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"m\"}],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, int, ne1): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;ILne1;)V\"},{\"signature\":\"create(java.lang.Object, ne1): ne1\",\"def_pos\":0,\"name\":\"create\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;Lne1;)Lne1;\"},{\"signature\":\"invoke(java.lang.Object, java.lang.Object): java.lang.Object\",\"def_pos\":0,\"name\":\"invoke\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;\"},{\"signature\":\"invokeSuspend(java.lang.Object): java.lang.Object\",\"def_pos\":0,\"name\":\"invokeSuspend\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "l31",
+          "method_name": "invokeSuspend",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"body\":\"    @Override // defpackage.c50\\r\\n    public final Object invokeSuspend(Object obj) {\\r\\n        int i \\u003d this.i;\\r\\n        String str \\u003d this.m;\\r\\n        String str2 \\u003d this.l;\\r\\n        jg1 jg1Var \\u003d jg1.i;\\r\\n        switch (i) {\\r\\n            case 0:\\r\\n                eg4 eg4Var \\u003d (eg4) this.k;\\r\\n                int i2 \\u003d this.j;\\r\\n                if (i2 !\\u003d 0) {\\r\\n                    if (i2 \\u003d\\u003d 1) {\\r\\n                        sl4.N(obj);\\r\\n                        return obj;\\r\\n                    }\\r\\n                    mz.h(\\\"call to \\u0027resume\\u0027 before \\u0027invoke\\u0027 with coroutine\\\");\\r\\n                    return null;\\r\\n                }\\r\\n                sl4.N(obj);\\r\\n                ContentBody contentBody \\u003d new ContentBody(str);\\r\\n                this.k \\u003d null;\\r\\n                this.j \\u003d 1;\\r\\n                Object objN \\u003d eg4Var.n(str2, contentBody, this);\\r\\n                return objN \\u003d\\u003d jg1Var ? jg1Var : objN;\\r\\n            case 1:\\r\\n                eg4 eg4Var2 \\u003d (eg4) this.k;\\r\\n                int i3 \\u003d this.j;\\r\\n                if (i3 !\\u003d 0) {\\r\\n                    if (i3 \\u003d\\u003d 1) {\\r\\n                        sl4.N(obj);\\r\\n                        return obj;\\r\\n                    }\\r\\n                    mz.h(\\\"call to \\u0027resume\\u0027 before \\u0027invoke\\u0027 with coroutine\\\");\\r\\n                    return null;\\r\\n                }\\r\\n                sl4.N(obj);\\r\\n                ContentBody contentBody2 \\u003d new ContentBody(str);\\r\\n                this.k \\u003d null;\\r\\n                this.j \\u003d 1;\\r\\n                Object objW \\u003d eg4Var2.w(str2, contentBody2, this);\\r\\n                return objW \\u003d\\u003d jg1Var ? jg1Var : objW;\\r\\n            case 2:\\r\\n                eg4 eg4Var3 \\u003d (eg4) this.k;\\r\\n                int i4 \\u003d this.j;\\r\\n                if (i4 !\\u003d 0) {\\r\\n                    if (i4 \\u003d\\u003d 1) {\\r\\n                        sl4.N(obj);\\r\\n                        return obj;\\r\\n                    }\\r\\n                    mz.h(\\\"call to \\u0027resume\\u0027 before \\u0027invoke\\u0027 with coroutine\\\");\\r\\n                    return null;\\r\\n                }\\r\\n                sl4.N(obj);\\r\\n                ContentBody contentBody3 \\u003d new ContentBody(str);\\r\\n                this.k \\u003d null;\\r\\n                this.j \\u003d 1;\\r\\n                Object objG \\u003d eg4Var3.g(str2, contentBody3, this);\\r\\n                return objG \\u003d\\u003d jg1Var ? jg1Var : objG;\\r\\n            case 3:\\r\\n                eg4 eg4Var4 \\u003d (eg4) this.k;\\r\\n                int i5 \\u003d this.j;\\r\\n                if (i5 !\\u003d 0) {\\r\\n                    if (i5 \\u003d\\u003d 1) {\\r\\n                        sl4.N(obj);\\r\\n                        return obj;\\r\\n                    }\\r\\n                    mz.h(\\\"call to \\u0027resume\\u0027 before \\u0027invoke\\u0027 with coroutine\\\");\\r\\n                    return null;\\r\\n                }\\r\\n                sl4.N(obj);\\r\\n                ContentBody contentBody4 \\u003d new ContentBody(str);\\r\\n                this.k \\u003d null;\\r\\n                this.j \\u003d 1;\\r\\n                Object objW2 \\u003d eg4Var4.w(str2, contentBody4, this);\\r\\n                return objW2 \\u003d\\u003d jg1Var ? jg1Var : objW2;\\r\\n            default:\\r\\n                eg4 eg4Var5 \\u003d (eg4) this.k;\\r\\n                int i6 \\u003d this.j;\\r\\n                if (i6 !\\u003d 0) {\\r\\n                    if (i6 \\u003d\\u003d 1) {\\r\\n                        sl4.N(obj);\\r\\n                        return obj;\\r\\n                    }\\r\\n                    mz.h(\\\"call to \\u0027resume\\u0027 before \\u0027invoke\\u0027 with coroutine\\\");\\r\\n                    return null;\\r\\n                }\\r\\n                sl4.N(obj);\\r\\n                SignInRequest signInRequest \\u003d new SignInRequest(str2, str);\\r\\n                this.k \\u003d null;\\r\\n                this.j \\u003d 1;\\r\\n                Object objH \\u003d eg4Var5.h(signInRequest, this);\\r\\n                return objH \\u003d\\u003d jg1Var ? jg1Var : objH;\\r\\n        }\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"l31.invokeSuspend\",\"overload_index\":0,\"method_name\":\"invokeSuspend\",\"overload_count\":1,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\",\"class_name\":\"defpackage.l31\",\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.l31",
+    "method": {
+      "name": "invokeSuspend",
+      "reported_signature": "invokeSuspend(java.lang.Object): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // defpackage.c50\r\n    public final Object invokeSuspend(Object obj) {\r\n        int i = this.i;\r\n        String str = this.m;\r\n        String str2 = this.l;\r\n        jg1 jg1Var = jg1.i;\r\n        switch (i) {\r\n            case 0:\r\n                eg4 eg4Var = (eg4) this.k;\r\n                int i2 = this.j;\r\n                if (i2 != 0) {\r\n                    if (i2 == 1) {\r\n                        sl4.N(obj);\r\n                        return obj;\r\n                    }\r\n                    mz.h(\"call to 'resume' before 'invoke' with coroutine\");\r\n                    return null;\r\n                }\r\n                sl4.N(obj);\r\n                ContentBody contentBody = new ContentBody(str);\r\n                this.k = null;\r\n                this.j = 1;\r\n                Object objN = eg4Var.n(str2, contentBody, this);\r\n                return objN == jg1Var ? jg1Var : objN;\r\n            case 1:\r\n                eg4 eg4Var2 = (eg4) this.k;\r\n                int i3 = this.j;\r\n                if (i3 != 0) {\r\n                    if (i3 == 1) {\r\n                        sl4.N(obj);\r\n                        return obj;\r\n                    }\r\n                    mz.h(\"call to 'resume' before 'invoke' with coroutine\");\r\n                    return null;\r\n                }\r\n                sl4.N(obj);\r\n                ContentBody contentBody2 = new ContentBody(str);\r\n                this.k = null;\r\n                this.j = 1;\r\n                Object objW = eg4Var2.w(str2, contentBody2, this);\r\n                return objW == jg1Var ? jg1Var : objW;\r\n            case 2:\r\n                eg4 eg4Var3 = (eg4) this.k;\r\n                int i4 = this.j;\r\n                if (i4 != 0) {\r\n                    if (i4 == 1) {\r\n                        sl4.N(obj);\r\n                        return obj;\r\n                    }\r\n                    mz.h(\"call to 'resume' before 'invoke' with coroutine\");\r\n                    return null;\r\n                }\r\n                sl4.N(obj);\r\n                ContentBody contentBody3 = new ContentBody(str);\r\n                this.k = null;\r\n                this.j = 1;\r\n                Object objG = eg4Var3.g(str2, contentBody3, this);\r\n                return objG == jg1Var ? jg1Var : objG;\r\n            case 3:\r\n                eg4 eg4Var4 = (eg4) this.k;\r\n                int i5 = this.j;\r\n                if (i5 != 0) {\r\n                    if (i5 == 1) {\r\n                        sl4.N(obj);\r\n                        return obj;\r\n                    }\r\n                    mz.h(\"call to 'resume' before 'invoke' with coroutine\");\r\n                    return null;\r\n                }\r\n                sl4.N(obj);\r\n                ContentBody contentBody4 = new ContentBody(str);\r\n                this.k = null;\r\n                this.j = 1;\r\n                Object objW2 = eg4Var4.w(str2, contentBody4, this);\r\n                return objW2 == jg1Var ? jg1Var : objW2;\r\n            default:\r\n                eg4 eg4Var5 = (eg4) this.k;\r\n                int i6 = this.j;\r\n                if (i6 != 0) {\r\n                    if (i6 == 1) {\r\n                        sl4.N(obj);\r\n                        return obj;\r\n                    }\r\n                    mz.h(\"call to 'resume' before 'invoke' with coroutine\");\r\n                    return null;\r\n                }\r\n                sl4.N(obj);\r\n                SignInRequest signInRequest = new SignInRequest(str2, str);\r\n                this.k = null;\r\n                this.j = 1;\r\n                Object objH = eg4Var5.h(signInRequest, this);\r\n                return objH == jg1Var ? jg1Var : objH;\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

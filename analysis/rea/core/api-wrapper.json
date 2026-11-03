@@ -1,0 +1,133 @@
+{
+  "evidence_id": "ev_e105c8d65c7772dce8edd700dc40e88daac62a33a0893f7897bf5dbf6e47652f",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "dg4",
+    "method_name": "a",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-fad178ded1fb46219c4ee95fb763dfad\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "dg4"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"dg4\",\"field_count\":3,\"full_name\":\"defpackage.dg4\",\"method_count\":5,\"raw_name\":\"dg4\",\"fields\":[{\"type\":\"eg4\",\"def_pos\":0,\"name\":\"a\"},{\"type\":\"v55\",\"def_pos\":0,\"name\":\"b\"},{\"type\":\"b83\",\"def_pos\":0,\"name\":\"c\"}],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(eg4, v55, b83): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Leg4;Lv55;Lb83;)V\"},{\"signature\":\"a(om2, ne1): java.lang.Object\",\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"(Lom2;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"b(om2, ne1): java.lang.Object\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"dex_descriptor\":\"(Lom2;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"c(com.picacg.network.pica.model.PicaResponse): void\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/picacg/network/pica/model/PicaResponse;)V\"},{\"signature\":\"d(lm2, pe1): java.lang.Object\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"dex_descriptor\":\"(Llm2;Lpe1;)Ljava/lang/Object;\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "dg4",
+          "method_name": "a",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"body\":\".method public final a(Lom2;Lne1;)Ljava/lang/Object;\\n    .registers 9\\n\\n    .line 1\\n    instance-of v0, p2, Lzf4;\\n\\n    .line 2\\n    .line 3\\n    if-eqz v0, :cond_13\\n\\n    .line 4\\n    .line 5\\n    move-object v0, p2\\n\\n    .line 6\\n    check-cast v0, Lzf4;\\n\\n    .line 7\\n    .line 8\\n    iget v1, v0, Lzf4;-\\u003el:I\\n\\n    .line 9\\n    .line 10\\n    const/high16 v2, -0x80000000\\n\\n    .line 11\\n    .line 12\\n    and-int v3, v1, v2\\n\\n    .line 13\\n    .line 14\\n    if-eqz v3, :cond_13\\n\\n    .line 15\\n    .line 16\\n    sub-int/2addr v1, v2\\n\\n    .line 17\\n    iput v1, v0, Lzf4;-\\u003el:I\\n\\n    .line 18\\n    .line 19\\n    goto :goto_18\\n\\n    .line 20\\n    :cond_13\\n    new-instance v0, Lzf4;\\n\\n    .line 21\\n    .line 22\\n    invoke-direct {v0, p0, p2}, Lzf4;-\\u003e\\u003cinit\\u003e(Ldg4;Lne1;)V\\n\\n    .line 23\\n    .line 24\\n    .line 25\\n    :goto_18\\n    iget-object p2, v0, Lzf4;-\\u003ej:Ljava/lang/Object;\\n\\n    .line 26\\n    .line 27\\n    iget v1, v0, Lzf4;-\\u003el:I\\n\\n    .line 28\\n    .line 29\\n    const/4 v2, 0x2\\n\\n    .line 30\\n    const/4 v3, 0x1\\n\\n    .line 31\\n    const/4 v4, 0x0\\n\\n    .line 32\\n    sget-object v5, Ljg1;-\\u003ei:Ljg1;\\n\\n    .line 33\\n    .line 34\\n    if-eqz v1, :cond_39\\n\\n    .line 35\\n    .line 36\\n    if-eq v1, v3, :cond_31\\n\\n    .line 37\\n    .line 38\\n    if-ne v1, v2, :cond_2b\\n\\n    .line 39\\n    .line 40\\n    invoke-static {p2}, Lsl4;-\\u003eN(Ljava/lang/Object;)V\\n\\n    .line 41\\n    .line 42\\n    .line 43\\n    goto :goto_5d\\n\\n    .line 44\\n    :cond_2b\\n    const-string p0, \\\"call to \\\\\\u0027resume\\\\\\u0027 before \\\\\\u0027invoke\\\\\\u0027 with coroutine\\\"\\n\\n    .line 45\\n    .line 46\\n    invoke-static {p0}, Lmz;-\\u003eh(Ljava/lang/String;)V\\n\\n    .line 47\\n    .line 48\\n    .line 49\\n    return-object v4\\n\\n    .line 50\\n    :cond_31\\n    iget-object p1, v0, Lzf4;-\\u003ei:Lyz5;\\n\\n    .line 51\\n    .line 52\\n    check-cast p1, Lom2;\\n\\n    .line 53\\n    .line 54\\n    invoke-static {p2}, Lsl4;-\\u003eN(Ljava/lang/Object;)V\\n\\n    .line 55\\n    .line 56\\n    .line 57\\n    goto :goto_4c\\n\\n    .line 58\\n    :cond_39\\n    invoke-static {p2}, Lsl4;-\\u003eN(Ljava/lang/Object;)V\\n\\n    .line 59\\n    .line 60\\n    .line 61\\n    move-object p2, p1\\n\\n    .line 62\\n    check-cast p2, Lyz5;\\n\\n    .line 63\\n    .line 64\\n    iput-object p2, v0, Lzf4;-\\u003ei:Lyz5;\\n\\n    .line 65\\n    .line 66\\n    iput v3, v0, Lzf4;-\\u003el:I\\n\\n    .line 67\\n    .line 68\\n    iget-object p2, p0, Ldg4;-\\u003eb:Lv55;\\n\\n    .line 69\\n    .line 70\\n    invoke-virtual {p2, v0}, Lv55;-\\u003ea(Lpe1;)Ljava/lang/Object;\\n\\n    .line 71\\n    .line 72\\n    .line 73\\n    move-result-object p2\\n\\n    .line 74\\n    if-ne p2, v5, :cond_4c\\n\\n    .line 75\\n    .line 76\\n    goto :goto_5c\\n\\n    .line 77\\n    :cond_4c\\n    :goto_4c\\n    new-instance p2, Lag4;\\n\\n    .line 78\\n    .line 79\\n    const/4 v1, 0x0\\n\\n    .line 80\\n    invoke-direct {p2, p1, p0, v4, v1}, Lag4;-\\u003e\\u003cinit\\u003e(Lom2;Ldg4;Lne1;I)V\\n\\n    .line 81\\n    .line 82\\n    .line 83\\n    iput-object v4, v0, Lzf4;-\\u003ei:Lyz5;\\n\\n    .line 84\\n    .line 85\\n    iput v2, v0, Lzf4;-\\u003el:I\\n\\n    .line 86\\n    .line 87\\n    invoke-virtual {p0, p2, v0}, Ldg4;-\\u003ed(Llm2;Lpe1;)Ljava/lang/Object;\\n\\n    .line 88\\n    .line 89\\n    .line 90\\n    move-result-object p2\\n\\n    .line 91\\n    if-ne p2, v5, :cond_5d\\n\\n    .line 92\\n    .line 93\\n    :goto_5c\\n    return-object v5\\n\\n    .line 94\\n    :cond_5d\\n    :goto_5d\\n    check-cast p2, Lcom/picacg/network/pica/model/PicaResponse;\\n\\n    .line 95\\n    .line 96\\n    invoke-static {p2}, Ldg4;-\\u003ec(Lcom/picacg/network/pica/model/PicaResponse;)V\\n\\n    .line 97\\n    .line 98\\n    .line 99\\n    invoke-virtual {p2}, Lcom/picacg/network/pica/model/PicaResponse;-\\u003egetData()Ljava/lang/Object;\\n\\n    .line 100\\n    .line 101\\n    .line 102\\n    move-result-object p0\\n\\n    .line 103\\n    if-eqz p0, :cond_69\\n\\n    .line 104\\n    .line 105\\n    return-object p0\\n\\n    .line 106\\n    :cond_69\\n    new-instance p0, Lwg4;\\n\\n    .line 107\\n    .line 108\\n    const-string p1, \\\"\\\\u54cd\\\\u5e94 data \\\\u4e3a null\\\"\\n\\n    .line 109\\n    .line 110\\n    invoke-direct {p0, p1, v4}, Ljava/lang/Exception;-\\u003e\\u003cinit\\u003e(Ljava/lang/String;Ljava/lang/Throwable;)V\\n\\n    .line 111\\n    .line 112\\n    .line 113\\n    throw p0\\n.end method\",\"markers\":[\"Code decompiled incorrectly, please refer to instructions dump\"],\"fell_back\":true,\"full_name\":\"dg4.a\",\"overload_index\":0,\"method_name\":\"a\",\"overload_count\":1,\"dex_descriptor\":\"(Lom2;Lne1;)Ljava/lang/Object;\",\"class_name\":\"defpackage.dg4\",\"mode\":\"smali\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.dg4",
+    "method": {
+      "name": "a",
+      "reported_signature": "a(om2, ne1): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lom2;Lne1;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "smali",
+    "body_status": "available",
+    "fell_back": true,
+    "markers": [
+      "Code decompiled incorrectly, please refer to instructions dump"
+    ],
+    "source": {
+      "status": "complete",
+      "text": ".method public final a(Lom2;Lne1;)Ljava/lang/Object;\n    .registers 9\n\n    .line 1\n    instance-of v0, p2, Lzf4;\n\n    .line 2\n    .line 3\n    if-eqz v0, :cond_13\n\n    .line 4\n    .line 5\n    move-object v0, p2\n\n    .line 6\n    check-cast v0, Lzf4;\n\n    .line 7\n    .line 8\n    iget v1, v0, Lzf4;->l:I\n\n    .line 9\n    .line 10\n    const/high16 v2, -0x80000000\n\n    .line 11\n    .line 12\n    and-int v3, v1, v2\n\n    .line 13\n    .line 14\n    if-eqz v3, :cond_13\n\n    .line 15\n    .line 16\n    sub-int/2addr v1, v2\n\n    .line 17\n    iput v1, v0, Lzf4;->l:I\n\n    .line 18\n    .line 19\n    goto :goto_18\n\n    .line 20\n    :cond_13\n    new-instance v0, Lzf4;\n\n    .line 21\n    .line 22\n    invoke-direct {v0, p0, p2}, Lzf4;-><init>(Ldg4;Lne1;)V\n\n    .line 23\n    .line 24\n    .line 25\n    :goto_18\n    iget-object p2, v0, Lzf4;->j:Ljava/lang/Object;\n\n    .line 26\n    .line 27\n    iget v1, v0, Lzf4;->l:I\n\n    .line 28\n    .line 29\n    const/4 v2, 0x2\n\n    .line 30\n    const/4 v3, 0x1\n\n    .line 31\n    const/4 v4, 0x0\n\n    .line 32\n    sget-object v5, Ljg1;->i:Ljg1;\n\n    .line 33\n    .line 34\n    if-eqz v1, :cond_39\n\n    .line 35\n    .line 36\n    if-eq v1, v3, :cond_31\n\n    .line 37\n    .line 38\n    if-ne v1, v2, :cond_2b\n\n    .line 39\n    .line 40\n    invoke-static {p2}, Lsl4;->N(Ljava/lang/Object;)V\n\n    .line 41\n    .line 42\n    .line 43\n    goto :goto_5d\n\n    .line 44\n    :cond_2b\n    const-string p0, \"call to \\'resume\\' before \\'invoke\\' with coroutine\"\n\n    .line 45\n    .line 46\n    invoke-static {p0}, Lmz;->h(Ljava/lang/String;)V\n\n    .line 47\n    .line 48\n    .line 49\n    return-object v4\n\n    .line 50\n    :cond_31\n    iget-object p1, v0, Lzf4;->i:Lyz5;\n\n    .line 51\n    .line 52\n    check-cast p1, Lom2;\n\n    .line 53\n    .line 54\n    invoke-static {p2}, Lsl4;->N(Ljava/lang/Object;)V\n\n    .line 55\n    .line 56\n    .line 57\n    goto :goto_4c\n\n    .line 58\n    :cond_39\n    invoke-static {p2}, Lsl4;->N(Ljava/lang/Object;)V\n\n    .line 59\n    .line 60\n    .line 61\n    move-object p2, p1\n\n    .line 62\n    check-cast p2, Lyz5;\n\n    .line 63\n    .line 64\n    iput-object p2, v0, Lzf4;->i:Lyz5;\n\n    .line 65\n    .line 66\n    iput v3, v0, Lzf4;->l:I\n\n    .line 67\n    .line 68\n    iget-object p2, p0, Ldg4;->b:Lv55;\n\n    .line 69\n    .line 70\n    invoke-virtual {p2, v0}, Lv55;->a(Lpe1;)Ljava/lang/Object;\n\n    .line 71\n    .line 72\n    .line 73\n    move-result-object p2\n\n    .line 74\n    if-ne p2, v5, :cond_4c\n\n    .line 75\n    .line 76\n    goto :goto_5c\n\n    .line 77\n    :cond_4c\n    :goto_4c\n    new-instance p2, Lag4;\n\n    .line 78\n    .line 79\n    const/4 v1, 0x0\n\n    .line 80\n    invoke-direct {p2, p1, p0, v4, v1}, Lag4;-><init>(Lom2;Ldg4;Lne1;I)V\n\n    .line 81\n    .line 82\n    .line 83\n    iput-object v4, v0, Lzf4;->i:Lyz5;\n\n    .line 84\n    .line 85\n    iput v2, v0, Lzf4;->l:I\n\n    .line 86\n    .line 87\n    invoke-virtual {p0, p2, v0}, Ldg4;->d(Llm2;Lpe1;)Ljava/lang/Object;\n\n    .line 88\n    .line 89\n    .line 90\n    move-result-object p2\n\n    .line 91\n    if-ne p2, v5, :cond_5d\n\n    .line 92\n    .line 93\n    :goto_5c\n    return-object v5\n\n    .line 94\n    :cond_5d\n    :goto_5d\n    check-cast p2, Lcom/picacg/network/pica/model/PicaResponse;\n\n    .line 95\n    .line 96\n    invoke-static {p2}, Ldg4;->c(Lcom/picacg/network/pica/model/PicaResponse;)V\n\n    .line 97\n    .line 98\n    .line 99\n    invoke-virtual {p2}, Lcom/picacg/network/pica/model/PicaResponse;->getData()Ljava/lang/Object;\n\n    .line 100\n    .line 101\n    .line 102\n    move-result-object p0\n\n    .line 103\n    if-eqz p0, :cond_69\n\n    .line 104\n    .line 105\n    return-object p0\n\n    .line 106\n    :cond_69\n    new-instance p0, Lwg4;\n\n    .line 107\n    .line 108\n    const-string p1, \"\\u54cd\\u5e94 data \\u4e3a null\"\n\n    .line 109\n    .line 110\n    invoke-direct {p0, p1, v4}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V\n\n    .line 111\n    .line 112\n    .line 113\n    throw p0\n.end method",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

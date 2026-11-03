@@ -1,0 +1,96 @@
+{
+  "apk_sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e",
+  "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+  "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+  "batches": [
+    {
+      "batch": "core",
+      "operations": 34,
+      "inspect_android_package": 1,
+      "search_android_classes": 1,
+      "inspect_android_class": 12,
+      "inspect_android_method": 17,
+      "java": 15,
+      "smali": 2,
+      "trace_android_references": 3,
+      "failures": 0,
+      "selection_notes": 0
+    },
+    {
+      "batch": "validation",
+      "operations": 685,
+      "inspect_android_class": 152,
+      "inspect_android_method": 533,
+      "java": 367,
+      "smali": 166,
+      "failures": 0,
+      "selection_notes": 0
+    },
+    {
+      "batch": "supplement",
+      "operations": 291,
+      "inspect_android_class": 62,
+      "inspect_android_method": 229,
+      "java": 210,
+      "smali": 19,
+      "failures": 0,
+      "selection_notes": 0
+    },
+    {
+      "batch": "closure",
+      "operations": 27,
+      "inspect_android_class": 9,
+      "inspect_android_method": 18,
+      "java": 17,
+      "smali": 1,
+      "failures": 0,
+      "selection_notes": 0
+    },
+    {
+      "batch": "final",
+      "operations": 9,
+      "inspect_android_class": 4,
+      "inspect_android_method": 5,
+      "java": 4,
+      "smali": 1,
+      "failures": 0,
+      "selection_notes": 0
+    },
+    {
+      "batch": "config",
+      "operations": 5,
+      "inspect_android_class": 2,
+      "inspect_android_method": 3,
+      "java": 3,
+      "failures": 0,
+      "selection_notes": 0
+    },
+    {
+      "batch": "defaults",
+      "operations": 5,
+      "inspect_android_class": 2,
+      "inspect_android_method": 3,
+      "smali": 1,
+      "java": 2,
+      "failures": 0,
+      "selection_notes": 0
+    }
+  ],
+  "total": {
+    "operations": 1056,
+    "inspect_android_package": 1,
+    "search_android_classes": 1,
+    "inspect_android_class": 243,
+    "inspect_android_method": 808,
+    "java": 618,
+    "smali": 190,
+    "trace_android_references": 3
+  },
+  "exact_method_requests": 791,
+  "unique_exact_method_ids": 787,
+  "model_count": 62,
+  "wire_field_count": 299,
+  "scope": "Saved successful REA operations only; repeated requests are counted. No APK execution or server validation.",
+  "local_links_checked": 797,
+  "link_errors": []
+}

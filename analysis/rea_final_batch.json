@@ -1,0 +1,46 @@
+{
+  "output_directory": "analysis/rea/final",
+  "scope": "JSON config/defaults and descriptor optional flags",
+  "tasks": [
+    {
+      "id": "000-final-tt3-p",
+      "operation": "inspect_android_method",
+      "class_name": "tt3",
+      "method_name": "p",
+      "dex_descriptor": "(Lzi5;ILca3;Ljava/lang/Object;)V",
+      "original_method_id": "Ltt3;->p(Lzi5;ILca3;Ljava/lang/Object;)V"
+    },
+    {
+      "id": "001-final-dc5-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "dc5",
+      "method_name": "<init>",
+      "dex_descriptor": "(I)V",
+      "original_method_id": "Ldc5;-><init>(I)V"
+    },
+    {
+      "id": "002-final-dc5-invoke",
+      "operation": "inspect_android_method",
+      "class_name": "dc5",
+      "method_name": "invoke",
+      "dex_descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+      "original_method_id": "Ldc5;->invoke(Ljava/lang/Object;)Ljava/lang/Object;"
+    },
+    {
+      "id": "003-final-hj5-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "hj5",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lhj5;-><clinit>()V"
+    },
+    {
+      "id": "004-final-qj4-f",
+      "operation": "inspect_android_method",
+      "class_name": "qj4",
+      "method_name": "f",
+      "dex_descriptor": "(I)Ljava/lang/String;",
+      "original_method_id": "Lqj4;->f(I)Ljava/lang/String;"
+    }
+  ]
+}

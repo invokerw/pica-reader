@@ -1,0 +1,3 @@
+        private FixedIps() {
+            super(null);
+        }

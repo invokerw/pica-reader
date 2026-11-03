@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_a4e713754f25604ca1fcf589bc1ceedb53c0b6cf5069a23cf3b261073799c455",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "nh4",
+    "method_name": "a",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "nh4"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(android.content.Context, nz, s42): void\",\"dex_descriptor\":\"(Landroid/content/Context;Lnz;Ls42;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"a(pe1): java.lang.Object\",\"dex_descriptor\":\"(Lpe1;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0},{\"signature\":\"b(pe1): java.lang.Object\",\"dex_descriptor\":\"(Lpe1;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0},{\"signature\":\"c(pe1): java.lang.Object\",\"dex_descriptor\":\"(Lpe1;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0},{\"signature\":\"d(pe1): java.lang.Object\",\"dex_descriptor\":\"(Lpe1;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0},{\"signature\":\"e(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"e\",\"def_pos\":0},{\"signature\":\"f(java.lang.String, pe1): java.lang.Object\",\"dex_descriptor\":\"(Ljava/lang/String;Lpe1;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"f\",\"def_pos\":0}],\"fields\":[{\"name\":\"a\",\"def_pos\":0,\"type\":\"android.content.Context\"},{\"name\":\"b\",\"def_pos\":0,\"type\":\"s42\"},{\"name\":\"c\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"d\",\"def_pos\":0,\"type\":\"java.lang.String\"}],\"raw_name\":\"nh4\",\"method_count\":7,\"full_name\":\"defpackage.nh4\",\"field_count\":4,\"name\":\"nh4\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "nh4",
+          "method_name": "a",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    /* JADX WARN: Code duplicated, block: B:7:0x0015  */\\r\\n    public final Object a(pe1 pe1Var) {\\r\\n        ih4 ih4Var;\\r\\n        dg6 dg6Var \\u003d dg6.a;\\r\\n        if (pe1Var instanceof ih4) {\\r\\n            ih4Var \\u003d (ih4) pe1Var;\\r\\n            int i \\u003d ih4Var.k;\\r\\n            if ((i \\u0026 Integer.MIN_VALUE) !\\u003d 0) {\\r\\n                ih4Var.k \\u003d i - Integer.MIN_VALUE;\\r\\n            } else {\\r\\n                ih4Var \\u003d new ih4(this, pe1Var);\\r\\n            }\\r\\n        } else {\\r\\n            ih4Var \\u003d new ih4(this, pe1Var);\\r\\n        }\\r\\n        Object obj \\u003d ih4Var.i;\\r\\n        jg1 jg1Var \\u003d jg1.i;\\r\\n        int i2 \\u003d ih4Var.k;\\r\\n        if (i2 \\u003d\\u003d 0) {\\r\\n            sl4.N(obj);\\r\\n            s42 s42Var \\u003d this.b;\\r\\n            ih4Var.k \\u003d 1;\\r\\n            s42Var.c.edit().remove(\\\"auth_token\\\").remove(\\\"refresh_token\\\").apply();\\r\\n            if (dg6Var \\u003d\\u003d jg1Var) {\\r\\n                return jg1Var;\\r\\n            }\\r\\n        } else {\\r\\n            if (i2 !\\u003d 1) {\\r\\n                mz.h(\\\"call to \\u0027resume\\u0027 before \\u0027invoke\\u0027 with coroutine\\\");\\r\\n                return null;\\r\\n            }\\r\\n            sl4.N(obj);\\r\\n        }\\r\\n        this.c \\u003d null;\\r\\n        return dg6Var;\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"defpackage.nh4\",\"dex_descriptor\":\"(Lpe1;)Ljava/lang/Object;\",\"overload_count\":1,\"method_name\":\"a\",\"overload_index\":0,\"full_name\":\"nh4.a\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.nh4",
+    "method": {
+      "name": "a",
+      "reported_signature": "a(pe1): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lpe1;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Code duplicated, block: B:7:0x0015  */\r\n    public final Object a(pe1 pe1Var) {\r\n        ih4 ih4Var;\r\n        dg6 dg6Var = dg6.a;\r\n        if (pe1Var instanceof ih4) {\r\n            ih4Var = (ih4) pe1Var;\r\n            int i = ih4Var.k;\r\n            if ((i & Integer.MIN_VALUE) != 0) {\r\n                ih4Var.k = i - Integer.MIN_VALUE;\r\n            } else {\r\n                ih4Var = new ih4(this, pe1Var);\r\n            }\r\n        } else {\r\n            ih4Var = new ih4(this, pe1Var);\r\n        }\r\n        Object obj = ih4Var.i;\r\n        jg1 jg1Var = jg1.i;\r\n        int i2 = ih4Var.k;\r\n        if (i2 == 0) {\r\n            sl4.N(obj);\r\n            s42 s42Var = this.b;\r\n            ih4Var.k = 1;\r\n            s42Var.c.edit().remove(\"auth_token\").remove(\"refresh_token\").apply();\r\n            if (dg6Var == jg1Var) {\r\n                return jg1Var;\r\n            }\r\n        } else {\r\n            if (i2 != 1) {\r\n                mz.h(\"call to 'resume' before 'invoke' with coroutine\");\r\n                return null;\r\n            }\r\n            sl4.N(obj);\r\n        }\r\n        this.c = null;\r\n        return dg6Var;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

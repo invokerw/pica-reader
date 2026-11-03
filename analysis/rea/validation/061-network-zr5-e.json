@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_266843e74d7480546d58fa283cb277b1070dbfe6e290e7b5f15a68efd84e839e",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "zr5",
+    "method_name": "e",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "zr5"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(tr5): void\",\"dex_descriptor\":\"(Ltr5;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"a(zr5, com.picacg.network.dns.smartdns.SmartDnsData): cs5\",\"dex_descriptor\":\"(Lzr5;Lcom/picacg/network/dns/smartdns/SmartDnsData;)Lcs5;\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0},{\"signature\":\"b(zr5): jv1\",\"dex_descriptor\":\"(Lzr5;)Ljv1;\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0},{\"signature\":\"c(zr5, java.lang.String): cs5\",\"dex_descriptor\":\"(Lzr5;Ljava/lang/String;)Lcs5;\",\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0},{\"signature\":\"d(zr5, java.lang.String, cs5, long): void\",\"dex_descriptor\":\"(Lzr5;Ljava/lang/String;Lcs5;J)V\",\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0},{\"signature\":\"e(zr5, com.picacg.network.dns.smartdns.SmartDnsData): void\",\"dex_descriptor\":\"(Lzr5;Lcom/picacg/network/dns/smartdns/SmartDnsData;)V\",\"is_constructor\":false,\"name\":\"e\",\"def_pos\":0},{\"signature\":\"f(): boolean\",\"dex_descriptor\":\"()Z\",\"is_constructor\":false,\"name\":\"f\",\"def_pos\":0},{\"signature\":\"g(java.util.List, pe1): java.lang.Object\",\"dex_descriptor\":\"(Ljava/util/List;Lpe1;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"g\",\"def_pos\":0}],\"fields\":[{\"name\":\"a\",\"def_pos\":0,\"type\":\"tr5\"},{\"name\":\"b\",\"def_pos\":0,\"type\":\"java.util.concurrent.ConcurrentHashMap\"},{\"name\":\"c\",\"def_pos\":0,\"type\":\"java.util.concurrent.ConcurrentHashMap\"},{\"name\":\"d\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"e\",\"def_pos\":0,\"type\":\"com.picacg.domain.model.SmartDnsStatusSnapshot\"}],\"raw_name\":\"zr5\",\"method_count\":8,\"full_name\":\"defpackage.zr5\",\"field_count\":5,\"name\":\"zr5\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "zr5",
+          "method_name": "e",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    public static final void e(zr5 zr5Var, SmartDnsData smartDnsData) {\\r\\n        int i;\\r\\n        Map\\u003cString, SmartDnsLine\\u003e lines \\u003d smartDnsData.getLines();\\r\\n        if (lines.isEmpty()) {\\r\\n            i \\u003d 0;\\r\\n        } else {\\r\\n            Iterator\\u003cMap.Entry\\u003cString, SmartDnsLine\\u003e\\u003e it \\u003d lines.entrySet().iterator();\\r\\n            int i2 \\u003d 0;\\r\\n            while (it.hasNext()) {\\r\\n                if (it.next().getValue().isOk()) {\\r\\n                    i2++;\\r\\n                }\\r\\n            }\\r\\n            i \\u003d i2;\\r\\n        }\\r\\n        Collection\\u003cSmartDnsLine\\u003e collectionValues \\u003d smartDnsData.getLines().values();\\r\\n        ArrayList arrayList \\u003d new ArrayList();\\r\\n        for (Object obj : collectionValues) {\\r\\n            if (((SmartDnsLine) obj).isOk()) {\\r\\n                arrayList.add(obj);\\r\\n            }\\r\\n        }\\r\\n        ArrayList arrayList2 \\u003d new ArrayList();\\r\\n        int size \\u003d arrayList.size();\\r\\n        int i3 \\u003d 0;\\r\\n        while (i3 \\u003c size) {\\r\\n            Object obj2 \\u003d arrayList.get(i3);\\r\\n            i3++;\\r\\n            nr0.k0(((SmartDnsLine) obj2).getCleanIps(), arrayList2);\\r\\n        }\\r\\n        int size2 \\u003d nr0.Y0(nr0.b1(arrayList2)).size();\\r\\n        zr5Var.e \\u003d new SmartDnsStatusSnapshot(size2 \\u003e 0, size2, i, smartDnsData.getClientCountry(), smartDnsData.getDegraded());\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"defpackage.zr5\",\"dex_descriptor\":\"(Lzr5;Lcom/picacg/network/dns/smartdns/SmartDnsData;)V\",\"overload_count\":1,\"method_name\":\"e\",\"overload_index\":0,\"full_name\":\"zr5.e\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.zr5",
+    "method": {
+      "name": "e",
+      "reported_signature": "e(zr5, com.picacg.network.dns.smartdns.SmartDnsData): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lzr5;Lcom/picacg/network/dns/smartdns/SmartDnsData;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public static final void e(zr5 zr5Var, SmartDnsData smartDnsData) {\r\n        int i;\r\n        Map<String, SmartDnsLine> lines = smartDnsData.getLines();\r\n        if (lines.isEmpty()) {\r\n            i = 0;\r\n        } else {\r\n            Iterator<Map.Entry<String, SmartDnsLine>> it = lines.entrySet().iterator();\r\n            int i2 = 0;\r\n            while (it.hasNext()) {\r\n                if (it.next().getValue().isOk()) {\r\n                    i2++;\r\n                }\r\n            }\r\n            i = i2;\r\n        }\r\n        Collection<SmartDnsLine> collectionValues = smartDnsData.getLines().values();\r\n        ArrayList arrayList = new ArrayList();\r\n        for (Object obj : collectionValues) {\r\n            if (((SmartDnsLine) obj).isOk()) {\r\n                arrayList.add(obj);\r\n            }\r\n        }\r\n        ArrayList arrayList2 = new ArrayList();\r\n        int size = arrayList.size();\r\n        int i3 = 0;\r\n        while (i3 < size) {\r\n            Object obj2 = arrayList.get(i3);\r\n            i3++;\r\n            nr0.k0(((SmartDnsLine) obj2).getCleanIps(), arrayList2);\r\n        }\r\n        int size2 = nr0.Y0(nr0.b1(arrayList2)).size();\r\n        zr5Var.e = new SmartDnsStatusSnapshot(size2 > 0, size2, i, smartDnsData.getClientCountry(), smartDnsData.getDegraded());\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

@@ -1,0 +1,3 @@
+    public /* synthetic */ UserProfile(String str, String str2, String str3, String str4, String str5, ImageInfo imageInfo, int i, int i2, String str6, boolean z, boolean z2, List list, String str7, String str8, int i3, jo1 jo1Var) {
+        this(str, str2, str3, (i3 & 8) != 0 ? null : str4, (i3 & 16) != 0 ? null : str5, (i3 & 32) != 0 ? null : imageInfo, (i3 & 64) != 0 ? 0 : i, (i3 & 128) != 0 ? 1 : i2, (i3 & 256) != 0 ? "bot" : str6, (i3 & 512) != 0 ? false : z, (i3 & 1024) != 0 ? false : z2, (i3 & 2048) != 0 ? b42.i : list, (i3 & 4096) != 0 ? null : str7, (i3 & 8192) != 0 ? null : str8);
+    }

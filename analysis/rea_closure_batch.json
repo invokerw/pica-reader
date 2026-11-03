@@ -1,0 +1,150 @@
+{
+  "output_directory": "analysis/rea/closure",
+  "scope": "Serialization and standard TLS helper closure",
+  "tasks": [
+    {
+      "id": "000-closure-pr2-m",
+      "operation": "inspect_android_method",
+      "class_name": "pr2",
+      "method_name": "m",
+      "dex_descriptor": "(Lb83;Lqr3;)Lja2;",
+      "original_method_id": "Lpr2;->m(Lb83;Lqr3;)Lja2;"
+    },
+    {
+      "id": "001-closure-nr0-J0",
+      "operation": "inspect_android_method",
+      "class_name": "nr0",
+      "method_name": "J0",
+      "dex_descriptor": "(Ljava/util/List;)Ljava/lang/Object;",
+      "original_method_id": "Lnr0;->J0(Ljava/util/List;)Ljava/lang/Object;"
+    },
+    {
+      "id": "002-closure-sq2-x",
+      "operation": "inspect_android_method",
+      "class_name": "sq2",
+      "method_name": "x",
+      "dex_descriptor": "(Ljava/lang/String;)Lqr3;",
+      "original_method_id": "Lsq2;->x(Ljava/lang/String;)Lqr3;"
+    },
+    {
+      "id": "003-closure-uo3-M",
+      "operation": "inspect_android_method",
+      "class_name": "uo3",
+      "method_name": "M",
+      "dex_descriptor": "(Lca3;)Lca3;",
+      "original_method_id": "Luo3;->M(Lca3;)Lca3;"
+    },
+    {
+      "id": "004-closure-qj4-j",
+      "operation": "inspect_android_method",
+      "class_name": "qj4",
+      "method_name": "j",
+      "dex_descriptor": "(Ljava/lang/String;Z)V",
+      "original_method_id": "Lqj4;->j(Ljava/lang/String;Z)V"
+    },
+    {
+      "id": "005-closure-b44-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "b44",
+      "method_name": "<init>",
+      "dex_descriptor": "(Lca3;)V",
+      "original_method_id": "Lb44;-><init>(Lca3;)V"
+    },
+    {
+      "id": "006-closure-b44-deserialize",
+      "operation": "inspect_android_method",
+      "class_name": "b44",
+      "method_name": "deserialize",
+      "dex_descriptor": "(Ldn1;)Ljava/lang/Object;",
+      "original_method_id": "Lb44;->deserialize(Ldn1;)Ljava/lang/Object;"
+    },
+    {
+      "id": "007-closure-b44-getDescriptor",
+      "operation": "inspect_android_method",
+      "class_name": "b44",
+      "method_name": "getDescriptor",
+      "dex_descriptor": "()Lzi5;",
+      "original_method_id": "Lb44;->getDescriptor()Lzi5;"
+    },
+    {
+      "id": "008-closure-b44-serialize",
+      "operation": "inspect_android_method",
+      "class_name": "b44",
+      "method_name": "serialize",
+      "dex_descriptor": "(Ln42;Ljava/lang/Object;)V",
+      "original_method_id": "Lb44;->serialize(Ln42;Ljava/lang/Object;)V"
+    },
+    {
+      "id": "009-closure-e53-getDescriptor",
+      "operation": "inspect_android_method",
+      "class_name": "e53",
+      "method_name": "getDescriptor",
+      "dex_descriptor": "()Lzi5;",
+      "original_method_id": "Le53;->getDescriptor()Lzi5;"
+    },
+    {
+      "id": "010-closure-h54-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "h54",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lh54;-><clinit>()V"
+    },
+    {
+      "id": "011-closure-h54-a",
+      "operation": "inspect_android_method",
+      "class_name": "h54",
+      "method_name": "a",
+      "dex_descriptor": "(Ljava/security/cert/X509Certificate;I)Ljava/util/List;",
+      "original_method_id": "Lh54;->a(Ljava/security/cert/X509Certificate;I)Ljava/util/List;"
+    },
+    {
+      "id": "012-closure-h54-b",
+      "operation": "inspect_android_method",
+      "class_name": "h54",
+      "method_name": "b",
+      "dex_descriptor": "(Ljava/lang/String;)Z",
+      "original_method_id": "Lh54;->b(Ljava/lang/String;)Z"
+    },
+    {
+      "id": "013-closure-h54-c",
+      "operation": "inspect_android_method",
+      "class_name": "h54",
+      "method_name": "c",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/security/cert/X509Certificate;)Z",
+      "original_method_id": "Lh54;->c(Ljava/lang/String;Ljava/security/cert/X509Certificate;)Z"
+    },
+    {
+      "id": "014-closure-h54-verify",
+      "operation": "inspect_android_method",
+      "class_name": "h54",
+      "method_name": "verify",
+      "dex_descriptor": "(Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z",
+      "original_method_id": "Lh54;->verify(Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z"
+    },
+    {
+      "id": "015-closure-ix5-deserialize",
+      "operation": "inspect_android_method",
+      "class_name": "ix5",
+      "method_name": "deserialize",
+      "dex_descriptor": "(Ldn1;)Ljava/lang/Object;",
+      "original_method_id": "Lix5;->deserialize(Ldn1;)Ljava/lang/Object;"
+    },
+    {
+      "id": "016-closure-ix5-getDescriptor",
+      "operation": "inspect_android_method",
+      "class_name": "ix5",
+      "method_name": "getDescriptor",
+      "dex_descriptor": "()Lzi5;",
+      "original_method_id": "Lix5;->getDescriptor()Lzi5;"
+    },
+    {
+      "id": "017-closure-ix5-serialize",
+      "operation": "inspect_android_method",
+      "class_name": "ix5",
+      "method_name": "serialize",
+      "dex_descriptor": "(Ln42;Ljava/lang/Object;)V",
+      "original_method_id": "Lix5;->serialize(Ln42;Ljava/lang/Object;)V"
+    }
+  ]
+}

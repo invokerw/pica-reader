@@ -1,0 +1,3764 @@
+{
+  "schema_version": 1,
+  "scope": "Static client serialization contracts, REA descriptor registrations cross-checked against original DEX; not live server responses.",
+  "model_count": 62,
+  "wire_field_count": 299,
+  "models": [
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/api/AdvancedSearchBody;",
+      "serializer_descriptor": "Lj8;",
+      "wire_fields": [
+        {
+          "key": "keyword",
+          "optional": false,
+          "original_pc": "0x12",
+          "rea_source": "rea/validation/108-serializer-j8-_clinit_.smali",
+          "rea_line": 41,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "sort",
+          "optional": true,
+          "original_pc": "0x18",
+          "rea_source": "rea/validation/108-serializer-j8-_clinit_.smali",
+          "rea_line": 53,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "categories",
+          "optional": true,
+          "original_pc": "0x1d",
+          "rea_source": "rea/validation/108-serializer-j8-_clinit_.smali",
+          "rea_line": 62,
+          "index": 2,
+          "serializer_expression": "(uo3.M((ca3) AdvancedSearchBody.$childSerializers[2].getValue()))",
+          "nullable": true
+        }
+      ],
+      "child_serializers_source": "rea/validation/109-serializer-j8-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/105-dto-com.picacg.network.pica.api.AdvancedSearchBody-_init_.java",
+        "rea/validation/106-dto-com.picacg.network.pica.api.AdvancedSearchBody-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/api/ContentBody;",
+      "serializer_descriptor": "Lac1;",
+      "wire_fields": [
+        {
+          "key": "content",
+          "optional": false,
+          "original_pc": "0x12",
+          "rea_source": "rea/validation/118-serializer-ac1-_clinit_.smali",
+          "rea_line": 41,
+          "index": 0,
+          "serializer_expression": "ix5.a",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/119-serializer-ac1-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/115-dto-com.picacg.network.pica.api.ContentBody-_init_.java",
+        "rea/validation/116-dto-com.picacg.network.pica.api.ContentBody-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/api/RegisterRequest;",
+      "serializer_descriptor": "Lq35;",
+      "wire_fields": [
+        {
+          "key": "name",
+          "optional": false,
+          "original_pc": "0x13",
+          "rea_source": "rea/validation/128-serializer-q35-_clinit_.smali",
+          "rea_line": 42,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "email",
+          "optional": false,
+          "original_pc": "0x18",
+          "rea_source": "rea/validation/128-serializer-q35-_clinit_.smali",
+          "rea_line": 51,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "password",
+          "optional": false,
+          "original_pc": "0x1d",
+          "rea_source": "rea/validation/128-serializer-q35-_clinit_.smali",
+          "rea_line": 60,
+          "index": 2,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "question1",
+          "optional": false,
+          "original_pc": "0x22",
+          "rea_source": "rea/validation/128-serializer-q35-_clinit_.smali",
+          "rea_line": 69,
+          "index": 3,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "answer1",
+          "optional": false,
+          "original_pc": "0x27",
+          "rea_source": "rea/validation/128-serializer-q35-_clinit_.smali",
+          "rea_line": 78,
+          "index": 4,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "question2",
+          "optional": false,
+          "original_pc": "0x2c",
+          "rea_source": "rea/validation/128-serializer-q35-_clinit_.smali",
+          "rea_line": 87,
+          "index": 5,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "answer2",
+          "optional": false,
+          "original_pc": "0x31",
+          "rea_source": "rea/validation/128-serializer-q35-_clinit_.smali",
+          "rea_line": 96,
+          "index": 6,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "question3",
+          "optional": false,
+          "original_pc": "0x36",
+          "rea_source": "rea/validation/128-serializer-q35-_clinit_.smali",
+          "rea_line": 105,
+          "index": 7,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "answer3",
+          "optional": false,
+          "original_pc": "0x3b",
+          "rea_source": "rea/validation/128-serializer-q35-_clinit_.smali",
+          "rea_line": 114,
+          "index": 8,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "birthday",
+          "optional": false,
+          "original_pc": "0x40",
+          "rea_source": "rea/validation/128-serializer-q35-_clinit_.smali",
+          "rea_line": 123,
+          "index": 9,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "gender",
+          "optional": false,
+          "original_pc": "0x45",
+          "rea_source": "rea/validation/128-serializer-q35-_clinit_.smali",
+          "rea_line": 132,
+          "index": 10,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/129-serializer-q35-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/125-dto-com.picacg.network.pica.api.RegisterRequest-_init_.java",
+        "rea/validation/126-dto-com.picacg.network.pica.api.RegisterRequest-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/api/SignInRequest;",
+      "serializer_descriptor": "Lto5;",
+      "wire_fields": [
+        {
+          "key": "email",
+          "optional": false,
+          "original_pc": "0x12",
+          "rea_source": "rea/validation/138-serializer-to5-_clinit_.smali",
+          "rea_line": 41,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "password",
+          "optional": false,
+          "original_pc": "0x17",
+          "rea_source": "rea/validation/138-serializer-to5-_clinit_.smali",
+          "rea_line": 50,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/139-serializer-to5-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/135-dto-com.picacg.network.pica.api.SignInRequest-_init_.java",
+        "rea/validation/136-dto-com.picacg.network.pica.api.SignInRequest-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/Announcement;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/Announcement$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/465-nested-com.picacg.network.pica.model.Announcement__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "title",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/465-nested-com.picacg.network.pica.model.Announcement__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "content",
+          "optional": false,
+          "original_pc": "0x20",
+          "rea_source": "rea/validation/465-nested-com.picacg.network.pica.model.Announcement__serializer-_clinit_.smali",
+          "rea_line": 67,
+          "index": 2,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "thumb",
+          "optional": false,
+          "original_pc": "0x25",
+          "rea_source": "rea/validation/465-nested-com.picacg.network.pica.model.Announcement__serializer-_clinit_.smali",
+          "rea_line": 76,
+          "index": 3,
+          "serializer_expression": "ImageInfo$$serializer.INSTANCE",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/466-nested-com.picacg.network.pica.model.Announcement__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/114-supp-com.picacg.network.pica.model.Announcement-_init_.java",
+        "rea/supplement/115-supp-com.picacg.network.pica.model.Announcement-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/AnnouncementsData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/AnnouncementsData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "docs",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/467-nested-com.picacg.network.pica.model.AnnouncementsData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "AnnouncementsData.$childSerializers[0].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "total",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/467-nested-com.picacg.network.pica.model.AnnouncementsData__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "limit",
+          "optional": false,
+          "original_pc": "0x20",
+          "rea_source": "rea/validation/467-nested-com.picacg.network.pica.model.AnnouncementsData__serializer-_clinit_.smali",
+          "rea_line": 67,
+          "index": 2,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "page",
+          "optional": false,
+          "original_pc": "0x25",
+          "rea_source": "rea/validation/467-nested-com.picacg.network.pica.model.AnnouncementsData__serializer-_clinit_.smali",
+          "rea_line": 76,
+          "index": 3,
+          "serializer_expression": "ix5.a",
+          "nullable": null
+        },
+        {
+          "key": "pages",
+          "optional": false,
+          "original_pc": "0x2a",
+          "rea_source": "rea/validation/467-nested-com.picacg.network.pica.model.AnnouncementsData__serializer-_clinit_.smali",
+          "rea_line": 85,
+          "index": 4,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/468-nested-com.picacg.network.pica.model.AnnouncementsData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/116-supp-com.picacg.network.pica.model.AnnouncementsData-_init_.java",
+        "rea/supplement/117-supp-com.picacg.network.pica.model.AnnouncementsData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/AnnouncementsResponse;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/AnnouncementsResponse$$serializer;",
+      "wire_fields": [
+        {
+          "key": "announcements",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/148-serializer-com.picacg.network.pica.model.AnnouncementsResponse__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "AnnouncementsData$$serializer.INSTANCE",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/150-serializer-com.picacg.network.pica.model.AnnouncementsResponse__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/145-dto-com.picacg.network.pica.model.AnnouncementsResponse-_init_.java",
+        "rea/validation/146-dto-com.picacg.network.pica.model.AnnouncementsResponse-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/AvatarUpdateData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/AvatarUpdateData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "avatar",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/469-nested-com.picacg.network.pica.model.AvatarUpdateData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "ImageInfo$$serializer.INSTANCE",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/470-nested-com.picacg.network.pica.model.AvatarUpdateData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/118-supp-com.picacg.network.pica.model.AvatarUpdateData-_init_.java",
+        "rea/supplement/119-supp-com.picacg.network.pica.model.AvatarUpdateData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/AvatarUpdateRequest;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/AvatarUpdateRequest$$serializer;",
+      "wire_fields": [
+        {
+          "key": "avatar",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/161-serializer-com.picacg.network.pica.model.AvatarUpdateRequest__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "ix5.a",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/163-serializer-com.picacg.network.pica.model.AvatarUpdateRequest__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/158-dto-com.picacg.network.pica.model.AvatarUpdateRequest-_init_.java",
+        "rea/validation/159-dto-com.picacg.network.pica.model.AvatarUpdateRequest-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/BannerData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/BannerData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/471-nested-com.picacg.network.pica.model.BannerData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "title",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/471-nested-com.picacg.network.pica.model.BannerData__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "shortDescription",
+          "optional": true,
+          "original_pc": "0x21",
+          "rea_source": "rea/validation/471-nested-com.picacg.network.pica.model.BannerData__serializer-_clinit_.smali",
+          "rea_line": 70,
+          "index": 2,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "link",
+          "optional": true,
+          "original_pc": "0x26",
+          "rea_source": "rea/validation/471-nested-com.picacg.network.pica.model.BannerData__serializer-_clinit_.smali",
+          "rea_line": 79,
+          "index": 3,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "type",
+          "optional": true,
+          "original_pc": "0x2b",
+          "rea_source": "rea/validation/471-nested-com.picacg.network.pica.model.BannerData__serializer-_clinit_.smali",
+          "rea_line": 88,
+          "index": 4,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "thumb",
+          "optional": false,
+          "original_pc": "0x30",
+          "rea_source": "rea/validation/471-nested-com.picacg.network.pica.model.BannerData__serializer-_clinit_.smali",
+          "rea_line": 97,
+          "index": 5,
+          "serializer_expression": "ImageInfo$$serializer.INSTANCE",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/472-nested-com.picacg.network.pica.model.BannerData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/120-supp-com.picacg.network.pica.model.BannerData-_init_.java",
+        "rea/supplement/121-supp-com.picacg.network.pica.model.BannerData-_init_.java",
+        "rea/supplement/122-supp-com.picacg.network.pica.model.BannerData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/BannersResponse;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/BannersResponse$$serializer;",
+      "wire_fields": [
+        {
+          "key": "banners",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/174-serializer-com.picacg.network.pica.model.BannersResponse__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "BannersResponse.$childSerializers[0].getValue()",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/176-serializer-com.picacg.network.pica.model.BannersResponse__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/171-dto-com.picacg.network.pica.model.BannersResponse-_init_.java",
+        "rea/validation/172-dto-com.picacg.network.pica.model.BannersResponse-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/CategoriesData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/CategoriesData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "categories",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/187-serializer-com.picacg.network.pica.model.CategoriesData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "CategoriesData.$childSerializers[0].getValue()",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/189-serializer-com.picacg.network.pica.model.CategoriesData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/184-dto-com.picacg.network.pica.model.CategoriesData-_init_.java",
+        "rea/validation/185-dto-com.picacg.network.pica.model.CategoriesData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/CategoryItem;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/CategoryItem$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": true,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/473-nested-com.picacg.network.pica.model.CategoryItem__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "(uo3.M((ix5.a)))",
+          "nullable": true
+        },
+        {
+          "key": "title",
+          "optional": false,
+          "original_pc": "0x1c",
+          "rea_source": "rea/validation/473-nested-com.picacg.network.pica.model.CategoryItem__serializer-_clinit_.smali",
+          "rea_line": 61,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "description",
+          "optional": true,
+          "original_pc": "0x21",
+          "rea_source": "rea/validation/473-nested-com.picacg.network.pica.model.CategoryItem__serializer-_clinit_.smali",
+          "rea_line": 70,
+          "index": 2,
+          "serializer_expression": "(uo3.M((ix5.a)))",
+          "nullable": true
+        },
+        {
+          "key": "thumb",
+          "optional": false,
+          "original_pc": "0x26",
+          "rea_source": "rea/validation/473-nested-com.picacg.network.pica.model.CategoryItem__serializer-_clinit_.smali",
+          "rea_line": 79,
+          "index": 3,
+          "serializer_expression": "ImageInfo$$serializer.INSTANCE",
+          "nullable": null
+        },
+        {
+          "key": "isWeb",
+          "optional": true,
+          "original_pc": "0x2b",
+          "rea_source": "rea/validation/473-nested-com.picacg.network.pica.model.CategoryItem__serializer-_clinit_.smali",
+          "rea_line": 88,
+          "index": 4,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "active",
+          "optional": true,
+          "original_pc": "0x30",
+          "rea_source": "rea/validation/473-nested-com.picacg.network.pica.model.CategoryItem__serializer-_clinit_.smali",
+          "rea_line": 97,
+          "index": 5,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "link",
+          "optional": true,
+          "original_pc": "0x35",
+          "rea_source": "rea/validation/473-nested-com.picacg.network.pica.model.CategoryItem__serializer-_clinit_.smali",
+          "rea_line": 106,
+          "index": 6,
+          "serializer_expression": "(uo3.M((ix5.a)))",
+          "nullable": true
+        }
+      ],
+      "child_serializers_source": "rea/validation/474-nested-com.picacg.network.pica.model.CategoryItem__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/123-supp-com.picacg.network.pica.model.CategoryItem-_init_.java",
+        "rea/supplement/124-supp-com.picacg.network.pica.model.CategoryItem-_init_.java",
+        "rea/supplement/125-supp-com.picacg.network.pica.model.CategoryItem-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/ChapterPagesData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/ChapterPagesData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "pages",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/200-serializer-com.picacg.network.pica.model.ChapterPagesData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "PagesInfo$$serializer.INSTANCE",
+          "nullable": null
+        },
+        {
+          "key": "ep",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/200-serializer-com.picacg.network.pica.model.ChapterPagesData__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "EpisodeInfo$$serializer.INSTANCE",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/202-serializer-com.picacg.network.pica.model.ChapterPagesData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/197-dto-com.picacg.network.pica.model.ChapterPagesData-_init_.java",
+        "rea/validation/198-dto-com.picacg.network.pica.model.ChapterPagesData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/CollectionComicItem;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/CollectionComicItem$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x17",
+          "rea_source": "rea/validation/475-nested-com.picacg.network.pica.model.CollectionComicItem__serializer-_clinit_.smali",
+          "rea_line": 50,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "title",
+          "optional": false,
+          "original_pc": "0x1c",
+          "rea_source": "rea/validation/475-nested-com.picacg.network.pica.model.CollectionComicItem__serializer-_clinit_.smali",
+          "rea_line": 59,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "author",
+          "optional": false,
+          "original_pc": "0x21",
+          "rea_source": "rea/validation/475-nested-com.picacg.network.pica.model.CollectionComicItem__serializer-_clinit_.smali",
+          "rea_line": 68,
+          "index": 2,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "thumb",
+          "optional": false,
+          "original_pc": "0x26",
+          "rea_source": "rea/validation/475-nested-com.picacg.network.pica.model.CollectionComicItem__serializer-_clinit_.smali",
+          "rea_line": 77,
+          "index": 3,
+          "serializer_expression": "ImageInfo$$serializer.INSTANCE",
+          "nullable": null
+        },
+        {
+          "key": "categories",
+          "optional": true,
+          "original_pc": "0x2c",
+          "rea_source": "rea/validation/475-nested-com.picacg.network.pica.model.CollectionComicItem__serializer-_clinit_.smali",
+          "rea_line": 89,
+          "index": 4,
+          "serializer_expression": "kd3VarArr[4].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "tags",
+          "optional": true,
+          "original_pc": "0x31",
+          "rea_source": "rea/validation/475-nested-com.picacg.network.pica.model.CollectionComicItem__serializer-_clinit_.smali",
+          "rea_line": 98,
+          "index": 5,
+          "serializer_expression": "kd3VarArr[5].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "finished",
+          "optional": true,
+          "original_pc": "0x36",
+          "rea_source": "rea/validation/475-nested-com.picacg.network.pica.model.CollectionComicItem__serializer-_clinit_.smali",
+          "rea_line": 107,
+          "index": 6,
+          "serializer_expression": "od0.a",
+          "nullable": null
+        },
+        {
+          "key": "epsCount",
+          "optional": true,
+          "original_pc": "0x3b",
+          "rea_source": "rea/validation/475-nested-com.picacg.network.pica.model.CollectionComicItem__serializer-_clinit_.smali",
+          "rea_line": 116,
+          "index": 7,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "pagesCount",
+          "optional": true,
+          "original_pc": "0x40",
+          "rea_source": "rea/validation/475-nested-com.picacg.network.pica.model.CollectionComicItem__serializer-_clinit_.smali",
+          "rea_line": 125,
+          "index": 8,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "totalViews",
+          "optional": true,
+          "original_pc": "0x45",
+          "rea_source": "rea/validation/475-nested-com.picacg.network.pica.model.CollectionComicItem__serializer-_clinit_.smali",
+          "rea_line": 134,
+          "index": 9,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "totalLikes",
+          "optional": true,
+          "original_pc": "0x4a",
+          "rea_source": "rea/validation/475-nested-com.picacg.network.pica.model.CollectionComicItem__serializer-_clinit_.smali",
+          "rea_line": 143,
+          "index": 10,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/476-nested-com.picacg.network.pica.model.CollectionComicItem__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/126-supp-com.picacg.network.pica.model.CollectionComicItem-_init_.java",
+        "rea/supplement/127-supp-com.picacg.network.pica.model.CollectionComicItem-_init_.java",
+        "rea/supplement/128-supp-com.picacg.network.pica.model.CollectionComicItem-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/CollectionGroup;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/CollectionGroup$$serializer;",
+      "wire_fields": [
+        {
+          "key": "title",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/477-nested-com.picacg.network.pica.model.CollectionGroup__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "ix5.a",
+          "nullable": null
+        },
+        {
+          "key": "comics",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/477-nested-com.picacg.network.pica.model.CollectionGroup__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "CollectionGroup.$childSerializers[1].getValue()",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/478-nested-com.picacg.network.pica.model.CollectionGroup__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/129-supp-com.picacg.network.pica.model.CollectionGroup-_init_.java",
+        "rea/supplement/130-supp-com.picacg.network.pica.model.CollectionGroup-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/CollectionsResponseData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/CollectionsResponseData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "collections",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/213-serializer-com.picacg.network.pica.model.CollectionsResponseData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "CollectionsResponseData.$childSerializers[0].getValue()",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/215-serializer-com.picacg.network.pica.model.CollectionsResponseData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/210-dto-com.picacg.network.pica.model.CollectionsResponseData-_init_.java",
+        "rea/validation/211-dto-com.picacg.network.pica.model.CollectionsResponseData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/ComicDetail;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/ComicDetail$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x17",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 50,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "_creator",
+          "optional": false,
+          "original_pc": "0x1c",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 59,
+          "index": 1,
+          "serializer_expression": "Creator$$serializer.INSTANCE",
+          "nullable": null
+        },
+        {
+          "key": "title",
+          "optional": true,
+          "original_pc": "0x22",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 71,
+          "index": 2,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "description",
+          "optional": true,
+          "original_pc": "0x27",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 80,
+          "index": 3,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "thumb",
+          "optional": false,
+          "original_pc": "0x2c",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 89,
+          "index": 4,
+          "serializer_expression": "ImageInfo$$serializer.INSTANCE",
+          "nullable": null
+        },
+        {
+          "key": "author",
+          "optional": true,
+          "original_pc": "0x31",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 98,
+          "index": 5,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "chineseTeam",
+          "optional": true,
+          "original_pc": "0x36",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 107,
+          "index": 6,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        },
+        {
+          "key": "categories",
+          "optional": true,
+          "original_pc": "0x3b",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 116,
+          "index": 7,
+          "serializer_expression": "kd3VarArr[7].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "tags",
+          "optional": true,
+          "original_pc": "0x40",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 125,
+          "index": 8,
+          "serializer_expression": "kd3VarArr[8].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "pagesCount",
+          "optional": true,
+          "original_pc": "0x45",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 134,
+          "index": 9,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "epsCount",
+          "optional": true,
+          "original_pc": "0x4a",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 143,
+          "index": 10,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "finished",
+          "optional": true,
+          "original_pc": "0x4f",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 152,
+          "index": 11,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "updated_at",
+          "optional": true,
+          "original_pc": "0x54",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 161,
+          "index": 12,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "created_at",
+          "optional": true,
+          "original_pc": "0x59",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 170,
+          "index": 13,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "allowDownload",
+          "optional": true,
+          "original_pc": "0x5e",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 179,
+          "index": 14,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "allowComment",
+          "optional": true,
+          "original_pc": "0x63",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 188,
+          "index": 15,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "totalLikes",
+          "optional": true,
+          "original_pc": "0x68",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 197,
+          "index": 16,
+          "serializer_expression": "uo3.M((e53.a))",
+          "nullable": true
+        },
+        {
+          "key": "totalViews",
+          "optional": true,
+          "original_pc": "0x6d",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 206,
+          "index": 17,
+          "serializer_expression": "uo3.M((e53.a))",
+          "nullable": true
+        },
+        {
+          "key": "totalComments",
+          "optional": true,
+          "original_pc": "0x72",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 215,
+          "index": 18,
+          "serializer_expression": "uo3.M((e53.a))",
+          "nullable": true
+        },
+        {
+          "key": "viewsCount",
+          "optional": true,
+          "original_pc": "0x77",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 224,
+          "index": 19,
+          "serializer_expression": "uo3.M((e53.a))",
+          "nullable": true
+        },
+        {
+          "key": "likesCount",
+          "optional": true,
+          "original_pc": "0x7c",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 233,
+          "index": 20,
+          "serializer_expression": "uo3.M((e53.a))",
+          "nullable": true
+        },
+        {
+          "key": "commentsCount",
+          "optional": true,
+          "original_pc": "0x81",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 242,
+          "index": 21,
+          "serializer_expression": "uo3.M((e53.a))",
+          "nullable": true
+        },
+        {
+          "key": "isFavourite",
+          "optional": true,
+          "original_pc": "0x86",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 251,
+          "index": 22,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "isLiked",
+          "optional": true,
+          "original_pc": "0x8b",
+          "rea_source": "rea/validation/479-nested-com.picacg.network.pica.model.ComicDetail__serializer-_clinit_.smali",
+          "rea_line": 260,
+          "index": 23,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/480-nested-com.picacg.network.pica.model.ComicDetail__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/131-supp-com.picacg.network.pica.model.ComicDetail-_init_.java",
+        "rea/supplement/132-supp-com.picacg.network.pica.model.ComicDetail-_init_.java",
+        "rea/supplement/133-supp-com.picacg.network.pica.model.ComicDetail-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/ComicDetailData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/ComicDetailData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "comic",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/226-serializer-com.picacg.network.pica.model.ComicDetailData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "ComicDetail$$serializer.INSTANCE",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/228-serializer-com.picacg.network.pica.model.ComicDetailData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/223-dto-com.picacg.network.pica.model.ComicDetailData-_init_.java",
+        "rea/validation/224-dto-com.picacg.network.pica.model.ComicDetailData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/ComicItem;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/ComicItem$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/481-nested-com.picacg.network.pica.model.ComicItem__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "title",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/481-nested-com.picacg.network.pica.model.ComicItem__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "author",
+          "optional": false,
+          "original_pc": "0x20",
+          "rea_source": "rea/validation/481-nested-com.picacg.network.pica.model.ComicItem__serializer-_clinit_.smali",
+          "rea_line": 67,
+          "index": 2,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "totalViews",
+          "optional": true,
+          "original_pc": "0x26",
+          "rea_source": "rea/validation/481-nested-com.picacg.network.pica.model.ComicItem__serializer-_clinit_.smali",
+          "rea_line": 79,
+          "index": 3,
+          "serializer_expression": "uo3.M((e53.a))",
+          "nullable": true
+        },
+        {
+          "key": "totalLikes",
+          "optional": true,
+          "original_pc": "0x2b",
+          "rea_source": "rea/validation/481-nested-com.picacg.network.pica.model.ComicItem__serializer-_clinit_.smali",
+          "rea_line": 88,
+          "index": 4,
+          "serializer_expression": "uo3.M((e53.a))",
+          "nullable": true
+        },
+        {
+          "key": "thumb",
+          "optional": false,
+          "original_pc": "0x30",
+          "rea_source": "rea/validation/481-nested-com.picacg.network.pica.model.ComicItem__serializer-_clinit_.smali",
+          "rea_line": 97,
+          "index": 5,
+          "serializer_expression": "ImageInfo$$serializer.INSTANCE",
+          "nullable": null
+        },
+        {
+          "key": "categories",
+          "optional": false,
+          "original_pc": "0x35",
+          "rea_source": "rea/validation/481-nested-com.picacg.network.pica.model.ComicItem__serializer-_clinit_.smali",
+          "rea_line": 106,
+          "index": 6,
+          "serializer_expression": "kd3VarArr[6].getValue()",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/482-nested-com.picacg.network.pica.model.ComicItem__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/134-supp-com.picacg.network.pica.model.ComicItem-_init_.java",
+        "rea/supplement/135-supp-com.picacg.network.pica.model.ComicItem-_init_.java",
+        "rea/supplement/136-supp-com.picacg.network.pica.model.ComicItem-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/ComicItemData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/ComicItemData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x17",
+          "rea_source": "rea/validation/483-nested-com.picacg.network.pica.model.ComicItemData__serializer-_clinit_.smali",
+          "rea_line": 50,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "title",
+          "optional": false,
+          "original_pc": "0x1c",
+          "rea_source": "rea/validation/483-nested-com.picacg.network.pica.model.ComicItemData__serializer-_clinit_.smali",
+          "rea_line": 59,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "author",
+          "optional": true,
+          "original_pc": "0x22",
+          "rea_source": "rea/validation/483-nested-com.picacg.network.pica.model.ComicItemData__serializer-_clinit_.smali",
+          "rea_line": 71,
+          "index": 2,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        },
+        {
+          "key": "totalViews",
+          "optional": true,
+          "original_pc": "0x27",
+          "rea_source": "rea/validation/483-nested-com.picacg.network.pica.model.ComicItemData__serializer-_clinit_.smali",
+          "rea_line": 80,
+          "index": 3,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "totalLikes",
+          "optional": true,
+          "original_pc": "0x2c",
+          "rea_source": "rea/validation/483-nested-com.picacg.network.pica.model.ComicItemData__serializer-_clinit_.smali",
+          "rea_line": 89,
+          "index": 4,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "pagesCount",
+          "optional": true,
+          "original_pc": "0x31",
+          "rea_source": "rea/validation/483-nested-com.picacg.network.pica.model.ComicItemData__serializer-_clinit_.smali",
+          "rea_line": 98,
+          "index": 5,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "epsCount",
+          "optional": true,
+          "original_pc": "0x36",
+          "rea_source": "rea/validation/483-nested-com.picacg.network.pica.model.ComicItemData__serializer-_clinit_.smali",
+          "rea_line": 107,
+          "index": 6,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "finished",
+          "optional": true,
+          "original_pc": "0x3b",
+          "rea_source": "rea/validation/483-nested-com.picacg.network.pica.model.ComicItemData__serializer-_clinit_.smali",
+          "rea_line": 116,
+          "index": 7,
+          "serializer_expression": "od0.a",
+          "nullable": null
+        },
+        {
+          "key": "categories",
+          "optional": true,
+          "original_pc": "0x40",
+          "rea_source": "rea/validation/483-nested-com.picacg.network.pica.model.ComicItemData__serializer-_clinit_.smali",
+          "rea_line": 125,
+          "index": 8,
+          "serializer_expression": "kd3VarArr[8].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "tags",
+          "optional": true,
+          "original_pc": "0x45",
+          "rea_source": "rea/validation/483-nested-com.picacg.network.pica.model.ComicItemData__serializer-_clinit_.smali",
+          "rea_line": 134,
+          "index": 9,
+          "serializer_expression": "kd3VarArr[9].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "thumb",
+          "optional": false,
+          "original_pc": "0x4a",
+          "rea_source": "rea/validation/483-nested-com.picacg.network.pica.model.ComicItemData__serializer-_clinit_.smali",
+          "rea_line": 143,
+          "index": 10,
+          "serializer_expression": "ImageInfo$$serializer.INSTANCE",
+          "nullable": null
+        },
+        {
+          "key": "likesCount",
+          "optional": true,
+          "original_pc": "0x4f",
+          "rea_source": "rea/validation/483-nested-com.picacg.network.pica.model.ComicItemData__serializer-_clinit_.smali",
+          "rea_line": 152,
+          "index": 11,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/484-nested-com.picacg.network.pica.model.ComicItemData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/137-supp-com.picacg.network.pica.model.ComicItemData-_init_.java",
+        "rea/supplement/138-supp-com.picacg.network.pica.model.ComicItemData-_init_.java",
+        "rea/supplement/139-supp-com.picacg.network.pica.model.ComicItemData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/ComicListData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/ComicListData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "comics",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/485-nested-com.picacg.network.pica.model.ComicListData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "ComicsData$$serializer.INSTANCE",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/486-nested-com.picacg.network.pica.model.ComicListData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/140-supp-com.picacg.network.pica.model.ComicListData-_init_.java",
+        "rea/supplement/141-supp-com.picacg.network.pica.model.ComicListData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/ComicsData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/ComicsData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "docs",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/487-nested-com.picacg.network.pica.model.ComicsData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "ComicsData.$childSerializers[0].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "total",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/487-nested-com.picacg.network.pica.model.ComicsData__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "page",
+          "optional": false,
+          "original_pc": "0x20",
+          "rea_source": "rea/validation/487-nested-com.picacg.network.pica.model.ComicsData__serializer-_clinit_.smali",
+          "rea_line": 67,
+          "index": 2,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "pages",
+          "optional": false,
+          "original_pc": "0x25",
+          "rea_source": "rea/validation/487-nested-com.picacg.network.pica.model.ComicsData__serializer-_clinit_.smali",
+          "rea_line": 76,
+          "index": 3,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/488-nested-com.picacg.network.pica.model.ComicsData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/142-supp-com.picacg.network.pica.model.ComicsData-_init_.java",
+        "rea/supplement/143-supp-com.picacg.network.pica.model.ComicsData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/ComicsListResponse;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/ComicsListResponse$$serializer;",
+      "wire_fields": [
+        {
+          "key": "comics",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/239-serializer-com.picacg.network.pica.model.ComicsListResponse__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "ComicsPageData$$serializer.INSTANCE",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/241-serializer-com.picacg.network.pica.model.ComicsListResponse__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/236-dto-com.picacg.network.pica.model.ComicsListResponse-_init_.java",
+        "rea/validation/237-dto-com.picacg.network.pica.model.ComicsListResponse-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/ComicsPageData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/ComicsPageData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "docs",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/489-nested-com.picacg.network.pica.model.ComicsPageData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "ComicsPageData.$childSerializers[0].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "total",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/489-nested-com.picacg.network.pica.model.ComicsPageData__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "page",
+          "optional": false,
+          "original_pc": "0x20",
+          "rea_source": "rea/validation/489-nested-com.picacg.network.pica.model.ComicsPageData__serializer-_clinit_.smali",
+          "rea_line": 67,
+          "index": 2,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "pages",
+          "optional": false,
+          "original_pc": "0x25",
+          "rea_source": "rea/validation/489-nested-com.picacg.network.pica.model.ComicsPageData__serializer-_clinit_.smali",
+          "rea_line": 76,
+          "index": 3,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "limit",
+          "optional": true,
+          "original_pc": "0x2b",
+          "rea_source": "rea/validation/489-nested-com.picacg.network.pica.model.ComicsPageData__serializer-_clinit_.smali",
+          "rea_line": 88,
+          "index": 4,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/490-nested-com.picacg.network.pica.model.ComicsPageData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/144-supp-com.picacg.network.pica.model.ComicsPageData-_init_.java",
+        "rea/supplement/145-supp-com.picacg.network.pica.model.ComicsPageData-_init_.java",
+        "rea/supplement/146-supp-com.picacg.network.pica.model.ComicsPageData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/Comment;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/Comment$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x17",
+          "rea_source": "rea/validation/491-nested-com.picacg.network.pica.model.Comment__serializer-_clinit_.smali",
+          "rea_line": 50,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "content",
+          "optional": false,
+          "original_pc": "0x1c",
+          "rea_source": "rea/validation/491-nested-com.picacg.network.pica.model.Comment__serializer-_clinit_.smali",
+          "rea_line": 59,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "_user",
+          "optional": true,
+          "original_pc": "0x22",
+          "rea_source": "rea/validation/491-nested-com.picacg.network.pica.model.Comment__serializer-_clinit_.smali",
+          "rea_line": 71,
+          "index": 2,
+          "serializer_expression": "(uo3.M(CommentUser$$serializer.INSTANCE))",
+          "nullable": true
+        },
+        {
+          "key": "_comic",
+          "optional": true,
+          "original_pc": "0x27",
+          "rea_source": "rea/validation/491-nested-com.picacg.network.pica.model.Comment__serializer-_clinit_.smali",
+          "rea_line": 80,
+          "index": 3,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "totalComments",
+          "optional": true,
+          "original_pc": "0x2c",
+          "rea_source": "rea/validation/491-nested-com.picacg.network.pica.model.Comment__serializer-_clinit_.smali",
+          "rea_line": 89,
+          "index": 4,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "isTop",
+          "optional": true,
+          "original_pc": "0x31",
+          "rea_source": "rea/validation/491-nested-com.picacg.network.pica.model.Comment__serializer-_clinit_.smali",
+          "rea_line": 98,
+          "index": 5,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "hide",
+          "optional": true,
+          "original_pc": "0x36",
+          "rea_source": "rea/validation/491-nested-com.picacg.network.pica.model.Comment__serializer-_clinit_.smali",
+          "rea_line": 107,
+          "index": 6,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "created_at",
+          "optional": false,
+          "original_pc": "0x3b",
+          "rea_source": "rea/validation/491-nested-com.picacg.network.pica.model.Comment__serializer-_clinit_.smali",
+          "rea_line": 116,
+          "index": 7,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "likesCount",
+          "optional": true,
+          "original_pc": "0x40",
+          "rea_source": "rea/validation/491-nested-com.picacg.network.pica.model.Comment__serializer-_clinit_.smali",
+          "rea_line": 125,
+          "index": 8,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "commentsCount",
+          "optional": true,
+          "original_pc": "0x45",
+          "rea_source": "rea/validation/491-nested-com.picacg.network.pica.model.Comment__serializer-_clinit_.smali",
+          "rea_line": 134,
+          "index": 9,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "isLiked",
+          "optional": true,
+          "original_pc": "0x4a",
+          "rea_source": "rea/validation/491-nested-com.picacg.network.pica.model.Comment__serializer-_clinit_.smali",
+          "rea_line": 143,
+          "index": 10,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/492-nested-com.picacg.network.pica.model.Comment__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/147-supp-com.picacg.network.pica.model.Comment-_init_.java",
+        "rea/supplement/148-supp-com.picacg.network.pica.model.Comment-_init_.java",
+        "rea/supplement/149-supp-com.picacg.network.pica.model.Comment-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/CommentLikeResponse;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/CommentLikeResponse$$serializer;",
+      "wire_fields": [
+        {
+          "key": "action",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/252-serializer-com.picacg.network.pica.model.CommentLikeResponse__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "ix5.a",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/254-serializer-com.picacg.network.pica.model.CommentLikeResponse__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/249-dto-com.picacg.network.pica.model.CommentLikeResponse-_init_.java",
+        "rea/validation/250-dto-com.picacg.network.pica.model.CommentLikeResponse-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/CommentResponseData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/CommentResponseData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "comments",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/266-serializer-com.picacg.network.pica.model.CommentResponseData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "CommentsPageData$$serializer.INSTANCE",
+          "nullable": null
+        },
+        {
+          "key": "topComments",
+          "optional": true,
+          "original_pc": "0x1c",
+          "rea_source": "rea/validation/266-serializer-com.picacg.network.pica.model.CommentResponseData__serializer-_clinit_.smali",
+          "rea_line": 61,
+          "index": 1,
+          "serializer_expression": "CommentResponseData.$childSerializers[1].getValue()",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/268-serializer-com.picacg.network.pica.model.CommentResponseData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/262-dto-com.picacg.network.pica.model.CommentResponseData-_init_.java",
+        "rea/validation/263-dto-com.picacg.network.pica.model.CommentResponseData-_init_.java",
+        "rea/validation/264-dto-com.picacg.network.pica.model.CommentResponseData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/CommentUser;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/CommentUser$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x17",
+          "rea_source": "rea/validation/493-nested-com.picacg.network.pica.model.CommentUser__serializer-_clinit_.smali",
+          "rea_line": 50,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "gender",
+          "optional": false,
+          "original_pc": "0x1c",
+          "rea_source": "rea/validation/493-nested-com.picacg.network.pica.model.CommentUser__serializer-_clinit_.smali",
+          "rea_line": 59,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "name",
+          "optional": false,
+          "original_pc": "0x21",
+          "rea_source": "rea/validation/493-nested-com.picacg.network.pica.model.CommentUser__serializer-_clinit_.smali",
+          "rea_line": 68,
+          "index": 2,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "title",
+          "optional": true,
+          "original_pc": "0x27",
+          "rea_source": "rea/validation/493-nested-com.picacg.network.pica.model.CommentUser__serializer-_clinit_.smali",
+          "rea_line": 80,
+          "index": 3,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        },
+        {
+          "key": "verified",
+          "optional": true,
+          "original_pc": "0x2c",
+          "rea_source": "rea/validation/493-nested-com.picacg.network.pica.model.CommentUser__serializer-_clinit_.smali",
+          "rea_line": 89,
+          "index": 4,
+          "serializer_expression": "od0.a",
+          "nullable": null
+        },
+        {
+          "key": "exp",
+          "optional": true,
+          "original_pc": "0x31",
+          "rea_source": "rea/validation/493-nested-com.picacg.network.pica.model.CommentUser__serializer-_clinit_.smali",
+          "rea_line": 98,
+          "index": 5,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "level",
+          "optional": true,
+          "original_pc": "0x36",
+          "rea_source": "rea/validation/493-nested-com.picacg.network.pica.model.CommentUser__serializer-_clinit_.smali",
+          "rea_line": 107,
+          "index": 6,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "characters",
+          "optional": true,
+          "original_pc": "0x3b",
+          "rea_source": "rea/validation/493-nested-com.picacg.network.pica.model.CommentUser__serializer-_clinit_.smali",
+          "rea_line": 116,
+          "index": 7,
+          "serializer_expression": "kd3VarArr[7].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "role",
+          "optional": true,
+          "original_pc": "0x40",
+          "rea_source": "rea/validation/493-nested-com.picacg.network.pica.model.CommentUser__serializer-_clinit_.smali",
+          "rea_line": 125,
+          "index": 8,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        },
+        {
+          "key": "avatar",
+          "optional": true,
+          "original_pc": "0x45",
+          "rea_source": "rea/validation/493-nested-com.picacg.network.pica.model.CommentUser__serializer-_clinit_.smali",
+          "rea_line": 134,
+          "index": 9,
+          "serializer_expression": "uo3.M(ImageInfo$$serializer.INSTANCE)",
+          "nullable": true
+        },
+        {
+          "key": "slogan",
+          "optional": true,
+          "original_pc": "0x4a",
+          "rea_source": "rea/validation/493-nested-com.picacg.network.pica.model.CommentUser__serializer-_clinit_.smali",
+          "rea_line": 143,
+          "index": 10,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        },
+        {
+          "key": "character",
+          "optional": true,
+          "original_pc": "0x4f",
+          "rea_source": "rea/validation/493-nested-com.picacg.network.pica.model.CommentUser__serializer-_clinit_.smali",
+          "rea_line": 152,
+          "index": 11,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        }
+      ],
+      "child_serializers_source": "rea/validation/494-nested-com.picacg.network.pica.model.CommentUser__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/150-supp-com.picacg.network.pica.model.CommentUser-_init_.java",
+        "rea/supplement/151-supp-com.picacg.network.pica.model.CommentUser-_init_.java",
+        "rea/supplement/152-supp-com.picacg.network.pica.model.CommentUser-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/CommentsPageData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/CommentsPageData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "docs",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/495-nested-com.picacg.network.pica.model.CommentsPageData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "CommentsPageData.$childSerializers[0].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "total",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/495-nested-com.picacg.network.pica.model.CommentsPageData__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "limit",
+          "optional": false,
+          "original_pc": "0x20",
+          "rea_source": "rea/validation/495-nested-com.picacg.network.pica.model.CommentsPageData__serializer-_clinit_.smali",
+          "rea_line": 67,
+          "index": 2,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "page",
+          "optional": false,
+          "original_pc": "0x25",
+          "rea_source": "rea/validation/495-nested-com.picacg.network.pica.model.CommentsPageData__serializer-_clinit_.smali",
+          "rea_line": 76,
+          "index": 3,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "pages",
+          "optional": false,
+          "original_pc": "0x2a",
+          "rea_source": "rea/validation/495-nested-com.picacg.network.pica.model.CommentsPageData__serializer-_clinit_.smali",
+          "rea_line": 85,
+          "index": 4,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/496-nested-com.picacg.network.pica.model.CommentsPageData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/153-supp-com.picacg.network.pica.model.CommentsPageData-_init_.java",
+        "rea/supplement/154-supp-com.picacg.network.pica.model.CommentsPageData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/Creator;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/Creator$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x17",
+          "rea_source": "rea/validation/497-nested-com.picacg.network.pica.model.Creator__serializer-_clinit_.smali",
+          "rea_line": 50,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "gender",
+          "optional": true,
+          "original_pc": "0x1d",
+          "rea_source": "rea/validation/497-nested-com.picacg.network.pica.model.Creator__serializer-_clinit_.smali",
+          "rea_line": 62,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "name",
+          "optional": true,
+          "original_pc": "0x22",
+          "rea_source": "rea/validation/497-nested-com.picacg.network.pica.model.Creator__serializer-_clinit_.smali",
+          "rea_line": 71,
+          "index": 2,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "title",
+          "optional": true,
+          "original_pc": "0x27",
+          "rea_source": "rea/validation/497-nested-com.picacg.network.pica.model.Creator__serializer-_clinit_.smali",
+          "rea_line": 80,
+          "index": 3,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        },
+        {
+          "key": "verified",
+          "optional": true,
+          "original_pc": "0x2c",
+          "rea_source": "rea/validation/497-nested-com.picacg.network.pica.model.Creator__serializer-_clinit_.smali",
+          "rea_line": 89,
+          "index": 4,
+          "serializer_expression": "od0.a",
+          "nullable": null
+        },
+        {
+          "key": "exp",
+          "optional": false,
+          "original_pc": "0x31",
+          "rea_source": "rea/validation/497-nested-com.picacg.network.pica.model.Creator__serializer-_clinit_.smali",
+          "rea_line": 98,
+          "index": 5,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "level",
+          "optional": false,
+          "original_pc": "0x36",
+          "rea_source": "rea/validation/497-nested-com.picacg.network.pica.model.Creator__serializer-_clinit_.smali",
+          "rea_line": 107,
+          "index": 6,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "characters",
+          "optional": true,
+          "original_pc": "0x3b",
+          "rea_source": "rea/validation/497-nested-com.picacg.network.pica.model.Creator__serializer-_clinit_.smali",
+          "rea_line": 116,
+          "index": 7,
+          "serializer_expression": "kd3VarArr[7].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "role",
+          "optional": true,
+          "original_pc": "0x40",
+          "rea_source": "rea/validation/497-nested-com.picacg.network.pica.model.Creator__serializer-_clinit_.smali",
+          "rea_line": 125,
+          "index": 8,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        },
+        {
+          "key": "slogan",
+          "optional": true,
+          "original_pc": "0x45",
+          "rea_source": "rea/validation/497-nested-com.picacg.network.pica.model.Creator__serializer-_clinit_.smali",
+          "rea_line": 134,
+          "index": 9,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        },
+        {
+          "key": "avatar",
+          "optional": true,
+          "original_pc": "0x4a",
+          "rea_source": "rea/validation/497-nested-com.picacg.network.pica.model.Creator__serializer-_clinit_.smali",
+          "rea_line": 143,
+          "index": 10,
+          "serializer_expression": "uo3.M(ImageInfo$$serializer.INSTANCE)",
+          "nullable": true
+        }
+      ],
+      "child_serializers_source": "rea/validation/498-nested-com.picacg.network.pica.model.Creator__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/155-supp-com.picacg.network.pica.model.Creator-_init_.java",
+        "rea/supplement/156-supp-com.picacg.network.pica.model.Creator-_init_.java",
+        "rea/supplement/157-supp-com.picacg.network.pica.model.Creator-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/Episode;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/Episode$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/499-nested-com.picacg.network.pica.model.Episode__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "title",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/499-nested-com.picacg.network.pica.model.Episode__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "order",
+          "optional": false,
+          "original_pc": "0x20",
+          "rea_source": "rea/validation/499-nested-com.picacg.network.pica.model.Episode__serializer-_clinit_.smali",
+          "rea_line": 67,
+          "index": 2,
+          "serializer_expression": "e53.a",
+          "nullable": null
+        },
+        {
+          "key": "updated_at",
+          "optional": false,
+          "original_pc": "0x25",
+          "rea_source": "rea/validation/499-nested-com.picacg.network.pica.model.Episode__serializer-_clinit_.smali",
+          "rea_line": 76,
+          "index": 3,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/500-nested-com.picacg.network.pica.model.Episode__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/158-supp-com.picacg.network.pica.model.Episode-_init_.java",
+        "rea/supplement/159-supp-com.picacg.network.pica.model.Episode-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/EpisodeInfo;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/EpisodeInfo$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/501-nested-com.picacg.network.pica.model.EpisodeInfo__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "title",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/501-nested-com.picacg.network.pica.model.EpisodeInfo__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "order",
+          "optional": true,
+          "original_pc": "0x21",
+          "rea_source": "rea/validation/501-nested-com.picacg.network.pica.model.EpisodeInfo__serializer-_clinit_.smali",
+          "rea_line": 70,
+          "index": 2,
+          "serializer_expression": "uo3.M(e53.a)",
+          "nullable": true
+        },
+        {
+          "key": "updated_at",
+          "optional": true,
+          "original_pc": "0x26",
+          "rea_source": "rea/validation/501-nested-com.picacg.network.pica.model.EpisodeInfo__serializer-_clinit_.smali",
+          "rea_line": 79,
+          "index": 3,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        }
+      ],
+      "child_serializers_source": "rea/validation/502-nested-com.picacg.network.pica.model.EpisodeInfo__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/160-supp-com.picacg.network.pica.model.EpisodeInfo-_init_.java",
+        "rea/supplement/161-supp-com.picacg.network.pica.model.EpisodeInfo-_init_.java",
+        "rea/supplement/162-supp-com.picacg.network.pica.model.EpisodeInfo-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/EpisodesData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/EpisodesData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "eps",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/279-serializer-com.picacg.network.pica.model.EpisodesData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "EpisodesInfo$$serializer.INSTANCE",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/281-serializer-com.picacg.network.pica.model.EpisodesData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/276-dto-com.picacg.network.pica.model.EpisodesData-_init_.java",
+        "rea/validation/277-dto-com.picacg.network.pica.model.EpisodesData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/EpisodesInfo;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/EpisodesInfo$$serializer;",
+      "wire_fields": [
+        {
+          "key": "docs",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/503-nested-com.picacg.network.pica.model.EpisodesInfo__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "EpisodesInfo.$childSerializers[0].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "total",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/503-nested-com.picacg.network.pica.model.EpisodesInfo__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "limit",
+          "optional": false,
+          "original_pc": "0x20",
+          "rea_source": "rea/validation/503-nested-com.picacg.network.pica.model.EpisodesInfo__serializer-_clinit_.smali",
+          "rea_line": 67,
+          "index": 2,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "page",
+          "optional": false,
+          "original_pc": "0x25",
+          "rea_source": "rea/validation/503-nested-com.picacg.network.pica.model.EpisodesInfo__serializer-_clinit_.smali",
+          "rea_line": 76,
+          "index": 3,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "pages",
+          "optional": false,
+          "original_pc": "0x2a",
+          "rea_source": "rea/validation/503-nested-com.picacg.network.pica.model.EpisodesInfo__serializer-_clinit_.smali",
+          "rea_line": 85,
+          "index": 4,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/504-nested-com.picacg.network.pica.model.EpisodesInfo__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/163-supp-com.picacg.network.pica.model.EpisodesInfo-_init_.java",
+        "rea/supplement/164-supp-com.picacg.network.pica.model.EpisodesInfo-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/GameComment;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/GameComment$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x17",
+          "rea_source": "rea/validation/505-nested-com.picacg.network.pica.model.GameComment__serializer-_clinit_.smali",
+          "rea_line": 50,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "content",
+          "optional": false,
+          "original_pc": "0x1c",
+          "rea_source": "rea/validation/505-nested-com.picacg.network.pica.model.GameComment__serializer-_clinit_.smali",
+          "rea_line": 59,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "_user",
+          "optional": true,
+          "original_pc": "0x22",
+          "rea_source": "rea/validation/505-nested-com.picacg.network.pica.model.GameComment__serializer-_clinit_.smali",
+          "rea_line": 71,
+          "index": 2,
+          "serializer_expression": "(uo3.M(CommentUser$$serializer.INSTANCE))",
+          "nullable": true
+        },
+        {
+          "key": "_game",
+          "optional": false,
+          "original_pc": "0x27",
+          "rea_source": "rea/validation/505-nested-com.picacg.network.pica.model.GameComment__serializer-_clinit_.smali",
+          "rea_line": 80,
+          "index": 3,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "totalComments",
+          "optional": true,
+          "original_pc": "0x2c",
+          "rea_source": "rea/validation/505-nested-com.picacg.network.pica.model.GameComment__serializer-_clinit_.smali",
+          "rea_line": 89,
+          "index": 4,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "isTop",
+          "optional": true,
+          "original_pc": "0x31",
+          "rea_source": "rea/validation/505-nested-com.picacg.network.pica.model.GameComment__serializer-_clinit_.smali",
+          "rea_line": 98,
+          "index": 5,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "hide",
+          "optional": true,
+          "original_pc": "0x36",
+          "rea_source": "rea/validation/505-nested-com.picacg.network.pica.model.GameComment__serializer-_clinit_.smali",
+          "rea_line": 107,
+          "index": 6,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "created_at",
+          "optional": false,
+          "original_pc": "0x3b",
+          "rea_source": "rea/validation/505-nested-com.picacg.network.pica.model.GameComment__serializer-_clinit_.smali",
+          "rea_line": 116,
+          "index": 7,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "likesCount",
+          "optional": true,
+          "original_pc": "0x40",
+          "rea_source": "rea/validation/505-nested-com.picacg.network.pica.model.GameComment__serializer-_clinit_.smali",
+          "rea_line": 125,
+          "index": 8,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "commentsCount",
+          "optional": true,
+          "original_pc": "0x45",
+          "rea_source": "rea/validation/505-nested-com.picacg.network.pica.model.GameComment__serializer-_clinit_.smali",
+          "rea_line": 134,
+          "index": 9,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "isLiked",
+          "optional": true,
+          "original_pc": "0x4a",
+          "rea_source": "rea/validation/505-nested-com.picacg.network.pica.model.GameComment__serializer-_clinit_.smali",
+          "rea_line": 143,
+          "index": 10,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/506-nested-com.picacg.network.pica.model.GameComment__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/165-supp-com.picacg.network.pica.model.GameComment-_init_.java",
+        "rea/supplement/166-supp-com.picacg.network.pica.model.GameComment-_init_.java",
+        "rea/supplement/167-supp-com.picacg.network.pica.model.GameComment-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/GameCommentResponseData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/GameCommentResponseData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "comments",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/293-serializer-com.picacg.network.pica.model.GameCommentResponseData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "GameCommentsPageData$$serializer.INSTANCE",
+          "nullable": null
+        },
+        {
+          "key": "topComments",
+          "optional": true,
+          "original_pc": "0x1c",
+          "rea_source": "rea/validation/293-serializer-com.picacg.network.pica.model.GameCommentResponseData__serializer-_clinit_.smali",
+          "rea_line": 61,
+          "index": 1,
+          "serializer_expression": "GameCommentResponseData.$childSerializers[1].getValue()",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/295-serializer-com.picacg.network.pica.model.GameCommentResponseData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/289-dto-com.picacg.network.pica.model.GameCommentResponseData-_init_.java",
+        "rea/validation/290-dto-com.picacg.network.pica.model.GameCommentResponseData-_init_.java",
+        "rea/validation/291-dto-com.picacg.network.pica.model.GameCommentResponseData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/GameCommentsPageData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/GameCommentsPageData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "docs",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/507-nested-com.picacg.network.pica.model.GameCommentsPageData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "GameCommentsPageData.$childSerializers[0].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "total",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/507-nested-com.picacg.network.pica.model.GameCommentsPageData__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "limit",
+          "optional": false,
+          "original_pc": "0x20",
+          "rea_source": "rea/validation/507-nested-com.picacg.network.pica.model.GameCommentsPageData__serializer-_clinit_.smali",
+          "rea_line": 67,
+          "index": 2,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "page",
+          "optional": false,
+          "original_pc": "0x25",
+          "rea_source": "rea/validation/507-nested-com.picacg.network.pica.model.GameCommentsPageData__serializer-_clinit_.smali",
+          "rea_line": 76,
+          "index": 3,
+          "serializer_expression": "ix5.a",
+          "nullable": null
+        },
+        {
+          "key": "pages",
+          "optional": false,
+          "original_pc": "0x2a",
+          "rea_source": "rea/validation/507-nested-com.picacg.network.pica.model.GameCommentsPageData__serializer-_clinit_.smali",
+          "rea_line": 85,
+          "index": 4,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/508-nested-com.picacg.network.pica.model.GameCommentsPageData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/168-supp-com.picacg.network.pica.model.GameCommentsPageData-_init_.java",
+        "rea/supplement/169-supp-com.picacg.network.pica.model.GameCommentsPageData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/GameDetail;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/GameDetail$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x17",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 50,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "title",
+          "optional": false,
+          "original_pc": "0x1c",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 59,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "version",
+          "optional": false,
+          "original_pc": "0x21",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 68,
+          "index": 2,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "publisher",
+          "optional": false,
+          "original_pc": "0x26",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 77,
+          "index": 3,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "description",
+          "optional": false,
+          "original_pc": "0x2b",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 86,
+          "index": 4,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "icon",
+          "optional": false,
+          "original_pc": "0x30",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 95,
+          "index": 5,
+          "serializer_expression": "ImageInfo$$serializer.INSTANCE",
+          "nullable": null
+        },
+        {
+          "key": "ios",
+          "optional": true,
+          "original_pc": "0x36",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 107,
+          "index": 6,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "android",
+          "optional": true,
+          "original_pc": "0x3b",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 116,
+          "index": 7,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "iosLinks",
+          "optional": true,
+          "original_pc": "0x40",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 125,
+          "index": 8,
+          "serializer_expression": "kd3VarArr[8].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "androidLinks",
+          "optional": true,
+          "original_pc": "0x45",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 134,
+          "index": 9,
+          "serializer_expression": "kd3VarArr[9].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "picaLink",
+          "optional": true,
+          "original_pc": "0x4a",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 143,
+          "index": 10,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "adult",
+          "optional": true,
+          "original_pc": "0x4f",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 152,
+          "index": 11,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "suggest",
+          "optional": true,
+          "original_pc": "0x54",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 161,
+          "index": 12,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "downloadsCount",
+          "optional": true,
+          "original_pc": "0x59",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 170,
+          "index": 13,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "likesCount",
+          "optional": true,
+          "original_pc": "0x5e",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 179,
+          "index": 14,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "commentsCount",
+          "optional": true,
+          "original_pc": "0x63",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 188,
+          "index": 15,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "isLiked",
+          "optional": true,
+          "original_pc": "0x68",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 197,
+          "index": 16,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "screenshots",
+          "optional": true,
+          "original_pc": "0x6d",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 206,
+          "index": 17,
+          "serializer_expression": "kd3VarArr[17].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "androidSize",
+          "optional": true,
+          "original_pc": "0x72",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 215,
+          "index": 18,
+          "serializer_expression": "uo3.M((tv1.a))",
+          "nullable": true
+        },
+        {
+          "key": "iosSize",
+          "optional": true,
+          "original_pc": "0x77",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 224,
+          "index": 19,
+          "serializer_expression": "uo3.M((tv1.a))",
+          "nullable": true
+        },
+        {
+          "key": "updateContent",
+          "optional": true,
+          "original_pc": "0x7c",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 233,
+          "index": 20,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        },
+        {
+          "key": "videoLink",
+          "optional": true,
+          "original_pc": "0x81",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 242,
+          "index": 21,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        },
+        {
+          "key": "created_at",
+          "optional": false,
+          "original_pc": "0x86",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 251,
+          "index": 22,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "updated_at",
+          "optional": false,
+          "original_pc": "0x8b",
+          "rea_source": "rea/validation/509-nested-com.picacg.network.pica.model.GameDetail__serializer-_clinit_.smali",
+          "rea_line": 260,
+          "index": 23,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/510-nested-com.picacg.network.pica.model.GameDetail__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/170-supp-com.picacg.network.pica.model.GameDetail-_init_.java",
+        "rea/supplement/171-supp-com.picacg.network.pica.model.GameDetail-_init_.java",
+        "rea/supplement/172-supp-com.picacg.network.pica.model.GameDetail-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/GameDetailResponse;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/GameDetailResponse$$serializer;",
+      "wire_fields": [
+        {
+          "key": "game",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/306-serializer-com.picacg.network.pica.model.GameDetailResponse__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "GameDetail$$serializer.INSTANCE",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/308-serializer-com.picacg.network.pica.model.GameDetailResponse__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/303-dto-com.picacg.network.pica.model.GameDetailResponse-_init_.java",
+        "rea/validation/304-dto-com.picacg.network.pica.model.GameDetailResponse-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/GameItem;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/GameItem$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x17",
+          "rea_source": "rea/validation/511-nested-com.picacg.network.pica.model.GameItem__serializer-_clinit_.smali",
+          "rea_line": 50,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "title",
+          "optional": false,
+          "original_pc": "0x1c",
+          "rea_source": "rea/validation/511-nested-com.picacg.network.pica.model.GameItem__serializer-_clinit_.smali",
+          "rea_line": 59,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "version",
+          "optional": false,
+          "original_pc": "0x21",
+          "rea_source": "rea/validation/511-nested-com.picacg.network.pica.model.GameItem__serializer-_clinit_.smali",
+          "rea_line": 68,
+          "index": 2,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "publisher",
+          "optional": false,
+          "original_pc": "0x26",
+          "rea_source": "rea/validation/511-nested-com.picacg.network.pica.model.GameItem__serializer-_clinit_.smali",
+          "rea_line": 77,
+          "index": 3,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "icon",
+          "optional": false,
+          "original_pc": "0x2b",
+          "rea_source": "rea/validation/511-nested-com.picacg.network.pica.model.GameItem__serializer-_clinit_.smali",
+          "rea_line": 86,
+          "index": 4,
+          "serializer_expression": "ImageInfo$$serializer.INSTANCE",
+          "nullable": null
+        },
+        {
+          "key": "ios",
+          "optional": true,
+          "original_pc": "0x31",
+          "rea_source": "rea/validation/511-nested-com.picacg.network.pica.model.GameItem__serializer-_clinit_.smali",
+          "rea_line": 98,
+          "index": 5,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "android",
+          "optional": true,
+          "original_pc": "0x36",
+          "rea_source": "rea/validation/511-nested-com.picacg.network.pica.model.GameItem__serializer-_clinit_.smali",
+          "rea_line": 107,
+          "index": 6,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "iosLinks",
+          "optional": true,
+          "original_pc": "0x3b",
+          "rea_source": "rea/validation/511-nested-com.picacg.network.pica.model.GameItem__serializer-_clinit_.smali",
+          "rea_line": 116,
+          "index": 7,
+          "serializer_expression": "kd3VarArr[7].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "androidLinks",
+          "optional": true,
+          "original_pc": "0x40",
+          "rea_source": "rea/validation/511-nested-com.picacg.network.pica.model.GameItem__serializer-_clinit_.smali",
+          "rea_line": 125,
+          "index": 8,
+          "serializer_expression": "kd3VarArr[8].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "picaLink",
+          "optional": true,
+          "original_pc": "0x45",
+          "rea_source": "rea/validation/511-nested-com.picacg.network.pica.model.GameItem__serializer-_clinit_.smali",
+          "rea_line": 134,
+          "index": 9,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "adult",
+          "optional": true,
+          "original_pc": "0x4a",
+          "rea_source": "rea/validation/511-nested-com.picacg.network.pica.model.GameItem__serializer-_clinit_.smali",
+          "rea_line": 143,
+          "index": 10,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "suggest",
+          "optional": true,
+          "original_pc": "0x4f",
+          "rea_source": "rea/validation/511-nested-com.picacg.network.pica.model.GameItem__serializer-_clinit_.smali",
+          "rea_line": 152,
+          "index": 11,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/512-nested-com.picacg.network.pica.model.GameItem__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/173-supp-com.picacg.network.pica.model.GameItem-_init_.java",
+        "rea/supplement/174-supp-com.picacg.network.pica.model.GameItem-_init_.java",
+        "rea/supplement/175-supp-com.picacg.network.pica.model.GameItem-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/GameLikeResponse;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/GameLikeResponse$$serializer;",
+      "wire_fields": [
+        {
+          "key": "action",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/319-serializer-com.picacg.network.pica.model.GameLikeResponse__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "ix5.a",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/321-serializer-com.picacg.network.pica.model.GameLikeResponse__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/316-dto-com.picacg.network.pica.model.GameLikeResponse-_init_.java",
+        "rea/validation/317-dto-com.picacg.network.pica.model.GameLikeResponse-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/GamesPageData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/GamesPageData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "docs",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/513-nested-com.picacg.network.pica.model.GamesPageData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "GamesPageData.$childSerializers[0].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "total",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/513-nested-com.picacg.network.pica.model.GamesPageData__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "limit",
+          "optional": false,
+          "original_pc": "0x20",
+          "rea_source": "rea/validation/513-nested-com.picacg.network.pica.model.GamesPageData__serializer-_clinit_.smali",
+          "rea_line": 67,
+          "index": 2,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "page",
+          "optional": false,
+          "original_pc": "0x25",
+          "rea_source": "rea/validation/513-nested-com.picacg.network.pica.model.GamesPageData__serializer-_clinit_.smali",
+          "rea_line": 76,
+          "index": 3,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "pages",
+          "optional": false,
+          "original_pc": "0x2a",
+          "rea_source": "rea/validation/513-nested-com.picacg.network.pica.model.GamesPageData__serializer-_clinit_.smali",
+          "rea_line": 85,
+          "index": 4,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/514-nested-com.picacg.network.pica.model.GamesPageData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/176-supp-com.picacg.network.pica.model.GamesPageData-_init_.java",
+        "rea/supplement/177-supp-com.picacg.network.pica.model.GamesPageData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/GamesResponse;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/GamesResponse$$serializer;",
+      "wire_fields": [
+        {
+          "key": "games",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/332-serializer-com.picacg.network.pica.model.GamesResponse__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "GamesPageData$$serializer.INSTANCE",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/334-serializer-com.picacg.network.pica.model.GamesResponse__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/329-dto-com.picacg.network.pica.model.GamesResponse-_init_.java",
+        "rea/validation/330-dto-com.picacg.network.pica.model.GamesResponse-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/ImageInfo;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/ImageInfo$$serializer;",
+      "wire_fields": [
+        {
+          "key": "originalName",
+          "optional": true,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/515-nested-com.picacg.network.pica.model.ImageInfo__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        },
+        {
+          "key": "path",
+          "optional": false,
+          "original_pc": "0x1c",
+          "rea_source": "rea/validation/515-nested-com.picacg.network.pica.model.ImageInfo__serializer-_clinit_.smali",
+          "rea_line": 61,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "fileServer",
+          "optional": false,
+          "original_pc": "0x21",
+          "rea_source": "rea/validation/515-nested-com.picacg.network.pica.model.ImageInfo__serializer-_clinit_.smali",
+          "rea_line": 70,
+          "index": 2,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/516-nested-com.picacg.network.pica.model.ImageInfo__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/178-supp-com.picacg.network.pica.model.ImageInfo-_init_.java",
+        "rea/supplement/179-supp-com.picacg.network.pica.model.ImageInfo-_init_.java",
+        "rea/supplement/180-supp-com.picacg.network.pica.model.ImageInfo-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/KeywordsData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/KeywordsData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "keywords",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/345-serializer-com.picacg.network.pica.model.KeywordsData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "KeywordsData.$childSerializers[0].getValue()",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/347-serializer-com.picacg.network.pica.model.KeywordsData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/342-dto-com.picacg.network.pica.model.KeywordsData-_init_.java",
+        "rea/validation/343-dto-com.picacg.network.pica.model.KeywordsData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/LeaderboardComic;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/LeaderboardComic$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x17",
+          "rea_source": "rea/validation/517-nested-com.picacg.network.pica.model.LeaderboardComic__serializer-_clinit_.smali",
+          "rea_line": 50,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "title",
+          "optional": false,
+          "original_pc": "0x1c",
+          "rea_source": "rea/validation/517-nested-com.picacg.network.pica.model.LeaderboardComic__serializer-_clinit_.smali",
+          "rea_line": 59,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "author",
+          "optional": false,
+          "original_pc": "0x21",
+          "rea_source": "rea/validation/517-nested-com.picacg.network.pica.model.LeaderboardComic__serializer-_clinit_.smali",
+          "rea_line": 68,
+          "index": 2,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "totalViews",
+          "optional": true,
+          "original_pc": "0x27",
+          "rea_source": "rea/validation/517-nested-com.picacg.network.pica.model.LeaderboardComic__serializer-_clinit_.smali",
+          "rea_line": 80,
+          "index": 3,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "totalLikes",
+          "optional": true,
+          "original_pc": "0x2c",
+          "rea_source": "rea/validation/517-nested-com.picacg.network.pica.model.LeaderboardComic__serializer-_clinit_.smali",
+          "rea_line": 89,
+          "index": 4,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "pagesCount",
+          "optional": true,
+          "original_pc": "0x31",
+          "rea_source": "rea/validation/517-nested-com.picacg.network.pica.model.LeaderboardComic__serializer-_clinit_.smali",
+          "rea_line": 98,
+          "index": 5,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "epsCount",
+          "optional": true,
+          "original_pc": "0x36",
+          "rea_source": "rea/validation/517-nested-com.picacg.network.pica.model.LeaderboardComic__serializer-_clinit_.smali",
+          "rea_line": 107,
+          "index": 6,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "finished",
+          "optional": true,
+          "original_pc": "0x3b",
+          "rea_source": "rea/validation/517-nested-com.picacg.network.pica.model.LeaderboardComic__serializer-_clinit_.smali",
+          "rea_line": 116,
+          "index": 7,
+          "serializer_expression": "od0.a",
+          "nullable": null
+        },
+        {
+          "key": "categories",
+          "optional": true,
+          "original_pc": "0x40",
+          "rea_source": "rea/validation/517-nested-com.picacg.network.pica.model.LeaderboardComic__serializer-_clinit_.smali",
+          "rea_line": 125,
+          "index": 8,
+          "serializer_expression": "kd3VarArr[8].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "tags",
+          "optional": true,
+          "original_pc": "0x45",
+          "rea_source": "rea/validation/517-nested-com.picacg.network.pica.model.LeaderboardComic__serializer-_clinit_.smali",
+          "rea_line": 134,
+          "index": 9,
+          "serializer_expression": "kd3VarArr[9].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "thumb",
+          "optional": false,
+          "original_pc": "0x4a",
+          "rea_source": "rea/validation/517-nested-com.picacg.network.pica.model.LeaderboardComic__serializer-_clinit_.smali",
+          "rea_line": 143,
+          "index": 10,
+          "serializer_expression": "ImageInfo$$serializer.INSTANCE",
+          "nullable": null
+        },
+        {
+          "key": "likesCount",
+          "optional": true,
+          "original_pc": "0x4f",
+          "rea_source": "rea/validation/517-nested-com.picacg.network.pica.model.LeaderboardComic__serializer-_clinit_.smali",
+          "rea_line": 152,
+          "index": 11,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/518-nested-com.picacg.network.pica.model.LeaderboardComic__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/182-supp-com.picacg.network.pica.model.LeaderboardComic-_init_.java",
+        "rea/supplement/183-supp-com.picacg.network.pica.model.LeaderboardComic-_init_.java",
+        "rea/supplement/184-supp-com.picacg.network.pica.model.LeaderboardComic-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/LeaderboardData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/LeaderboardData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "comics",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/358-serializer-com.picacg.network.pica.model.LeaderboardData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "LeaderboardData.$childSerializers[0].getValue()",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/360-serializer-com.picacg.network.pica.model.LeaderboardData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/355-dto-com.picacg.network.pica.model.LeaderboardData-_init_.java",
+        "rea/validation/356-dto-com.picacg.network.pica.model.LeaderboardData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/LoginData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/LoginData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "token",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/371-serializer-com.picacg.network.pica.model.LoginData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "ix5.a",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/373-serializer-com.picacg.network.pica.model.LoginData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/368-dto-com.picacg.network.pica.model.LoginData-_init_.java",
+        "rea/validation/369-dto-com.picacg.network.pica.model.LoginData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/MyCommentComicRef;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/MyCommentComicRef$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/519-nested-com.picacg.network.pica.model.MyCommentComicRef__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "title",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/519-nested-com.picacg.network.pica.model.MyCommentComicRef__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/520-nested-com.picacg.network.pica.model.MyCommentComicRef__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/185-supp-com.picacg.network.pica.model.MyCommentComicRef-_init_.java",
+        "rea/supplement/186-supp-com.picacg.network.pica.model.MyCommentComicRef-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/MyCommentItem;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/MyCommentItem$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x17",
+          "rea_source": "rea/validation/521-nested-com.picacg.network.pica.model.MyCommentItem__serializer-_clinit_.smali",
+          "rea_line": 50,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "content",
+          "optional": false,
+          "original_pc": "0x1c",
+          "rea_source": "rea/validation/521-nested-com.picacg.network.pica.model.MyCommentItem__serializer-_clinit_.smali",
+          "rea_line": 59,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "_comic",
+          "optional": true,
+          "original_pc": "0x22",
+          "rea_source": "rea/validation/521-nested-com.picacg.network.pica.model.MyCommentItem__serializer-_clinit_.smali",
+          "rea_line": 71,
+          "index": 2,
+          "serializer_expression": "(uo3.M(MyCommentComicRef$$serializer.INSTANCE))",
+          "nullable": true
+        },
+        {
+          "key": "totalComments",
+          "optional": true,
+          "original_pc": "0x27",
+          "rea_source": "rea/validation/521-nested-com.picacg.network.pica.model.MyCommentItem__serializer-_clinit_.smali",
+          "rea_line": 80,
+          "index": 3,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "hide",
+          "optional": true,
+          "original_pc": "0x2c",
+          "rea_source": "rea/validation/521-nested-com.picacg.network.pica.model.MyCommentItem__serializer-_clinit_.smali",
+          "rea_line": 89,
+          "index": 4,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "created_at",
+          "optional": false,
+          "original_pc": "0x31",
+          "rea_source": "rea/validation/521-nested-com.picacg.network.pica.model.MyCommentItem__serializer-_clinit_.smali",
+          "rea_line": 98,
+          "index": 5,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "likesCount",
+          "optional": true,
+          "original_pc": "0x36",
+          "rea_source": "rea/validation/521-nested-com.picacg.network.pica.model.MyCommentItem__serializer-_clinit_.smali",
+          "rea_line": 107,
+          "index": 6,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "commentsCount",
+          "optional": true,
+          "original_pc": "0x3b",
+          "rea_source": "rea/validation/521-nested-com.picacg.network.pica.model.MyCommentItem__serializer-_clinit_.smali",
+          "rea_line": 116,
+          "index": 7,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "isLiked",
+          "optional": true,
+          "original_pc": "0x40",
+          "rea_source": "rea/validation/521-nested-com.picacg.network.pica.model.MyCommentItem__serializer-_clinit_.smali",
+          "rea_line": 125,
+          "index": 8,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/522-nested-com.picacg.network.pica.model.MyCommentItem__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/187-supp-com.picacg.network.pica.model.MyCommentItem-_init_.java",
+        "rea/supplement/188-supp-com.picacg.network.pica.model.MyCommentItem-_init_.java",
+        "rea/supplement/189-supp-com.picacg.network.pica.model.MyCommentItem-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/MyCommentsPageData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/MyCommentsPageData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "docs",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/523-nested-com.picacg.network.pica.model.MyCommentsPageData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "MyCommentsPageData.$childSerializers[0].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "total",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/523-nested-com.picacg.network.pica.model.MyCommentsPageData__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "limit",
+          "optional": false,
+          "original_pc": "0x20",
+          "rea_source": "rea/validation/523-nested-com.picacg.network.pica.model.MyCommentsPageData__serializer-_clinit_.smali",
+          "rea_line": 67,
+          "index": 2,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "page",
+          "optional": false,
+          "original_pc": "0x25",
+          "rea_source": "rea/validation/523-nested-com.picacg.network.pica.model.MyCommentsPageData__serializer-_clinit_.smali",
+          "rea_line": 76,
+          "index": 3,
+          "serializer_expression": "ix5.a",
+          "nullable": null
+        },
+        {
+          "key": "pages",
+          "optional": false,
+          "original_pc": "0x2a",
+          "rea_source": "rea/validation/523-nested-com.picacg.network.pica.model.MyCommentsPageData__serializer-_clinit_.smali",
+          "rea_line": 85,
+          "index": 4,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/524-nested-com.picacg.network.pica.model.MyCommentsPageData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/190-supp-com.picacg.network.pica.model.MyCommentsPageData-_init_.java",
+        "rea/supplement/191-supp-com.picacg.network.pica.model.MyCommentsPageData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/MyCommentsResponseData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/MyCommentsResponseData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "comments",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/384-serializer-com.picacg.network.pica.model.MyCommentsResponseData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "MyCommentsPageData$$serializer.INSTANCE",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/386-serializer-com.picacg.network.pica.model.MyCommentsResponseData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/381-dto-com.picacg.network.pica.model.MyCommentsResponseData-_init_.java",
+        "rea/validation/382-dto-com.picacg.network.pica.model.MyCommentsResponseData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/PageItem;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/PageItem$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/525-nested-com.picacg.network.pica.model.PageItem__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "ix5.a",
+          "nullable": null
+        },
+        {
+          "key": "media",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/525-nested-com.picacg.network.pica.model.PageItem__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "ImageInfo$$serializer.INSTANCE",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/526-nested-com.picacg.network.pica.model.PageItem__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/192-supp-com.picacg.network.pica.model.PageItem-_init_.java",
+        "rea/supplement/193-supp-com.picacg.network.pica.model.PageItem-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/PagesInfo;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/PagesInfo$$serializer;",
+      "wire_fields": [
+        {
+          "key": "docs",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/527-nested-com.picacg.network.pica.model.PagesInfo__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "PagesInfo.$childSerializers[0].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "total",
+          "optional": false,
+          "original_pc": "0x1b",
+          "rea_source": "rea/validation/527-nested-com.picacg.network.pica.model.PagesInfo__serializer-_clinit_.smali",
+          "rea_line": 58,
+          "index": 1,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "limit",
+          "optional": false,
+          "original_pc": "0x20",
+          "rea_source": "rea/validation/527-nested-com.picacg.network.pica.model.PagesInfo__serializer-_clinit_.smali",
+          "rea_line": 67,
+          "index": 2,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "page",
+          "optional": false,
+          "original_pc": "0x25",
+          "rea_source": "rea/validation/527-nested-com.picacg.network.pica.model.PagesInfo__serializer-_clinit_.smali",
+          "rea_line": 76,
+          "index": 3,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "pages",
+          "optional": false,
+          "original_pc": "0x2a",
+          "rea_source": "rea/validation/527-nested-com.picacg.network.pica.model.PagesInfo__serializer-_clinit_.smali",
+          "rea_line": 85,
+          "index": 4,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/528-nested-com.picacg.network.pica.model.PagesInfo__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/194-supp-com.picacg.network.pica.model.PagesInfo-_init_.java",
+        "rea/supplement/195-supp-com.picacg.network.pica.model.PagesInfo-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/PicaResponse;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/PicaResponse$$serializer;",
+      "wire_fields": [
+        {
+          "key": "code",
+          "optional": false,
+          "original_pc": "0xe",
+          "rea_source": "rea/validation/398-serializer-com.picacg.network.pica.model.PicaResponse__serializer-_init_.java",
+          "rea_line": 3,
+          "index": 0,
+          "serializer_expression": "e53.a",
+          "nullable": null
+        },
+        {
+          "key": "message",
+          "optional": false,
+          "original_pc": "0x13",
+          "rea_source": "rea/validation/398-serializer-com.picacg.network.pica.model.PicaResponse__serializer-_init_.java",
+          "rea_line": 4,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "error",
+          "optional": true,
+          "original_pc": "0x19",
+          "rea_source": "rea/validation/398-serializer-com.picacg.network.pica.model.PicaResponse__serializer-_init_.java",
+          "rea_line": 5,
+          "index": 2,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        },
+        {
+          "key": "data",
+          "optional": true,
+          "original_pc": "0x1e",
+          "rea_source": "rea/validation/398-serializer-com.picacg.network.pica.model.PicaResponse__serializer-_init_.java",
+          "rea_line": 6,
+          "index": 3,
+          "serializer_expression": "uo3.M(this.typeSerial0)",
+          "nullable": true
+        }
+      ],
+      "child_serializers_source": "rea/validation/400-serializer-com.picacg.network.pica.model.PicaResponse__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/394-dto-com.picacg.network.pica.model.PicaResponse-_init_.java",
+        "rea/validation/395-dto-com.picacg.network.pica.model.PicaResponse-_init_.java",
+        "rea/validation/396-dto-com.picacg.network.pica.model.PicaResponse-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/PunchInData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/PunchInData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "status",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/529-nested-com.picacg.network.pica.model.PunchInData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "punchInLastDay",
+          "optional": true,
+          "original_pc": "0x1c",
+          "rea_source": "rea/validation/529-nested-com.picacg.network.pica.model.PunchInData__serializer-_clinit_.smali",
+          "rea_line": 61,
+          "index": 1,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        }
+      ],
+      "child_serializers_source": "rea/validation/530-nested-com.picacg.network.pica.model.PunchInData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/196-supp-com.picacg.network.pica.model.PunchInData-_init_.java",
+        "rea/supplement/197-supp-com.picacg.network.pica.model.PunchInData-_init_.java",
+        "rea/supplement/198-supp-com.picacg.network.pica.model.PunchInData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/PunchInResponse;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/PunchInResponse$$serializer;",
+      "wire_fields": [
+        {
+          "key": "res",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/411-serializer-com.picacg.network.pica.model.PunchInResponse__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "PunchInData$$serializer.INSTANCE",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/413-serializer-com.picacg.network.pica.model.PunchInResponse__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/408-dto-com.picacg.network.pica.model.PunchInResponse-_init_.java",
+        "rea/validation/409-dto-com.picacg.network.pica.model.PunchInResponse-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/RandomComicsResponse;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/RandomComicsResponse$$serializer;",
+      "wire_fields": [
+        {
+          "key": "comics",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/424-serializer-com.picacg.network.pica.model.RandomComicsResponse__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "RandomComicsResponse.$childSerializers[0].getValue()",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/426-serializer-com.picacg.network.pica.model.RandomComicsResponse__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/421-dto-com.picacg.network.pica.model.RandomComicsResponse-_init_.java",
+        "rea/validation/422-dto-com.picacg.network.pica.model.RandomComicsResponse-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/SloganUpdateRequest;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/SloganUpdateRequest$$serializer;",
+      "wire_fields": [
+        {
+          "key": "slogan",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/437-serializer-com.picacg.network.pica.model.SloganUpdateRequest__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "ix5.a",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/439-serializer-com.picacg.network.pica.model.SloganUpdateRequest__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/434-dto-com.picacg.network.pica.model.SloganUpdateRequest-_init_.java",
+        "rea/validation/435-dto-com.picacg.network.pica.model.SloganUpdateRequest-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/UserProfile;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/UserProfile$$serializer;",
+      "wire_fields": [
+        {
+          "key": "_id",
+          "optional": false,
+          "original_pc": "0x17",
+          "rea_source": "rea/validation/531-nested-com.picacg.network.pica.model.UserProfile__serializer-_clinit_.smali",
+          "rea_line": 50,
+          "index": 0,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "email",
+          "optional": false,
+          "original_pc": "0x1c",
+          "rea_source": "rea/validation/531-nested-com.picacg.network.pica.model.UserProfile__serializer-_clinit_.smali",
+          "rea_line": 59,
+          "index": 1,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "name",
+          "optional": false,
+          "original_pc": "0x21",
+          "rea_source": "rea/validation/531-nested-com.picacg.network.pica.model.UserProfile__serializer-_clinit_.smali",
+          "rea_line": 68,
+          "index": 2,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "title",
+          "optional": true,
+          "original_pc": "0x27",
+          "rea_source": "rea/validation/531-nested-com.picacg.network.pica.model.UserProfile__serializer-_clinit_.smali",
+          "rea_line": 80,
+          "index": 3,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        },
+        {
+          "key": "slogan",
+          "optional": true,
+          "original_pc": "0x2c",
+          "rea_source": "rea/validation/531-nested-com.picacg.network.pica.model.UserProfile__serializer-_clinit_.smali",
+          "rea_line": 89,
+          "index": 4,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        },
+        {
+          "key": "avatar",
+          "optional": true,
+          "original_pc": "0x31",
+          "rea_source": "rea/validation/531-nested-com.picacg.network.pica.model.UserProfile__serializer-_clinit_.smali",
+          "rea_line": 98,
+          "index": 5,
+          "serializer_expression": "uo3.M(ImageInfo$$serializer.INSTANCE)",
+          "nullable": true
+        },
+        {
+          "key": "exp",
+          "optional": true,
+          "original_pc": "0x36",
+          "rea_source": "rea/validation/531-nested-com.picacg.network.pica.model.UserProfile__serializer-_clinit_.smali",
+          "rea_line": 107,
+          "index": 6,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "level",
+          "optional": true,
+          "original_pc": "0x3b",
+          "rea_source": "rea/validation/531-nested-com.picacg.network.pica.model.UserProfile__serializer-_clinit_.smali",
+          "rea_line": 116,
+          "index": 7,
+          "serializer_expression": "(e53.a)",
+          "nullable": null
+        },
+        {
+          "key": "gender",
+          "optional": true,
+          "original_pc": "0x40",
+          "rea_source": "rea/validation/531-nested-com.picacg.network.pica.model.UserProfile__serializer-_clinit_.smali",
+          "rea_line": 125,
+          "index": 8,
+          "serializer_expression": "(ix5.a)",
+          "nullable": null
+        },
+        {
+          "key": "verified",
+          "optional": true,
+          "original_pc": "0x45",
+          "rea_source": "rea/validation/531-nested-com.picacg.network.pica.model.UserProfile__serializer-_clinit_.smali",
+          "rea_line": 134,
+          "index": 9,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "isPunched",
+          "optional": true,
+          "original_pc": "0x4a",
+          "rea_source": "rea/validation/531-nested-com.picacg.network.pica.model.UserProfile__serializer-_clinit_.smali",
+          "rea_line": 143,
+          "index": 10,
+          "serializer_expression": "(od0.a)",
+          "nullable": null
+        },
+        {
+          "key": "characters",
+          "optional": true,
+          "original_pc": "0x4f",
+          "rea_source": "rea/validation/531-nested-com.picacg.network.pica.model.UserProfile__serializer-_clinit_.smali",
+          "rea_line": 152,
+          "index": 11,
+          "serializer_expression": "kd3VarArr[11].getValue()",
+          "nullable": null
+        },
+        {
+          "key": "birthday",
+          "optional": true,
+          "original_pc": "0x54",
+          "rea_source": "rea/validation/531-nested-com.picacg.network.pica.model.UserProfile__serializer-_clinit_.smali",
+          "rea_line": 161,
+          "index": 12,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        },
+        {
+          "key": "created_at",
+          "optional": true,
+          "original_pc": "0x59",
+          "rea_source": "rea/validation/531-nested-com.picacg.network.pica.model.UserProfile__serializer-_clinit_.smali",
+          "rea_line": 170,
+          "index": 13,
+          "serializer_expression": "uo3.M((ix5.a))",
+          "nullable": true
+        }
+      ],
+      "child_serializers_source": "rea/validation/532-nested-com.picacg.network.pica.model.UserProfile__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/supplement/199-supp-com.picacg.network.pica.model.UserProfile-_init_.java",
+        "rea/supplement/200-supp-com.picacg.network.pica.model.UserProfile-_init_.java",
+        "rea/supplement/201-supp-com.picacg.network.pica.model.UserProfile-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    },
+    {
+      "class_descriptor": "Lcom/picacg/network/pica/model/UserProfileData;",
+      "serializer_descriptor": "Lcom/picacg/network/pica/model/UserProfileData$$serializer;",
+      "wire_fields": [
+        {
+          "key": "user",
+          "optional": false,
+          "original_pc": "0x16",
+          "rea_source": "rea/validation/450-serializer-com.picacg.network.pica.model.UserProfileData__serializer-_clinit_.smali",
+          "rea_line": 49,
+          "index": 0,
+          "serializer_expression": "UserProfile$$serializer.INSTANCE",
+          "nullable": null
+        }
+      ],
+      "child_serializers_source": "rea/validation/452-serializer-com.picacg.network.pica.model.UserProfileData__serializer-childSerializers.java",
+      "constructor_sources": [
+        "rea/validation/447-dto-com.picacg.network.pica.model.UserProfileData-_init_.java",
+        "rea/validation/448-dto-com.picacg.network.pica.model.UserProfileData-_init_.java"
+      ],
+      "notes": "optional means missing field allowed; not the same as nullable. Raw serializer expressions retained, unresolved lazy/generic child types are not invented."
+    }
+  ]
+}

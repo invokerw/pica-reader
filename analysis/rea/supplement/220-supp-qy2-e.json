@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_6ecc3d3ab1052290983291ea8b0def2ed422c1ed451aa26bcb10e4b463addd94",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "qy2",
+    "method_name": "e",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-7802ea5287a189237b935c294ddb9235\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":2,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "qy2"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"qy2\",\"fields\":[{\"def_pos\":0,\"name\":\"a\",\"type\":\"java.util.List\"},{\"def_pos\":0,\"name\":\"b\",\"type\":\"java.util.List\"}],\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"(Lhe3;)Ls65;\",\"signature\":\"a(he3): s65\",\"def_pos\":0},{\"name\":\"b\",\"is_constructor\":false,\"dex_descriptor\":\"(Ls65;)Ljava/lang/String;\",\"signature\":\"b(s65): java.lang.String\",\"def_pos\":0},{\"name\":\"c\",\"is_constructor\":false,\"dex_descriptor\":\"(Ls65;)Ljava/lang/String;\",\"signature\":\"c(s65): java.lang.String\",\"def_pos\":0},{\"name\":\"d\",\"is_constructor\":false,\"dex_descriptor\":\"(Lhe3;)Ljava/lang/String;\",\"signature\":\"d(he3): java.lang.String\",\"def_pos\":0},{\"name\":\"e\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ls65;JLjava/lang/String;)V\",\"signature\":\"e(java.lang.String, s65, long, java.lang.String): void\",\"def_pos\":0},{\"name\":\"f\",\"is_constructor\":false,\"dex_descriptor\":\"(IJLjava/lang/String;Ljava/lang/String;)V\",\"signature\":\"f(int, long, java.lang.String, java.lang.String): void\",\"def_pos\":0}],\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"qy2\",\"field_count\":2,\"full_name\":\"defpackage.qy2\",\"method_count\":7}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "qy2",
+          "method_name": "e",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_index\":0,\"method_name\":\"e\",\"overload_count\":1,\"dex_descriptor\":\"(Ljava/lang/String;Ls65;JLjava/lang/String;)V\",\"class_name\":\"defpackage.qy2\",\"mode\":\"java\",\"body\":\"    public static void e(String str, s65 s65Var, long j, String str2) {\\r\\n        SimpleDateFormat simpleDateFormat \\u003d sy2.a;\\r\\n        if (sy2.a(\\\"http_failure\\\")) {\\r\\n            try {\\r\\n                String strH \\u003d s65.h(s65Var, \\\"cf-ray\\\");\\r\\n                int i \\u003d s65Var.l;\\r\\n                FirebaseCrashlytics firebaseCrashlytics \\u003d FirebaseCrashlytics.getInstance();\\r\\n                firebaseCrashlytics.getClass();\\r\\n                firebaseCrashlytics.setCustomKey(\\\"pica_img_fail_http_code\\\", i);\\r\\n                firebaseCrashlytics.setCustomKey(\\\"pica_img_fail_http_url\\\", kx5.L0(400, str));\\r\\n                String str3 \\u003d \\\"unknown\\\";\\r\\n                firebaseCrashlytics.setCustomKey(\\\"pica_img_fail_colo\\\", strH !\\u003d null ? kx5.H0(\\u0027-\\u0027, strH, strH) : \\\"unknown\\\");\\r\\n                String strH2 \\u003d s65.h(s65Var, \\\"server\\\");\\r\\n                if (strH2 !\\u003d null) {\\r\\n                    str3 \\u003d strH2;\\r\\n                }\\r\\n                firebaseCrashlytics.setCustomKey(\\\"pica_img_fail_server\\\", str3);\\r\\n                firebaseCrashlytics.log(\\\"[PICA_IMG_HTTP_FAILURE] \\\" + i + \\\" \\\" + str + \\\" (\\\" + j + \\\"ms) cf-ray\\u003d\\\" + strH + \\\" body\\u003d\\\" + (str2 !\\u003d null ? kx5.L0(200, str2) : null));\\r\\n                StringBuilder sb \\u003d new StringBuilder(\\\"[PICA_IMG_HTTP_FAILURE] HTTP \\\");\\r\\n                sb.append(i);\\r\\n                sb.append(\\\" @ \\\");\\r\\n                sb.append(str);\\r\\n                firebaseCrashlytics.recordException(new RuntimeException(sb.toString()));\\r\\n            } catch (Exception unused) {\\r\\n            }\\r\\n        }\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"qy2.e\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.qy2",
+    "method": {
+      "name": "e",
+      "reported_signature": "e(java.lang.String, s65, long, java.lang.String): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/String;Ls65;JLjava/lang/String;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public static void e(String str, s65 s65Var, long j, String str2) {\r\n        SimpleDateFormat simpleDateFormat = sy2.a;\r\n        if (sy2.a(\"http_failure\")) {\r\n            try {\r\n                String strH = s65.h(s65Var, \"cf-ray\");\r\n                int i = s65Var.l;\r\n                FirebaseCrashlytics firebaseCrashlytics = FirebaseCrashlytics.getInstance();\r\n                firebaseCrashlytics.getClass();\r\n                firebaseCrashlytics.setCustomKey(\"pica_img_fail_http_code\", i);\r\n                firebaseCrashlytics.setCustomKey(\"pica_img_fail_http_url\", kx5.L0(400, str));\r\n                String str3 = \"unknown\";\r\n                firebaseCrashlytics.setCustomKey(\"pica_img_fail_colo\", strH != null ? kx5.H0('-', strH, strH) : \"unknown\");\r\n                String strH2 = s65.h(s65Var, \"server\");\r\n                if (strH2 != null) {\r\n                    str3 = strH2;\r\n                }\r\n                firebaseCrashlytics.setCustomKey(\"pica_img_fail_server\", str3);\r\n                firebaseCrashlytics.log(\"[PICA_IMG_HTTP_FAILURE] \" + i + \" \" + str + \" (\" + j + \"ms) cf-ray=\" + strH + \" body=\" + (str2 != null ? kx5.L0(200, str2) : null));\r\n                StringBuilder sb = new StringBuilder(\"[PICA_IMG_HTTP_FAILURE] HTTP \");\r\n                sb.append(i);\r\n                sb.append(\" @ \");\r\n                sb.append(str);\r\n                firebaseCrashlytics.recordException(new RuntimeException(sb.toString()));\r\n            } catch (Exception unused) {\r\n            }\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

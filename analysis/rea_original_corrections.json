@@ -1,0 +1,2048 @@
+[
+  {
+    "dex": "classes.dex",
+    "method": {
+      "index": 39693,
+      "class": "Lcom/picacg/domain/model/ComicListParams;",
+      "name": "toQueryMap",
+      "prototype": "()Ljava/util/Map;",
+      "id": "Lcom/picacg/domain/model/ComicListParams;->toQueryMap()Ljava/util/Map;",
+      "dex": "classes.dex",
+      "access": 17,
+      "code_offset": 7628896,
+      "annotations": [
+        {
+          "type": "Ldalvik/annotation/Signature;",
+          "values": {
+            "value": [
+              "()",
+              "Ljava/util/Map<",
+              "Ljava/lang/String;",
+              "Ljava/lang/String;",
+              ">;"
+            ]
+          }
+        }
+      ],
+      "parameter_annotations": []
+    },
+    "instructions": [
+      {
+        "pc": 0,
+        "opcode": "new-instance",
+        "words": [
+          34,
+          5624
+        ],
+        "type": "Ldq3;"
+      },
+      {
+        "pc": 2,
+        "opcode": "invoke-direct",
+        "words": [
+          4208,
+          42266,
+          0
+        ],
+        "method": "Ldq3;-><init>()V"
+      },
+      {
+        "pc": 5,
+        "opcode": "iget-object",
+        "words": [
+          12628,
+          20061
+        ],
+        "field": "Lcom/picacg/domain/model/ComicListParams;->category:Ljava/lang/String;"
+      },
+      {
+        "pc": 7,
+        "opcode": "if-eqz",
+        "words": [
+          312,
+          10
+        ]
+      },
+      {
+        "pc": 9,
+        "opcode": "const-string",
+        "words": [
+          538,
+          33527
+        ],
+        "string": "c"
+      },
+      {
+        "pc": 11,
+        "opcode": "invoke-virtual",
+        "words": [
+          12398,
+          42270,
+          288
+        ],
+        "method": "Ldq3;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+      },
+      {
+        "pc": 14,
+        "opcode": "move-result-object",
+        "words": [
+          268
+        ]
+      },
+      {
+        "pc": 15,
+        "opcode": "check-cast",
+        "words": [
+          287,
+          7129
+        ],
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "pc": 17,
+        "opcode": "iget-object",
+        "words": [
+          12628,
+          20070
+        ],
+        "field": "Lcom/picacg/domain/model/ComicListParams;->tag:Ljava/lang/String;"
+      },
+      {
+        "pc": 19,
+        "opcode": "if-eqz",
+        "words": [
+          312,
+          10
+        ]
+      },
+      {
+        "pc": 21,
+        "opcode": "const-string",
+        "words": [
+          538,
+          52064
+        ],
+        "string": "t"
+      },
+      {
+        "pc": 23,
+        "opcode": "invoke-virtual",
+        "words": [
+          12398,
+          42270,
+          288
+        ],
+        "method": "Ldq3;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+      },
+      {
+        "pc": 26,
+        "opcode": "move-result-object",
+        "words": [
+          268
+        ]
+      },
+      {
+        "pc": 27,
+        "opcode": "check-cast",
+        "words": [
+          287,
+          7129
+        ],
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "pc": 29,
+        "opcode": "iget-object",
+        "words": [
+          12628,
+          20059
+        ],
+        "field": "Lcom/picacg/domain/model/ComicListParams;->author:Ljava/lang/String;"
+      },
+      {
+        "pc": 31,
+        "opcode": "if-eqz",
+        "words": [
+          312,
+          10
+        ]
+      },
+      {
+        "pc": 33,
+        "opcode": "const-string",
+        "words": [
+          538,
+          30692
+        ],
+        "string": "a"
+      },
+      {
+        "pc": 35,
+        "opcode": "invoke-virtual",
+        "words": [
+          12398,
+          42270,
+          288
+        ],
+        "method": "Ldq3;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+      },
+      {
+        "pc": 38,
+        "opcode": "move-result-object",
+        "words": [
+          268
+        ]
+      },
+      {
+        "pc": 39,
+        "opcode": "check-cast",
+        "words": [
+          287,
+          7129
+        ],
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "pc": 41,
+        "opcode": "iget-object",
+        "words": [
+          12628,
+          20063
+        ],
+        "field": "Lcom/picacg/domain/model/ComicListParams;->creatorId:Ljava/lang/String;"
+      },
+      {
+        "pc": 43,
+        "opcode": "if-eqz",
+        "words": [
+          312,
+          10
+        ]
+      },
+      {
+        "pc": 45,
+        "opcode": "const-string",
+        "words": [
+          538,
+          33545
+        ],
+        "string": "ca"
+      },
+      {
+        "pc": 47,
+        "opcode": "invoke-virtual",
+        "words": [
+          12398,
+          42270,
+          288
+        ],
+        "method": "Ldq3;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+      },
+      {
+        "pc": 50,
+        "opcode": "move-result-object",
+        "words": [
+          268
+        ]
+      },
+      {
+        "pc": 51,
+        "opcode": "check-cast",
+        "words": [
+          287,
+          7129
+        ],
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "pc": 53,
+        "opcode": "iget-object",
+        "words": [
+          12628,
+          20062
+        ],
+        "field": "Lcom/picacg/domain/model/ComicListParams;->chineseTeam:Ljava/lang/String;"
+      },
+      {
+        "pc": 55,
+        "opcode": "if-eqz",
+        "words": [
+          312,
+          10
+        ]
+      },
+      {
+        "pc": 57,
+        "opcode": "const-string",
+        "words": [
+          538,
+          35257
+        ],
+        "string": "ct"
+      },
+      {
+        "pc": 59,
+        "opcode": "invoke-virtual",
+        "words": [
+          12398,
+          42270,
+          288
+        ],
+        "method": "Ldq3;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+      },
+      {
+        "pc": 62,
+        "opcode": "move-result-object",
+        "words": [
+          268
+        ]
+      },
+      {
+        "pc": 63,
+        "opcode": "check-cast",
+        "words": [
+          287,
+          7129
+        ],
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "pc": 65,
+        "opcode": "const-string",
+        "words": [
+          282,
+          48850
+        ],
+        "string": "s"
+      },
+      {
+        "pc": 67,
+        "opcode": "iget-object",
+        "words": [
+          12884,
+          20069
+        ],
+        "field": "Lcom/picacg/domain/model/ComicListParams;->sort:Ljava/lang/String;"
+      },
+      {
+        "pc": 69,
+        "opcode": "invoke-virtual",
+        "words": [
+          12398,
+          42270,
+          528
+        ],
+        "method": "Ldq3;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+      },
+      {
+        "pc": 72,
+        "opcode": "iget-object",
+        "words": [
+          13140,
+          20065
+        ],
+        "field": "Lcom/picacg/domain/model/ComicListParams;->customParams:Ljava/util/Map;"
+      },
+      {
+        "pc": 74,
+        "opcode": "invoke-virtual",
+        "words": [
+          8302,
+          42271,
+          48
+        ],
+        "method": "Ldq3;->putAll(Ljava/util/Map;)V"
+      },
+      {
+        "pc": 77,
+        "opcode": "invoke-virtual",
+        "words": [
+          4206,
+          42268,
+          0
+        ],
+        "method": "Ldq3;->b()Ldq3;"
+      },
+      {
+        "pc": 80,
+        "opcode": "move-result-object",
+        "words": [
+          780
+        ]
+      },
+      {
+        "pc": 81,
+        "opcode": "return-object",
+        "words": [
+          785
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes.dex",
+    "method": {
+      "index": 45797,
+      "class": "Lhj5;",
+      "name": "<clinit>",
+      "prototype": "()V",
+      "id": "Lhj5;-><clinit>()V",
+      "dex": "classes.dex",
+      "access": 65544,
+      "code_offset": 4950936,
+      "annotations": [],
+      "parameter_annotations": []
+    },
+    "instructions": [
+      {
+        "pc": 0,
+        "opcode": "new-instance",
+        "words": [
+          34,
+          5521
+        ],
+        "type": "Ldc5;"
+      },
+      {
+        "pc": 2,
+        "opcode": "const/16",
+        "words": [
+          275,
+          10
+        ],
+        "literal": 10
+      },
+      {
+        "pc": 4,
+        "opcode": "invoke-direct",
+        "words": [
+          8304,
+          41965,
+          16
+        ],
+        "method": "Ldc5;-><init>(I)V"
+      },
+      {
+        "pc": 7,
+        "opcode": "invoke-static",
+        "words": [
+          4209,
+          44124,
+          0
+        ],
+        "method": "Lfs2;->d(Llm2;)Lx83;"
+      },
+      {
+        "pc": 10,
+        "opcode": "move-result-object",
+        "words": [
+          12
+        ]
+      },
+      {
+        "pc": 11,
+        "opcode": "sput-object",
+        "words": [
+          105,
+          24543
+        ],
+        "field": "Lhj5;->a:Lx83;"
+      },
+      {
+        "pc": 13,
+        "opcode": "return-void",
+        "words": [
+          14
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes3.dex",
+    "method": {
+      "index": 398,
+      "class": "Lat1;",
+      "name": "c",
+      "prototype": "(Lpe1;)Ljava/lang/Object;",
+      "id": "Lat1;->c(Lpe1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "access": 17,
+      "code_offset": 775552,
+      "annotations": [],
+      "parameter_annotations": []
+    },
+    "instructions": [
+      {
+        "pc": 0,
+        "opcode": "instance-of",
+        "words": [
+          45088,
+          3765
+        ],
+        "type": "Lys1;"
+      },
+      {
+        "pc": 2,
+        "opcode": "if-eqz",
+        "words": [
+          56,
+          17
+        ]
+      },
+      {
+        "pc": 4,
+        "opcode": "move-object",
+        "words": [
+          45063
+        ]
+      },
+      {
+        "pc": 5,
+        "opcode": "check-cast",
+        "words": [
+          31,
+          3765
+        ],
+        "type": "Lys1;"
+      },
+      {
+        "pc": 7,
+        "opcode": "iget",
+        "words": [
+          338,
+          8991
+        ],
+        "field": "Lys1;->l:I"
+      },
+      {
+        "pc": 9,
+        "opcode": "const/high16",
+        "words": [
+          533,
+          32768
+        ]
+      },
+      {
+        "pc": 11,
+        "opcode": "op_95",
+        "words": [
+          917,
+          513
+        ]
+      },
+      {
+        "pc": 13,
+        "opcode": "if-eqz",
+        "words": [
+          824,
+          6
+        ]
+      },
+      {
+        "pc": 15,
+        "opcode": "op_b1",
+        "words": [
+          8625
+        ]
+      },
+      {
+        "pc": 16,
+        "opcode": "iput",
+        "words": [
+          345,
+          8991
+        ],
+        "field": "Lys1;->l:I"
+      },
+      {
+        "pc": 18,
+        "opcode": "goto",
+        "words": [
+          1576
+        ]
+      },
+      {
+        "pc": 19,
+        "opcode": "new-instance",
+        "words": [
+          34,
+          3765
+        ],
+        "type": "Lys1;"
+      },
+      {
+        "pc": 21,
+        "opcode": "invoke-direct",
+        "words": [
+          12400,
+          12863,
+          2976
+        ],
+        "method": "Lys1;-><init>(Lat1;Lpe1;)V"
+      },
+      {
+        "pc": 24,
+        "opcode": "iget-object",
+        "words": [
+          2900,
+          8989
+        ],
+        "field": "Lys1;->j:Ljava/lang/Object;"
+      },
+      {
+        "pc": 26,
+        "opcode": "iget",
+        "words": [
+          338,
+          8991
+        ],
+        "field": "Lys1;->l:I"
+      },
+      {
+        "pc": 28,
+        "opcode": "sget-object",
+        "words": [
+          610,
+          249
+        ],
+        "field": "Lat1;->d:[Lba3;"
+      },
+      {
+        "pc": 30,
+        "opcode": "iget-object",
+        "words": [
+          41812,
+          247
+        ],
+        "field": "Lat1;->b:Lir4;"
+      },
+      {
+        "pc": 32,
+        "opcode": "const/4",
+        "words": [
+          1042
+        ],
+        "literal": 0
+      },
+      {
+        "pc": 33,
+        "opcode": "const/4",
+        "words": [
+          1298
+        ],
+        "literal": 0
+      },
+      {
+        "pc": 34,
+        "opcode": "const/4",
+        "words": [
+          9746
+        ],
+        "literal": 2
+      },
+      {
+        "pc": 35,
+        "opcode": "iget-object",
+        "words": [
+          43604,
+          246
+        ],
+        "field": "Lat1;->a:Landroid/content/Context;"
+      },
+      {
+        "pc": 37,
+        "opcode": "const/4",
+        "words": [
+          5906
+        ],
+        "literal": 1
+      },
+      {
+        "pc": 38,
+        "opcode": "sget-object",
+        "words": [
+          2146,
+          4341
+        ],
+        "field": "Ljg1;->i:Ljg1;"
+      },
+      {
+        "pc": 40,
+        "opcode": "if-eqz",
+        "words": [
+          312,
+          22
+        ]
+      },
+      {
+        "pc": 42,
+        "opcode": "if-eq",
+        "words": [
+          28978,
+          16
+        ]
+      },
+      {
+        "pc": 44,
+        "opcode": "if-ne",
+        "words": [
+          24883,
+          8
+        ]
+      },
+      {
+        "pc": 46,
+        "opcode": "iget-object",
+        "words": [
+          2644,
+          8988
+        ],
+        "field": "Lys1;->i:Ljava/lang/String;"
+      },
+      {
+        "pc": 48,
+        "opcode": "invoke-static",
+        "words": [
+          4209,
+          10595,
+          11
+        ],
+        "method": "Lsl4;->N(Ljava/lang/Object;)V"
+      },
+      {
+        "pc": 51,
+        "opcode": "return-object",
+        "words": [
+          2577
+        ]
+      },
+      {
+        "pc": 52,
+        "opcode": "const-string",
+        "words": [
+          2586,
+          7679
+        ],
+        "string": "call to 'resume' before 'invoke' with coroutine"
+      },
+      {
+        "pc": 54,
+        "opcode": "invoke-static",
+        "words": [
+          4209,
+          8652,
+          10
+        ],
+        "method": "Lmz;->h(Ljava/lang/String;)V"
+      },
+      {
+        "pc": 57,
+        "opcode": "return-object",
+        "words": [
+          1297
+        ]
+      },
+      {
+        "pc": 58,
+        "opcode": "invoke-static",
+        "words": [
+          4209,
+          10595,
+          11
+        ],
+        "method": "Lsl4;->N(Ljava/lang/Object;)V"
+      },
+      {
+        "pc": 61,
+        "opcode": "goto",
+        "words": [
+          8488
+        ]
+      },
+      {
+        "pc": 62,
+        "opcode": "invoke-static",
+        "words": [
+          4209,
+          10595,
+          11
+        ],
+        "method": "Lsl4;->N(Ljava/lang/Object;)V"
+      },
+      {
+        "pc": 65,
+        "opcode": "op_46",
+        "words": [
+          2886,
+          1026
+        ]
+      },
+      {
+        "pc": 67,
+        "opcode": "invoke-interface",
+        "words": [
+          12402,
+          6426,
+          2979
+        ],
+        "method": "Lir4;->getValue(Ljava/lang/Object;Lba3;)Ljava/lang/Object;"
+      },
+      {
+        "pc": 70,
+        "opcode": "move-result-object",
+        "words": [
+          2828
+        ]
+      },
+      {
+        "pc": 71,
+        "opcode": "check-cast",
+        "words": [
+          2847,
+          152
+        ],
+        "type": "Landroidx/datastore/core/DataStore;"
+      },
+      {
+        "pc": 73,
+        "opcode": "invoke-interface",
+        "words": [
+          4210,
+          290,
+          11
+        ],
+        "method": "Landroidx/datastore/core/DataStore;->getData()Lcg2;"
+      },
+      {
+        "pc": 76,
+        "opcode": "move-result-object",
+        "words": [
+          2828
+        ]
+      },
+      {
+        "pc": 77,
+        "opcode": "new-instance",
+        "words": [
+          290,
+          75
+        ],
+        "type": "Lai;"
+      },
+      {
+        "pc": 79,
+        "opcode": "const/16",
+        "words": [
+          2323,
+          24
+        ],
+        "literal": 24
+      },
+      {
+        "pc": 81,
+        "opcode": "invoke-direct",
+        "words": [
+          12400,
+          150,
+          2481
+        ],
+        "method": "Lai;-><init>(Lcg2;I)V"
+      },
+      {
+        "pc": 84,
+        "opcode": "iput",
+        "words": [
+          1881,
+          8991
+        ],
+        "field": "Lys1;->l:I"
+      },
+      {
+        "pc": 86,
+        "opcode": "invoke-static",
+        "words": [
+          8305,
+          7835,
+          1
+        ],
+        "method": "Lkl0;->I(Lcg2;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "pc": 89,
+        "opcode": "move-result-object",
+        "words": [
+          2828
+        ]
+      },
+      {
+        "pc": 90,
+        "opcode": "if-ne",
+        "words": [
+          35635,
+          4
+        ]
+      },
+      {
+        "pc": 92,
+        "opcode": "goto/16",
+        "words": [
+          41,
+          164
+        ]
+      },
+      {
+        "pc": 94,
+        "opcode": "check-cast",
+        "words": [
+          2847,
+          1734
+        ],
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "pc": 96,
+        "opcode": "if-eqz",
+        "words": [
+          2872,
+          58
+        ]
+      },
+      {
+        "pc": 98,
+        "opcode": "invoke-virtual",
+        "words": [
+          4206,
+          6885,
+          11
+        ],
+        "method": "Ljava/lang/String;->length()I"
+      },
+      {
+        "pc": 101,
+        "opcode": "move-result",
+        "words": [
+          266
+        ]
+      },
+      {
+        "pc": 102,
+        "opcode": "if-nez",
+        "words": [
+          313,
+          3
+        ]
+      },
+      {
+        "pc": 104,
+        "opcode": "goto",
+        "words": [
+          12840
+        ]
+      },
+      {
+        "pc": 105,
+        "opcode": "invoke-virtual",
+        "words": [
+          4206,
+          6885,
+          11
+        ],
+        "method": "Ljava/lang/String;->length()I"
+      },
+      {
+        "pc": 108,
+        "opcode": "move-result",
+        "words": [
+          266
+        ]
+      },
+      {
+        "pc": 109,
+        "opcode": "const/16",
+        "words": [
+          1811,
+          32
+        ],
+        "literal": 32
+      },
+      {
+        "pc": 111,
+        "opcode": "if-ne",
+        "words": [
+          28979,
+          43
+        ]
+      },
+      {
+        "pc": 113,
+        "opcode": "move",
+        "words": [
+          16641
+        ]
+      },
+      {
+        "pc": 114,
+        "opcode": "invoke-virtual",
+        "words": [
+          4206,
+          6885,
+          11
+        ],
+        "method": "Ljava/lang/String;->length()I"
+      },
+      {
+        "pc": 117,
+        "opcode": "move-result",
+        "words": [
+          1802
+        ]
+      },
+      {
+        "pc": 118,
+        "opcode": "if-ge",
+        "words": [
+          28981,
+          35
+        ]
+      },
+      {
+        "pc": 120,
+        "opcode": "invoke-virtual",
+        "words": [
+          8302,
+          6871,
+          27
+        ],
+        "method": "Ljava/lang/String;->charAt(I)C"
+      },
+      {
+        "pc": 123,
+        "opcode": "move-result",
+        "words": [
+          1802
+        ]
+      },
+      {
+        "pc": 124,
+        "opcode": "const/16",
+        "words": [
+          2323,
+          48
+        ],
+        "literal": 48
+      },
+      {
+        "pc": 126,
+        "opcode": "if-gt",
+        "words": [
+          31030,
+          7
+        ]
+      },
+      {
+        "pc": 128,
+        "opcode": "const/16",
+        "words": [
+          2323,
+          58
+        ],
+        "literal": 58
+      },
+      {
+        "pc": 130,
+        "opcode": "if-ge",
+        "words": [
+          38709,
+          3
+        ]
+      },
+      {
+        "pc": 132,
+        "opcode": "goto",
+        "words": [
+          4648
+        ]
+      },
+      {
+        "pc": 133,
+        "opcode": "const/16",
+        "words": [
+          2323,
+          97
+        ],
+        "literal": 97
+      },
+      {
+        "pc": 135,
+        "opcode": "if-gt",
+        "words": [
+          31030,
+          7
+        ]
+      },
+      {
+        "pc": 137,
+        "opcode": "const/16",
+        "words": [
+          2323,
+          103
+        ],
+        "literal": 103
+      },
+      {
+        "pc": 139,
+        "opcode": "if-ge",
+        "words": [
+          38709,
+          3
+        ]
+      },
+      {
+        "pc": 141,
+        "opcode": "goto",
+        "words": [
+          2344
+        ]
+      },
+      {
+        "pc": 142,
+        "opcode": "const/16",
+        "words": [
+          2323,
+          65
+        ],
+        "literal": 65
+      },
+      {
+        "pc": 144,
+        "opcode": "if-gt",
+        "words": [
+          31030,
+          10
+        ]
+      },
+      {
+        "pc": 146,
+        "opcode": "const/16",
+        "words": [
+          2323,
+          71
+        ],
+        "literal": 71
+      },
+      {
+        "pc": 148,
+        "opcode": "if-ge",
+        "words": [
+          38709,
+          6
+        ]
+      },
+      {
+        "pc": 150,
+        "opcode": "op_d8",
+        "words": [
+          472,
+          257
+        ]
+      },
+      {
+        "pc": 152,
+        "opcode": "goto",
+        "words": [
+          55848
+        ]
+      },
+      {
+        "pc": 153,
+        "opcode": "return-object",
+        "words": [
+          2833
+        ]
+      },
+      {
+        "pc": 154,
+        "opcode": "invoke-virtual",
+        "words": [
+          4206,
+          207,
+          10
+        ],
+        "method": "Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;"
+      },
+      {
+        "pc": 157,
+        "opcode": "move-result-object",
+        "words": [
+          2828
+        ]
+      },
+      {
+        "pc": 158,
+        "opcode": "const-string",
+        "words": [
+          282,
+          7568
+        ],
+        "string": "android_id"
+      },
+      {
+        "pc": 160,
+        "opcode": "invoke-static",
+        "words": [
+          8305,
+          254,
+          27
+        ],
+        "method": "Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;"
+      },
+      {
+        "pc": 163,
+        "opcode": "move-result-object",
+        "words": [
+          2828
+        ]
+      },
+      {
+        "pc": 164,
+        "opcode": "if-eqz",
+        "words": [
+          2872,
+          60
+        ]
+      },
+      {
+        "pc": 166,
+        "opcode": "invoke-virtual",
+        "words": [
+          4206,
+          6885,
+          11
+        ],
+        "method": "Ljava/lang/String;->length()I"
+      },
+      {
+        "pc": 169,
+        "opcode": "move-result",
+        "words": [
+          266
+        ]
+      },
+      {
+        "pc": 170,
+        "opcode": "if-nez",
+        "words": [
+          313,
+          3
+        ]
+      },
+      {
+        "pc": 172,
+        "opcode": "goto",
+        "words": [
+          13352
+        ]
+      },
+      {
+        "pc": 173,
+        "opcode": "const-string",
+        "words": [
+          282,
+          776
+        ],
+        "string": "9774d56d682e549c"
+      },
+      {
+        "pc": 175,
+        "opcode": "invoke-virtual",
+        "words": [
+          8302,
+          6847,
+          27
+        ],
+        "method": "Ljava/lang/Object;->equals(Ljava/lang/Object;)Z"
+      },
+      {
+        "pc": 178,
+        "opcode": "move-result",
+        "words": [
+          266
+        ]
+      },
+      {
+        "pc": 179,
+        "opcode": "if-nez",
+        "words": [
+          313,
+          45
+        ]
+      },
+      {
+        "pc": 181,
+        "opcode": "const-string",
+        "words": [
+          282,
+          5825
+        ],
+        "string": "MD5"
+      },
+      {
+        "pc": 183,
+        "opcode": "invoke-static",
+        "words": [
+          4209,
+          7026,
+          1
+        ],
+        "method": "Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;"
+      },
+      {
+        "pc": 186,
+        "opcode": "move-result-object",
+        "words": [
+          268
+        ]
+      },
+      {
+        "pc": 187,
+        "opcode": "sget-object",
+        "words": [
+          1890,
+          2291
+        ],
+        "field": "Ldo0;->a:Ljava/nio/charset/Charset;"
+      },
+      {
+        "pc": 189,
+        "opcode": "invoke-virtual",
+        "words": [
+          8302,
+          6881,
+          123
+        ],
+        "method": "Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B"
+      },
+      {
+        "pc": 192,
+        "opcode": "move-result-object",
+        "words": [
+          2828
+        ]
+      },
+      {
+        "pc": 193,
+        "opcode": "invoke-virtual",
+        "words": [
+          4206,
+          6848,
+          11
+        ],
+        "method": "Ljava/lang/Object;->getClass()Ljava/lang/Class;"
+      },
+      {
+        "pc": 196,
+        "opcode": "invoke-virtual",
+        "words": [
+          8302,
+          7025,
+          177
+        ],
+        "method": "Ljava/security/MessageDigest;->digest([B)[B"
+      },
+      {
+        "pc": 199,
+        "opcode": "move-result-object",
+        "words": [
+          2828
+        ]
+      },
+      {
+        "pc": 200,
+        "opcode": "invoke-virtual",
+        "words": [
+          4206,
+          6848,
+          11
+        ],
+        "method": "Ljava/lang/Object;->getClass()Ljava/lang/Class;"
+      },
+      {
+        "pc": 203,
+        "opcode": "const-string",
+        "words": [
+          282,
+          0
+        ],
+        "string": ""
+      },
+      {
+        "pc": 205,
+        "opcode": "new-instance",
+        "words": [
+          1826,
+          1033
+        ],
+        "type": "Ldz0;"
+      },
+      {
+        "pc": 207,
+        "opcode": "const/16",
+        "words": [
+          2323,
+          23
+        ],
+        "literal": 23
+      },
+      {
+        "pc": 209,
+        "opcode": "invoke-direct",
+        "words": [
+          8304,
+          4670,
+          151
+        ],
+        "method": "Ldz0;-><init>(I)V"
+      },
+      {
+        "pc": 212,
+        "opcode": "const/16",
+        "words": [
+          2323,
+          30
+        ],
+        "literal": 30
+      },
+      {
+        "pc": 214,
+        "opcode": "invoke-static",
+        "words": [
+          16497,
+          10714,
+          38683
+        ],
+        "method": "Lsx;->i0([BLjava/lang/String;Llm2;I)Ljava/lang/String;"
+      },
+      {
+        "pc": 217,
+        "opcode": "move-result-object",
+        "words": [
+          2828
+        ]
+      },
+      {
+        "pc": 218,
+        "opcode": "goto",
+        "words": [
+          3880
+        ]
+      },
+      {
+        "pc": 219,
+        "opcode": "invoke-static",
+        "words": [
+          113,
+          396,
+          0
+        ],
+        "method": "Lat1;->a()Ljava/lang/String;"
+      },
+      {
+        "pc": 222,
+        "opcode": "move-result-object",
+        "words": [
+          2828
+        ]
+      },
+      {
+        "pc": 223,
+        "opcode": "goto",
+        "words": [
+          2600
+        ]
+      },
+      {
+        "pc": 224,
+        "opcode": "invoke-static",
+        "words": [
+          113,
+          396,
+          0
+        ],
+        "method": "Lat1;->a()Ljava/lang/String;"
+      },
+      {
+        "pc": 227,
+        "opcode": "move-result-object",
+        "words": [
+          2828
+        ]
+      },
+      {
+        "pc": 228,
+        "opcode": "goto",
+        "words": [
+          1320
+        ]
+      },
+      {
+        "pc": 229,
+        "opcode": "invoke-static",
+        "words": [
+          113,
+          396,
+          0
+        ],
+        "method": "Lat1;->a()Ljava/lang/String;"
+      },
+      {
+        "pc": 232,
+        "opcode": "move-result-object",
+        "words": [
+          2828
+        ]
+      },
+      {
+        "pc": 233,
+        "opcode": "op_46",
+        "words": [
+          326,
+          1026
+        ]
+      },
+      {
+        "pc": 235,
+        "opcode": "invoke-interface",
+        "words": [
+          12402,
+          6426,
+          419
+        ],
+        "method": "Lir4;->getValue(Ljava/lang/Object;Lba3;)Ljava/lang/Object;"
+      },
+      {
+        "pc": 238,
+        "opcode": "move-result-object",
+        "words": [
+          2572
+        ]
+      },
+      {
+        "pc": 239,
+        "opcode": "check-cast",
+        "words": [
+          2591,
+          152
+        ],
+        "type": "Landroidx/datastore/core/DataStore;"
+      },
+      {
+        "pc": 241,
+        "opcode": "new-instance",
+        "words": [
+          290,
+          3889
+        ],
+        "type": "Lzs1;"
+      },
+      {
+        "pc": 243,
+        "opcode": "invoke-direct",
+        "words": [
+          12400,
+          13240,
+          1457
+        ],
+        "method": "Lzs1;-><init>(Ljava/lang/String;Lne1;)V"
+      },
+      {
+        "pc": 246,
+        "opcode": "iput-object",
+        "words": [
+          2907,
+          8988
+        ],
+        "field": "Lys1;->i:Ljava/lang/String;"
+      },
+      {
+        "pc": 248,
+        "opcode": "iput",
+        "words": [
+          1625,
+          8991
+        ],
+        "field": "Lys1;->l:I"
+      },
+      {
+        "pc": 250,
+        "opcode": "invoke-static",
+        "words": [
+          12401,
+          302,
+          26
+        ],
+        "method": "Landroidx/datastore/preferences/core/PreferencesKt;->edit(Landroidx/datastore/core/DataStore;Lom2;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "pc": 253,
+        "opcode": "move-result-object",
+        "words": [
+          2572
+        ]
+      },
+      {
+        "pc": 254,
+        "opcode": "if-ne",
+        "words": [
+          35379,
+          3
+        ]
+      },
+      {
+        "pc": 256,
+        "opcode": "return-object",
+        "words": [
+          2065
+        ]
+      },
+      {
+        "pc": 257,
+        "opcode": "return-object",
+        "words": [
+          2833
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes3.dex",
+    "method": {
+      "index": 8806,
+      "class": "Lnh4;",
+      "name": "d",
+      "prototype": "(Lpe1;)Ljava/lang/Object;",
+      "id": "Lnh4;->d(Lpe1;)Ljava/lang/Object;",
+      "dex": "classes3.dex",
+      "access": 17,
+      "code_offset": 1121768,
+      "annotations": [],
+      "parameter_annotations": []
+    },
+    "instructions": [
+      {
+        "pc": 0,
+        "opcode": "instance-of",
+        "words": [
+          28704,
+          2163
+        ],
+        "type": "Llh4;"
+      },
+      {
+        "pc": 2,
+        "opcode": "if-eqz",
+        "words": [
+          56,
+          17
+        ]
+      },
+      {
+        "pc": 4,
+        "opcode": "move-object",
+        "words": [
+          28679
+        ]
+      },
+      {
+        "pc": 5,
+        "opcode": "check-cast",
+        "words": [
+          31,
+          2163
+        ],
+        "type": "Llh4;"
+      },
+      {
+        "pc": 7,
+        "opcode": "iget",
+        "words": [
+          338,
+          4985
+        ],
+        "field": "Llh4;->l:I"
+      },
+      {
+        "pc": 9,
+        "opcode": "const/high16",
+        "words": [
+          533,
+          32768
+        ]
+      },
+      {
+        "pc": 11,
+        "opcode": "op_95",
+        "words": [
+          917,
+          513
+        ]
+      },
+      {
+        "pc": 13,
+        "opcode": "if-eqz",
+        "words": [
+          824,
+          6
+        ]
+      },
+      {
+        "pc": 15,
+        "opcode": "op_b1",
+        "words": [
+          8625
+        ]
+      },
+      {
+        "pc": 16,
+        "opcode": "iput",
+        "words": [
+          345,
+          4985
+        ],
+        "field": "Llh4;->l:I"
+      },
+      {
+        "pc": 18,
+        "opcode": "goto",
+        "words": [
+          1576
+        ]
+      },
+      {
+        "pc": 19,
+        "opcode": "new-instance",
+        "words": [
+          34,
+          2163
+        ],
+        "type": "Llh4;"
+      },
+      {
+        "pc": 21,
+        "opcode": "invoke-direct",
+        "words": [
+          12400,
+          8134,
+          1888
+        ],
+        "method": "Llh4;-><init>(Lnh4;Lpe1;)V"
+      },
+      {
+        "pc": 24,
+        "opcode": "iget-object",
+        "words": [
+          1876,
+          4983
+        ],
+        "field": "Llh4;->j:Ljava/lang/Object;"
+      },
+      {
+        "pc": 26,
+        "opcode": "sget-object",
+        "words": [
+          354,
+          4341
+        ],
+        "field": "Ljg1;->i:Ljg1;"
+      },
+      {
+        "pc": 28,
+        "opcode": "iget",
+        "words": [
+          594,
+          4985
+        ],
+        "field": "Llh4;->l:I"
+      },
+      {
+        "pc": 30,
+        "opcode": "const/4",
+        "words": [
+          786
+        ],
+        "literal": 0
+      },
+      {
+        "pc": 31,
+        "opcode": "const/4",
+        "words": [
+          5138
+        ],
+        "literal": 1
+      },
+      {
+        "pc": 32,
+        "opcode": "if-eqz",
+        "words": [
+          568,
+          16
+        ]
+      },
+      {
+        "pc": 34,
+        "opcode": "if-ne",
+        "words": [
+          16947,
+          8
+        ]
+      },
+      {
+        "pc": 36,
+        "opcode": "iget-object",
+        "words": [
+          1620,
+          4982
+        ],
+        "field": "Llh4;->i:Lnh4;"
+      },
+      {
+        "pc": 38,
+        "opcode": "invoke-static",
+        "words": [
+          4209,
+          10595,
+          7
+        ],
+        "method": "Lsl4;->N(Ljava/lang/Object;)V"
+      },
+      {
+        "pc": 41,
+        "opcode": "goto",
+        "words": [
+          11304
+        ]
+      },
+      {
+        "pc": 42,
+        "opcode": "const-string",
+        "words": [
+          1562,
+          7679
+        ],
+        "string": "call to 'resume' before 'invoke' with coroutine"
+      },
+      {
+        "pc": 44,
+        "opcode": "invoke-static",
+        "words": [
+          4209,
+          8652,
+          6
+        ],
+        "method": "Lmz;->h(Ljava/lang/String;)V"
+      },
+      {
+        "pc": 47,
+        "opcode": "return-object",
+        "words": [
+          785
+        ]
+      },
+      {
+        "pc": 48,
+        "opcode": "invoke-static",
+        "words": [
+          4209,
+          10595,
+          7
+        ],
+        "method": "Lsl4;->N(Ljava/lang/Object;)V"
+      },
+      {
+        "pc": 51,
+        "opcode": "iget-object",
+        "words": [
+          26452,
+          5586
+        ],
+        "field": "Lnh4;->b:Ls42;"
+      },
+      {
+        "pc": 53,
+        "opcode": "iget-object",
+        "words": [
+          29268,
+          6973
+        ],
+        "field": "Ls42;->c:Landroid/content/SharedPreferences;"
+      },
+      {
+        "pc": 55,
+        "opcode": "const-string",
+        "words": [
+          1306,
+          7601
+        ],
+        "string": "auth_token"
+      },
+      {
+        "pc": 57,
+        "opcode": "invoke-interface",
+        "words": [
+          12402,
+          223,
+          850
+        ],
+        "method": "Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+      },
+      {
+        "pc": 60,
+        "opcode": "move-result-object",
+        "words": [
+          524
+        ]
+      },
+      {
+        "pc": 61,
+        "opcode": "if-nez",
+        "words": [
+          569,
+          3
+        ]
+      },
+      {
+        "pc": 63,
+        "opcode": "goto",
+        "words": [
+          1320
+        ]
+      },
+      {
+        "pc": 64,
+        "opcode": "invoke-virtual",
+        "words": [
+          8302,
+          10357,
+          39
+        ],
+        "method": "Ls42;->a(Ljava/lang/String;)Ljava/lang/String;"
+      },
+      {
+        "pc": 67,
+        "opcode": "move-result-object",
+        "words": [
+          780
+        ]
+      },
+      {
+        "pc": 68,
+        "opcode": "iput-object",
+        "words": [
+          25435,
+          5587
+        ],
+        "field": "Lnh4;->c:Ljava/lang/String;"
+      },
+      {
+        "pc": 70,
+        "opcode": "iget-object",
+        "words": [
+          26452,
+          5588
+        ],
+        "field": "Lnh4;->d:Ljava/lang/String;"
+      },
+      {
+        "pc": 72,
+        "opcode": "if-nez",
+        "words": [
+          1849,
+          17
+        ]
+      },
+      {
+        "pc": 74,
+        "opcode": "iput-object",
+        "words": [
+          1627,
+          4982
+        ],
+        "field": "Llh4;->i:Lnh4;"
+      },
+      {
+        "pc": 76,
+        "opcode": "iput",
+        "words": [
+          1113,
+          4985
+        ],
+        "field": "Llh4;->l:I"
+      },
+      {
+        "pc": 78,
+        "opcode": "invoke-virtual",
+        "words": [
+          4206,
+          8807,
+          6
+        ],
+        "method": "Lnh4;->e()Ljava/lang/String;"
+      },
+      {
+        "pc": 81,
+        "opcode": "move-result-object",
+        "words": [
+          1804
+        ]
+      },
+      {
+        "pc": 82,
+        "opcode": "if-ne",
+        "words": [
+          5939,
+          3
+        ]
+      },
+      {
+        "pc": 84,
+        "opcode": "return-object",
+        "words": [
+          273
+        ]
+      },
+      {
+        "pc": 85,
+        "opcode": "check-cast",
+        "words": [
+          1823,
+          1734
+        ],
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "pc": 87,
+        "opcode": "iput-object",
+        "words": [
+          26459,
+          5588
+        ],
+        "field": "Lnh4;->d:Ljava/lang/String;"
+      },
+      {
+        "pc": 89,
+        "opcode": "sget-object",
+        "words": [
+          1634,
+          2249
+        ],
+        "field": "Ldg6;->a:Ldg6;"
+      },
+      {
+        "pc": 91,
+        "opcode": "return-object",
+        "words": [
+          1553
+        ]
+      }
+    ]
+  }
+]

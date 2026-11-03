@@ -1,0 +1,133 @@
+{
+  "evidence_id": "ev_ce3b754d606136dcac339feef551a00295e2c0a687aef84495d65d40458efb5d",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "com.picacg.network.pica.model.PicaResponse$$serializer",
+    "method_name": "deserialize",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.picacg.network.pica.model.PicaResponse$$serializer"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(ca3): void\",\"dex_descriptor\":\"(Lca3;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"childSerializers(): ca3[]\",\"dex_descriptor\":\"()[Lca3;\",\"is_constructor\":false,\"name\":\"childSerializers\",\"def_pos\":0},{\"signature\":\"deserialize(dn1): com.picacg.network.pica.model.PicaResponse\\u003cT\\u003e\",\"dex_descriptor\":\"(Ldn1;)Lcom/picacg/network/pica/model/PicaResponse;\",\"is_constructor\":false,\"name\":\"deserialize\",\"def_pos\":0},{\"signature\":\"deserialize(dn1): java.lang.Object\",\"dex_descriptor\":\"(Ldn1;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"deserialize\",\"def_pos\":0},{\"signature\":\"getDescriptor(): zi5\",\"dex_descriptor\":\"()Lzi5;\",\"is_constructor\":false,\"name\":\"getDescriptor\",\"def_pos\":0},{\"signature\":\"getTypeSerial0(): ca3\",\"dex_descriptor\":\"()Lca3;\",\"is_constructor\":false,\"name\":\"getTypeSerial0\",\"def_pos\":0},{\"signature\":\"serialize(n42, com.picacg.network.pica.model.PicaResponse\\u003cT\\u003e): void\",\"dex_descriptor\":\"(Ln42;Lcom/picacg/network/pica/model/PicaResponse;)V\",\"is_constructor\":false,\"name\":\"serialize\",\"def_pos\":0},{\"signature\":\"serialize(n42, java.lang.Object): void\",\"dex_descriptor\":\"(Ln42;Ljava/lang/Object;)V\",\"is_constructor\":false,\"name\":\"serialize\",\"def_pos\":0},{\"signature\":\"typeParametersSerializers(): ca3[]\",\"dex_descriptor\":\"()[Lca3;\",\"is_constructor\":false,\"name\":\"typeParametersSerializers\",\"def_pos\":0}],\"fields\":[{\"name\":\"$stable\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"descriptor\",\"def_pos\":0,\"type\":\"zi5\"},{\"name\":\"typeSerial0\",\"def_pos\":0,\"type\":\"ca3\"}],\"raw_name\":\"com.picacg.network.pica.model.PicaResponse$$serializer\",\"method_count\":10,\"full_name\":\"com.picacg.network.pica.model.PicaResponse$$serializer\",\"field_count\":3,\"name\":\"PicaResponse$$serializer\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.picacg.network.pica.model.PicaResponse$$serializer",
+          "method_name": "deserialize",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[\"java_body_unavailable\"],\"body\":\".method public final deserialize(Ldn1;)Lcom/picacg/network/pica/model/PicaResponse;\\n    .registers 14\\n    .annotation system Ldalvik/annotation/Signature;\\n        value \\u003d {\\n            \\\"(\\\",\\n            \\\"Ldn1;\\\",\\n            \\\")\\\",\\n            \\\"Lcom/picacg/network/pica/model/PicaResponse\\u003c\\\",\\n            \\\"TT;\\u003e;\\\"\\n        }\\n    .end annotation\\n\\n    .line 1\\n    invoke-virtual {p1}, Ljava/lang/Object;-\\u003egetClass()Ljava/lang/Class;\\n\\n    .line 2\\n    .line 3\\n    .line 4\\n    iget-object v0, p0, Lcom/picacg/network/pica/model/PicaResponse$$serializer;-\\u003edescriptor:Lzi5;\\n\\n    .line 5\\n    .line 6\\n    invoke-interface {p1, v0}, Ldn1;-\\u003ec(Lzi5;)Lt91;\\n\\n    .line 7\\n    .line 8\\n    .line 9\\n    move-result-object p1\\n\\n    .line 10\\n    const/4 v1, 0x1\\n\\n    .line 11\\n    const/4 v2, 0x0\\n\\n    .line 12\\n    const/4 v3, 0x0\\n\\n    .line 13\\n    move v4, v1\\n\\n    .line 14\\n    move v6, v2\\n\\n    .line 15\\n    move v7, v6\\n\\n    .line 16\\n    move-object v8, v3\\n\\n    .line 17\\n    move-object v9, v8\\n\\n    .line 18\\n    move-object v10, v9\\n\\n    .line 19\\n    :goto_12\\n    if-eqz v4, :cond_50\\n\\n    .line 20\\n    .line 21\\n    invoke-interface {p1, v0}, Lt91;-\\u003eh(Lzi5;)I\\n\\n    .line 22\\n    .line 23\\n    .line 24\\n    move-result v5\\n\\n    .line 25\\n    const/4 v11, -0x1\\n\\n    .line 26\\n    if-eq v5, v11, :cond_4e\\n\\n    .line 27\\n    .line 28\\n    if-eqz v5, :cond_47\\n\\n    .line 29\\n    .line 30\\n    if-eq v5, v1, :cond_40\\n\\n    .line 31\\n    .line 32\\n    const/4 v11, 0x2\\n\\n    .line 33\\n    if-eq v5, v11, :cond_34\\n\\n    .line 34\\n    .line 35\\n    const/4 v11, 0x3\\n\\n    .line 36\\n    if-ne v5, v11, :cond_30\\n\\n    .line 37\\n    .line 38\\n    iget-object v5, p0, Lcom/picacg/network/pica/model/PicaResponse$$serializer;-\\u003etypeSerial0:Lca3;\\n\\n    .line 39\\n    .line 40\\n    check-cast v5, Lca3;\\n\\n    .line 41\\n    .line 42\\n    invoke-interface {p1, v0, v11, v5, v10}, Lt91;-\\u003ew(Lzi5;ILca3;Ljava/lang/Object;)Ljava/lang/Object;\\n\\n    .line 43\\n    .line 44\\n    .line 45\\n    move-result-object v10\\n\\n    .line 46\\n    or-int/lit8 v6, v6, 0x8\\n\\n    .line 47\\n    .line 48\\n    goto :goto_12\\n\\n    .line 49\\n    :cond_30\\n    invoke-static {v5}, Lk;-\\u003ec(I)V\\n\\n    .line 50\\n    .line 51\\n    .line 52\\n    return-object v3\\n\\n    .line 53\\n    :cond_34\\n    sget-object v5, Lix5;-\\u003ea:Lix5;\\n\\n    .line 54\\n    .line 55\\n    invoke-interface {p1, v0, v11, v5, v9}, Lt91;-\\u003ew(Lzi5;ILca3;Ljava/lang/Object;)Ljava/lang/Object;\\n\\n    .line 56\\n    .line 57\\n    .line 58\\n    move-result-object v5\\n\\n    .line 59\\n    move-object v9, v5\\n\\n    .line 60\\n    check-cast v9, Ljava/lang/String;\\n\\n    .line 61\\n    .line 62\\n    or-int/lit8 v6, v6, 0x4\\n\\n    .line 63\\n    .line 64\\n    goto :goto_12\\n\\n    .line 65\\n    :cond_40\\n    invoke-interface {p1, v0, v1}, Lt91;-\\u003em(Lzi5;I)Ljava/lang/String;\\n\\n    .line 66\\n    .line 67\\n    .line 68\\n    move-result-object v8\\n\\n    .line 69\\n    or-int/lit8 v6, v6, 0x2\\n\\n    .line 70\\n    .line 71\\n    goto :goto_12\\n\\n    .line 72\\n    :cond_47\\n    invoke-interface {p1, v0, v2}, Lt91;-\\u003er(Lzi5;I)I\\n\\n    .line 73\\n    .line 74\\n    .line 75\\n    move-result v7\\n\\n    .line 76\\n    or-int/lit8 v6, v6, 0x1\\n\\n    .line 77\\n    .line 78\\n    goto :goto_12\\n\\n    .line 79\\n    :cond_4e\\n    move v4, v2\\n\\n    .line 80\\n    goto :goto_12\\n\\n    .line 81\\n    :cond_50\\n    invoke-interface {p1, v0}, Lt91;-\\u003ea(Lzi5;)V\\n\\n    .line 82\\n    .line 83\\n    .line 84\\n    new-instance v5, Lcom/picacg/network/pica/model/PicaResponse;\\n\\n    .line 85\\n    .line 86\\n    const/4 v11, 0x0\\n\\n    .line 87\\n    invoke-direct/range {v5 .. v11}, Lcom/picacg/network/pica/model/PicaResponse;-\\u003e\\u003cinit\\u003e(IILjava/lang/String;Ljava/lang/String;Ljava/lang/Object;Lfj5;)V\\n\\n    .line 88\\n    .line 89\\n    .line 90\\n    return-object v5\\n.end method\",\"mode\":\"smali\",\"class_name\":\"com.picacg.network.pica.model.PicaResponse$$serializer\",\"dex_descriptor\":\"(Ldn1;)Lcom/picacg/network/pica/model/PicaResponse;\",\"overload_count\":2,\"method_name\":\"deserialize\",\"overload_index\":0,\"full_name\":\"com.picacg.network.pica.model.PicaResponse$$serializer.deserialize\",\"fell_back\":true}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "com.picacg.network.pica.model.PicaResponse$$serializer",
+    "method": {
+      "name": "deserialize",
+      "reported_signature": "deserialize(dn1): com.picacg.network.pica.model.PicaResponse<T>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ldn1;)Lcom/picacg/network/pica/model/PicaResponse;"
+    },
+    "overload_count": 2,
+    "representation": "smali",
+    "body_status": "available",
+    "fell_back": true,
+    "markers": [
+      "java_body_unavailable"
+    ],
+    "source": {
+      "status": "complete",
+      "text": ".method public final deserialize(Ldn1;)Lcom/picacg/network/pica/model/PicaResponse;\n    .registers 14\n    .annotation system Ldalvik/annotation/Signature;\n        value = {\n            \"(\",\n            \"Ldn1;\",\n            \")\",\n            \"Lcom/picacg/network/pica/model/PicaResponse<\",\n            \"TT;>;\"\n        }\n    .end annotation\n\n    .line 1\n    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;\n\n    .line 2\n    .line 3\n    .line 4\n    iget-object v0, p0, Lcom/picacg/network/pica/model/PicaResponse$$serializer;->descriptor:Lzi5;\n\n    .line 5\n    .line 6\n    invoke-interface {p1, v0}, Ldn1;->c(Lzi5;)Lt91;\n\n    .line 7\n    .line 8\n    .line 9\n    move-result-object p1\n\n    .line 10\n    const/4 v1, 0x1\n\n    .line 11\n    const/4 v2, 0x0\n\n    .line 12\n    const/4 v3, 0x0\n\n    .line 13\n    move v4, v1\n\n    .line 14\n    move v6, v2\n\n    .line 15\n    move v7, v6\n\n    .line 16\n    move-object v8, v3\n\n    .line 17\n    move-object v9, v8\n\n    .line 18\n    move-object v10, v9\n\n    .line 19\n    :goto_12\n    if-eqz v4, :cond_50\n\n    .line 20\n    .line 21\n    invoke-interface {p1, v0}, Lt91;->h(Lzi5;)I\n\n    .line 22\n    .line 23\n    .line 24\n    move-result v5\n\n    .line 25\n    const/4 v11, -0x1\n\n    .line 26\n    if-eq v5, v11, :cond_4e\n\n    .line 27\n    .line 28\n    if-eqz v5, :cond_47\n\n    .line 29\n    .line 30\n    if-eq v5, v1, :cond_40\n\n    .line 31\n    .line 32\n    const/4 v11, 0x2\n\n    .line 33\n    if-eq v5, v11, :cond_34\n\n    .line 34\n    .line 35\n    const/4 v11, 0x3\n\n    .line 36\n    if-ne v5, v11, :cond_30\n\n    .line 37\n    .line 38\n    iget-object v5, p0, Lcom/picacg/network/pica/model/PicaResponse$$serializer;->typeSerial0:Lca3;\n\n    .line 39\n    .line 40\n    check-cast v5, Lca3;\n\n    .line 41\n    .line 42\n    invoke-interface {p1, v0, v11, v5, v10}, Lt91;->w(Lzi5;ILca3;Ljava/lang/Object;)Ljava/lang/Object;\n\n    .line 43\n    .line 44\n    .line 45\n    move-result-object v10\n\n    .line 46\n    or-int/lit8 v6, v6, 0x8\n\n    .line 47\n    .line 48\n    goto :goto_12\n\n    .line 49\n    :cond_30\n    invoke-static {v5}, Lk;->c(I)V\n\n    .line 50\n    .line 51\n    .line 52\n    return-object v3\n\n    .line 53\n    :cond_34\n    sget-object v5, Lix5;->a:Lix5;\n\n    .line 54\n    .line 55\n    invoke-interface {p1, v0, v11, v5, v9}, Lt91;->w(Lzi5;ILca3;Ljava/lang/Object;)Ljava/lang/Object;\n\n    .line 56\n    .line 57\n    .line 58\n    move-result-object v5\n\n    .line 59\n    move-object v9, v5\n\n    .line 60\n    check-cast v9, Ljava/lang/String;\n\n    .line 61\n    .line 62\n    or-int/lit8 v6, v6, 0x4\n\n    .line 63\n    .line 64\n    goto :goto_12\n\n    .line 65\n    :cond_40\n    invoke-interface {p1, v0, v1}, Lt91;->m(Lzi5;I)Ljava/lang/String;\n\n    .line 66\n    .line 67\n    .line 68\n    move-result-object v8\n\n    .line 69\n    or-int/lit8 v6, v6, 0x2\n\n    .line 70\n    .line 71\n    goto :goto_12\n\n    .line 72\n    :cond_47\n    invoke-interface {p1, v0, v2}, Lt91;->r(Lzi5;I)I\n\n    .line 73\n    .line 74\n    .line 75\n    move-result v7\n\n    .line 76\n    or-int/lit8 v6, v6, 0x1\n\n    .line 77\n    .line 78\n    goto :goto_12\n\n    .line 79\n    :cond_4e\n    move v4, v2\n\n    .line 80\n    goto :goto_12\n\n    .line 81\n    :cond_50\n    invoke-interface {p1, v0}, Lt91;->a(Lzi5;)V\n\n    .line 82\n    .line 83\n    .line 84\n    new-instance v5, Lcom/picacg/network/pica/model/PicaResponse;\n\n    .line 85\n    .line 86\n    const/4 v11, 0x0\n\n    .line 87\n    invoke-direct/range {v5 .. v11}, Lcom/picacg/network/pica/model/PicaResponse;-><init>(IILjava/lang/String;Ljava/lang/String;Ljava/lang/Object;Lfj5;)V\n\n    .line 88\n    .line 89\n    .line 90\n    return-object v5\n.end method",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

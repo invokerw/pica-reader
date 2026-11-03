@@ -1,0 +1,28 @@
+{
+ "output_directory":"analysis/rea/core",
+ "tasks":[
+  {"id":"package","operation":"inspect_android_package"},
+  {"id":"all-classes","operation":"search_android_classes","input":{"query":""}},
+  {"id":"signer","operation":"inspect_android_method","class_name":"fg4","method_name":"a","dex_descriptor":"(Lhe3;)Ls65;"},
+  {"id":"signin-interface","operation":"inspect_android_method","class_name":"eg4","method_name":"h"},
+  {"id":"signin-call","operation":"inspect_android_method","class_name":"l31","method_name":"invokeSuspend"},
+  {"id":"login-service","operation":"inspect_android_method","class_name":"bb3","method_name":"invokeSuspend"},
+  {"id":"login-ui","operation":"inspect_android_method","class_name":"eo3","method_name":"c"},
+  {"id":"remember","operation":"inspect_android_method","class_name":"eo3","method_name":"f"},
+  {"id":"token-load","operation":"inspect_android_method","class_name":"nh4","method_name":"d"},
+  {"id":"nonce","operation":"inspect_android_method","class_name":"nh4","method_name":"e"},
+  {"id":"token-save","operation":"inspect_android_method","class_name":"nh4","method_name":"f"},
+  {"id":"token-decrypt","operation":"inspect_android_method","class_name":"s42","method_name":"a"},
+  {"id":"token-encrypt","operation":"inspect_android_method","class_name":"s42","method_name":"b"},
+  {"id":"key-init","operation":"inspect_android_method","class_name":"s42","method_name":"<init>"},
+  {"id":"api-error","operation":"inspect_android_method","class_name":"dg4","method_name":"d"},
+  {"id":"api-wrapper","operation":"inspect_android_method","class_name":"dg4","method_name":"a"},
+  {"id":"preflight","operation":"inspect_android_method","class_name":"v55","method_name":"a"},
+  {"id":"client-provider","operation":"inspect_android_method","class_name":"wj1","method_name":"get"},
+  {"id":"uuid-holder","operation":"inspect_android_class","class_name":"at1"},
+  {"id":"uuid-lambda","operation":"inspect_android_method","class_name":"fk","method_name":"invoke"},
+  {"id":"signer-xrefs","operation":"trace_android_references","class_name":"fg4"},
+  {"id":"signin-xrefs","operation":"trace_android_references","class_name":"eg4","method_name":"h"},
+  {"id":"token-save-xrefs","operation":"trace_android_references","class_name":"nh4","method_name":"f"}
+ ]
+}

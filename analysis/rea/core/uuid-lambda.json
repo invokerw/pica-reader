@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_2c2f7020f335d8a36551bf7aec8861a3fe6a70294f0936644a8312d09df9d373",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "fk",
+    "method_name": "invoke",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-fad178ded1fb46219c4ee95fb763dfad\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "fk"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"fk\",\"field_count\":3,\"full_name\":\"defpackage.fk\",\"method_count\":7,\"raw_name\":\"fk\",\"fields\":[{\"type\":\"int\",\"def_pos\":0,\"name\":\"i\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"j\"},{\"type\":\"java.lang.Object\",\"def_pos\":0,\"name\":\"k\"}],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(java.lang.Object, int, ne1, int): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Ljava/lang/Object;ILne1;I)V\"},{\"signature\":\"\\u003cinit\\u003e(java.lang.Object, ne1, int): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Ljava/lang/Object;Lne1;I)V\"},{\"signature\":\"create(java.lang.Object, ne1): ne1\",\"def_pos\":0,\"name\":\"create\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;Lne1;)Lne1;\"},{\"signature\":\"h(java.lang.Object): java.lang.Object\",\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\"},{\"signature\":\"i(java.lang.Object): java.lang.Object\",\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\"},{\"signature\":\"invoke(java.lang.Object, java.lang.Object): java.lang.Object\",\"def_pos\":0,\"name\":\"invoke\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;\"},{\"signature\":\"invokeSuspend(java.lang.Object): java.lang.Object\",\"def_pos\":0,\"name\":\"invokeSuspend\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "fk",
+          "method_name": "invoke",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"body\":\"    @Override // defpackage.om2\\r\\n    public final Object invoke(Object obj, Object obj2) throws Throwable {\\r\\n        int i \\u003d this.i;\\r\\n        jg1 jg1Var \\u003d jg1.i;\\r\\n        dg6 dg6Var \\u003d dg6.a;\\r\\n        switch (i) {\\r\\n            case 0:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 1:\\r\\n                ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n                return dg6Var;\\r\\n            case 2:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 3:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 4:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 5:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 6:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 7:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 8:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 9:\\r\\n                ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n                return jg1Var;\\r\\n            case 10:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 11:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 12:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 13:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 14:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 15:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 16:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 17:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 18:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 19:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 20:\\r\\n                ((fk) create((dd5) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n                return dg6Var;\\r\\n            case 21:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 22:\\r\\n                ((fk) create((dd5) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n                return dg6Var;\\r\\n            case 23:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 24:\\r\\n                ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n                return jg1Var;\\r\\n            case 25:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 26:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 27:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            case 28:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n            default:\\r\\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\\r\\n        }\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"fk.invoke\",\"overload_index\":0,\"method_name\":\"invoke\",\"overload_count\":1,\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;\",\"class_name\":\"defpackage.fk\",\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.fk",
+    "method": {
+      "name": "invoke",
+      "reported_signature": "invoke(java.lang.Object, java.lang.Object): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // defpackage.om2\r\n    public final Object invoke(Object obj, Object obj2) throws Throwable {\r\n        int i = this.i;\r\n        jg1 jg1Var = jg1.i;\r\n        dg6 dg6Var = dg6.a;\r\n        switch (i) {\r\n            case 0:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 1:\r\n                ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n                return dg6Var;\r\n            case 2:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 3:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 4:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 5:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 6:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 7:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 8:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 9:\r\n                ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n                return jg1Var;\r\n            case 10:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 11:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 12:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 13:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 14:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 15:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 16:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 17:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 18:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 19:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 20:\r\n                ((fk) create((dd5) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n                return dg6Var;\r\n            case 21:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 22:\r\n                ((fk) create((dd5) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n                return dg6Var;\r\n            case 23:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 24:\r\n                ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n                return jg1Var;\r\n            case 25:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 26:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 27:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            case 28:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n            default:\r\n                return ((fk) create((hg1) obj, (ne1) obj2)).invokeSuspend(dg6Var);\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

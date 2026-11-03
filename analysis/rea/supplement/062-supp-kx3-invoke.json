@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_d50242cda659bb67bb4d100f188926bcee9507ee493f1adad8661d2ebc1ee9a0",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "kx3",
+    "method_name": "invoke",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-7802ea5287a189237b935c294ddb9235\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":2,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "kx3"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"kx3\",\"fields\":[{\"def_pos\":0,\"name\":\"i\",\"type\":\"int\"}],\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(I)V\",\"signature\":\"\\u003cinit\\u003e(int): void\",\"def_pos\":0},{\"name\":\"invoke\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\",\"signature\":\"invoke(java.lang.Object): java.lang.Object\",\"def_pos\":0}],\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"kx3\",\"field_count\":1,\"full_name\":\"defpackage.kx3\",\"method_count\":2}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "kx3",
+          "method_name": "invoke",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_index\":0,\"method_name\":\"invoke\",\"overload_count\":1,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\",\"class_name\":\"defpackage.kx3\",\"mode\":\"java\",\"body\":\"    @Override // defpackage.lm2\\r\\n    public final Object invoke(Object obj) {\\r\\n        int i \\u003d this.i;\\r\\n        dg6 dg6Var \\u003d dg6.a;\\r\\n        switch (i) {\\r\\n            case 0:\\r\\n                ((CommentUser) obj).getClass();\\r\\n                return dg6Var;\\r\\n            case 1:\\r\\n                MyCommentItem myCommentItem \\u003d (MyCommentItem) obj;\\r\\n                myCommentItem.getClass();\\r\\n                return myCommentItem.getId();\\r\\n            case 2:\\r\\n                zg1 zg1Var \\u003d (zg1) obj;\\r\\n                zg1Var.getClass();\\r\\n                return new yx3(jb5.o(zg1Var));\\r\\n            case 3:\\r\\n                return new t30(jb5.o((zg1) obj));\\r\\n            case 4:\\r\\n                Context context \\u003d (Context) obj;\\r\\n                context.getClass();\\r\\n                if (context instanceof ContextWrapper) {\\r\\n                    return ((ContextWrapper) context).getBaseContext();\\r\\n                }\\r\\n                return null;\\r\\n            case 5:\\r\\n                fz3 fz3Var \\u003d (fz3) obj;\\r\\n                fz3Var.getClass();\\r\\n                fz3Var.c \\u003d true;\\r\\n                return dg6Var;\\r\\n            case 6:\\r\\n                py3 py3Var \\u003d (py3) obj;\\r\\n                py3Var.getClass();\\r\\n                sy3 sy3Var \\u003d py3Var.k;\\r\\n                if (sy3Var \\u003d\\u003d null || sy3Var.n.b !\\u003d py3Var.j.b) {\\r\\n                    return null;\\r\\n                }\\r\\n                return sy3Var;\\r\\n            case 7:\\r\\n                py3 py3Var2 \\u003d (py3) obj;\\r\\n                py3Var2.getClass();\\r\\n                sy3 sy3Var2 \\u003d py3Var2.k;\\r\\n                if (sy3Var2 \\u003d\\u003d null || sy3Var2.n.b !\\u003d py3Var2.j.b) {\\r\\n                    return null;\\r\\n                }\\r\\n                return sy3Var2;\\r\\n            case 8:\\r\\n                py3 py3Var3 \\u003d (py3) obj;\\r\\n                py3Var3.getClass();\\r\\n                return Integer.valueOf(py3Var3.j.b);\\r\\n            case 9:\\r\\n                ((zg1) obj).getClass();\\r\\n                return new hy3();\\r\\n            case 10:\\r\\n                Context context2 \\u003d (Context) obj;\\r\\n                context2.getClass();\\r\\n                ContextWrapper contextWrapper \\u003d context2 instanceof ContextWrapper ? (ContextWrapper) context2 : null;\\r\\n                if (contextWrapper !\\u003d null) {\\r\\n                    return contextWrapper.getBaseContext();\\r\\n                }\\r\\n                return null;\\r\\n            case 11:\\r\\n                Context context3 \\u003d (Context) obj;\\r\\n                context3.getClass();\\r\\n                if (context3 instanceof Activity) {\\r\\n                    return (Activity) context3;\\r\\n                }\\r\\n                return null;\\r\\n            case 12:\\r\\n                py3 py3Var4 \\u003d (py3) obj;\\r\\n                py3Var4.getClass();\\r\\n                return py3Var4.k;\\r\\n            case 13:\\r\\n                py3 py3Var5 \\u003d (py3) obj;\\r\\n                py3Var5.getClass();\\r\\n                if (!(py3Var5 instanceof sy3)) {\\r\\n                    return null;\\r\\n                }\\r\\n                ef efVar \\u003d ((sy3) py3Var5).n;\\r\\n                return efVar.n(efVar.b);\\r\\n            case 14:\\r\\n                py3 py3Var6 \\u003d ((xx3) ((wi) ((qi) obj)).c()).j;\\r\\n                py3Var6.getClass();\\r\\n                int i2 \\u003d py3.m;\\r\\n                for (py3 py3Var7 : sq2.B((n81) py3Var6)) {\\r\\n                }\\r\\n                return null;\\r\\n            case 15:\\r\\n                return j52.d(u04.U(700, 6, null), 2);\\r\\n            case 16:\\r\\n                return j52.e(u04.U(700, 6, null), 2);\\r\\n            case 17:\\r\\n                return ((xx3) obj).n;\\r\\n            case 18:\\r\\n                fz3 fz3Var2 \\u003d (fz3) obj;\\r\\n                fz3Var2.getClass();\\r\\n                fz3Var2.b \\u003d true;\\r\\n                return dg6Var;\\r\\n            case 19:\\r\\n                String str \\u003d (String) obj;\\r\\n                str.getClass();\\r\\n                return \\\"  \\\".concat(str);\\r\\n            case 20:\\r\\n                String str2 \\u003d (String) obj;\\r\\n                str2.getClass();\\r\\n                return \\\"  \\\".concat(str2);\\r\\n            case 21:\\r\\n                sf sfVar \\u003d ((o14) obj).a;\\r\\n                if (sfVar !\\u003d null) {\\r\\n                    sfVar.invoke();\\r\\n                }\\r\\n                return dg6Var;\\r\\n            case 22:\\r\\n                ne4 ne4Var \\u003d (ne4) obj;\\r\\n                int i3 \\u003d df.a;\\r\\n                uw5 uw5Var \\u003d zc.b;\\r\\n                ne4Var.getClass();\\r\\n                Context context4 \\u003d (Context) in0.Y(ne4Var, uw5Var);\\r\\n                hs1 hs1Var \\u003d (hs1) in0.Y(ne4Var, ia1.h);\\r\\n                e94 e94Var \\u003d (e94) in0.Y(ne4Var, f94.a);\\r\\n                if (e94Var \\u003d\\u003d null) {\\r\\n                    return null;\\r\\n                }\\r\\n                return new zd(context4, hs1Var, e94Var.a, e94Var.b);\\r\\n            case 23:\\r\\n                ((qi) obj).getClass();\\r\\n                return xm1.z(j52.d(u04.U(300, 6, null), 2), j52.e(u04.U(200, 6, null), 2));\\r\\n            case 24:\\r\\n                ea4 ea4Var \\u003d (ea4) obj;\\r\\n                ea4Var.getClass();\\r\\n                return ea4Var;\\r\\n            case 25:\\r\\n                return Boolean.valueOf(PagedList.addWeakLoadStateListener$lambda$0((WeakReference) obj));\\r\\n            case 26:\\r\\n                return Boolean.valueOf(PagedList.addWeakCallback$lambda$0((WeakReference) obj));\\r\\n            case 27:\\r\\n                return PagingSource.invalidateCallbackTracker$lambda$0((km2) obj);\\r\\n            case 28:\\r\\n                Byte b \\u003d (Byte) obj;\\r\\n                b.byteValue();\\r\\n                return String.format(\\\"%02x\\\", Arrays.copyOf(new Object[]{b}, 1));\\r\\n            default:\\r\\n                return PreferenceDataStoreDelegateKt.preferencesDataStore$lambda$0((Context) obj);\\r\\n        }\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"kx3.invoke\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.kx3",
+    "method": {
+      "name": "invoke",
+      "reported_signature": "invoke(java.lang.Object): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // defpackage.lm2\r\n    public final Object invoke(Object obj) {\r\n        int i = this.i;\r\n        dg6 dg6Var = dg6.a;\r\n        switch (i) {\r\n            case 0:\r\n                ((CommentUser) obj).getClass();\r\n                return dg6Var;\r\n            case 1:\r\n                MyCommentItem myCommentItem = (MyCommentItem) obj;\r\n                myCommentItem.getClass();\r\n                return myCommentItem.getId();\r\n            case 2:\r\n                zg1 zg1Var = (zg1) obj;\r\n                zg1Var.getClass();\r\n                return new yx3(jb5.o(zg1Var));\r\n            case 3:\r\n                return new t30(jb5.o((zg1) obj));\r\n            case 4:\r\n                Context context = (Context) obj;\r\n                context.getClass();\r\n                if (context instanceof ContextWrapper) {\r\n                    return ((ContextWrapper) context).getBaseContext();\r\n                }\r\n                return null;\r\n            case 5:\r\n                fz3 fz3Var = (fz3) obj;\r\n                fz3Var.getClass();\r\n                fz3Var.c = true;\r\n                return dg6Var;\r\n            case 6:\r\n                py3 py3Var = (py3) obj;\r\n                py3Var.getClass();\r\n                sy3 sy3Var = py3Var.k;\r\n                if (sy3Var == null || sy3Var.n.b != py3Var.j.b) {\r\n                    return null;\r\n                }\r\n                return sy3Var;\r\n            case 7:\r\n                py3 py3Var2 = (py3) obj;\r\n                py3Var2.getClass();\r\n                sy3 sy3Var2 = py3Var2.k;\r\n                if (sy3Var2 == null || sy3Var2.n.b != py3Var2.j.b) {\r\n                    return null;\r\n                }\r\n                return sy3Var2;\r\n            case 8:\r\n                py3 py3Var3 = (py3) obj;\r\n                py3Var3.getClass();\r\n                return Integer.valueOf(py3Var3.j.b);\r\n            case 9:\r\n                ((zg1) obj).getClass();\r\n                return new hy3();\r\n            case 10:\r\n                Context context2 = (Context) obj;\r\n                context2.getClass();\r\n                ContextWrapper contextWrapper = context2 instanceof ContextWrapper ? (ContextWrapper) context2 : null;\r\n                if (contextWrapper != null) {\r\n                    return contextWrapper.getBaseContext();\r\n                }\r\n                return null;\r\n            case 11:\r\n                Context context3 = (Context) obj;\r\n                context3.getClass();\r\n                if (context3 instanceof Activity) {\r\n                    return (Activity) context3;\r\n                }\r\n                return null;\r\n            case 12:\r\n                py3 py3Var4 = (py3) obj;\r\n                py3Var4.getClass();\r\n                return py3Var4.k;\r\n            case 13:\r\n                py3 py3Var5 = (py3) obj;\r\n                py3Var5.getClass();\r\n                if (!(py3Var5 instanceof sy3)) {\r\n                    return null;\r\n                }\r\n                ef efVar = ((sy3) py3Var5).n;\r\n                return efVar.n(efVar.b);\r\n            case 14:\r\n                py3 py3Var6 = ((xx3) ((wi) ((qi) obj)).c()).j;\r\n                py3Var6.getClass();\r\n                int i2 = py3.m;\r\n                for (py3 py3Var7 : sq2.B((n81) py3Var6)) {\r\n                }\r\n                return null;\r\n            case 15:\r\n                return j52.d(u04.U(700, 6, null), 2);\r\n            case 16:\r\n                return j52.e(u04.U(700, 6, null), 2);\r\n            case 17:\r\n                return ((xx3) obj).n;\r\n            case 18:\r\n                fz3 fz3Var2 = (fz3) obj;\r\n                fz3Var2.getClass();\r\n                fz3Var2.b = true;\r\n                return dg6Var;\r\n            case 19:\r\n                String str = (String) obj;\r\n                str.getClass();\r\n                return \"  \".concat(str);\r\n            case 20:\r\n                String str2 = (String) obj;\r\n                str2.getClass();\r\n                return \"  \".concat(str2);\r\n            case 21:\r\n                sf sfVar = ((o14) obj).a;\r\n                if (sfVar != null) {\r\n                    sfVar.invoke();\r\n                }\r\n                return dg6Var;\r\n            case 22:\r\n                ne4 ne4Var = (ne4) obj;\r\n                int i3 = df.a;\r\n                uw5 uw5Var = zc.b;\r\n                ne4Var.getClass();\r\n                Context context4 = (Context) in0.Y(ne4Var, uw5Var);\r\n                hs1 hs1Var = (hs1) in0.Y(ne4Var, ia1.h);\r\n                e94 e94Var = (e94) in0.Y(ne4Var, f94.a);\r\n                if (e94Var == null) {\r\n                    return null;\r\n                }\r\n                return new zd(context4, hs1Var, e94Var.a, e94Var.b);\r\n            case 23:\r\n                ((qi) obj).getClass();\r\n                return xm1.z(j52.d(u04.U(300, 6, null), 2), j52.e(u04.U(200, 6, null), 2));\r\n            case 24:\r\n                ea4 ea4Var = (ea4) obj;\r\n                ea4Var.getClass();\r\n                return ea4Var;\r\n            case 25:\r\n                return Boolean.valueOf(PagedList.addWeakLoadStateListener$lambda$0((WeakReference) obj));\r\n            case 26:\r\n                return Boolean.valueOf(PagedList.addWeakCallback$lambda$0((WeakReference) obj));\r\n            case 27:\r\n                return PagingSource.invalidateCallbackTracker$lambda$0((km2) obj);\r\n            case 28:\r\n                Byte b = (Byte) obj;\r\n                b.byteValue();\r\n                return String.format(\"%02x\", Arrays.copyOf(new Object[]{b}, 1));\r\n            default:\r\n                return PreferenceDataStoreDelegateKt.preferencesDataStore$lambda$0((Context) obj);\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

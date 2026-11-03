@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_57929005d4ffc757f77e96462126d9f5a9e02a000d8df764d996a13a061ae1a4",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "n54",
+    "method_name": "invoke",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "n54"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(p54, com.picacg.domain.model.RequestMode, int): void\",\"dex_descriptor\":\"(Lp54;Lcom/picacg/domain/model/RequestMode;I)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"invoke(java.lang.Object): java.lang.Object\",\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"invoke\",\"def_pos\":0}],\"fields\":[{\"name\":\"i\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"j\",\"def_pos\":0,\"type\":\"p54\"},{\"name\":\"k\",\"def_pos\":0,\"type\":\"com.picacg.domain.model.RequestMode\"}],\"raw_name\":\"n54\",\"method_count\":2,\"full_name\":\"defpackage.n54\",\"field_count\":3,\"name\":\"n54\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "n54",
+          "method_name": "invoke",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    @Override // defpackage.lm2\\r\\n    public final Object invoke(Object obj) {\\r\\n        int i \\u003d this.i;\\r\\n        int i2 \\u003d 3;\\r\\n        int i3 \\u003d 2;\\r\\n        RequestMode requestMode \\u003d this.k;\\r\\n        p54 p54Var \\u003d this.j;\\r\\n        RequestMode requestMode2 \\u003d (RequestMode) obj;\\r\\n        switch (i) {\\r\\n            case 0:\\r\\n                requestMode2.getClass();\\r\\n                requestMode.getDisplayName();\\r\\n                g35.a(requestMode.getResolveStrategy().getClass()).d();\\r\\n                l54 l54Var \\u003d new l54();\\r\\n                up2 up2Var \\u003d p54Var.h;\\r\\n                up2Var.getClass();\\r\\n                l54Var.b \\u003d up2Var;\\r\\n                l54Var.l \\u003d (mh0) p54Var.i.getValue();\\r\\n                wi0 wi0Var \\u003d new wi0(i2);\\r\\n                ArrayList arrayList \\u003d l54Var.c;\\r\\n                arrayList.add(wi0Var);\\r\\n                arrayList.add(new wi0(i3));\\r\\n                arrayList.add(new fg4(p54Var.b, p54Var.c, p54Var.g));\\r\\n                ue0 ue0Var \\u003d new ue0(p54Var.f, i3);\\r\\n                ArrayList arrayList2 \\u003d l54Var.d;\\r\\n                arrayList2.add(ue0Var);\\r\\n                arrayList2.add(new qy2());\\r\\n                fa4 fa4Var \\u003d dh4.e;\\r\\n                fa4Var.getClass();\\r\\n                l54Var.e \\u003d fa4Var;\\r\\n                l54Var.a(30L);\\r\\n                l54Var.c(30L);\\r\\n                l54Var.d(30L);\\r\\n                fv1 fv1VarA \\u003d p54Var.a(requestMode);\\r\\n                if (fv1VarA !\\u003d null) {\\r\\n                    l54Var.b(fv1VarA);\\r\\n                }\\r\\n                return new m54(l54Var);\\r\\n            case 1:\\r\\n                requestMode2.getClass();\\r\\n                requestMode.getDisplayName();\\r\\n                g35.a(requestMode.getResolveStrategy().getClass()).d();\\r\\n                l54 l54Var2 \\u003d new l54();\\r\\n                up2 up2Var2 \\u003d p54Var.j;\\r\\n                up2Var2.getClass();\\r\\n                l54Var2.b \\u003d up2Var2;\\r\\n                l54Var2.l \\u003d (mh0) p54Var.i.getValue();\\r\\n                l54Var2.i \\u003d false;\\r\\n                wi0 wi0Var2 \\u003d new wi0(i2);\\r\\n                ArrayList arrayList3 \\u003d l54Var2.c;\\r\\n                arrayList3.add(wi0Var2);\\r\\n                arrayList3.add(new hz2());\\r\\n                ue0 ue0Var2 \\u003d new ue0(p54Var.f, i3);\\r\\n                ArrayList arrayList4 \\u003d l54Var2.d;\\r\\n                arrayList4.add(ue0Var2);\\r\\n                arrayList4.add(new qy2());\\r\\n                fa4 fa4Var2 \\u003d dh4.e;\\r\\n                fa4Var2.getClass();\\r\\n                l54Var2.e \\u003d fa4Var2;\\r\\n                l54Var2.a(30L);\\r\\n                l54Var2.c(30L);\\r\\n                l54Var2.d(30L);\\r\\n                fv1 fv1VarA2 \\u003d p54Var.a(requestMode);\\r\\n                if (fv1VarA2 !\\u003d null) {\\r\\n                    l54Var2.b(fv1VarA2);\\r\\n                }\\r\\n                return new m54(l54Var2);\\r\\n            default:\\r\\n                requestMode2.getClass();\\r\\n                l54 l54Var3 \\u003d new l54();\\r\\n                l54Var3.a(10L);\\r\\n                l54Var3.c(10L);\\r\\n                l54Var3.d(10L);\\r\\n                fv1 fv1VarA3 \\u003d p54Var.a(requestMode);\\r\\n                if (fv1VarA3 !\\u003d null) {\\r\\n                    l54Var3.b(fv1VarA3);\\r\\n                }\\r\\n                return new m54(l54Var3);\\r\\n        }\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"defpackage.n54\",\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\",\"overload_count\":1,\"method_name\":\"invoke\",\"overload_index\":0,\"full_name\":\"n54.invoke\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.n54",
+    "method": {
+      "name": "invoke",
+      "reported_signature": "invoke(java.lang.Object): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // defpackage.lm2\r\n    public final Object invoke(Object obj) {\r\n        int i = this.i;\r\n        int i2 = 3;\r\n        int i3 = 2;\r\n        RequestMode requestMode = this.k;\r\n        p54 p54Var = this.j;\r\n        RequestMode requestMode2 = (RequestMode) obj;\r\n        switch (i) {\r\n            case 0:\r\n                requestMode2.getClass();\r\n                requestMode.getDisplayName();\r\n                g35.a(requestMode.getResolveStrategy().getClass()).d();\r\n                l54 l54Var = new l54();\r\n                up2 up2Var = p54Var.h;\r\n                up2Var.getClass();\r\n                l54Var.b = up2Var;\r\n                l54Var.l = (mh0) p54Var.i.getValue();\r\n                wi0 wi0Var = new wi0(i2);\r\n                ArrayList arrayList = l54Var.c;\r\n                arrayList.add(wi0Var);\r\n                arrayList.add(new wi0(i3));\r\n                arrayList.add(new fg4(p54Var.b, p54Var.c, p54Var.g));\r\n                ue0 ue0Var = new ue0(p54Var.f, i3);\r\n                ArrayList arrayList2 = l54Var.d;\r\n                arrayList2.add(ue0Var);\r\n                arrayList2.add(new qy2());\r\n                fa4 fa4Var = dh4.e;\r\n                fa4Var.getClass();\r\n                l54Var.e = fa4Var;\r\n                l54Var.a(30L);\r\n                l54Var.c(30L);\r\n                l54Var.d(30L);\r\n                fv1 fv1VarA = p54Var.a(requestMode);\r\n                if (fv1VarA != null) {\r\n                    l54Var.b(fv1VarA);\r\n                }\r\n                return new m54(l54Var);\r\n            case 1:\r\n                requestMode2.getClass();\r\n                requestMode.getDisplayName();\r\n                g35.a(requestMode.getResolveStrategy().getClass()).d();\r\n                l54 l54Var2 = new l54();\r\n                up2 up2Var2 = p54Var.j;\r\n                up2Var2.getClass();\r\n                l54Var2.b = up2Var2;\r\n                l54Var2.l = (mh0) p54Var.i.getValue();\r\n                l54Var2.i = false;\r\n                wi0 wi0Var2 = new wi0(i2);\r\n                ArrayList arrayList3 = l54Var2.c;\r\n                arrayList3.add(wi0Var2);\r\n                arrayList3.add(new hz2());\r\n                ue0 ue0Var2 = new ue0(p54Var.f, i3);\r\n                ArrayList arrayList4 = l54Var2.d;\r\n                arrayList4.add(ue0Var2);\r\n                arrayList4.add(new qy2());\r\n                fa4 fa4Var2 = dh4.e;\r\n                fa4Var2.getClass();\r\n                l54Var2.e = fa4Var2;\r\n                l54Var2.a(30L);\r\n                l54Var2.c(30L);\r\n                l54Var2.d(30L);\r\n                fv1 fv1VarA2 = p54Var.a(requestMode);\r\n                if (fv1VarA2 != null) {\r\n                    l54Var2.b(fv1VarA2);\r\n                }\r\n                return new m54(l54Var2);\r\n            default:\r\n                requestMode2.getClass();\r\n                l54 l54Var3 = new l54();\r\n                l54Var3.a(10L);\r\n                l54Var3.c(10L);\r\n                l54Var3.d(10L);\r\n                fv1 fv1VarA3 = p54Var.a(requestMode);\r\n                if (fv1VarA3 != null) {\r\n                    l54Var3.b(fv1VarA3);\r\n                }\r\n                return new m54(l54Var3);\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

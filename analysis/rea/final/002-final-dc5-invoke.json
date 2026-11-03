@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_a9d49f4bf1fd952c50cac2c7105fdcec1692c3fdefa2298075329483bb94f7ab",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "dc5",
+    "method_name": "invoke",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-4e1f00ad5d641c1e79ff5bf9446b6c07\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "dc5"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"dc5\",\"method_count\":2,\"full_name\":\"defpackage.dc5\",\"field_count\":1,\"name\":\"dc5\",\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(int): void\",\"dex_descriptor\":\"(I)V\",\"is_constructor\":true},{\"name\":\"invoke\",\"def_pos\":0,\"signature\":\"invoke(java.lang.Object): java.lang.Object\",\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\",\"is_constructor\":false}],\"fields\":[{\"type\":\"int\",\"name\":\"i\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "dc5",
+          "method_name": "invoke",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"class_name\":\"defpackage.dc5\",\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\",\"overload_count\":1,\"method_name\":\"invoke\",\"overload_index\":0,\"full_name\":\"dc5.invoke\",\"fell_back\":false,\"markers\":[],\"body\":\"    /* JADX WARN: Code duplicated, block: B:22:0x0089  */\\r\\n    @Override // defpackage.lm2\\r\\n    public final Object invoke(Object obj) {\\r\\n        int iOffsetByCodePoints;\\r\\n        int i \\u003d this.i;\\r\\n        boolean z \\u003d false;\\r\\n        dg6 dg6Var \\u003d dg6.a;\\r\\n        switch (i) {\\r\\n            case 0:\\r\\n                obj.getClass();\\r\\n                List list \\u003d (List) obj;\\r\\n                Object obj2 \\u003d list.get(0);\\r\\n                w66 w66Var \\u003d (j63.u(obj2, Boolean.FALSE) || obj2 \\u003d\\u003d null) ? null : (w66) ((lm2) x34.m.k).invoke(obj2);\\r\\n                w66Var.getClass();\\r\\n                int i2 \\u003d w66Var.a;\\r\\n                Object obj3 \\u003d list.get(1);\\r\\n                Boolean bool \\u003d obj3 !\\u003d null ? (Boolean) obj3 : null;\\r\\n                bool.getClass();\\r\\n                return new x66(i2, bool.booleanValue());\\r\\n            case 1:\\r\\n                obj.getClass();\\r\\n                return new w66(((Integer) obj).intValue());\\r\\n            case 2:\\r\\n                return new gd5(((Integer) obj).intValue());\\r\\n            case 3:\\r\\n                ik4 ik4Var \\u003d (ik4) obj;\\r\\n                if (ik4Var !\\u003d null \\u0026\\u0026 ik4Var.a \\u003d\\u003d 2) {\\r\\n                    z \\u003d true;\\r\\n                }\\r\\n                return Boolean.valueOf(!z);\\r\\n            case 4:\\r\\n                tj tjVar \\u003d (tj) obj;\\r\\n                tjVar.getClass();\\r\\n                return Integer.valueOf(tjVar.a);\\r\\n            case 5:\\r\\n                ba3[] ba3VarArr \\u003d ji5.a;\\r\\n                ((li5) obj).a(hi5.e, dg6Var);\\r\\n                return dg6Var;\\r\\n            case 6:\\r\\n                y44 y44Var \\u003d (y44) obj;\\r\\n                long j \\u003d y44Var.a;\\r\\n                return (9223372034707292159L \\u0026 j) !\\u003d 9205357640488583168L ? new mj(Float.intBitsToFloat((int) (j \\u003e\\u003e 32)), Float.intBitsToFloat((int) (y44Var.a \\u0026 4294967295L))) : kh5.a;\\r\\n            case 7:\\r\\n                mj mjVar \\u003d (mj) obj;\\r\\n                return new y44((((long) Float.floatToRawIntBits(mjVar.b)) \\u0026 4294967295L) | (((long) Float.floatToRawIntBits(mjVar.a)) \\u003c\\u003c 32));\\r\\n            case 8:\\r\\n                return new rh5(((Long) obj).longValue());\\r\\n            case 9:\\r\\n                return Boolean.valueOf(obj \\u003d\\u003d null);\\r\\n            case 10:\\r\\n                g83 g83Var \\u003d (g83) obj;\\r\\n                g83Var.getClass();\\r\\n                g83Var.b \\u003d true;\\r\\n                g83Var.c \\u003d true;\\r\\n                g83Var.a \\u003d true;\\r\\n                return dg6Var;\\r\\n            case 11:\\r\\n                r93 r93Var \\u003d (r93) obj;\\r\\n                r93Var.getClass();\\r\\n                ca3 ca3VarP \\u003d gk4.P(r93Var);\\r\\n                if (ca3VarP !\\u003d null) {\\r\\n                    return ca3VarP;\\r\\n                }\\r\\n                if (lq2.H(r93Var).isInterface()) {\\r\\n                    return new mk4(r93Var);\\r\\n                }\\r\\n                return null;\\r\\n            case 12:\\r\\n                r93 r93Var2 \\u003d (r93) obj;\\r\\n                r93Var2.getClass();\\r\\n                ca3 ca3VarP2 \\u003d gk4.P(r93Var2);\\r\\n                if (ca3VarP2 \\u003d\\u003d null) {\\r\\n                    ca3VarP2 \\u003d lq2.H(r93Var2).isInterface() ? new mk4(r93Var2) : null;\\r\\n                }\\r\\n                if (ca3VarP2 !\\u003d null) {\\r\\n                    return uo3.M(ca3VarP2);\\r\\n                }\\r\\n                return null;\\r\\n            case 13:\\r\\n                li5 li5Var \\u003d (li5) obj;\\r\\n                li5Var.getClass();\\r\\n                ba3[] ba3VarArr2 \\u003d ji5.a;\\r\\n                li5Var.a(hi5.h, dg6Var);\\r\\n                return dg6Var;\\r\\n            case 14:\\r\\n                ((sz1) obj).getClass();\\r\\n                return dg6Var;\\r\\n            case 15:\\r\\n                dc5 dc5Var \\u003d ot5.a;\\r\\n                return dg6Var;\\r\\n            case 16:\\r\\n                ((qi) obj).getClass();\\r\\n                return xm1.z(j52.d(null, 3).a(j52.f(null, 0.7f, 5)), j52.e(null, 3).a(j52.g(null, 0.7f, 5)));\\r\\n            case 17:\\r\\n                li5 li5Var2 \\u003d (li5) obj;\\r\\n                li5Var2.getClass();\\r\\n                ji5.c(li5Var2, \\\"加载中\\\");\\r\\n                return dg6Var;\\r\\n            case 18:\\r\\n                hr0 hr0Var \\u003d (hr0) obj;\\r\\n                hr0Var.getClass();\\r\\n                return hr0Var.a;\\r\\n            case 19:\\r\\n                ((String) obj).getClass();\\r\\n                return dg6Var;\\r\\n            case 20:\\r\\n                ((sz1) obj).getClass();\\r\\n                return dg6Var;\\r\\n            case 21:\\r\\n                ba3[] ba3VarArr3 \\u003d ji5.a;\\r\\n                ki5 ki5Var \\u003d hi5.l;\\r\\n                ba3 ba3Var \\u003d ji5.a[5];\\r\\n                ((li5) obj).a(ki5Var, Boolean.TRUE);\\r\\n                return dg6Var;\\r\\n            case 22:\\r\\n                return dg6Var;\\r\\n            case 23:\\r\\n                Resources resources \\u003d (Resources) obj;\\r\\n                resources.getClass();\\r\\n                return Boolean.valueOf((resources.getConfiguration().uiMode \\u0026 48) \\u003d\\u003d 32);\\r\\n            case 24:\\r\\n                ((Float) obj).getClass();\\r\\n                return dg6Var;\\r\\n            case 25:\\r\\n                f56 f56Var \\u003d (f56) obj;\\r\\n                String str \\u003d f56Var.g.j;\\r\\n                long j2 \\u003d f56Var.f;\\r\\n                int i3 \\u003d z66.c;\\r\\n                int i4 \\u003d (int) (j2 \\u0026 4294967295L);\\r\\n                if (i4 \\u003e 0) {\\r\\n                    j32 j32VarZ \\u003d bl4.z();\\r\\n                    if (j32VarZ !\\u003d null) {\\r\\n                        int iB \\u003d j32VarZ.b(str, i4 - 1);\\r\\n                        if (iB \\u003e\\u003d 0) {\\r\\n                            iOffsetByCodePoints \\u003d iB;\\r\\n                        } else if (i4 \\u003c\\u003d 0) {\\r\\n                            iOffsetByCodePoints \\u003d -1;\\r\\n                        } else {\\r\\n                            iOffsetByCodePoints \\u003d Character.offsetByCodePoints(str, i4, -1);\\r\\n                        }\\r\\n                    } else if (i4 \\u003c\\u003d 0) {\\r\\n                        iOffsetByCodePoints \\u003d -1;\\r\\n                    } else {\\r\\n                        iOffsetByCodePoints \\u003d Character.offsetByCodePoints(str, i4, -1);\\r\\n                    }\\r\\n                } else {\\r\\n                    iOffsetByCodePoints \\u003d -1;\\r\\n                }\\r\\n                if (iOffsetByCodePoints \\u003d\\u003d -1) {\\r\\n                    return null;\\r\\n                }\\r\\n                return new yr1(((int) (f56Var.f \\u0026 4294967295L)) - iOffsetByCodePoints, 0);\\r\\n            case 26:\\r\\n                f56 f56Var2 \\u003d (f56) obj;\\r\\n                String str2 \\u003d f56Var2.g.j;\\r\\n                long j3 \\u003d f56Var2.f;\\r\\n                int i5 \\u003d z66.c;\\r\\n                int iX \\u003d bl4.x((int) (j3 \\u0026 4294967295L), str2);\\r\\n                if (iX !\\u003d -1) {\\r\\n                    return new yr1(0, iX - ((int) (f56Var2.f \\u0026 4294967295L)));\\r\\n                }\\r\\n                return null;\\r\\n            case 27:\\r\\n                f56 f56Var3 \\u003d (f56) obj;\\r\\n                Integer numE \\u003d f56Var3.e();\\r\\n                if (numE \\u003d\\u003d null) {\\r\\n                    return null;\\r\\n                }\\r\\n                int iIntValue \\u003d numE.intValue();\\r\\n                long j4 \\u003d f56Var3.f;\\r\\n                int i6 \\u003d z66.c;\\r\\n                return new yr1(((int) (j4 \\u0026 4294967295L)) - iIntValue, 0);\\r\\n            case 28:\\r\\n                f56 f56Var4 \\u003d (f56) obj;\\r\\n                Integer numD \\u003d f56Var4.d();\\r\\n                if (numD \\u003d\\u003d null) {\\r\\n                    return null;\\r\\n                }\\r\\n                int iIntValue2 \\u003d numD.intValue();\\r\\n                long j5 \\u003d f56Var4.f;\\r\\n                int i7 \\u003d z66.c;\\r\\n                return new yr1(0, iIntValue2 - ((int) (j5 \\u0026 4294967295L)));\\r\\n            default:\\r\\n                f56 f56Var5 \\u003d (f56) obj;\\r\\n                Integer numC \\u003d f56Var5.c();\\r\\n                if (numC \\u003d\\u003d null) {\\r\\n                    return null;\\r\\n                }\\r\\n                int iIntValue3 \\u003d numC.intValue();\\r\\n                long j6 \\u003d f56Var5.f;\\r\\n                int i8 \\u003d z66.c;\\r\\n                return new yr1(((int) (j6 \\u0026 4294967295L)) - iIntValue3, 0);\\r\\n        }\\r\\n    }\",\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.dc5",
+    "method": {
+      "name": "invoke",
+      "reported_signature": "invoke(java.lang.Object): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Code duplicated, block: B:22:0x0089  */\r\n    @Override // defpackage.lm2\r\n    public final Object invoke(Object obj) {\r\n        int iOffsetByCodePoints;\r\n        int i = this.i;\r\n        boolean z = false;\r\n        dg6 dg6Var = dg6.a;\r\n        switch (i) {\r\n            case 0:\r\n                obj.getClass();\r\n                List list = (List) obj;\r\n                Object obj2 = list.get(0);\r\n                w66 w66Var = (j63.u(obj2, Boolean.FALSE) || obj2 == null) ? null : (w66) ((lm2) x34.m.k).invoke(obj2);\r\n                w66Var.getClass();\r\n                int i2 = w66Var.a;\r\n                Object obj3 = list.get(1);\r\n                Boolean bool = obj3 != null ? (Boolean) obj3 : null;\r\n                bool.getClass();\r\n                return new x66(i2, bool.booleanValue());\r\n            case 1:\r\n                obj.getClass();\r\n                return new w66(((Integer) obj).intValue());\r\n            case 2:\r\n                return new gd5(((Integer) obj).intValue());\r\n            case 3:\r\n                ik4 ik4Var = (ik4) obj;\r\n                if (ik4Var != null && ik4Var.a == 2) {\r\n                    z = true;\r\n                }\r\n                return Boolean.valueOf(!z);\r\n            case 4:\r\n                tj tjVar = (tj) obj;\r\n                tjVar.getClass();\r\n                return Integer.valueOf(tjVar.a);\r\n            case 5:\r\n                ba3[] ba3VarArr = ji5.a;\r\n                ((li5) obj).a(hi5.e, dg6Var);\r\n                return dg6Var;\r\n            case 6:\r\n                y44 y44Var = (y44) obj;\r\n                long j = y44Var.a;\r\n                return (9223372034707292159L & j) != 9205357640488583168L ? new mj(Float.intBitsToFloat((int) (j >> 32)), Float.intBitsToFloat((int) (y44Var.a & 4294967295L))) : kh5.a;\r\n            case 7:\r\n                mj mjVar = (mj) obj;\r\n                return new y44((((long) Float.floatToRawIntBits(mjVar.b)) & 4294967295L) | (((long) Float.floatToRawIntBits(mjVar.a)) << 32));\r\n            case 8:\r\n                return new rh5(((Long) obj).longValue());\r\n            case 9:\r\n                return Boolean.valueOf(obj == null);\r\n            case 10:\r\n                g83 g83Var = (g83) obj;\r\n                g83Var.getClass();\r\n                g83Var.b = true;\r\n                g83Var.c = true;\r\n                g83Var.a = true;\r\n                return dg6Var;\r\n            case 11:\r\n                r93 r93Var = (r93) obj;\r\n                r93Var.getClass();\r\n                ca3 ca3VarP = gk4.P(r93Var);\r\n                if (ca3VarP != null) {\r\n                    return ca3VarP;\r\n                }\r\n                if (lq2.H(r93Var).isInterface()) {\r\n                    return new mk4(r93Var);\r\n                }\r\n                return null;\r\n            case 12:\r\n                r93 r93Var2 = (r93) obj;\r\n                r93Var2.getClass();\r\n                ca3 ca3VarP2 = gk4.P(r93Var2);\r\n                if (ca3VarP2 == null) {\r\n                    ca3VarP2 = lq2.H(r93Var2).isInterface() ? new mk4(r93Var2) : null;\r\n                }\r\n                if (ca3VarP2 != null) {\r\n                    return uo3.M(ca3VarP2);\r\n                }\r\n                return null;\r\n            case 13:\r\n                li5 li5Var = (li5) obj;\r\n                li5Var.getClass();\r\n                ba3[] ba3VarArr2 = ji5.a;\r\n                li5Var.a(hi5.h, dg6Var);\r\n                return dg6Var;\r\n            case 14:\r\n                ((sz1) obj).getClass();\r\n                return dg6Var;\r\n            case 15:\r\n                dc5 dc5Var = ot5.a;\r\n                return dg6Var;\r\n            case 16:\r\n                ((qi) obj).getClass();\r\n                return xm1.z(j52.d(null, 3).a(j52.f(null, 0.7f, 5)), j52.e(null, 3).a(j52.g(null, 0.7f, 5)));\r\n            case 17:\r\n                li5 li5Var2 = (li5) obj;\r\n                li5Var2.getClass();\r\n                ji5.c(li5Var2, \"加载中\");\r\n                return dg6Var;\r\n            case 18:\r\n                hr0 hr0Var = (hr0) obj;\r\n                hr0Var.getClass();\r\n                return hr0Var.a;\r\n            case 19:\r\n                ((String) obj).getClass();\r\n                return dg6Var;\r\n            case 20:\r\n                ((sz1) obj).getClass();\r\n                return dg6Var;\r\n            case 21:\r\n                ba3[] ba3VarArr3 = ji5.a;\r\n                ki5 ki5Var = hi5.l;\r\n                ba3 ba3Var = ji5.a[5];\r\n                ((li5) obj).a(ki5Var, Boolean.TRUE);\r\n                return dg6Var;\r\n            case 22:\r\n                return dg6Var;\r\n            case 23:\r\n                Resources resources = (Resources) obj;\r\n                resources.getClass();\r\n                return Boolean.valueOf((resources.getConfiguration().uiMode & 48) == 32);\r\n            case 24:\r\n                ((Float) obj).getClass();\r\n                return dg6Var;\r\n            case 25:\r\n                f56 f56Var = (f56) obj;\r\n                String str = f56Var.g.j;\r\n                long j2 = f56Var.f;\r\n                int i3 = z66.c;\r\n                int i4 = (int) (j2 & 4294967295L);\r\n                if (i4 > 0) {\r\n                    j32 j32VarZ = bl4.z();\r\n                    if (j32VarZ != null) {\r\n                        int iB = j32VarZ.b(str, i4 - 1);\r\n                        if (iB >= 0) {\r\n                            iOffsetByCodePoints = iB;\r\n                        } else if (i4 <= 0) {\r\n                            iOffsetByCodePoints = -1;\r\n                        } else {\r\n                            iOffsetByCodePoints = Character.offsetByCodePoints(str, i4, -1);\r\n                        }\r\n                    } else if (i4 <= 0) {\r\n                        iOffsetByCodePoints = -1;\r\n                    } else {\r\n                        iOffsetByCodePoints = Character.offsetByCodePoints(str, i4, -1);\r\n                    }\r\n                } else {\r\n                    iOffsetByCodePoints = -1;\r\n                }\r\n                if (iOffsetByCodePoints == -1) {\r\n                    return null;\r\n                }\r\n                return new yr1(((int) (f56Var.f & 4294967295L)) - iOffsetByCodePoints, 0);\r\n            case 26:\r\n                f56 f56Var2 = (f56) obj;\r\n                String str2 = f56Var2.g.j;\r\n                long j3 = f56Var2.f;\r\n                int i5 = z66.c;\r\n                int iX = bl4.x((int) (j3 & 4294967295L), str2);\r\n                if (iX != -1) {\r\n                    return new yr1(0, iX - ((int) (f56Var2.f & 4294967295L)));\r\n                }\r\n                return null;\r\n            case 27:\r\n                f56 f56Var3 = (f56) obj;\r\n                Integer numE = f56Var3.e();\r\n                if (numE == null) {\r\n                    return null;\r\n                }\r\n                int iIntValue = numE.intValue();\r\n                long j4 = f56Var3.f;\r\n                int i6 = z66.c;\r\n                return new yr1(((int) (j4 & 4294967295L)) - iIntValue, 0);\r\n            case 28:\r\n                f56 f56Var4 = (f56) obj;\r\n                Integer numD = f56Var4.d();\r\n                if (numD == null) {\r\n                    return null;\r\n                }\r\n                int iIntValue2 = numD.intValue();\r\n                long j5 = f56Var4.f;\r\n                int i7 = z66.c;\r\n                return new yr1(0, iIntValue2 - ((int) (j5 & 4294967295L)));\r\n            default:\r\n                f56 f56Var5 = (f56) obj;\r\n                Integer numC = f56Var5.c();\r\n                if (numC == null) {\r\n                    return null;\r\n                }\r\n                int iIntValue3 = numC.intValue();\r\n                long j6 = f56Var5.f;\r\n                int i8 = z66.c;\r\n                return new yr1(((int) (j6 & 4294967295L)) - iIntValue3, 0);\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

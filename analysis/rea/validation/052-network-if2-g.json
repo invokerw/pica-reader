@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_c38bec673448cc7d9aeba9cd319f8747745b1eae1f245fcdf9665309db5bb100",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "if2",
+    "method_name": "g",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "if2"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(ra2, b73): void\",\"dex_descriptor\":\"(Lra2;Lb73;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"g(java.lang.String): java.util.List\",\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/util/List;\",\"is_constructor\":false,\"name\":\"g\",\"def_pos\":0}],\"fields\":[{\"name\":\"i\",\"def_pos\":0,\"type\":\"ra2\"},{\"name\":\"j\",\"def_pos\":0,\"type\":\"b73\"}],\"raw_name\":\"if2\",\"method_count\":2,\"full_name\":\"defpackage.if2\",\"field_count\":2,\"name\":\"if2\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "if2",
+          "method_name": "g",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    @Override // defpackage.fv1\\r\\n    public final List g(String str) throws UnknownHostException {\\r\\n        Object y65Var;\\r\\n        str.getClass();\\r\\n        List listB \\u003d this.i.b(str);\\r\\n        if (listB \\u003d\\u003d null || listB.isEmpty()) {\\r\\n            try {\\r\\n                InetAddress[] allByName \\u003d InetAddress.getAllByName(str);\\r\\n                allByName.getClass();\\r\\n                return sx.t0(allByName);\\r\\n            } catch (NullPointerException e) {\\r\\n                UnknownHostException unknownHostException \\u003d new UnknownHostException(\\\"Broken system behaviour for dns lookup of \\\".concat(str));\\r\\n                unknownHostException.initCause(e);\\r\\n                throw unknownHostException;\\r\\n            }\\r\\n        }\\r\\n        ArrayList arrayList \\u003d new ArrayList();\\r\\n        ArrayList arrayList2 \\u003d new ArrayList();\\r\\n        for (Object obj : listB) {\\r\\n            if (this.j.d((String) obj)) {\\r\\n                arrayList2.add(obj);\\r\\n            } else {\\r\\n                arrayList.add(obj);\\r\\n            }\\r\\n        }\\r\\n        ArrayList arrayListH0 \\u003d nr0.H0(arrayList2, arrayList);\\r\\n        if (!arrayList2.isEmpty()) {\\r\\n            SimpleDateFormat simpleDateFormat \\u003d sy2.a;\\r\\n            sy2.f(c31.k(\\\"DNS \\\", str, \\\" [固定IP] \\\", nr0.C0(arrayList2, \\\", \\\", null, null, null, 62), \\\" 在黑名单中，已排到最后但仍会尝试\\\"), \\u0027D\\u0027);\\r\\n        }\\r\\n        SimpleDateFormat simpleDateFormat2 \\u003d sy2.a;\\r\\n        sy2.f(\\\"DNS \\\" + str + \\\" ← [固定IP] → \\\" + nr0.C0(arrayListH0, \\\", \\\", null, null, null, 62), \\u0027D\\u0027);\\r\\n        ArrayList arrayList3 \\u003d new ArrayList();\\r\\n        int size \\u003d arrayListH0.size();\\r\\n        int i \\u003d 0;\\r\\n        while (i \\u003c size) {\\r\\n            int i2 \\u003d i + 1;\\r\\n            try {\\r\\n                y65Var \\u003d InetAddress.getByAddress(str, InetAddress.getByName((String) arrayListH0.get(i)).getAddress());\\r\\n            } catch (Throwable th) {\\r\\n                y65Var \\u003d new y65(th);\\r\\n            }\\r\\n            if (y65Var instanceof y65) {\\r\\n                y65Var \\u003d null;\\r\\n            }\\r\\n            InetAddress inetAddress \\u003d (InetAddress) y65Var;\\r\\n            if (inetAddress !\\u003d null) {\\r\\n                arrayList3.add(inetAddress);\\r\\n            }\\r\\n            i \\u003d i2;\\r\\n        }\\r\\n        if (arrayList3.isEmpty()) {\\r\\n            throw new UnknownHostException(\\\"固定 IP 全部无效: \\\".concat(str));\\r\\n        }\\r\\n        return arrayList3;\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"defpackage.if2\",\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/util/List;\",\"overload_count\":1,\"method_name\":\"g\",\"overload_index\":0,\"full_name\":\"if2.g\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.if2",
+    "method": {
+      "name": "g",
+      "reported_signature": "g(java.lang.String): java.util.List",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/String;)Ljava/util/List;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // defpackage.fv1\r\n    public final List g(String str) throws UnknownHostException {\r\n        Object y65Var;\r\n        str.getClass();\r\n        List listB = this.i.b(str);\r\n        if (listB == null || listB.isEmpty()) {\r\n            try {\r\n                InetAddress[] allByName = InetAddress.getAllByName(str);\r\n                allByName.getClass();\r\n                return sx.t0(allByName);\r\n            } catch (NullPointerException e) {\r\n                UnknownHostException unknownHostException = new UnknownHostException(\"Broken system behaviour for dns lookup of \".concat(str));\r\n                unknownHostException.initCause(e);\r\n                throw unknownHostException;\r\n            }\r\n        }\r\n        ArrayList arrayList = new ArrayList();\r\n        ArrayList arrayList2 = new ArrayList();\r\n        for (Object obj : listB) {\r\n            if (this.j.d((String) obj)) {\r\n                arrayList2.add(obj);\r\n            } else {\r\n                arrayList.add(obj);\r\n            }\r\n        }\r\n        ArrayList arrayListH0 = nr0.H0(arrayList2, arrayList);\r\n        if (!arrayList2.isEmpty()) {\r\n            SimpleDateFormat simpleDateFormat = sy2.a;\r\n            sy2.f(c31.k(\"DNS \", str, \" [固定IP] \", nr0.C0(arrayList2, \", \", null, null, null, 62), \" 在黑名单中，已排到最后但仍会尝试\"), 'D');\r\n        }\r\n        SimpleDateFormat simpleDateFormat2 = sy2.a;\r\n        sy2.f(\"DNS \" + str + \" ← [固定IP] → \" + nr0.C0(arrayListH0, \", \", null, null, null, 62), 'D');\r\n        ArrayList arrayList3 = new ArrayList();\r\n        int size = arrayListH0.size();\r\n        int i = 0;\r\n        while (i < size) {\r\n            int i2 = i + 1;\r\n            try {\r\n                y65Var = InetAddress.getByAddress(str, InetAddress.getByName((String) arrayListH0.get(i)).getAddress());\r\n            } catch (Throwable th) {\r\n                y65Var = new y65(th);\r\n            }\r\n            if (y65Var instanceof y65) {\r\n                y65Var = null;\r\n            }\r\n            InetAddress inetAddress = (InetAddress) y65Var;\r\n            if (inetAddress != null) {\r\n                arrayList3.add(inetAddress);\r\n            }\r\n            i = i2;\r\n        }\r\n        if (arrayList3.isEmpty()) {\r\n            throw new UnknownHostException(\"固定 IP 全部无效: \".concat(str));\r\n        }\r\n        return arrayList3;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

@@ -1,0 +1,3 @@
+        private SystemDns() {
+            super(null);
+        }

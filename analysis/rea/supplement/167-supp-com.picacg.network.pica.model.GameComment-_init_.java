@@ -1,0 +1,3 @@
+    public /* synthetic */ GameComment(String str, String str2, CommentUser commentUser, String str3, int i, boolean z, boolean z2, String str4, int i2, int i3, boolean z3, int i4, jo1 jo1Var) {
+        this(str, str2, (i4 & 4) != 0 ? null : commentUser, str3, (i4 & 16) != 0 ? 0 : i, (i4 & 32) != 0 ? false : z, (i4 & 64) != 0 ? false : z2, str4, (i4 & 256) != 0 ? 0 : i2, (i4 & 512) != 0 ? 0 : i3, (i4 & 1024) != 0 ? false : z3);
+    }

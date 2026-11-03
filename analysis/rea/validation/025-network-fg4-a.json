@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_1823188e7a8c794f14a7d699af122285ec5da24df809486d3c97ad7d31d39a3f",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "fg4",
+    "method_name": "a",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "fg4"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(nh4, at1, dd1): void\",\"dex_descriptor\":\"(Lnh4;Lat1;Ldd1;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"a(he3): s65\",\"dex_descriptor\":\"(Lhe3;)Ls65;\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0}],\"fields\":[{\"name\":\"a\",\"def_pos\":0,\"type\":\"nh4\"},{\"name\":\"b\",\"def_pos\":0,\"type\":\"at1\"},{\"name\":\"c\",\"def_pos\":0,\"type\":\"dd1\"}],\"raw_name\":\"fg4\",\"method_count\":2,\"full_name\":\"defpackage.fg4\",\"field_count\":3,\"name\":\"fg4\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "fg4",
+          "method_name": "a",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    @Override // defpackage.o53\\r\\n    public final s65 a(he3 he3Var) throws NoSuchAlgorithmException, InvalidKeyException {\\r\\n        zx zxVar \\u003d (zx) he3Var.i;\\r\\n        int iCurrentTimeMillis \\u003d (int) (System.currentTimeMillis() / 1000);\\r\\n        nh4 nh4Var \\u003d this.a;\\r\\n        if (nh4Var.d \\u003d\\u003d null) {\\r\\n            nh4Var.d \\u003d nh4Var.e();\\r\\n        }\\r\\n        String str \\u003d nh4Var.d;\\r\\n        str.getClass();\\r\\n        at1 at1Var \\u003d this.b;\\r\\n        ne1 ne1Var \\u003d null;\\r\\n        if (at1Var.c \\u003d\\u003d null) {\\r\\n            at1Var.c \\u003d (String) k64.P(y32.i, new fk(at1Var, ne1Var, 15));\\r\\n        }\\r\\n        String str2 \\u003d at1Var.c;\\r\\n        str2.getClass();\\r\\n        String strA0 \\u003d kx5.A0(((lx2) zxVar.b).b(), \\\"/\\\");\\r\\n        String strD \\u003d ((lx2) zxVar.b).d();\\r\\n        if (strD !\\u003d null \\u0026\\u0026 strD.length() !\\u003d 0) {\\r\\n            strA0 \\u003d c31.x(strA0, \\\"?\\\", strD);\\r\\n        }\\r\\n        String str3 \\u003d (String) zxVar.g;\\r\\n        str3.getClass();\\r\\n        StringBuilder sb \\u003d new StringBuilder();\\r\\n        sb.append(strA0);\\r\\n        sb.append(iCurrentTimeMillis);\\r\\n        sb.append(str);\\r\\n        String lowerCase \\u003d c31.n(sb, str3, \\\"C69BAF41DA5ABD1FFEDC6D2FEA56B\\\").toLowerCase(Locale.ROOT);\\r\\n        lowerCase.getClass();\\r\\n        Mac mac \\u003d Mac.getInstance(\\\"HmacSHA256\\\");\\r\\n        Charset charset \\u003d do0.a;\\r\\n        byte[] bytes \\u003d \\\"~d}$Q7$eIni\\u003dV)9\\\\\\\\RK/P.RM4;9[7|@/CA}b~OW!3?EV`:\\u003c\\u003eM7pddUBL5n|0/*Cn\\\".getBytes(charset);\\r\\n        bytes.getClass();\\r\\n        mac.init(new SecretKeySpec(bytes, \\\"HmacSHA256\\\"));\\r\\n        byte[] bytes2 \\u003d lowerCase.getBytes(charset);\\r\\n        bytes2.getClass();\\r\\n        byte[] bArrDoFinal \\u003d mac.doFinal(bytes2);\\r\\n        bArrDoFinal.getClass();\\r\\n        String strI0 \\u003d sx.i0(bArrDoFinal, \\\"\\\", new kx3(28), 30);\\r\\n        nh4 nh4Var2 \\u003d this.a;\\r\\n        if (nh4Var2.c \\u003d\\u003d null) {\\r\\n            s42 s42Var \\u003d nh4Var2.b;\\r\\n            String string \\u003d s42Var.c.getString(\\\"auth_token\\\", null);\\r\\n            nh4Var2.c \\u003d string \\u003d\\u003d null ? null : s42Var.a(string);\\r\\n        }\\r\\n        String str4 \\u003d nh4Var2.c;\\r\\n        String str5 \\u003d this.c.b;\\r\\n        k30 k30VarK \\u003d zxVar.k();\\r\\n        k30VarK.q(\\\"accept\\\", \\\"application/vnd.picacomic.com.v1+json\\\");\\r\\n        String strValueOf \\u003d String.valueOf(iCurrentTimeMillis);\\r\\n        strValueOf.getClass();\\r\\n        ((ys2) k30VarK.c).a(\\\"time\\\", strValueOf);\\r\\n        ((ys2) k30VarK.c).a(\\\"nonce\\\", str);\\r\\n        ((ys2) k30VarK.c).a(\\\"signature\\\", strI0);\\r\\n        ((ys2) k30VarK.c).a(\\\"api-key\\\", \\\"C69BAF41DA5ABD1FFEDC6D2FEA56B\\\");\\r\\n        ((ys2) k30VarK.c).a(\\\"app-channel\\\", IcyHeaders.REQUEST_HEADER_ENABLE_METADATA_VALUE);\\r\\n        ((ys2) k30VarK.c).a(\\\"app-version\\\", \\\"2.3.1.20241111\\\");\\r\\n        ((ys2) k30VarK.c).a(\\\"app-uuid\\\", str2);\\r\\n        ((ys2) k30VarK.c).a(\\\"app-platform\\\", \\\"android\\\");\\r\\n        ((ys2) k30VarK.c).a(\\\"app-build-version\\\", \\\"20250144\\\");\\r\\n        ((ys2) k30VarK.c).a(\\\"User-Agent\\\", \\\"okhttp/3.8.1\\\");\\r\\n        str5.getClass();\\r\\n        ((ys2) k30VarK.c).a(\\\"image-quality\\\", str5);\\r\\n        if (str4 !\\u003d null) {\\r\\n            ((ys2) k30VarK.c).a(\\\"authorization\\\", str4);\\r\\n        }\\r\\n        s65 s65VarF \\u003d he3Var.f(new zx(k30VarK));\\r\\n        if (s65VarF.l \\u003d\\u003d 401) {\\r\\n            Log.w(\\\"PicaAuthInterceptor\\\", \\\"intercept: 收到401响应，清除Token\\\");\\r\\n            nh4 nh4Var3 \\u003d this.a;\\r\\n            nh4Var3.b.c.edit().remove(\\\"auth_token\\\").remove(\\\"refresh_token\\\").commit();\\r\\n            nh4Var3.c \\u003d null;\\r\\n        }\\r\\n        return s65VarF;\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"defpackage.fg4\",\"dex_descriptor\":\"(Lhe3;)Ls65;\",\"overload_count\":1,\"method_name\":\"a\",\"overload_index\":0,\"full_name\":\"fg4.a\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.fg4",
+    "method": {
+      "name": "a",
+      "reported_signature": "a(he3): s65",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lhe3;)Ls65;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // defpackage.o53\r\n    public final s65 a(he3 he3Var) throws NoSuchAlgorithmException, InvalidKeyException {\r\n        zx zxVar = (zx) he3Var.i;\r\n        int iCurrentTimeMillis = (int) (System.currentTimeMillis() / 1000);\r\n        nh4 nh4Var = this.a;\r\n        if (nh4Var.d == null) {\r\n            nh4Var.d = nh4Var.e();\r\n        }\r\n        String str = nh4Var.d;\r\n        str.getClass();\r\n        at1 at1Var = this.b;\r\n        ne1 ne1Var = null;\r\n        if (at1Var.c == null) {\r\n            at1Var.c = (String) k64.P(y32.i, new fk(at1Var, ne1Var, 15));\r\n        }\r\n        String str2 = at1Var.c;\r\n        str2.getClass();\r\n        String strA0 = kx5.A0(((lx2) zxVar.b).b(), \"/\");\r\n        String strD = ((lx2) zxVar.b).d();\r\n        if (strD != null && strD.length() != 0) {\r\n            strA0 = c31.x(strA0, \"?\", strD);\r\n        }\r\n        String str3 = (String) zxVar.g;\r\n        str3.getClass();\r\n        StringBuilder sb = new StringBuilder();\r\n        sb.append(strA0);\r\n        sb.append(iCurrentTimeMillis);\r\n        sb.append(str);\r\n        String lowerCase = c31.n(sb, str3, \"C69BAF41DA5ABD1FFEDC6D2FEA56B\").toLowerCase(Locale.ROOT);\r\n        lowerCase.getClass();\r\n        Mac mac = Mac.getInstance(\"HmacSHA256\");\r\n        Charset charset = do0.a;\r\n        byte[] bytes = \"~d}$Q7$eIni=V)9\\\\RK/P.RM4;9[7|@/CA}b~OW!3?EV`:<>M7pddUBL5n|0/*Cn\".getBytes(charset);\r\n        bytes.getClass();\r\n        mac.init(new SecretKeySpec(bytes, \"HmacSHA256\"));\r\n        byte[] bytes2 = lowerCase.getBytes(charset);\r\n        bytes2.getClass();\r\n        byte[] bArrDoFinal = mac.doFinal(bytes2);\r\n        bArrDoFinal.getClass();\r\n        String strI0 = sx.i0(bArrDoFinal, \"\", new kx3(28), 30);\r\n        nh4 nh4Var2 = this.a;\r\n        if (nh4Var2.c == null) {\r\n            s42 s42Var = nh4Var2.b;\r\n            String string = s42Var.c.getString(\"auth_token\", null);\r\n            nh4Var2.c = string == null ? null : s42Var.a(string);\r\n        }\r\n        String str4 = nh4Var2.c;\r\n        String str5 = this.c.b;\r\n        k30 k30VarK = zxVar.k();\r\n        k30VarK.q(\"accept\", \"application/vnd.picacomic.com.v1+json\");\r\n        String strValueOf = String.valueOf(iCurrentTimeMillis);\r\n        strValueOf.getClass();\r\n        ((ys2) k30VarK.c).a(\"time\", strValueOf);\r\n        ((ys2) k30VarK.c).a(\"nonce\", str);\r\n        ((ys2) k30VarK.c).a(\"signature\", strI0);\r\n        ((ys2) k30VarK.c).a(\"api-key\", \"C69BAF41DA5ABD1FFEDC6D2FEA56B\");\r\n        ((ys2) k30VarK.c).a(\"app-channel\", IcyHeaders.REQUEST_HEADER_ENABLE_METADATA_VALUE);\r\n        ((ys2) k30VarK.c).a(\"app-version\", \"2.3.1.20241111\");\r\n        ((ys2) k30VarK.c).a(\"app-uuid\", str2);\r\n        ((ys2) k30VarK.c).a(\"app-platform\", \"android\");\r\n        ((ys2) k30VarK.c).a(\"app-build-version\", \"20250144\");\r\n        ((ys2) k30VarK.c).a(\"User-Agent\", \"okhttp/3.8.1\");\r\n        str5.getClass();\r\n        ((ys2) k30VarK.c).a(\"image-quality\", str5);\r\n        if (str4 != null) {\r\n            ((ys2) k30VarK.c).a(\"authorization\", str4);\r\n        }\r\n        s65 s65VarF = he3Var.f(new zx(k30VarK));\r\n        if (s65VarF.l == 401) {\r\n            Log.w(\"PicaAuthInterceptor\", \"intercept: 收到401响应，清除Token\");\r\n            nh4 nh4Var3 = this.a;\r\n            nh4Var3.b.c.edit().remove(\"auth_token\").remove(\"refresh_token\").commit();\r\n            nh4Var3.c = null;\r\n        }\r\n        return s65VarF;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

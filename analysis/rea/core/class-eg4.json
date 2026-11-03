@@ -1,0 +1,330 @@
+{
+  "evidence_id": "ev_cdedc2867cc20ddc5868ea4da8ba9b2f5a93b2490e8ac10fea62419f1f746604",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "eg4"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-fad178ded1fb46219c4ee95fb763dfad\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "eg4",
+          "dex_static_values": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"eg4\",\"field_count\":0,\"full_name\":\"defpackage.eg4\",\"method_count\":33,\"raw_name\":\"eg4\",\"fields\":[],\"methods\":[{\"signature\":\"A(java.lang.String, int, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.GameCommentResponseData\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"A\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;ILne1;)Ljava/lang/Object;\"},{\"signature\":\"B(java.lang.String, int, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.CommentResponseData\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"B\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;ILne1;)Ljava/lang/Object;\"},{\"signature\":\"C(com.picacg.network.pica.model.SloganUpdateRequest, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003cq83\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"C\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/picacg/network/pica/model/SloganUpdateRequest;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"D(int, java.lang.String, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.ComicsListResponse\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"D\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/lang/String;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"E(int, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.MyCommentsResponseData\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"E\",\"is_constructor\":false,\"dex_descriptor\":\"(ILne1;)Ljava/lang/Object;\"},{\"signature\":\"F(java.lang.String, java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003cq83\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"F\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/util/Map;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"G(com.picacg.network.pica.model.AvatarUpdateRequest, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003cq83\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"G\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/picacg/network/pica/model/AvatarUpdateRequest;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"a(java.lang.String, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.GameDetailResponse\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"b(java.lang.String, java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.CommentLikeResponse\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/util/Map;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"c(ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.CategoriesData\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"dex_descriptor\":\"(Lne1;)Ljava/lang/Object;\"},{\"signature\":\"d(java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.ComicsListResponse\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Map;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"e(int, com.picacg.network.pica.api.AdvancedSearchBody, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.ComicsListResponse\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"dex_descriptor\":\"(ILcom/picacg/network/pica/api/AdvancedSearchBody;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"f(ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.UserProfileData\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false,\"dex_descriptor\":\"(Lne1;)Ljava/lang/Object;\"},{\"signature\":\"g(java.lang.String, com.picacg.network.pica.api.ContentBody, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003cq83\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lcom/picacg/network/pica/api/ContentBody;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"h(com.picacg.network.pica.api.SignInRequest, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.LoginData\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/picacg/network/pica/api/SignInRequest;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"i(q14, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.RandomComicsResponse\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false,\"dex_descriptor\":\"(Lq14;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"j(int, java.lang.String, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.AnnouncementsResponse\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"j\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/lang/String;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"k(java.lang.String, java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003cq83\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"k\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/util/Map;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"l(java.lang.String, java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003cq83\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/util/Map;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"m(ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.KeywordsData\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"m\",\"is_constructor\":false,\"dex_descriptor\":\"(Lne1;)Ljava/lang/Object;\"},{\"signature\":\"n(java.lang.String, com.picacg.network.pica.api.ContentBody, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003cq83\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lcom/picacg/network/pica/api/ContentBody;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"o(java.lang.String, java.lang.String, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.LeaderboardData\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"o\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"p(com.picacg.network.pica.api.RegisterRequest, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003cq83\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"p\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/picacg/network/pica/api/RegisterRequest;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"q(java.lang.String, java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.GameLikeResponse\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"q\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/util/Map;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"r(java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.PunchInResponse\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"r\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Map;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"s(java.lang.String, int, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.CommentResponseData\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"s\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;ILne1;)Ljava/lang/Object;\"},{\"signature\":\"t(java.lang.String, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.ComicDetailData\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"t\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"u(java.lang.String, int, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.EpisodesData\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"u\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;ILne1;)Ljava/lang/Object;\"},{\"signature\":\"v(java.lang.String, java.lang.String, int, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.ChapterPagesData\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"v\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;ILne1;)Ljava/lang/Object;\"},{\"signature\":\"w(java.lang.String, com.picacg.network.pica.api.ContentBody, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003cq83\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"w\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lcom/picacg/network/pica/api/ContentBody;Lne1;)Ljava/lang/Object;\"},{\"signature\":\"x(int, ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.GamesResponse\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"x\",\"is_constructor\":false,\"dex_descriptor\":\"(ILne1;)Ljava/lang/Object;\"},{\"signature\":\"y(ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.CollectionsResponseData\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"y\",\"is_constructor\":false,\"dex_descriptor\":\"(Lne1;)Ljava/lang/Object;\"},{\"signature\":\"z(ne1\\u003c? super com.picacg.network.pica.model.PicaResponse\\u003ccom.picacg.network.pica.model.BannersResponse\\u003e\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"z\",\"is_constructor\":false,\"dex_descriptor\":\"(Lne1;)Ljava/lang/Object;\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.eg4",
+    "methods": [
+      {
+        "name": "A",
+        "reported_signature": "A(java.lang.String, int, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.GameCommentResponseData>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;ILne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "B",
+        "reported_signature": "B(java.lang.String, int, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.CommentResponseData>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;ILne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "C",
+        "reported_signature": "C(com.picacg.network.pica.model.SloganUpdateRequest, ne1<? super com.picacg.network.pica.model.PicaResponse<q83>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/picacg/network/pica/model/SloganUpdateRequest;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "D",
+        "reported_signature": "D(int, java.lang.String, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.ComicsListResponse>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(ILjava/lang/String;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "E",
+        "reported_signature": "E(int, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.MyCommentsResponseData>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(ILne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "F",
+        "reported_signature": "F(java.lang.String, java.util.Map<java.lang.String, java.lang.String>, ne1<? super com.picacg.network.pica.model.PicaResponse<q83>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/util/Map;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "G",
+        "reported_signature": "G(com.picacg.network.pica.model.AvatarUpdateRequest, ne1<? super com.picacg.network.pica.model.PicaResponse<q83>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/picacg/network/pica/model/AvatarUpdateRequest;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(java.lang.String, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.GameDetailResponse>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(java.lang.String, java.util.Map<java.lang.String, java.lang.String>, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.CommentLikeResponse>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/util/Map;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.CategoriesData>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(java.util.Map<java.lang.String, java.lang.String>, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.ComicsListResponse>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/Map;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(int, com.picacg.network.pica.api.AdvancedSearchBody, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.ComicsListResponse>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(ILcom/picacg/network/pica/api/AdvancedSearchBody;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.UserProfileData>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(java.lang.String, com.picacg.network.pica.api.ContentBody, ne1<? super com.picacg.network.pica.model.PicaResponse<q83>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Lcom/picacg/network/pica/api/ContentBody;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(com.picacg.network.pica.api.SignInRequest, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.LoginData>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/picacg/network/pica/api/SignInRequest;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "i",
+        "reported_signature": "i(q14, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.RandomComicsResponse>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lq14;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "j",
+        "reported_signature": "j(int, java.lang.String, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.AnnouncementsResponse>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(ILjava/lang/String;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "k",
+        "reported_signature": "k(java.lang.String, java.util.Map<java.lang.String, java.lang.String>, ne1<? super com.picacg.network.pica.model.PicaResponse<q83>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/util/Map;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "l",
+        "reported_signature": "l(java.lang.String, java.util.Map<java.lang.String, java.lang.String>, ne1<? super com.picacg.network.pica.model.PicaResponse<q83>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/util/Map;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "m",
+        "reported_signature": "m(ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.KeywordsData>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "n",
+        "reported_signature": "n(java.lang.String, com.picacg.network.pica.api.ContentBody, ne1<? super com.picacg.network.pica.model.PicaResponse<q83>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Lcom/picacg/network/pica/api/ContentBody;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(java.lang.String, java.lang.String, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.LeaderboardData>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "p",
+        "reported_signature": "p(com.picacg.network.pica.api.RegisterRequest, ne1<? super com.picacg.network.pica.model.PicaResponse<q83>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/picacg/network/pica/api/RegisterRequest;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "q",
+        "reported_signature": "q(java.lang.String, java.util.Map<java.lang.String, java.lang.String>, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.GameLikeResponse>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/util/Map;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "r",
+        "reported_signature": "r(java.util.Map<java.lang.String, java.lang.String>, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.PunchInResponse>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/Map;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "s",
+        "reported_signature": "s(java.lang.String, int, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.CommentResponseData>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;ILne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "t",
+        "reported_signature": "t(java.lang.String, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.ComicDetailData>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "u",
+        "reported_signature": "u(java.lang.String, int, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.EpisodesData>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;ILne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "v",
+        "reported_signature": "v(java.lang.String, java.lang.String, int, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.ChapterPagesData>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;ILne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "w",
+        "reported_signature": "w(java.lang.String, com.picacg.network.pica.api.ContentBody, ne1<? super com.picacg.network.pica.model.PicaResponse<q83>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Lcom/picacg/network/pica/api/ContentBody;Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "x",
+        "reported_signature": "x(int, ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.GamesResponse>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(ILne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "y",
+        "reported_signature": "y(ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.CollectionsResponseData>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lne1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "z",
+        "reported_signature": "z(ne1<? super com.picacg.network.pica.model.PicaResponse<com.picacg.network.pica.model.BannersResponse>>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lne1;)Ljava/lang/Object;"
+      }
+    ],
+    "fields": [],
+    "inner_classes": []
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

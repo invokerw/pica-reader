@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_0198041f596029e5e0d54c2dcccdd3fac29a5452bcf375898aaf7eea65bffeb5",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "rx5",
+    "method_name": "d0",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-7802ea5287a189237b935c294ddb9235\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":2,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "rx5"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"rx5\",\"fields\":[],\"methods\":[{\"name\":\"Y\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Z)Z\",\"signature\":\"Y(java.lang.String, java.lang.String, boolean): boolean\",\"def_pos\":0},{\"name\":\"Z\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Z)Z\",\"signature\":\"Z(java.lang.String, java.lang.String, boolean): boolean\",\"def_pos\":0},{\"name\":\"a0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"signature\":\"a0(java.lang.String): void\",\"def_pos\":0},{\"name\":\"b0\",\"is_constructor\":false,\"dex_descriptor\":\"(IIILjava/lang/String;Ljava/lang/String;Z)Z\",\"signature\":\"b0(int, int, int, java.lang.String, java.lang.String, boolean): boolean\",\"def_pos\":0},{\"name\":\"c0\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/lang/String;)Ljava/lang/String;\",\"signature\":\"c0(int, java.lang.String): java.lang.String\",\"def_pos\":0},{\"name\":\"d0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;\",\"signature\":\"d0(java.lang.String, java.lang.String, java.lang.String, boolean): java.lang.String\",\"def_pos\":0},{\"name\":\"e0\",\"is_constructor\":false,\"dex_descriptor\":\"(ILjava/lang/String;Ljava/lang/String;Z)Z\",\"signature\":\"e0(int, java.lang.String, java.lang.String, boolean): boolean\",\"def_pos\":0},{\"name\":\"f0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Z)Z\",\"signature\":\"f0(java.lang.String, java.lang.String, boolean): boolean\",\"def_pos\":0},{\"name\":\"g0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/lang/Integer;\",\"signature\":\"g0(java.lang.String): java.lang.Integer\",\"def_pos\":0},{\"name\":\"h0\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/lang/Long;\",\"signature\":\"h0(java.lang.String): java.lang.Long\",\"def_pos\":0}],\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"rx5\",\"field_count\":0,\"full_name\":\"defpackage.rx5\",\"method_count\":10}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "rx5",
+          "method_name": "d0",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_index\":0,\"method_name\":\"d0\",\"overload_count\":1,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;\",\"class_name\":\"defpackage.rx5\",\"mode\":\"java\",\"body\":\"    public static String d0(String str, String str2, String str3, boolean z) {\\r\\n        zv3.v(str, str2, str3);\\r\\n        int i \\u003d 0;\\r\\n        int iO0 \\u003d kx5.o0(str, str2, 0, z);\\r\\n        if (iO0 \\u003c 0) {\\r\\n            return str;\\r\\n        }\\r\\n        int length \\u003d str2.length();\\r\\n        int i2 \\u003d length \\u003e\\u003d 1 ? length : 1;\\r\\n        int length2 \\u003d str3.length() + (str.length() - length);\\r\\n        if (length2 \\u003c 0) {\\r\\n            throw new OutOfMemoryError();\\r\\n        }\\r\\n        StringBuilder sb \\u003d new StringBuilder(length2);\\r\\n        do {\\r\\n            sb.append((CharSequence) str, i, iO0);\\r\\n            sb.append(str3);\\r\\n            i \\u003d iO0 + length;\\r\\n            if (iO0 \\u003e\\u003d str.length()) {\\r\\n                break;\\r\\n            }\\r\\n            iO0 \\u003d kx5.o0(str, str2, iO0 + i2, z);\\r\\n        } while (iO0 \\u003e 0);\\r\\n        sb.append((CharSequence) str, i, str.length());\\r\\n        return sb.toString();\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"rx5.d0\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.rx5",
+    "method": {
+      "name": "d0",
+      "reported_signature": "d0(java.lang.String, java.lang.String, java.lang.String, boolean): java.lang.String",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public static String d0(String str, String str2, String str3, boolean z) {\r\n        zv3.v(str, str2, str3);\r\n        int i = 0;\r\n        int iO0 = kx5.o0(str, str2, 0, z);\r\n        if (iO0 < 0) {\r\n            return str;\r\n        }\r\n        int length = str2.length();\r\n        int i2 = length >= 1 ? length : 1;\r\n        int length2 = str3.length() + (str.length() - length);\r\n        if (length2 < 0) {\r\n            throw new OutOfMemoryError();\r\n        }\r\n        StringBuilder sb = new StringBuilder(length2);\r\n        do {\r\n            sb.append((CharSequence) str, i, iO0);\r\n            sb.append(str3);\r\n            i = iO0 + length;\r\n            if (iO0 >= str.length()) {\r\n                break;\r\n            }\r\n            iO0 = kx5.o0(str, str2, iO0 + i2, z);\r\n        } while (iO0 > 0);\r\n        sb.append((CharSequence) str, i, str.length());\r\n        return sb.toString();\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

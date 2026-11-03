@@ -1,0 +1,2 @@
+    private UserProfileData$$serializer() {
+    }

@@ -1,0 +1,133 @@
+{
+  "evidence_id": "ev_7dbfbf338f41f888db8ec2f34faab557599ce379123a79b41e9a40b74e809bbb",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "com.picacg.network.pica.api.ContentBody",
+    "method_name": "<clinit>",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.picacg.network.pica.api.ContentBody"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(int, java.lang.String, fj5): void\",\"dex_descriptor\":\"(ILjava/lang/String;Lfj5;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(java.lang.String): void\",\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"equals(java.lang.Object): boolean\",\"dex_descriptor\":\"(Ljava/lang/Object;)Z\",\"is_constructor\":false,\"name\":\"equals\",\"def_pos\":0},{\"signature\":\"hashCode(): int\",\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"hashCode\",\"def_pos\":0},{\"signature\":\"toString(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"toString\",\"def_pos\":0},{\"signature\":\"write$Self$app(com.picacg.network.pica.api.ContentBody, u91, zi5): void\",\"dex_descriptor\":\"(Lcom/picacg/network/pica/api/ContentBody;Lu91;Lzi5;)V\",\"is_constructor\":false,\"name\":\"write$Self$app\",\"def_pos\":0}],\"fields\":[{\"name\":\"Companion\",\"def_pos\":0,\"type\":\"bc1\"},{\"name\":\"content\",\"def_pos\":0,\"type\":\"java.lang.String\"}],\"raw_name\":\"com.picacg.network.pica.api.ContentBody\",\"method_count\":7,\"full_name\":\"com.picacg.network.pica.api.ContentBody\",\"field_count\":2,\"name\":\"ContentBody\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.picacg.network.pica.api.ContentBody",
+          "method_name": "<clinit>",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[\"static_initializer_disassembly\"],\"body\":\".method static constructor \\u003cclinit\\u003e()V\\n    .registers 1\\n\\n    .line 1\\n    new-instance v0, Lbc1;\\n\\n    .line 2\\n    .line 3\\n    invoke-direct {v0}, Ljava/lang/Object;-\\u003e\\u003cinit\\u003e()V\\n\\n    .line 4\\n    .line 5\\n    .line 6\\n    sput-object v0, Lcom/picacg/network/pica/api/ContentBody;-\\u003eCompanion:Lbc1;\\n\\n    .line 7\\n    .line 8\\n    return-void\\n.end method\",\"mode\":\"smali\",\"class_name\":\"com.picacg.network.pica.api.ContentBody\",\"dex_descriptor\":\"()V\",\"overload_count\":1,\"method_name\":\"\\u003cclinit\\u003e\",\"overload_index\":0,\"full_name\":\"com.picacg.network.pica.api.ContentBody.\\u003cclinit\\u003e\",\"fell_back\":true}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "com.picacg.network.pica.api.ContentBody",
+    "method": {
+      "name": "<clinit>",
+      "reported_signature": "<clinit>(): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()V"
+    },
+    "overload_count": 1,
+    "representation": "smali",
+    "body_status": "available",
+    "fell_back": true,
+    "markers": [
+      "static_initializer_disassembly"
+    ],
+    "source": {
+      "status": "complete",
+      "text": ".method static constructor <clinit>()V\n    .registers 1\n\n    .line 1\n    new-instance v0, Lbc1;\n\n    .line 2\n    .line 3\n    invoke-direct {v0}, Ljava/lang/Object;-><init>()V\n\n    .line 4\n    .line 5\n    .line 6\n    sput-object v0, Lcom/picacg/network/pica/api/ContentBody;->Companion:Lbc1;\n\n    .line 7\n    .line 8\n    return-void\n.end method",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

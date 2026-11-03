@@ -1,0 +1,2 @@
+    private AvatarUpdateRequest$$serializer() {
+    }

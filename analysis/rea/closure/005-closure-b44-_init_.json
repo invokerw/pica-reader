@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_cba214a472d1305b6c94c1e30e57a052cd9af409833c36d3118cf269e9060121",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "b44",
+    "method_name": "<init>",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-ed31fdca024c038dac85310d4b0ed03c\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "b44"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"a\",\"type\":\"ca3\",\"def_pos\":0},{\"name\":\"b\",\"type\":\"aj5\",\"def_pos\":0}],\"methods\":[{\"is_constructor\":true,\"dex_descriptor\":\"(Lca3;)V\",\"signature\":\"\\u003cinit\\u003e(ca3): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Ldn1;)Ljava/lang/Object;\",\"signature\":\"deserialize(dn1): java.lang.Object\",\"def_pos\":0,\"name\":\"deserialize\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Z\",\"signature\":\"equals(java.lang.Object): boolean\",\"def_pos\":0,\"name\":\"equals\"},{\"is_constructor\":false,\"dex_descriptor\":\"()Lzi5;\",\"signature\":\"getDescriptor(): zi5\",\"def_pos\":0,\"name\":\"getDescriptor\"},{\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"hashCode(): int\",\"def_pos\":0,\"name\":\"hashCode\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Ln42;Ljava/lang/Object;)V\",\"signature\":\"serialize(n42, java.lang.Object): void\",\"def_pos\":0,\"name\":\"serialize\"}],\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"b44\",\"field_count\":2,\"full_name\":\"defpackage.b44\",\"method_count\":6,\"raw_name\":\"b44\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "b44",
+          "method_name": "<init>",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"class_name\":\"defpackage.b44\",\"mode\":\"java\",\"body\":\"    public b44(ca3 ca3Var) {\\r\\n        ca3Var.getClass();\\r\\n        this.a \\u003d ca3Var;\\r\\n        this.b \\u003d new aj5(ca3Var.getDescriptor());\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"b44.\\u003cinit\\u003e\",\"overload_index\":0,\"method_name\":\"\\u003cinit\\u003e\",\"overload_count\":1,\"dex_descriptor\":\"(Lca3;)V\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.b44",
+    "method": {
+      "name": "<init>",
+      "reported_signature": "<init>(ca3): void",
+      "overload_index": 0,
+      "is_constructor": true,
+      "dex_descriptor": "(Lca3;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public b44(ca3 ca3Var) {\r\n        ca3Var.getClass();\r\n        this.a = ca3Var;\r\n        this.b = new aj5(ca3Var.getDescriptor());\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

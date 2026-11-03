@@ -1,0 +1,623 @@
+[
+  {
+    "id": "class-pr2",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "pr2"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\class-pr2.json",
+    "elapsed_ms": 16623,
+    "evidence_id": "ev_1dcc2833ad1d0fd2264b6ace397b0187c1ebc34388af8c2db3937b54b2820c85",
+    "original_task": {
+      "id": "000-closure-pr2-m",
+      "operation": "inspect_android_method",
+      "class_name": "pr2",
+      "method_name": "m",
+      "dex_descriptor": "(Lb83;Lqr3;)Lja2;",
+      "original_method_id": "Lpr2;->m(Lb83;Lqr3;)Lja2;"
+    }
+  },
+  {
+    "id": "000-closure-pr2-m",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "pr2",
+      "method_name": "m",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\000-closure-pr2-m.json",
+    "elapsed_ms": 4977,
+    "evidence_id": "ev_8937b6d555d06c22b956a8d1102fdba789d7cf2ff8362ecd7c599a5b4f35920c",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\000-closure-pr2-m.java",
+    "original_task": {
+      "id": "000-closure-pr2-m",
+      "operation": "inspect_android_method",
+      "class_name": "pr2",
+      "method_name": "m",
+      "dex_descriptor": "(Lb83;Lqr3;)Lja2;",
+      "original_method_id": "Lpr2;->m(Lb83;Lqr3;)Lja2;"
+    }
+  },
+  {
+    "id": "class-nr0",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "nr0"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\class-nr0.json",
+    "elapsed_ms": 244,
+    "evidence_id": "ev_640509a5a6d03743c5a656b5b6ffd1509e90a5766fc8e62b7b8993cc42f14d7f",
+    "original_task": {
+      "id": "001-closure-nr0-J0",
+      "operation": "inspect_android_method",
+      "class_name": "nr0",
+      "method_name": "J0",
+      "dex_descriptor": "(Ljava/util/List;)Ljava/lang/Object;",
+      "original_method_id": "Lnr0;->J0(Ljava/util/List;)Ljava/lang/Object;"
+    }
+  },
+  {
+    "id": "001-closure-nr0-J0",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "nr0",
+      "method_name": "J0",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\001-closure-nr0-J0.json",
+    "elapsed_ms": 566,
+    "evidence_id": "ev_cb3350288679db736bf0eb5c214fbed8ed1764b381c7ff5b12ac530e8b8df809",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\001-closure-nr0-J0.java",
+    "original_task": {
+      "id": "001-closure-nr0-J0",
+      "operation": "inspect_android_method",
+      "class_name": "nr0",
+      "method_name": "J0",
+      "dex_descriptor": "(Ljava/util/List;)Ljava/lang/Object;",
+      "original_method_id": "Lnr0;->J0(Ljava/util/List;)Ljava/lang/Object;"
+    }
+  },
+  {
+    "id": "class-sq2",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "sq2"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\class-sq2.json",
+    "elapsed_ms": 218,
+    "evidence_id": "ev_0b24976221aa0f9ea1f5878abfd39ece7bca2d3177538060c95413f129f9fe43",
+    "original_task": {
+      "id": "002-closure-sq2-x",
+      "operation": "inspect_android_method",
+      "class_name": "sq2",
+      "method_name": "x",
+      "dex_descriptor": "(Ljava/lang/String;)Lqr3;",
+      "original_method_id": "Lsq2;->x(Ljava/lang/String;)Lqr3;"
+    }
+  },
+  {
+    "id": "002-closure-sq2-x",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "sq2",
+      "method_name": "x",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\002-closure-sq2-x.json",
+    "elapsed_ms": 1970,
+    "evidence_id": "ev_02f49f995e46c64817e12f193b94488536773e9dac35864f7926022b0294aeb8",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\002-closure-sq2-x.java",
+    "original_task": {
+      "id": "002-closure-sq2-x",
+      "operation": "inspect_android_method",
+      "class_name": "sq2",
+      "method_name": "x",
+      "dex_descriptor": "(Ljava/lang/String;)Lqr3;",
+      "original_method_id": "Lsq2;->x(Ljava/lang/String;)Lqr3;"
+    }
+  },
+  {
+    "id": "class-uo3",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "uo3"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\class-uo3.json",
+    "elapsed_ms": 251,
+    "evidence_id": "ev_385ee1c59411201d5956b6f4bc29b9466eb87fd8a0c96056c6677d1536f30bcf",
+    "original_task": {
+      "id": "003-closure-uo3-M",
+      "operation": "inspect_android_method",
+      "class_name": "uo3",
+      "method_name": "M",
+      "dex_descriptor": "(Lca3;)Lca3;",
+      "original_method_id": "Luo3;->M(Lca3;)Lca3;"
+    }
+  },
+  {
+    "id": "003-closure-uo3-M",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "uo3",
+      "method_name": "M",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\003-closure-uo3-M.json",
+    "elapsed_ms": 1553,
+    "evidence_id": "ev_1cf874e89d98a7e8e5ee7580f44615581b31f60b90c87193e095941854dcf2fb",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\003-closure-uo3-M.java",
+    "original_task": {
+      "id": "003-closure-uo3-M",
+      "operation": "inspect_android_method",
+      "class_name": "uo3",
+      "method_name": "M",
+      "dex_descriptor": "(Lca3;)Lca3;",
+      "original_method_id": "Luo3;->M(Lca3;)Lca3;"
+    }
+  },
+  {
+    "id": "class-qj4",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "qj4"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\class-qj4.json",
+    "elapsed_ms": 216,
+    "evidence_id": "ev_a52a83cc0e2c35bc976f6e629a6778bd3da70eca5ab28084eb1b175f2b6d6b20",
+    "original_task": {
+      "id": "004-closure-qj4-j",
+      "operation": "inspect_android_method",
+      "class_name": "qj4",
+      "method_name": "j",
+      "dex_descriptor": "(Ljava/lang/String;Z)V",
+      "original_method_id": "Lqj4;->j(Ljava/lang/String;Z)V"
+    }
+  },
+  {
+    "id": "004-closure-qj4-j",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "qj4",
+      "method_name": "j",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\004-closure-qj4-j.json",
+    "elapsed_ms": 279,
+    "evidence_id": "ev_f01425bd25b66f53da88ab1d25060e7dc3db0a100655af052d3b4c02575d7bda",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\004-closure-qj4-j.java",
+    "original_task": {
+      "id": "004-closure-qj4-j",
+      "operation": "inspect_android_method",
+      "class_name": "qj4",
+      "method_name": "j",
+      "dex_descriptor": "(Ljava/lang/String;Z)V",
+      "original_method_id": "Lqj4;->j(Ljava/lang/String;Z)V"
+    }
+  },
+  {
+    "id": "class-b44",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "b44"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\class-b44.json",
+    "elapsed_ms": 218,
+    "evidence_id": "ev_1bc5824acb5732809fd0794d16398addaf56016fb39958d33e890014f029f85f",
+    "original_task": {
+      "id": "005-closure-b44-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "b44",
+      "method_name": "<init>",
+      "dex_descriptor": "(Lca3;)V",
+      "original_method_id": "Lb44;-><init>(Lca3;)V"
+    }
+  },
+  {
+    "id": "005-closure-b44-_init_",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "b44",
+      "method_name": "<init>",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\005-closure-b44-_init_.json",
+    "elapsed_ms": 247,
+    "evidence_id": "ev_cba214a472d1305b6c94c1e30e57a052cd9af409833c36d3118cf269e9060121",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\005-closure-b44-_init_.java",
+    "original_task": {
+      "id": "005-closure-b44-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "b44",
+      "method_name": "<init>",
+      "dex_descriptor": "(Lca3;)V",
+      "original_method_id": "Lb44;-><init>(Lca3;)V"
+    }
+  },
+  {
+    "id": "006-closure-b44-deserialize",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "b44",
+      "method_name": "deserialize",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\006-closure-b44-deserialize.json",
+    "elapsed_ms": 275,
+    "evidence_id": "ev_c8be61fd013df6525c2f487caa644cd87398be815384a94c7e51b54745291414",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\006-closure-b44-deserialize.java",
+    "original_task": {
+      "id": "006-closure-b44-deserialize",
+      "operation": "inspect_android_method",
+      "class_name": "b44",
+      "method_name": "deserialize",
+      "dex_descriptor": "(Ldn1;)Ljava/lang/Object;",
+      "original_method_id": "Lb44;->deserialize(Ldn1;)Ljava/lang/Object;"
+    }
+  },
+  {
+    "id": "007-closure-b44-getDescriptor",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "b44",
+      "method_name": "getDescriptor",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\007-closure-b44-getDescriptor.json",
+    "elapsed_ms": 249,
+    "evidence_id": "ev_a2b0292bd2a01cba5eabf27d945c91667bb4a72563d67d5f27eb37a9cbdfbe7a",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\007-closure-b44-getDescriptor.java",
+    "original_task": {
+      "id": "007-closure-b44-getDescriptor",
+      "operation": "inspect_android_method",
+      "class_name": "b44",
+      "method_name": "getDescriptor",
+      "dex_descriptor": "()Lzi5;",
+      "original_method_id": "Lb44;->getDescriptor()Lzi5;"
+    }
+  },
+  {
+    "id": "008-closure-b44-serialize",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "b44",
+      "method_name": "serialize",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\008-closure-b44-serialize.json",
+    "elapsed_ms": 231,
+    "evidence_id": "ev_dd9a99c6acf81c0e1e79fadba8965bff41c04655612358035e6f799a6c8be109",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\008-closure-b44-serialize.java",
+    "original_task": {
+      "id": "008-closure-b44-serialize",
+      "operation": "inspect_android_method",
+      "class_name": "b44",
+      "method_name": "serialize",
+      "dex_descriptor": "(Ln42;Ljava/lang/Object;)V",
+      "original_method_id": "Lb44;->serialize(Ln42;Ljava/lang/Object;)V"
+    }
+  },
+  {
+    "id": "class-e53",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "e53"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\class-e53.json",
+    "elapsed_ms": 212,
+    "evidence_id": "ev_f8ace841244eeccb16fbd604adbd417e209c9072414d8e5a32fd102cf4735481",
+    "original_task": {
+      "id": "009-closure-e53-getDescriptor",
+      "operation": "inspect_android_method",
+      "class_name": "e53",
+      "method_name": "getDescriptor",
+      "dex_descriptor": "()Lzi5;",
+      "original_method_id": "Le53;->getDescriptor()Lzi5;"
+    }
+  },
+  {
+    "id": "009-closure-e53-getDescriptor",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "e53",
+      "method_name": "getDescriptor",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\009-closure-e53-getDescriptor.json",
+    "elapsed_ms": 248,
+    "evidence_id": "ev_456283b5c98926d4a00ddf7fc2f4e3ae9117928663a94b30b99c9cecbf0c7504",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\009-closure-e53-getDescriptor.java",
+    "original_task": {
+      "id": "009-closure-e53-getDescriptor",
+      "operation": "inspect_android_method",
+      "class_name": "e53",
+      "method_name": "getDescriptor",
+      "dex_descriptor": "()Lzi5;",
+      "original_method_id": "Le53;->getDescriptor()Lzi5;"
+    }
+  },
+  {
+    "id": "class-h54",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "h54"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\class-h54.json",
+    "elapsed_ms": 216,
+    "evidence_id": "ev_fa4eaae4fe80fed5919e8f62b34be629952acaed98eccf9b7e1e58efb4b2d43d",
+    "original_task": {
+      "id": "010-closure-h54-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "h54",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lh54;-><clinit>()V"
+    }
+  },
+  {
+    "id": "010-closure-h54-_clinit_",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "h54",
+      "method_name": "<clinit>",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\010-closure-h54-_clinit_.json",
+    "elapsed_ms": 325,
+    "evidence_id": "ev_197443924e7dd7c0032cd442c9f118e71b0a1c35dcf6ee197dc2224cf7597cd6",
+    "representation": "smali",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\010-closure-h54-_clinit_.smali",
+    "original_task": {
+      "id": "010-closure-h54-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "h54",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lh54;-><clinit>()V"
+    }
+  },
+  {
+    "id": "011-closure-h54-a",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "h54",
+      "method_name": "a",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\011-closure-h54-a.json",
+    "elapsed_ms": 279,
+    "evidence_id": "ev_e4abac62e1af8256c37b095a17957559eab1e958dc383dcf12171e3c6ee32279",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\011-closure-h54-a.java",
+    "original_task": {
+      "id": "011-closure-h54-a",
+      "operation": "inspect_android_method",
+      "class_name": "h54",
+      "method_name": "a",
+      "dex_descriptor": "(Ljava/security/cert/X509Certificate;I)Ljava/util/List;",
+      "original_method_id": "Lh54;->a(Ljava/security/cert/X509Certificate;I)Ljava/util/List;"
+    }
+  },
+  {
+    "id": "012-closure-h54-b",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "h54",
+      "method_name": "b",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\012-closure-h54-b.json",
+    "elapsed_ms": 263,
+    "evidence_id": "ev_27647a9a94a0c165c8079484d349d01db8d2e4358c0616ac9e12b8988774340b",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\012-closure-h54-b.java",
+    "original_task": {
+      "id": "012-closure-h54-b",
+      "operation": "inspect_android_method",
+      "class_name": "h54",
+      "method_name": "b",
+      "dex_descriptor": "(Ljava/lang/String;)Z",
+      "original_method_id": "Lh54;->b(Ljava/lang/String;)Z"
+    }
+  },
+  {
+    "id": "013-closure-h54-c",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "h54",
+      "method_name": "c",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\013-closure-h54-c.json",
+    "elapsed_ms": 296,
+    "evidence_id": "ev_b32a62d5f0882c1dd504fa5e2f051b35ad6a34302fd7d7f844963f8a7b01ee55",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\013-closure-h54-c.java",
+    "original_task": {
+      "id": "013-closure-h54-c",
+      "operation": "inspect_android_method",
+      "class_name": "h54",
+      "method_name": "c",
+      "dex_descriptor": "(Ljava/lang/String;Ljava/security/cert/X509Certificate;)Z",
+      "original_method_id": "Lh54;->c(Ljava/lang/String;Ljava/security/cert/X509Certificate;)Z"
+    }
+  },
+  {
+    "id": "014-closure-h54-verify",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "h54",
+      "method_name": "verify",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\014-closure-h54-verify.json",
+    "elapsed_ms": 243,
+    "evidence_id": "ev_2fe5c30e55b6656add7ccaa1aab3e0b9a3e10376f831dd0b07b95223f7bfadc7",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\014-closure-h54-verify.java",
+    "original_task": {
+      "id": "014-closure-h54-verify",
+      "operation": "inspect_android_method",
+      "class_name": "h54",
+      "method_name": "verify",
+      "dex_descriptor": "(Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z",
+      "original_method_id": "Lh54;->verify(Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z"
+    }
+  },
+  {
+    "id": "class-ix5",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "ix5"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\class-ix5.json",
+    "elapsed_ms": 219,
+    "evidence_id": "ev_4f09960ba5768404eeebee6baec29ef0a4dfaa587055e02dcceb0e6759cd0f2b",
+    "original_task": {
+      "id": "015-closure-ix5-deserialize",
+      "operation": "inspect_android_method",
+      "class_name": "ix5",
+      "method_name": "deserialize",
+      "dex_descriptor": "(Ldn1;)Ljava/lang/Object;",
+      "original_method_id": "Lix5;->deserialize(Ldn1;)Ljava/lang/Object;"
+    }
+  },
+  {
+    "id": "015-closure-ix5-deserialize",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "ix5",
+      "method_name": "deserialize",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\015-closure-ix5-deserialize.json",
+    "elapsed_ms": 232,
+    "evidence_id": "ev_345227e79f15250425e444823f7ee95211940fb031fe2060b9c2db95a83457d0",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\015-closure-ix5-deserialize.java",
+    "original_task": {
+      "id": "015-closure-ix5-deserialize",
+      "operation": "inspect_android_method",
+      "class_name": "ix5",
+      "method_name": "deserialize",
+      "dex_descriptor": "(Ldn1;)Ljava/lang/Object;",
+      "original_method_id": "Lix5;->deserialize(Ldn1;)Ljava/lang/Object;"
+    }
+  },
+  {
+    "id": "016-closure-ix5-getDescriptor",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "ix5",
+      "method_name": "getDescriptor",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\016-closure-ix5-getDescriptor.json",
+    "elapsed_ms": 257,
+    "evidence_id": "ev_a3faad958ebef6ab5c1113930ef1c1a4a210a002cd9d59953493fb12ecdbb886",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\016-closure-ix5-getDescriptor.java",
+    "original_task": {
+      "id": "016-closure-ix5-getDescriptor",
+      "operation": "inspect_android_method",
+      "class_name": "ix5",
+      "method_name": "getDescriptor",
+      "dex_descriptor": "()Lzi5;",
+      "original_method_id": "Lix5;->getDescriptor()Lzi5;"
+    }
+  },
+  {
+    "id": "017-closure-ix5-serialize",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "ix5",
+      "method_name": "serialize",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\017-closure-ix5-serialize.json",
+    "elapsed_ms": 261,
+    "evidence_id": "ev_b47f46ccf7a2f8e99d21105b63721be2c7650133dfa766395c24ff6e05956563",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\closure\\017-closure-ix5-serialize.java",
+    "original_task": {
+      "id": "017-closure-ix5-serialize",
+      "operation": "inspect_android_method",
+      "class_name": "ix5",
+      "method_name": "serialize",
+      "dex_descriptor": "(Ln42;Ljava/lang/Object;)V",
+      "original_method_id": "Lix5;->serialize(Ln42;Ljava/lang/Object;)V"
+    }
+  }
+]

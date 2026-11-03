@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_848e92ef51d8b98670ca44f7dd259de07c4f538a5c387bd95c5f26535ad6b085",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "hz2",
+    "method_name": "a",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "hz2"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0},{\"signature\":\"a(he3): s65\",\"dex_descriptor\":\"(Lhe3;)Ls65;\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0}],\"fields\":[{\"name\":\"a\",\"def_pos\":0,\"type\":\"android.util.LruCache\"}],\"raw_name\":\"hz2\",\"method_count\":2,\"full_name\":\"defpackage.hz2\",\"field_count\":1,\"name\":\"hz2\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "hz2",
+          "method_name": "a",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    @Override // defpackage.o53\\r\\n    public final s65 a(he3 he3Var) {\\r\\n        oa1 oa1Var;\\r\\n        zx zxVar \\u003d (zx) he3Var.i;\\r\\n        String str \\u003d ((lx2) zxVar.b).i;\\r\\n        LruCache lruCache \\u003d a;\\r\\n        String str2 \\u003d (String) lruCache.get(str);\\r\\n        if (str2 !\\u003d null) {\\r\\n            SimpleDateFormat simpleDateFormat \\u003d sy2.a;\\r\\n            lx2 lx2Var \\u003d (lx2) zxVar.b;\\r\\n            sy2.f(\\\"⚡ 301缓存命中: \\\" + lx2Var.d + kx5.L0(60, lx2Var.b()) + \\\"...\\\", \\u0027D\\u0027);\\r\\n            k30 k30VarK \\u003d zxVar.k();\\r\\n            k30VarK.v(str2);\\r\\n            return he3Var.f(new zx(k30VarK));\\r\\n        }\\r\\n        int i \\u003d 0;\\r\\n        while (true) {\\r\\n            lx2 lx2Var2 \\u003d (lx2) zxVar.b;\\r\\n            s65 s65VarF \\u003d he3Var.f(zxVar);\\r\\n            int i2 \\u003d s65VarF.l;\\r\\n            if (!pl0.M(301, 302, 303, 307, 308).contains(Integer.valueOf(i2))) {\\r\\n                return s65VarF;\\r\\n            }\\r\\n            String strH \\u003d s65.h(s65VarF, \\\"Location\\\");\\r\\n            if (strH \\u003d\\u003d null) {\\r\\n                Log.w(\\\"ImgRedirect\\\", i2 + \\\" 无 Location header: \\\" + lx2Var2);\\r\\n                return s65VarF;\\r\\n            }\\r\\n            i++;\\r\\n            if (i \\u003e 5) {\\r\\n                Log.e(\\\"ImgRedirect\\\", \\\"重定向链超过 5 次，终止: \\\".concat(str));\\r\\n                return s65VarF;\\r\\n            }\\r\\n            lx2Var2.getClass();\\r\\n            try {\\r\\n                oa1Var \\u003d new oa1();\\r\\n                oa1Var.i(lx2Var2, strH);\\r\\n            } catch (IllegalArgumentException unused) {\\r\\n                oa1Var \\u003d null;\\r\\n            }\\r\\n            lx2 lx2VarB \\u003d oa1Var !\\u003d null ? oa1Var.b() : null;\\r\\n            if (lx2VarB \\u003d\\u003d null) {\\r\\n                Log.w(\\\"ImgRedirect\\\", \\\"无法解析 Location: \\\".concat(strH));\\r\\n                return s65VarF;\\r\\n            }\\r\\n            String str3 \\u003d lx2Var2.d;\\r\\n            String str4 \\u003d lx2VarB.d;\\r\\n            boolean Z \\u003d rx5.Z(str3, str4, true);\\r\\n            SimpleDateFormat simpleDateFormat2 \\u003d sy2.a;\\r\\n            String str5 \\u003d !Z ? \\\"跨域\\\" : \\\"同域\\\";\\r\\n            String strL0 \\u003d kx5.L0(50, lx2VarB.b());\\r\\n            StringBuilder sb \\u003d new StringBuilder(\\\"↪ \\\");\\r\\n            sb.append(i2);\\r\\n            sb.append(\\\" 重定向 [\\\");\\r\\n            sb.append(str5);\\r\\n            sb.append(\\\"] \\\");\\r\\n            zv3.w(sb, str3, \\\" → \\\", str4, strL0);\\r\\n            sb.append(\\\"...\\\");\\r\\n            sy2.f(sb.toString(), \\u0027D\\u0027);\\r\\n            if (i2 \\u003d\\u003d 301 || i2 \\u003d\\u003d 308) {\\r\\n                lruCache.put(str, lx2VarB.i);\\r\\n            }\\r\\n            s65VarF.o.close();\\r\\n            k30 k30VarK2 \\u003d zxVar.k();\\r\\n            k30VarK2.a \\u003d lx2VarB;\\r\\n            zxVar \\u003d new zx(k30VarK2);\\r\\n        }\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"defpackage.hz2\",\"dex_descriptor\":\"(Lhe3;)Ls65;\",\"overload_count\":1,\"method_name\":\"a\",\"overload_index\":0,\"full_name\":\"hz2.a\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.hz2",
+    "method": {
+      "name": "a",
+      "reported_signature": "a(he3): s65",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lhe3;)Ls65;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // defpackage.o53\r\n    public final s65 a(he3 he3Var) {\r\n        oa1 oa1Var;\r\n        zx zxVar = (zx) he3Var.i;\r\n        String str = ((lx2) zxVar.b).i;\r\n        LruCache lruCache = a;\r\n        String str2 = (String) lruCache.get(str);\r\n        if (str2 != null) {\r\n            SimpleDateFormat simpleDateFormat = sy2.a;\r\n            lx2 lx2Var = (lx2) zxVar.b;\r\n            sy2.f(\"⚡ 301缓存命中: \" + lx2Var.d + kx5.L0(60, lx2Var.b()) + \"...\", 'D');\r\n            k30 k30VarK = zxVar.k();\r\n            k30VarK.v(str2);\r\n            return he3Var.f(new zx(k30VarK));\r\n        }\r\n        int i = 0;\r\n        while (true) {\r\n            lx2 lx2Var2 = (lx2) zxVar.b;\r\n            s65 s65VarF = he3Var.f(zxVar);\r\n            int i2 = s65VarF.l;\r\n            if (!pl0.M(301, 302, 303, 307, 308).contains(Integer.valueOf(i2))) {\r\n                return s65VarF;\r\n            }\r\n            String strH = s65.h(s65VarF, \"Location\");\r\n            if (strH == null) {\r\n                Log.w(\"ImgRedirect\", i2 + \" 无 Location header: \" + lx2Var2);\r\n                return s65VarF;\r\n            }\r\n            i++;\r\n            if (i > 5) {\r\n                Log.e(\"ImgRedirect\", \"重定向链超过 5 次，终止: \".concat(str));\r\n                return s65VarF;\r\n            }\r\n            lx2Var2.getClass();\r\n            try {\r\n                oa1Var = new oa1();\r\n                oa1Var.i(lx2Var2, strH);\r\n            } catch (IllegalArgumentException unused) {\r\n                oa1Var = null;\r\n            }\r\n            lx2 lx2VarB = oa1Var != null ? oa1Var.b() : null;\r\n            if (lx2VarB == null) {\r\n                Log.w(\"ImgRedirect\", \"无法解析 Location: \".concat(strH));\r\n                return s65VarF;\r\n            }\r\n            String str3 = lx2Var2.d;\r\n            String str4 = lx2VarB.d;\r\n            boolean Z = rx5.Z(str3, str4, true);\r\n            SimpleDateFormat simpleDateFormat2 = sy2.a;\r\n            String str5 = !Z ? \"跨域\" : \"同域\";\r\n            String strL0 = kx5.L0(50, lx2VarB.b());\r\n            StringBuilder sb = new StringBuilder(\"↪ \");\r\n            sb.append(i2);\r\n            sb.append(\" 重定向 [\");\r\n            sb.append(str5);\r\n            sb.append(\"] \");\r\n            zv3.w(sb, str3, \" → \", str4, strL0);\r\n            sb.append(\"...\");\r\n            sy2.f(sb.toString(), 'D');\r\n            if (i2 == 301 || i2 == 308) {\r\n                lruCache.put(str, lx2VarB.i);\r\n            }\r\n            s65VarF.o.close();\r\n            k30 k30VarK2 = zxVar.k();\r\n            k30VarK2.a = lx2VarB;\r\n            zxVar = new zx(k30VarK2);\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

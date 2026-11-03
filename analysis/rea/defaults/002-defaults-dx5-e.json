@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_d1c26ad832dbcceac16676226d4be32b4ae34046e71504cae72521a4bc4977a2",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "dx5",
+    "method_name": "e",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-a476c6ede3caecbbe0bf2faa40ee8b18\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "dx5"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"dx5\",\"method_count\":20,\"full_name\":\"defpackage.dx5\",\"field_count\":9,\"name\":\"dx5\",\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(i91, b83, lq6, dx5[]): void\",\"dex_descriptor\":\"(Li91;Lb83;Llq6;[Ldx5;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\"},{\"def_pos\":0,\"signature\":\"W(zi5, int): void\",\"dex_descriptor\":\"(Lzi5;I)V\",\"is_constructor\":false,\"name\":\"W\"},{\"def_pos\":0,\"signature\":\"a(zi5): void\",\"dex_descriptor\":\"(Lzi5;)V\",\"is_constructor\":false,\"name\":\"a\"},{\"def_pos\":0,\"signature\":\"b(): mv2\",\"dex_descriptor\":\"()Lmv2;\",\"is_constructor\":false,\"name\":\"b\"},{\"def_pos\":0,\"signature\":\"c(zi5): u91\",\"dex_descriptor\":\"(Lzi5;)Lu91;\",\"is_constructor\":false,\"name\":\"c\"},{\"def_pos\":0,\"signature\":\"d(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"d\"},{\"def_pos\":0,\"signature\":\"e(zi5): boolean\",\"dex_descriptor\":\"(Lzi5;)Z\",\"is_constructor\":false,\"name\":\"e\"},{\"def_pos\":0,\"signature\":\"f(ca3, java.lang.Object): void\",\"dex_descriptor\":\"(Lca3;Ljava/lang/Object;)V\",\"is_constructor\":false,\"name\":\"f\"},{\"def_pos\":0,\"signature\":\"g(double): void\",\"dex_descriptor\":\"(D)V\",\"is_constructor\":false,\"name\":\"g\"},{\"def_pos\":0,\"signature\":\"h(short): void\",\"dex_descriptor\":\"(S)V\",\"is_constructor\":false,\"name\":\"h\"},{\"def_pos\":0,\"signature\":\"i(byte): void\",\"dex_descriptor\":\"(B)V\",\"is_constructor\":false,\"name\":\"i\"},{\"def_pos\":0,\"signature\":\"j(boolean): void\",\"dex_descriptor\":\"(Z)V\",\"is_constructor\":false,\"name\":\"j\"},{\"def_pos\":0,\"signature\":\"k(zi5): n42\",\"dex_descriptor\":\"(Lzi5;)Ln42;\",\"is_constructor\":false,\"name\":\"k\"},{\"def_pos\":0,\"signature\":\"l(float): void\",\"dex_descriptor\":\"(F)V\",\"is_constructor\":false,\"name\":\"l\"},{\"def_pos\":0,\"signature\":\"m(char): void\",\"dex_descriptor\":\"(C)V\",\"is_constructor\":false,\"name\":\"m\"},{\"def_pos\":0,\"signature\":\"n(zi5, int): void\",\"dex_descriptor\":\"(Lzi5;I)V\",\"is_constructor\":false,\"name\":\"n\"},{\"def_pos\":0,\"signature\":\"o(int): void\",\"dex_descriptor\":\"(I)V\",\"is_constructor\":false,\"name\":\"o\"},{\"def_pos\":0,\"signature\":\"p(zi5, int, ca3, java.lang.Object): void\",\"dex_descriptor\":\"(Lzi5;ILca3;Ljava/lang/Object;)V\",\"is_constructor\":false,\"name\":\"p\"},{\"def_pos\":0,\"signature\":\"q(long): void\",\"dex_descriptor\":\"(J)V\",\"is_constructor\":false,\"name\":\"q\"},{\"def_pos\":0,\"signature\":\"r(java.lang.String): void\",\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"is_constructor\":false,\"name\":\"r\"}],\"fields\":[{\"type\":\"b83\",\"name\":\"A\",\"def_pos\":0},{\"type\":\"lq6\",\"name\":\"B\",\"def_pos\":0},{\"type\":\"dx5[]\",\"name\":\"C\",\"def_pos\":0},{\"type\":\"mv2\",\"name\":\"D\",\"def_pos\":0},{\"type\":\"i83\",\"name\":\"E\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"F\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"G\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"H\",\"def_pos\":0},{\"type\":\"i91\",\"name\":\"z\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "dx5",
+          "method_name": "e",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_count\":1,\"method_name\":\"e\",\"overload_index\":0,\"full_name\":\"dx5.e\",\"fell_back\":false,\"markers\":[],\"body\":\"    @Override // defpackage.u91\\r\\n    public final boolean e(zi5 zi5Var) {\\r\\n        zi5Var.getClass();\\r\\n        return this.E.a;\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"defpackage.dx5\",\"dex_descriptor\":\"(Lzi5;)Z\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.dx5",
+    "method": {
+      "name": "e",
+      "reported_signature": "e(zi5): boolean",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lzi5;)Z"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // defpackage.u91\r\n    public final boolean e(zi5 zi5Var) {\r\n        zi5Var.getClass();\r\n        return this.E.a;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

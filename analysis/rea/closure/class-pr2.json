@@ -1,0 +1,389 @@
+{
+  "evidence_id": "ev_1dcc2833ad1d0fd2264b6ace397b0187c1ebc34388af8c2db3937b54b2820c85",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "pr2"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-ed31fdca024c038dac85310d4b0ed03c\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-ed31fdca024c038dac85310d4b0ed03c\\target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\weife\\\\Desktop\\\\work\\\\picacg\\\\.rea-tools\\\\runtime-temp\\\\rea-android-ed31fdca024c038dac85310d4b0ed03c\\\\target.apk\",\"class_count\":9032,\"raw_class_count\":9032,\"resource_count\":448,\"load_duration_ms\":5044,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "pr2",
+          "dex_static_values": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"a\",\"type\":\"yz2\",\"def_pos\":0},{\"name\":\"b\",\"type\":\"yz2\",\"def_pos\":0},{\"name\":\"c\",\"type\":\"int\",\"def_pos\":0},{\"name\":\"d\",\"type\":\"yz2\",\"def_pos\":0},{\"name\":\"e\",\"type\":\"yz2\",\"def_pos\":0},{\"name\":\"f\",\"type\":\"int\",\"def_pos\":0},{\"name\":\"g\",\"type\":\"int\",\"def_pos\":0},{\"name\":\"h\",\"type\":\"yz2\",\"def_pos\":0},{\"name\":\"i\",\"type\":\"int\",\"def_pos\":0},{\"name\":\"j\",\"type\":\"yz2\",\"def_pos\":0},{\"name\":\"k\",\"type\":\"yz2\",\"def_pos\":0}],\"methods\":[{\"is_constructor\":false,\"dex_descriptor\":\"(Le23;Lm84;Ld23;)J\",\"signature\":\"A(e23, m84, d23): long\",\"def_pos\":0,\"name\":\"A\"},{\"is_constructor\":false,\"dex_descriptor\":\"([Li04;Lj91;)Lxy3;\",\"signature\":\"B(i04[], j91): xy3\",\"def_pos\":0,\"name\":\"B\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lz15;)Lc53;\",\"signature\":\"C(z15): c53\",\"def_pos\":0,\"name\":\"C\"},{\"is_constructor\":false,\"dex_descriptor\":\"(IILzi5;)V\",\"signature\":\"D(int, int, zi5): void\",\"def_pos\":0,\"name\":\"D\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Map;)Ljava/lang/String;\",\"signature\":\"E(java.util.Map): java.lang.String\",\"def_pos\":0,\"name\":\"E\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;Llm2;Lom2;Llm2;Lkm2;Lj91;I)V\",\"signature\":\"a(java.util.List, lm2, om2, lm2, km2, j91, int): void\",\"def_pos\":0,\"name\":\"a\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Llm2;Lkm2;Lj91;I)V\",\"signature\":\"b(java.lang.String, java.lang.String, lm2, km2, j91, int): void\",\"def_pos\":0,\"name\":\"b\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/picacg/domain/model/ShelfGroup;Lkm2;Lkm2;Lj91;I)V\",\"signature\":\"c(com.picacg.domain.model.ShelfGroup, km2, km2, j91, int): void\",\"def_pos\":0,\"name\":\"c\"},{\"is_constructor\":false,\"dex_descriptor\":\"(ZLcom/picacg/domain/model/ImageQuality;Lkm2;Llm2;Lj91;I)V\",\"signature\":\"d(boolean, com.picacg.domain.model.ImageQuality, km2, lm2, j91, int): void\",\"def_pos\":0,\"name\":\"d\"},{\"is_constructor\":false,\"dex_descriptor\":\"(JJ)Lc53;\",\"signature\":\"e(long, long): c53\",\"def_pos\":0,\"name\":\"e\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lz61;Lj91;I)V\",\"signature\":\"f(z61, j91, int): void\",\"def_pos\":0,\"name\":\"f\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/picacg/domain/model/PageInfo;Lgw5;ILlm2;Llm2;Lot3;Lj91;I)V\",\"signature\":\"g(com.picacg.domain.model.PageInfo, gw5, int, lm2, lm2, ot3, j91, int): void\",\"def_pos\":0,\"name\":\"g\"},{\"is_constructor\":false,\"dex_descriptor\":\"(FLlm2;Lbr0;Lot3;IZLkm2;Lqv3;FFLj91;II)V\",\"signature\":\"h(float, lm2, br0, ot3, int, boolean, km2, qv3, float, float, j91, int, int): void\",\"def_pos\":0,\"name\":\"h\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lnj6;Le23;Lm84;Ld23;Lm23;J)V\",\"signature\":\"i(nj6, e23, m84, d23, m23, long): void\",\"def_pos\":0,\"name\":\"i\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Le23;)Z\",\"signature\":\"j(e23): boolean\",\"def_pos\":0,\"name\":\"j\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Iterator;)V\",\"signature\":\"k(java.util.Iterator): void\",\"def_pos\":0,\"name\":\"k\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lxa6;Ljava/lang/Object;)Z\",\"signature\":\"l(xa6, java.lang.Object): boolean\",\"def_pos\":0,\"name\":\"l\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lb83;Lqr3;)Lja2;\",\"signature\":\"m(b83, qr3): ja2\",\"def_pos\":0,\"name\":\"m\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/lang/Object;)Z\",\"signature\":\"n(java.lang.Object, java.lang.Object): boolean\",\"def_pos\":0,\"name\":\"n\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Map;Ljava/lang/Object;)Z\",\"signature\":\"o(java.util.Map, java.lang.Object): boolean\",\"def_pos\":0,\"name\":\"o\"},{\"is_constructor\":false,\"dex_descriptor\":\"(JJJJLj91;I)Lvx2;\",\"signature\":\"p(long, long, long, long, j91, int): vx2\",\"def_pos\":0,\"name\":\"p\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;\",\"signature\":\"q(java.lang.Object, java.lang.Object): java.lang.Object\",\"def_pos\":0,\"name\":\"q\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/text/TextPaint;Ljava/lang/CharSequence;II)Landroid/graphics/Rect;\",\"signature\":\"r(android.text.TextPaint, java.lang.CharSequence, int, int): android.graphics.Rect\",\"def_pos\":0,\"name\":\"r\"},{\"is_constructor\":false,\"dex_descriptor\":\"(I)Ljava/lang/Object;\",\"signature\":\"s(int): java.lang.Object\",\"def_pos\":0,\"name\":\"s\"},{\"is_constructor\":false,\"dex_descriptor\":\"()Lyz2;\",\"signature\":\"t(): yz2\",\"def_pos\":0,\"name\":\"t\"},{\"is_constructor\":false,\"dex_descriptor\":\"()Lpe;\",\"signature\":\"u(): pe\",\"def_pos\":0,\"name\":\"u\"},{\"is_constructor\":false,\"dex_descriptor\":\"(I)Ljava/lang/Object;\",\"signature\":\"v(int): java.lang.Object\",\"def_pos\":0,\"name\":\"v\"},{\"is_constructor\":false,\"dex_descriptor\":\"()Lyz2;\",\"signature\":\"w(): yz2\",\"def_pos\":0,\"name\":\"w\"},{\"is_constructor\":false,\"dex_descriptor\":\"(JJLj91;I)Lvx2;\",\"signature\":\"x(long, long, j91, int): vx2\",\"def_pos\":0,\"name\":\"x\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Lrc3;)Z\",\"signature\":\"y(rc3): boolean\",\"def_pos\":0,\"name\":\"y\"},{\"is_constructor\":false,\"dex_descriptor\":\"(Le23;Lm84;Ld23;)J\",\"signature\":\"z(e23, m84, d23): long\",\"def_pos\":0,\"name\":\"z\"}],\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"pr2\",\"field_count\":11,\"full_name\":\"defpackage.pr2\",\"method_count\":31,\"raw_name\":\"pr2\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.pr2",
+    "methods": [
+      {
+        "name": "A",
+        "reported_signature": "A(e23, m84, d23): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Le23;Lm84;Ld23;)J"
+      },
+      {
+        "name": "B",
+        "reported_signature": "B(i04[], j91): xy3",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "([Li04;Lj91;)Lxy3;"
+      },
+      {
+        "name": "C",
+        "reported_signature": "C(z15): c53",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lz15;)Lc53;"
+      },
+      {
+        "name": "D",
+        "reported_signature": "D(int, int, zi5): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(IILzi5;)V"
+      },
+      {
+        "name": "E",
+        "reported_signature": "E(java.util.Map): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/Map;)Ljava/lang/String;"
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(java.util.List, lm2, om2, lm2, km2, j91, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/List;Llm2;Lom2;Llm2;Lkm2;Lj91;I)V"
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(java.lang.String, java.lang.String, lm2, km2, j91, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Llm2;Lkm2;Lj91;I)V"
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(com.picacg.domain.model.ShelfGroup, km2, km2, j91, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/picacg/domain/model/ShelfGroup;Lkm2;Lkm2;Lj91;I)V"
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(boolean, com.picacg.domain.model.ImageQuality, km2, lm2, j91, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(ZLcom/picacg/domain/model/ImageQuality;Lkm2;Llm2;Lj91;I)V"
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(long, long): c53",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(JJ)Lc53;"
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(z61, j91, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lz61;Lj91;I)V"
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(com.picacg.domain.model.PageInfo, gw5, int, lm2, lm2, ot3, j91, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/picacg/domain/model/PageInfo;Lgw5;ILlm2;Llm2;Lot3;Lj91;I)V"
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(float, lm2, br0, ot3, int, boolean, km2, qv3, float, float, j91, int, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(FLlm2;Lbr0;Lot3;IZLkm2;Lqv3;FFLj91;II)V"
+      },
+      {
+        "name": "i",
+        "reported_signature": "i(nj6, e23, m84, d23, m23, long): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lnj6;Le23;Lm84;Ld23;Lm23;J)V"
+      },
+      {
+        "name": "j",
+        "reported_signature": "j(e23): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Le23;)Z"
+      },
+      {
+        "name": "k",
+        "reported_signature": "k(java.util.Iterator): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/Iterator;)V"
+      },
+      {
+        "name": "l",
+        "reported_signature": "l(xa6, java.lang.Object): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lxa6;Ljava/lang/Object;)Z"
+      },
+      {
+        "name": "m",
+        "reported_signature": "m(b83, qr3): ja2",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lb83;Lqr3;)Lja2;"
+      },
+      {
+        "name": "n",
+        "reported_signature": "n(java.lang.Object, java.lang.Object): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)Z"
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(java.util.Map, java.lang.Object): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/Map;Ljava/lang/Object;)Z"
+      },
+      {
+        "name": "p",
+        "reported_signature": "p(long, long, long, long, j91, int): vx2",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(JJJJLj91;I)Lvx2;"
+      },
+      {
+        "name": "q",
+        "reported_signature": "q(java.lang.Object, java.lang.Object): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+      },
+      {
+        "name": "r",
+        "reported_signature": "r(android.text.TextPaint, java.lang.CharSequence, int, int): android.graphics.Rect",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroid/text/TextPaint;Ljava/lang/CharSequence;II)Landroid/graphics/Rect;"
+      },
+      {
+        "name": "s",
+        "reported_signature": "s(int): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(I)Ljava/lang/Object;"
+      },
+      {
+        "name": "t",
+        "reported_signature": "t(): yz2",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lyz2;"
+      },
+      {
+        "name": "u",
+        "reported_signature": "u(): pe",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lpe;"
+      },
+      {
+        "name": "v",
+        "reported_signature": "v(int): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(I)Ljava/lang/Object;"
+      },
+      {
+        "name": "w",
+        "reported_signature": "w(): yz2",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lyz2;"
+      },
+      {
+        "name": "x",
+        "reported_signature": "x(long, long, j91, int): vx2",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(JJLj91;I)Lvx2;"
+      },
+      {
+        "name": "y",
+        "reported_signature": "y(rc3): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lrc3;)Z"
+      },
+      {
+        "name": "z",
+        "reported_signature": "z(e23, m84, d23): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Le23;Lm84;Ld23;)J"
+      }
+    ],
+    "fields": [
+      {
+        "name": "a",
+        "reported_type": "yz2",
+        "dex_static_value": null
+      },
+      {
+        "name": "b",
+        "reported_type": "yz2",
+        "dex_static_value": null
+      },
+      {
+        "name": "c",
+        "reported_type": "int",
+        "dex_static_value": null
+      },
+      {
+        "name": "d",
+        "reported_type": "yz2",
+        "dex_static_value": null
+      },
+      {
+        "name": "e",
+        "reported_type": "yz2",
+        "dex_static_value": null
+      },
+      {
+        "name": "f",
+        "reported_type": "int",
+        "dex_static_value": null
+      },
+      {
+        "name": "g",
+        "reported_type": "int",
+        "dex_static_value": null
+      },
+      {
+        "name": "h",
+        "reported_type": "yz2",
+        "dex_static_value": null
+      },
+      {
+        "name": "i",
+        "reported_type": "int",
+        "dex_static_value": null
+      },
+      {
+        "name": "j",
+        "reported_type": "yz2",
+        "dex_static_value": null
+      },
+      {
+        "name": "k",
+        "reported_type": "yz2",
+        "dex_static_value": null
+      }
+    ],
+    "inner_classes": []
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

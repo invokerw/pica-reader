@@ -1,0 +1,33 @@
+    public GameDetail(String str, String str2, String str3, String str4, String str5, ImageInfo imageInfo, boolean z, boolean z2, List<String> list, List<String> list2, boolean z3, boolean z4, boolean z5, int i, int i2, int i3, boolean z6, List<ImageInfo> list3, Double d, Double d2, String str6, String str7, String str8, String str9) {
+        ud2.w(str, str2, str3, str4, str5);
+        imageInfo.getClass();
+        list.getClass();
+        list2.getClass();
+        list3.getClass();
+        str8.getClass();
+        str9.getClass();
+        this.id = str;
+        this.title = str2;
+        this.version = str3;
+        this.publisher = str4;
+        this.description = str5;
+        this.icon = imageInfo;
+        this.ios = z;
+        this.f2android = z2;
+        this.iosLinks = list;
+        this.androidLinks = list2;
+        this.picaLink = z3;
+        this.adult = z4;
+        this.suggest = z5;
+        this.downloadsCount = i;
+        this.likesCount = i2;
+        this.commentsCount = i3;
+        this.isLiked = z6;
+        this.screenshots = list3;
+        this.androidSize = d;
+        this.iosSize = d2;
+        this.updateContent = str6;
+        this.videoLink = str7;
+        this.createdAt = str8;
+        this.updatedAt = str9;
+    }

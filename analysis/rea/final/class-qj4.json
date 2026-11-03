@@ -1,0 +1,260 @@
+{
+  "evidence_id": "ev_4b8ffd23160ee688594f949883297e7dbda34c1c121fb65678a989a18c6c2ae6",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "qj4"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-4e1f00ad5d641c1e79ff5bf9446b6c07\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "qj4",
+          "dex_static_values": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"qj4\",\"method_count\":15,\"full_name\":\"defpackage.qj4\",\"field_count\":11,\"name\":\"qj4\",\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(java.lang.String, ep2, int): void\",\"dex_descriptor\":\"(Ljava/lang/String;Lep2;I)V\",\"is_constructor\":true},{\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false},{\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(): java.util.Set\",\"dex_descriptor\":\"()Ljava/util/Set;\",\"is_constructor\":false},{\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(java.lang.String): int\",\"dex_descriptor\":\"(Ljava/lang/String;)I\",\"is_constructor\":false},{\"name\":\"e\",\"def_pos\":0,\"signature\":\"e(): int\",\"dex_descriptor\":\"()I\",\"is_constructor\":false},{\"name\":\"equals\",\"def_pos\":0,\"signature\":\"equals(java.lang.Object): boolean\",\"dex_descriptor\":\"(Ljava/lang/Object;)Z\",\"is_constructor\":false},{\"name\":\"f\",\"def_pos\":0,\"signature\":\"f(int): java.lang.String\",\"dex_descriptor\":\"(I)Ljava/lang/String;\",\"is_constructor\":false},{\"name\":\"g\",\"def_pos\":0,\"signature\":\"g(int): java.util.List\",\"dex_descriptor\":\"(I)Ljava/util/List;\",\"is_constructor\":false},{\"name\":\"getAnnotations\",\"def_pos\":0,\"signature\":\"getAnnotations(): java.util.List\",\"dex_descriptor\":\"()Ljava/util/List;\",\"is_constructor\":false},{\"name\":\"getKind\",\"def_pos\":0,\"signature\":\"getKind(): ul4\",\"dex_descriptor\":\"()Lul4;\",\"is_constructor\":false},{\"name\":\"h\",\"def_pos\":0,\"signature\":\"h(int): zi5\",\"dex_descriptor\":\"(I)Lzi5;\",\"is_constructor\":false},{\"name\":\"hashCode\",\"def_pos\":0,\"signature\":\"hashCode(): int\",\"dex_descriptor\":\"()I\",\"is_constructor\":false},{\"name\":\"i\",\"def_pos\":0,\"signature\":\"i(int): boolean\",\"dex_descriptor\":\"(I)Z\",\"is_constructor\":false},{\"name\":\"j\",\"def_pos\":0,\"signature\":\"j(java.lang.String, boolean): void\",\"dex_descriptor\":\"(Ljava/lang/String;Z)V\",\"is_constructor\":false},{\"name\":\"toString\",\"def_pos\":0,\"signature\":\"toString(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false}],\"fields\":[{\"type\":\"java.lang.String\",\"name\":\"a\",\"def_pos\":0},{\"type\":\"ep2\",\"name\":\"b\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"c\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"d\",\"def_pos\":0},{\"type\":\"java.lang.String[]\",\"name\":\"e\",\"def_pos\":0},{\"type\":\"java.util.List[]\",\"name\":\"f\",\"def_pos\":0},{\"type\":\"boolean[]\",\"name\":\"g\",\"def_pos\":0},{\"type\":\"java.util.Map\",\"name\":\"h\",\"def_pos\":0},{\"type\":\"kd3\",\"name\":\"i\",\"def_pos\":0},{\"type\":\"kd3\",\"name\":\"j\",\"def_pos\":0},{\"type\":\"kd3\",\"name\":\"k\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.qj4",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, ep2, int): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": "(Ljava/lang/String;Lep2;I)V"
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(): java.util.Set",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/Set;"
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(java.lang.String): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;)I"
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "equals",
+        "reported_signature": "equals(java.lang.Object): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(int): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(I)Ljava/lang/String;"
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(int): java.util.List",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(I)Ljava/util/List;"
+      },
+      {
+        "name": "getAnnotations",
+        "reported_signature": "getAnnotations(): java.util.List",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/List;"
+      },
+      {
+        "name": "getKind",
+        "reported_signature": "getKind(): ul4",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lul4;"
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(int): zi5",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(I)Lzi5;"
+      },
+      {
+        "name": "hashCode",
+        "reported_signature": "hashCode(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "i",
+        "reported_signature": "i(int): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(I)Z"
+      },
+      {
+        "name": "j",
+        "reported_signature": "j(java.lang.String, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Z)V"
+      },
+      {
+        "name": "toString",
+        "reported_signature": "toString(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      }
+    ],
+    "fields": [
+      {
+        "name": "a",
+        "reported_type": "java.lang.String",
+        "dex_static_value": null
+      },
+      {
+        "name": "b",
+        "reported_type": "ep2",
+        "dex_static_value": null
+      },
+      {
+        "name": "c",
+        "reported_type": "int",
+        "dex_static_value": null
+      },
+      {
+        "name": "d",
+        "reported_type": "int",
+        "dex_static_value": null
+      },
+      {
+        "name": "e",
+        "reported_type": "java.lang.String[]",
+        "dex_static_value": null
+      },
+      {
+        "name": "f",
+        "reported_type": "java.util.List[]",
+        "dex_static_value": null
+      },
+      {
+        "name": "g",
+        "reported_type": "boolean[]",
+        "dex_static_value": null
+      },
+      {
+        "name": "h",
+        "reported_type": "java.util.Map",
+        "dex_static_value": null
+      },
+      {
+        "name": "i",
+        "reported_type": "kd3",
+        "dex_static_value": null
+      },
+      {
+        "name": "j",
+        "reported_type": "kd3",
+        "dex_static_value": null
+      },
+      {
+        "name": "k",
+        "reported_type": "kd3",
+        "dex_static_value": null
+      }
+    ],
+    "inner_classes": []
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

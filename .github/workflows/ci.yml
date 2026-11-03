@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  analysis:
+    name: 分析脚本与生成文件
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 语法检查
+        run: python -m compileall -q analysis
+
+      - name: 生成文件必须与基线一致
+        run: python analysis/pipeline.py gen --protocol analysis/baseline --check
+
+  flutter:
+    name: Flutter 静态检查与测试
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: pica_reader
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 3.47.9
+          channel: stable
+          cache: true
+
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test

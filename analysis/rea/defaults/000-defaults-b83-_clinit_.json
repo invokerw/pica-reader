@@ -1,0 +1,133 @@
+{
+  "evidence_id": "ev_7111293d4a5e4791a95a3cbf445cd621f4f15edcac04bc15546c935721882c9a",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "b83",
+    "method_name": "<clinit>",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-a476c6ede3caecbbe0bf2faa40ee8b18\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "b83"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"b83\",\"method_count\":4,\"full_name\":\"defpackage.b83\",\"field_count\":4,\"name\":\"b83\",\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"def_pos\":0,\"signature\":\"\\u003cclinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\"},{\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(i83, mv2): void\",\"dex_descriptor\":\"(Li83;Lmv2;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\"},{\"def_pos\":0,\"signature\":\"a(ca3, java.lang.String): java.lang.Object\",\"dex_descriptor\":\"(Lca3;Ljava/lang/String;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"a\"},{\"def_pos\":0,\"signature\":\"b(ca3, java.lang.Object): java.lang.String\",\"dex_descriptor\":\"(Lca3;Ljava/lang/Object;)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"b\"}],\"fields\":[{\"type\":\"i83\",\"name\":\"a\",\"def_pos\":0},{\"type\":\"mv2\",\"name\":\"b\",\"def_pos\":0},{\"type\":\"ss1\",\"name\":\"c\",\"def_pos\":0},{\"type\":\"a83\",\"name\":\"d\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "b83",
+          "method_name": "<clinit>",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_count\":1,\"method_name\":\"\\u003cclinit\\u003e\",\"overload_index\":0,\"full_name\":\"b83.\\u003cclinit\\u003e\",\"fell_back\":true,\"markers\":[\"static_initializer_disassembly\"],\"body\":\".method static constructor \\u003cclinit\\u003e()V\\n    .registers 10\\n\\n    .line 1\\n    new-instance v0, La83;\\n\\n    .line 2\\n    .line 3\\n    new-instance v1, Li83;\\n\\n    .line 4\\n    .line 5\\n    const/4 v8, 0x1\\n\\n    .line 6\\n    sget-object v9, Lzp0;-\\u003ek:Lzp0;\\n\\n    .line 7\\n    .line 8\\n    const/4 v2, 0x0\\n\\n    .line 9\\n    const/4 v3, 0x0\\n\\n    .line 10\\n    const/4 v4, 0x0\\n\\n    .line 11\\n    const/4 v5, 0x1\\n\\n    .line 12\\n    const-string v6, \\\"    \\\"\\n\\n    .line 13\\n    .line 14\\n    const-string v7, \\\"type\\\"\\n\\n    .line 15\\n    .line 16\\n    invoke-direct/range {v1 .. v9}, Li83;-\\u003e\\u003cinit\\u003e(ZZZZLjava/lang/String;Ljava/lang/String;ZLzp0;)V\\n\\n    .line 17\\n    .line 18\\n    .line 19\\n    sget-object v2, Lx34;-\\u003en:Lmv2;\\n\\n    .line 20\\n    .line 21\\n    invoke-direct {v0, v1, v2}, Lb83;-\\u003e\\u003cinit\\u003e(Li83;Lmv2;)V\\n\\n    .line 22\\n    .line 23\\n    .line 24\\n    sput-object v0, Lb83;-\\u003ed:La83;\\n\\n    .line 25\\n    .line 26\\n    return-void\\n.end method\",\"mode\":\"smali\",\"class_name\":\"defpackage.b83\",\"dex_descriptor\":\"()V\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.b83",
+    "method": {
+      "name": "<clinit>",
+      "reported_signature": "<clinit>(): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()V"
+    },
+    "overload_count": 1,
+    "representation": "smali",
+    "body_status": "available",
+    "fell_back": true,
+    "markers": [
+      "static_initializer_disassembly"
+    ],
+    "source": {
+      "status": "complete",
+      "text": ".method static constructor <clinit>()V\n    .registers 10\n\n    .line 1\n    new-instance v0, La83;\n\n    .line 2\n    .line 3\n    new-instance v1, Li83;\n\n    .line 4\n    .line 5\n    const/4 v8, 0x1\n\n    .line 6\n    sget-object v9, Lzp0;->k:Lzp0;\n\n    .line 7\n    .line 8\n    const/4 v2, 0x0\n\n    .line 9\n    const/4 v3, 0x0\n\n    .line 10\n    const/4 v4, 0x0\n\n    .line 11\n    const/4 v5, 0x1\n\n    .line 12\n    const-string v6, \"    \"\n\n    .line 13\n    .line 14\n    const-string v7, \"type\"\n\n    .line 15\n    .line 16\n    invoke-direct/range {v1 .. v9}, Li83;-><init>(ZZZZLjava/lang/String;Ljava/lang/String;ZLzp0;)V\n\n    .line 17\n    .line 18\n    .line 19\n    sget-object v2, Lx34;->n:Lmv2;\n\n    .line 20\n    .line 21\n    invoke-direct {v0, v1, v2}, Lb83;-><init>(Li83;Lmv2;)V\n\n    .line 22\n    .line 23\n    .line 24\n    sput-object v0, Lb83;->d:La83;\n\n    .line 25\n    .line 26\n    return-void\n.end method",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

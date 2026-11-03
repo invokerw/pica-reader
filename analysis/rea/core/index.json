@@ -1,0 +1,479 @@
+[
+  {
+    "id": "package",
+    "operation": "inspect_android_package",
+    "input": {},
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\package.json",
+    "elapsed_ms": 16321,
+    "evidence_id": "ev_143d11b92cbaf778ad1f1d2fdf4507797f25cf9390ab4c23b7f3da3e2e60ff6e"
+  },
+  {
+    "id": "all-classes",
+    "operation": "search_android_classes",
+    "input": {
+      "query": ""
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\all-classes.json",
+    "elapsed_ms": 984,
+    "evidence_id": "ev_0789056b0c93a99fb65b5c622b1402388dcc5ec52b247ede20039ede6805821f"
+  },
+  {
+    "id": "class-fg4",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "fg4"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\class-fg4.json",
+    "elapsed_ms": 477,
+    "evidence_id": "ev_81e7fdf831a2b7c8596e1c7a5000c4e7a0e515a8fd0a08c5a10c6022b4e7ea4f"
+  },
+  {
+    "id": "signer",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "fg4",
+      "method_name": "a",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\signer.json",
+    "elapsed_ms": 2026,
+    "evidence_id": "ev_038d69d16974ade3fc335b5de0139990562e3671c6b05ed442311fb5f18f68a5",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\signer.java"
+  },
+  {
+    "id": "class-eg4",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "eg4"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\class-eg4.json",
+    "elapsed_ms": 254,
+    "evidence_id": "ev_cdedc2867cc20ddc5868ea4da8ba9b2f5a93b2490e8ac10fea62419f1f746604"
+  },
+  {
+    "id": "signin-interface",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "eg4",
+      "method_name": "h",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\signin-interface.json",
+    "elapsed_ms": 278,
+    "evidence_id": "ev_6ee806867f46422249051a2b52a62b92dd0d73b0f83c759e60dfff78947f7a64",
+    "representation": "java",
+    "body_status": "not_available",
+    "source_status": "complete"
+  },
+  {
+    "id": "class-l31",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "l31"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\class-l31.json",
+    "elapsed_ms": 229,
+    "evidence_id": "ev_f813c3d788499bee03c6516510e14027cf4f7e79c8b2808aa6bb09418abd1492"
+  },
+  {
+    "id": "signin-call",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "l31",
+      "method_name": "invokeSuspend",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\signin-call.json",
+    "elapsed_ms": 523,
+    "evidence_id": "ev_e7792f7e2e3a52409746e44be353d1621860024bda71ea03ac6022569f413142",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\signin-call.java"
+  },
+  {
+    "id": "class-bb3",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "bb3"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\class-bb3.json",
+    "elapsed_ms": 213,
+    "evidence_id": "ev_509c6718317f533f18e46985ef77fd0bb7a787b9723937987bdb66d61f8bca40"
+  },
+  {
+    "id": "login-service",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "bb3",
+      "method_name": "invokeSuspend",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\login-service.json",
+    "elapsed_ms": 365,
+    "evidence_id": "ev_544eef6ddeaed601ae36cd84aa82b7a203edad4754d6f7747b6b52828a1c993b",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\login-service.java"
+  },
+  {
+    "id": "class-eo3",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "eo3"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\class-eo3.json",
+    "elapsed_ms": 220,
+    "evidence_id": "ev_23bd484ed8af54f8bb07d30de2515f58975b4e8010a0b3fe4858fff1f1dd5d7d"
+  },
+  {
+    "id": "login-ui",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "eo3",
+      "method_name": "c",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\login-ui.json",
+    "elapsed_ms": 1410,
+    "evidence_id": "ev_8ef0ad7dd5047fc3fde26a8c9299fb4520b327fa95a7c52c37fd1f21af7df711",
+    "representation": "smali",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\login-ui.smali"
+  },
+  {
+    "id": "remember",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "eo3",
+      "method_name": "f",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\remember.json",
+    "elapsed_ms": 261,
+    "evidence_id": "ev_b3c504cf08a6e5411b6e89b5b3361b21baf8f75b736e5a54f29d51562ac8fef6",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\remember.java"
+  },
+  {
+    "id": "class-nh4",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "nh4"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\class-nh4.json",
+    "elapsed_ms": 215,
+    "evidence_id": "ev_7f6b6961b132db895ce20d84bb6e343d0203752f0690c0792097a91501db33ed"
+  },
+  {
+    "id": "token-load",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "nh4",
+      "method_name": "d",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\token-load.json",
+    "elapsed_ms": 329,
+    "evidence_id": "ev_185f905a5c6fed390fb7527f2765dda3b72183c204e7dfce93750e4a5ad21163",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\token-load.java"
+  },
+  {
+    "id": "nonce",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "nh4",
+      "method_name": "e",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\nonce.json",
+    "elapsed_ms": 265,
+    "evidence_id": "ev_cd15de375d017be66f4c644f3ec565fdd472fc4ac7108790e3fd20b8809c7f73",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\nonce.java"
+  },
+  {
+    "id": "token-save",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "nh4",
+      "method_name": "f",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\token-save.json",
+    "elapsed_ms": 264,
+    "evidence_id": "ev_517554a36d90ffd0a101e2be53696cdfab4b6db775f237ec6157e4f11869f16d",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\token-save.java"
+  },
+  {
+    "id": "class-s42",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "s42"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\class-s42.json",
+    "elapsed_ms": 217,
+    "evidence_id": "ev_d1e31977abd9df71b6a325232cb5e25668a4ecd7ca66c07aab4da205f08475f7"
+  },
+  {
+    "id": "token-decrypt",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "s42",
+      "method_name": "a",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\token-decrypt.json",
+    "elapsed_ms": 249,
+    "evidence_id": "ev_5b649a4111a512d9f9fd79ef162fa94e12e876e307c02e1ededfb61d7a24088a",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\token-decrypt.java"
+  },
+  {
+    "id": "token-encrypt",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "s42",
+      "method_name": "b",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\token-encrypt.json",
+    "elapsed_ms": 247,
+    "evidence_id": "ev_64d3884f8c5bf5d23adc7fc124eda8c0a0e1d11637985ee28105880e80fa8c16",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\token-encrypt.java"
+  },
+  {
+    "id": "key-init",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "s42",
+      "method_name": "<init>",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\key-init.json",
+    "elapsed_ms": 249,
+    "evidence_id": "ev_496291724ff2af9fbb16488f1ceeb996a67d6dc6f101fa809edcd198ceeb3baa",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\key-init.java"
+  },
+  {
+    "id": "class-dg4",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "dg4"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\class-dg4.json",
+    "elapsed_ms": 218,
+    "evidence_id": "ev_1611453928526fdc5807c352bc55ec2cee891acaf8b10cbd4262f2ff8bfcf5e5"
+  },
+  {
+    "id": "api-error",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "dg4",
+      "method_name": "d",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\api-error.json",
+    "elapsed_ms": 418,
+    "evidence_id": "ev_d2daa443b63dee227aa6e6a44364a625c061451ec4d5e0d3e30d74061db19137",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\api-error.java"
+  },
+  {
+    "id": "api-wrapper",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "dg4",
+      "method_name": "a",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\api-wrapper.json",
+    "elapsed_ms": 262,
+    "evidence_id": "ev_e105c8d65c7772dce8edd700dc40e88daac62a33a0893f7897bf5dbf6e47652f",
+    "representation": "smali",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\api-wrapper.smali"
+  },
+  {
+    "id": "class-v55",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "v55"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\class-v55.json",
+    "elapsed_ms": 216,
+    "evidence_id": "ev_aa687e9e103822216b0bcc603f7540b4d03312432793465cefe56013653d5bf9"
+  },
+  {
+    "id": "preflight",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "v55",
+      "method_name": "a",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\preflight.json",
+    "elapsed_ms": 359,
+    "evidence_id": "ev_e59bebd4ebc5d539217028264a843d98c0c31b782d91b60065aa0f822509dc02",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\preflight.java"
+  },
+  {
+    "id": "class-wj1",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "wj1"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\class-wj1.json",
+    "elapsed_ms": 201,
+    "evidence_id": "ev_31275a665a7f0b3d04eddc29988be0f40b4b03d665fe43cd143a67470b509919"
+  },
+  {
+    "id": "client-provider",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "wj1",
+      "method_name": "get",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\client-provider.json",
+    "elapsed_ms": 1656,
+    "evidence_id": "ev_6322d731acf4d4ea3a9ad9d4535156fee41882d8268d4e617b4b8b47495d621c",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\client-provider.java"
+  },
+  {
+    "id": "class-at1",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "at1"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\class-at1.json",
+    "elapsed_ms": 218,
+    "evidence_id": "ev_f060afb6b6063d207b47342b2253a1182e675dfbc8532e594d4bc9e8a0eccd9b"
+  },
+  {
+    "id": "class-fk",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "fk"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\class-fk.json",
+    "elapsed_ms": 205,
+    "evidence_id": "ev_c99ad43906878da2a7ece99dd0bf36bfa0c7e17bf99befdf354d137ad5863eac"
+  },
+  {
+    "id": "uuid-lambda",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "fk",
+      "method_name": "invoke",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\uuid-lambda.json",
+    "elapsed_ms": 1073,
+    "evidence_id": "ev_2c2f7020f335d8a36551bf7aec8861a3fe6a70294f0936644a8312d09df9d373",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\uuid-lambda.java"
+  },
+  {
+    "id": "signer-xrefs",
+    "operation": "trace_android_references",
+    "input": {
+      "class_name": "fg4"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\signer-xrefs.json",
+    "elapsed_ms": 267,
+    "evidence_id": "ev_24b9befa385dba643e367d7ea2d7fda0d65a627099476f873acaa80d224631ef"
+  },
+  {
+    "id": "signin-xrefs",
+    "operation": "trace_android_references",
+    "input": {
+      "class_name": "eg4",
+      "method_name": "h",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\signin-xrefs.json",
+    "elapsed_ms": 266,
+    "evidence_id": "ev_3c1584cbc4806d4fa46835900781952d3b61aafc8ab4dd434b3553a1aa8e5758"
+  },
+  {
+    "id": "token-save-xrefs",
+    "operation": "trace_android_references",
+    "input": {
+      "class_name": "nh4",
+      "method_name": "f",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\core\\token-save-xrefs.json",
+    "elapsed_ms": 251,
+    "evidence_id": "ev_6a60d5d400cc1c97af9d4939e11e208aea00b4b355dda2c4c622eaf36cb2f315"
+  }
+]

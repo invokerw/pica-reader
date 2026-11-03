@@ -1,0 +1,2 @@
+    private AnnouncementsResponse$$serializer() {
+    }

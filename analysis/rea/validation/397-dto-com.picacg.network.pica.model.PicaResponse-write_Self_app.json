@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_a7ed726bc42e87236c344482de2940f218c365f7cab8d0e2f3d1817aa814c5a7",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "com.picacg.network.pica.model.PicaResponse",
+    "method_name": "write$Self$app",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.picacg.network.pica.model.PicaResponse"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":1,\"inner_classes\":[\"com.picacg.network.pica.model.PicaResponse.Companion\"],\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(int, int, java.lang.String, java.lang.String, java.lang.Object, fj5): void\",\"dex_descriptor\":\"(IILjava/lang/String;Ljava/lang/String;Ljava/lang/Object;Lfj5;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(int, java.lang.String, java.lang.String, T): void\",\"dex_descriptor\":\"(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(int, java.lang.String, java.lang.String, java.lang.Object, int, jo1): void\",\"dex_descriptor\":\"(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Object;ILjo1;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"component1(): int\",\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"component1\",\"def_pos\":0},{\"signature\":\"component2(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"component2\",\"def_pos\":0},{\"signature\":\"component3(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"component3\",\"def_pos\":0},{\"signature\":\"component4(): T\",\"dex_descriptor\":\"()Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"component4\",\"def_pos\":0},{\"signature\":\"copy(int, java.lang.String, java.lang.String, T): com.picacg.network.pica.model.PicaResponse\\u003cT\\u003e\",\"dex_descriptor\":\"(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lcom/picacg/network/pica/model/PicaResponse;\",\"is_constructor\":false,\"name\":\"copy\",\"def_pos\":0},{\"signature\":\"copy$default(com.picacg.network.pica.model.PicaResponse, int, java.lang.String, java.lang.String, java.lang.Object, int, java.lang.Object): com.picacg.network.pica.model.PicaResponse\",\"dex_descriptor\":\"(Lcom/picacg/network/pica/model/PicaResponse;ILjava/lang/String;Ljava/lang/String;Ljava/lang/Object;ILjava/lang/Object;)Lcom/picacg/network/pica/model/PicaResponse;\",\"is_constructor\":false,\"name\":\"copy$default\",\"def_pos\":0},{\"signature\":\"equals(java.lang.Object): boolean\",\"dex_descriptor\":\"(Ljava/lang/Object;)Z\",\"is_constructor\":false,\"name\":\"equals\",\"def_pos\":0},{\"signature\":\"getCode(): int\",\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"getCode\",\"def_pos\":0},{\"signature\":\"getData(): T\",\"dex_descriptor\":\"()Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"getData\",\"def_pos\":0},{\"signature\":\"getError(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"getError\",\"def_pos\":0},{\"signature\":\"getMessage(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"getMessage\",\"def_pos\":0},{\"signature\":\"hashCode(): int\",\"dex_descriptor\":\"()I\",\"is_constructor\":false,\"name\":\"hashCode\",\"def_pos\":0},{\"signature\":\"toString(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"toString\",\"def_pos\":0},{\"signature\":\"write$Self$app(com.picacg.network.pica.model.PicaResponse, u91, zi5, ca3): void\",\"dex_descriptor\":\"(Lcom/picacg/network/pica/model/PicaResponse;Lu91;Lzi5;Lca3;)V\",\"is_constructor\":false,\"name\":\"write$Self$app\",\"def_pos\":0}],\"fields\":[{\"name\":\"$cachedDescriptor\",\"def_pos\":0,\"type\":\"zi5\"},{\"name\":\"$stable\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"Companion\",\"def_pos\":0,\"type\":\"com.picacg.network.pica.model.PicaResponse$Companion\"},{\"name\":\"code\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"data\",\"def_pos\":0,\"type\":\"T\"},{\"name\":\"error\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"message\",\"def_pos\":0,\"type\":\"java.lang.String\"}],\"raw_name\":\"com.picacg.network.pica.model.PicaResponse\",\"method_count\":18,\"full_name\":\"com.picacg.network.pica.model.PicaResponse\",\"field_count\":7,\"name\":\"PicaResponse\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.picacg.network.pica.model.PicaResponse",
+          "method_name": "write$Self$app",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    public static final /* synthetic */ void write$Self$app(PicaResponse picaResponse, u91 u91Var, zi5 zi5Var, ca3 ca3Var) {\\r\\n        tt3 tt3Var \\u003d (tt3) u91Var;\\r\\n        tt3Var.Y(0, picaResponse.code, zi5Var);\\r\\n        tt3Var.b0(zi5Var, 1, picaResponse.message);\\r\\n        if (tt3Var.e(zi5Var) || picaResponse.error !\\u003d null) {\\r\\n            tt3Var.p(zi5Var, 2, ix5.a, picaResponse.error);\\r\\n        }\\r\\n        if (!tt3Var.e(zi5Var) \\u0026\\u0026 picaResponse.data \\u003d\\u003d null) {\\r\\n            return;\\r\\n        }\\r\\n        tt3Var.p(zi5Var, 3, ca3Var, picaResponse.data);\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"com.picacg.network.pica.model.PicaResponse\",\"dex_descriptor\":\"(Lcom/picacg/network/pica/model/PicaResponse;Lu91;Lzi5;Lca3;)V\",\"overload_count\":1,\"method_name\":\"write$Self$app\",\"overload_index\":0,\"full_name\":\"com.picacg.network.pica.model.PicaResponse.write$Self$app\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "com.picacg.network.pica.model.PicaResponse",
+    "method": {
+      "name": "write$Self$app",
+      "reported_signature": "write$Self$app(com.picacg.network.pica.model.PicaResponse, u91, zi5, ca3): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lcom/picacg/network/pica/model/PicaResponse;Lu91;Lzi5;Lca3;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public static final /* synthetic */ void write$Self$app(PicaResponse picaResponse, u91 u91Var, zi5 zi5Var, ca3 ca3Var) {\r\n        tt3 tt3Var = (tt3) u91Var;\r\n        tt3Var.Y(0, picaResponse.code, zi5Var);\r\n        tt3Var.b0(zi5Var, 1, picaResponse.message);\r\n        if (tt3Var.e(zi5Var) || picaResponse.error != null) {\r\n            tt3Var.p(zi5Var, 2, ix5.a, picaResponse.error);\r\n        }\r\n        if (!tt3Var.e(zi5Var) && picaResponse.data == null) {\r\n            return;\r\n        }\r\n        tt3Var.p(zi5Var, 3, ca3Var, picaResponse.data);\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

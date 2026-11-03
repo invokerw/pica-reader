@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_437eac6449b79fee40b871383b544917ea43a7ecdb608ca2e8689243c8c1f359",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "nh4",
+    "method_name": "e",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "nh4"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(android.content.Context, nz, s42): void\",\"dex_descriptor\":\"(Landroid/content/Context;Lnz;Ls42;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"a(pe1): java.lang.Object\",\"dex_descriptor\":\"(Lpe1;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0},{\"signature\":\"b(pe1): java.lang.Object\",\"dex_descriptor\":\"(Lpe1;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0},{\"signature\":\"c(pe1): java.lang.Object\",\"dex_descriptor\":\"(Lpe1;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0},{\"signature\":\"d(pe1): java.lang.Object\",\"dex_descriptor\":\"(Lpe1;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0},{\"signature\":\"e(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"e\",\"def_pos\":0},{\"signature\":\"f(java.lang.String, pe1): java.lang.Object\",\"dex_descriptor\":\"(Ljava/lang/String;Lpe1;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"f\",\"def_pos\":0}],\"fields\":[{\"name\":\"a\",\"def_pos\":0,\"type\":\"android.content.Context\"},{\"name\":\"b\",\"def_pos\":0,\"type\":\"s42\"},{\"name\":\"c\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"d\",\"def_pos\":0,\"type\":\"java.lang.String\"}],\"raw_name\":\"nh4\",\"method_count\":7,\"full_name\":\"defpackage.nh4\",\"field_count\":4,\"name\":\"nh4\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "nh4",
+          "method_name": "e",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    public final String e() {\\r\\n        ArrayList arrayListH0;\\r\\n        SharedPreferences sharedPreferences \\u003d this.a.getSharedPreferences(\\\"pica_nonce_prefs\\\", 0);\\r\\n        String string \\u003d sharedPreferences.getString(\\\"pica_nonce\\\", null);\\r\\n        if (string !\\u003d null) {\\r\\n            return string;\\r\\n        }\\r\\n        b53 b53Var \\u003d new b53(1, 32, 1);\\r\\n        ArrayList arrayList \\u003d new ArrayList(or0.f0(b53Var, 10));\\r\\n        Iterator it \\u003d b53Var.iterator();\\r\\n        while (((a53) it).k) {\\r\\n            ((t43) it).nextInt();\\r\\n            Iterable ao0Var \\u003d new ao0(\\u00270\\u0027, \\u00279\\u0027);\\r\\n            ao0 ao0Var2 \\u003d new ao0(\\u0027a\\u0027, \\u0027z\\u0027);\\r\\n            if (ao0Var instanceof Collection) {\\r\\n                arrayListH0 \\u003d nr0.H0(ao0Var2, (Collection) ao0Var);\\r\\n            } else {\\r\\n                ArrayList arrayList2 \\u003d new ArrayList();\\r\\n                nr0.k0(ao0Var, arrayList2);\\r\\n                nr0.k0(ao0Var2, arrayList2);\\r\\n                arrayListH0 \\u003d arrayList2;\\r\\n            }\\r\\n            f3 f3Var \\u003d dr4.i;\\r\\n            Character ch \\u003d (Character) nr0.J0(arrayListH0);\\r\\n            ch.getClass();\\r\\n            arrayList.add(ch);\\r\\n        }\\r\\n        String strC0 \\u003d nr0.C0(arrayList, \\\"\\\", null, null, null, 62);\\r\\n        sharedPreferences.edit().putString(\\\"pica_nonce\\\", strC0).apply();\\r\\n        return strC0;\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"defpackage.nh4\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"overload_count\":1,\"method_name\":\"e\",\"overload_index\":0,\"full_name\":\"nh4.e\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.nh4",
+    "method": {
+      "name": "e",
+      "reported_signature": "e(): java.lang.String",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()Ljava/lang/String;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final String e() {\r\n        ArrayList arrayListH0;\r\n        SharedPreferences sharedPreferences = this.a.getSharedPreferences(\"pica_nonce_prefs\", 0);\r\n        String string = sharedPreferences.getString(\"pica_nonce\", null);\r\n        if (string != null) {\r\n            return string;\r\n        }\r\n        b53 b53Var = new b53(1, 32, 1);\r\n        ArrayList arrayList = new ArrayList(or0.f0(b53Var, 10));\r\n        Iterator it = b53Var.iterator();\r\n        while (((a53) it).k) {\r\n            ((t43) it).nextInt();\r\n            Iterable ao0Var = new ao0('0', '9');\r\n            ao0 ao0Var2 = new ao0('a', 'z');\r\n            if (ao0Var instanceof Collection) {\r\n                arrayListH0 = nr0.H0(ao0Var2, (Collection) ao0Var);\r\n            } else {\r\n                ArrayList arrayList2 = new ArrayList();\r\n                nr0.k0(ao0Var, arrayList2);\r\n                nr0.k0(ao0Var2, arrayList2);\r\n                arrayListH0 = arrayList2;\r\n            }\r\n            f3 f3Var = dr4.i;\r\n            Character ch = (Character) nr0.J0(arrayListH0);\r\n            ch.getClass();\r\n            arrayList.add(ch);\r\n        }\r\n        String strC0 = nr0.C0(arrayList, \"\", null, null, null, 62);\r\n        sharedPreferences.edit().putString(\"pica_nonce\", strC0).apply();\r\n        return strC0;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

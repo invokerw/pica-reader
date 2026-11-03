@@ -1,0 +1,2 @@
+    private ChapterPagesData$$serializer() {
+    }

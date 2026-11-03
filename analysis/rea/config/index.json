@@ -1,0 +1,115 @@
+[
+  {
+    "id": "class-fs2",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "fs2"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\config\\class-fs2.json",
+    "elapsed_ms": 16354,
+    "evidence_id": "ev_57953ec144a3a06f9d5d33122bab4ff0d019a60156d2d916bce79cb93ffa6156",
+    "original_task": {
+      "id": "000-config-fs2-d",
+      "operation": "inspect_android_method",
+      "class_name": "fs2",
+      "method_name": "d",
+      "dex_descriptor": "(Llm2;)Lx83;",
+      "original_method_id": "Lfs2;->d(Llm2;)Lx83;"
+    }
+  },
+  {
+    "id": "000-config-fs2-d",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "fs2",
+      "method_name": "d",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\config\\000-config-fs2-d.json",
+    "elapsed_ms": 5821,
+    "evidence_id": "ev_c3d18ed83b0abdc8993abf5ac19196e8ca64ca86a8969d49e4860822c11a6227",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\config\\000-config-fs2-d.java",
+    "original_task": {
+      "id": "000-config-fs2-d",
+      "operation": "inspect_android_method",
+      "class_name": "fs2",
+      "method_name": "d",
+      "dex_descriptor": "(Llm2;)Lx83;",
+      "original_method_id": "Lfs2;->d(Llm2;)Lx83;"
+    }
+  },
+  {
+    "id": "class-i83",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "i83"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\config\\class-i83.json",
+    "elapsed_ms": 227,
+    "evidence_id": "ev_11b3502444ac2027b972be723e1a64a7d8281602d3c6ce7e5540dc528144b8c4",
+    "original_task": {
+      "id": "001-config-i83-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "i83",
+      "method_name": "<init>",
+      "dex_descriptor": "(ZZZZLjava/lang/String;Ljava/lang/String;ZLzp0;)V",
+      "original_method_id": "Li83;-><init>(ZZZZLjava/lang/String;Ljava/lang/String;ZLzp0;)V"
+    }
+  },
+  {
+    "id": "001-config-i83-_init_",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "i83",
+      "method_name": "<init>",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\config\\001-config-i83-_init_.json",
+    "elapsed_ms": 266,
+    "evidence_id": "ev_4dfb76711d75f5f8fccf815090b48eed6b3c19a32753a799926278ae137fefb6",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\config\\001-config-i83-_init_.java",
+    "original_task": {
+      "id": "001-config-i83-_init_",
+      "operation": "inspect_android_method",
+      "class_name": "i83",
+      "method_name": "<init>",
+      "dex_descriptor": "(ZZZZLjava/lang/String;Ljava/lang/String;ZLzp0;)V",
+      "original_method_id": "Li83;-><init>(ZZZZLjava/lang/String;Ljava/lang/String;ZLzp0;)V"
+    }
+  },
+  {
+    "id": "002-config-i83-toString",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "i83",
+      "method_name": "toString",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\config\\002-config-i83-toString.json",
+    "elapsed_ms": 252,
+    "evidence_id": "ev_509ac2180b9d7505111e9e016324b9ee2309baf784767f4a09d8f089ae159436",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\config\\002-config-i83-toString.java",
+    "original_task": {
+      "id": "002-config-i83-toString",
+      "operation": "inspect_android_method",
+      "class_name": "i83",
+      "method_name": "toString",
+      "dex_descriptor": "()Ljava/lang/String;",
+      "original_method_id": "Li83;->toString()Ljava/lang/String;"
+    }
+  }
+]

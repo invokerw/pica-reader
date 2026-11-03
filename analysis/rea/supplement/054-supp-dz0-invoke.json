@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_41c2b934937723fbae6a1333e1ed7175b2454503e1a5b7eddd31f89a41503be8",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "dz0",
+    "method_name": "invoke",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-7802ea5287a189237b935c294ddb9235\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":2,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "dz0"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"dz0\",\"fields\":[{\"def_pos\":0,\"name\":\"i\",\"type\":\"int\"}],\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(I)V\",\"signature\":\"\\u003cinit\\u003e(int): void\",\"def_pos\":0},{\"name\":\"invoke\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\",\"signature\":\"invoke(java.lang.Object): java.lang.Object\",\"def_pos\":0}],\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"dz0\",\"field_count\":1,\"full_name\":\"defpackage.dz0\",\"method_count\":2}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "dz0",
+          "method_name": "invoke",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_index\":0,\"method_name\":\"invoke\",\"overload_count\":1,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\",\"class_name\":\"defpackage.dz0\",\"mode\":\"java\",\"body\":\"    @Override // defpackage.lm2\\r\\n    public final Object invoke(Object obj) throws Exception {\\r\\n        int i \\u003d this.i;\\r\\n        boolean z \\u003d true;\\r\\n        dg6 dg6Var \\u003d dg6.a;\\r\\n        switch (i) {\\r\\n            case 0:\\r\\n                ((qi) obj).getClass();\\r\\n                return xm1.z(j52.d(null, 3), j52.e(null, 3));\\r\\n            case 1:\\r\\n                gg3 gg3Var \\u003d (gg3) obj;\\r\\n                gg3Var.getClass();\\r\\n                gg3.I(gg3Var, 10, null, j85.B, 6);\\r\\n                return dg6Var;\\r\\n            case 2:\\r\\n                zg3 zg3Var \\u003d (zg3) obj;\\r\\n                zg3Var.getClass();\\r\\n                zg3.G(zg3Var, 10, null, j85.z, 14);\\r\\n                return dg6Var;\\r\\n            case 3:\\r\\n                ((String) obj).getClass();\\r\\n                return dg6Var;\\r\\n            case 4:\\r\\n                ((String) obj).getClass();\\r\\n                return dg6Var;\\r\\n            case 5:\\r\\n                Comment comment \\u003d (Comment) obj;\\r\\n                comment.getClass();\\r\\n                return c31.i(\\\"top_\\\", comment.getId());\\r\\n            case 6:\\r\\n                Comment comment2 \\u003d (Comment) obj;\\r\\n                comment2.getClass();\\r\\n                return c31.i(\\\"local_\\\", comment2.getId());\\r\\n            case 7:\\r\\n                ((sz1) obj).getClass();\\r\\n                return dg6Var;\\r\\n            case 8:\\r\\n                gg3 gg3Var2 \\u003d (gg3) obj;\\r\\n                gg3Var2.getClass();\\r\\n                gg3.I(gg3Var2, 5, null, ee0.K, 6);\\r\\n                return dg6Var;\\r\\n            case 9:\\r\\n                xs xsVar \\u003d (xs) obj;\\r\\n                xsVar.getClass();\\r\\n                return Integer.valueOf(xsVar.a);\\r\\n            case 10:\\r\\n                vf1 vf1Var \\u003d (vf1) obj;\\r\\n                if (vf1Var instanceof zf1) {\\r\\n                    return (zf1) vf1Var;\\r\\n                }\\r\\n                return null;\\r\\n            case 11:\\r\\n                y95 y95Var \\u003d (y95) obj;\\r\\n                y95Var.getClass();\\r\\n                ea5 ea5VarT \\u003d y95Var.T(\\\"SELECT COUNT(*) FROM custom_categories\\\");\\r\\n                try {\\r\\n                    return Integer.valueOf(ea5VarT.N() ? (int) ea5VarT.getLong(0) : 0);\\r\\n                } finally {\\r\\n                    ea5VarT.close();\\r\\n                }\\r\\n            case 12:\\r\\n                return DataSource.invalidateCallbackTracker$lambda$0((DataSource.InvalidatedCallback) obj);\\r\\n            case 13:\\r\\n                return DataStoreDelegateKt.dataStore$lambda$0((Context) obj);\\r\\n            case 14:\\r\\n                return DataStoreDelegateKt.deviceProtectedDataStore$lambda$0((Context) obj);\\r\\n            case 15:\\r\\n                return dg6Var;\\r\\n            case 16:\\r\\n                Integer num \\u003d (Integer) obj;\\r\\n                num.intValue();\\r\\n                return num;\\r\\n            case 17:\\r\\n                ba3[] ba3VarArr \\u003d ji5.a;\\r\\n                ki5 ki5Var \\u003d hi5.l;\\r\\n                ba3 ba3Var \\u003d ji5.a[5];\\r\\n                ((li5) obj).a(ki5Var, Boolean.TRUE);\\r\\n                return dg6Var;\\r\\n            case 18:\\r\\n                ba3[] ba3VarArr2 \\u003d ji5.a;\\r\\n                ki5 ki5Var2 \\u003d hi5.l;\\r\\n                ba3 ba3Var2 \\u003d ji5.a[5];\\r\\n                ((li5) obj).a(ki5Var2, Boolean.TRUE);\\r\\n                return dg6Var;\\r\\n            case 19:\\r\\n                int i2 \\u003d 25;\\r\\n                vc5 vc5Var \\u003d new vc5(new lw0(i2), new lw0(i2), false);\\r\\n                ba3[] ba3VarArr3 \\u003d ji5.a;\\r\\n                ki5 ki5Var3 \\u003d hi5.u;\\r\\n                ba3 ba3Var3 \\u003d ji5.a[12];\\r\\n                ((li5) obj).a(ki5Var3, vc5Var);\\r\\n                return dg6Var;\\r\\n            case 20:\\r\\n                ji5.j((li5) obj);\\r\\n                return dg6Var;\\r\\n            case 21:\\r\\n                List list \\u003d (List) obj;\\r\\n                Object obj2 \\u003d list.get(0);\\r\\n                obj2.getClass();\\r\\n                int iIntValue \\u003d ((Integer) obj2).intValue();\\r\\n                Object obj3 \\u003d list.get(1);\\r\\n                obj3.getClass();\\r\\n                return new up1(iIntValue, ((Float) obj3).floatValue(), new f6(2, list));\\r\\n            case 22:\\r\\n                ji5.j((li5) obj);\\r\\n                return dg6Var;\\r\\n            case 23:\\r\\n                Byte b \\u003d (Byte) obj;\\r\\n                b.byteValue();\\r\\n                return String.format(\\\"%02x\\\", Arrays.copyOf(new Object[]{b}, 1));\\r\\n            case 24:\\r\\n                Subdomain subdomain \\u003d (Subdomain) obj;\\r\\n                subdomain.getClass();\\r\\n                return subdomain.getPrefix();\\r\\n            case 25:\\r\\n                ((sz1) obj).getClass();\\r\\n                return dg6Var;\\r\\n            case 26:\\r\\n                ((sz1) obj).getClass();\\r\\n                return dg6Var;\\r\\n            case 27:\\r\\n                DownloadTask downloadTask \\u003d (DownloadTask) obj;\\r\\n                downloadTask.getClass();\\r\\n                return Long.valueOf(downloadTask.getId());\\r\\n            case 28:\\r\\n                vv1 vv1Var \\u003d (vv1) obj;\\r\\n                vv1Var.getClass();\\r\\n                return vv1Var.a;\\r\\n            default:\\r\\n                DownloadTask downloadTask2 \\u003d (DownloadTask) obj;\\r\\n                downloadTask2.getClass();\\r\\n                if (downloadTask2.getStatus() !\\u003d DownloadStatus.DOWNLOADING \\u0026\\u0026 downloadTask2.getStatus() !\\u003d DownloadStatus.PENDING) {\\r\\n                    z \\u003d false;\\r\\n                }\\r\\n                return Boolean.valueOf(z);\\r\\n        }\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"dz0.invoke\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.dz0",
+    "method": {
+      "name": "invoke",
+      "reported_signature": "invoke(java.lang.Object): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // defpackage.lm2\r\n    public final Object invoke(Object obj) throws Exception {\r\n        int i = this.i;\r\n        boolean z = true;\r\n        dg6 dg6Var = dg6.a;\r\n        switch (i) {\r\n            case 0:\r\n                ((qi) obj).getClass();\r\n                return xm1.z(j52.d(null, 3), j52.e(null, 3));\r\n            case 1:\r\n                gg3 gg3Var = (gg3) obj;\r\n                gg3Var.getClass();\r\n                gg3.I(gg3Var, 10, null, j85.B, 6);\r\n                return dg6Var;\r\n            case 2:\r\n                zg3 zg3Var = (zg3) obj;\r\n                zg3Var.getClass();\r\n                zg3.G(zg3Var, 10, null, j85.z, 14);\r\n                return dg6Var;\r\n            case 3:\r\n                ((String) obj).getClass();\r\n                return dg6Var;\r\n            case 4:\r\n                ((String) obj).getClass();\r\n                return dg6Var;\r\n            case 5:\r\n                Comment comment = (Comment) obj;\r\n                comment.getClass();\r\n                return c31.i(\"top_\", comment.getId());\r\n            case 6:\r\n                Comment comment2 = (Comment) obj;\r\n                comment2.getClass();\r\n                return c31.i(\"local_\", comment2.getId());\r\n            case 7:\r\n                ((sz1) obj).getClass();\r\n                return dg6Var;\r\n            case 8:\r\n                gg3 gg3Var2 = (gg3) obj;\r\n                gg3Var2.getClass();\r\n                gg3.I(gg3Var2, 5, null, ee0.K, 6);\r\n                return dg6Var;\r\n            case 9:\r\n                xs xsVar = (xs) obj;\r\n                xsVar.getClass();\r\n                return Integer.valueOf(xsVar.a);\r\n            case 10:\r\n                vf1 vf1Var = (vf1) obj;\r\n                if (vf1Var instanceof zf1) {\r\n                    return (zf1) vf1Var;\r\n                }\r\n                return null;\r\n            case 11:\r\n                y95 y95Var = (y95) obj;\r\n                y95Var.getClass();\r\n                ea5 ea5VarT = y95Var.T(\"SELECT COUNT(*) FROM custom_categories\");\r\n                try {\r\n                    return Integer.valueOf(ea5VarT.N() ? (int) ea5VarT.getLong(0) : 0);\r\n                } finally {\r\n                    ea5VarT.close();\r\n                }\r\n            case 12:\r\n                return DataSource.invalidateCallbackTracker$lambda$0((DataSource.InvalidatedCallback) obj);\r\n            case 13:\r\n                return DataStoreDelegateKt.dataStore$lambda$0((Context) obj);\r\n            case 14:\r\n                return DataStoreDelegateKt.deviceProtectedDataStore$lambda$0((Context) obj);\r\n            case 15:\r\n                return dg6Var;\r\n            case 16:\r\n                Integer num = (Integer) obj;\r\n                num.intValue();\r\n                return num;\r\n            case 17:\r\n                ba3[] ba3VarArr = ji5.a;\r\n                ki5 ki5Var = hi5.l;\r\n                ba3 ba3Var = ji5.a[5];\r\n                ((li5) obj).a(ki5Var, Boolean.TRUE);\r\n                return dg6Var;\r\n            case 18:\r\n                ba3[] ba3VarArr2 = ji5.a;\r\n                ki5 ki5Var2 = hi5.l;\r\n                ba3 ba3Var2 = ji5.a[5];\r\n                ((li5) obj).a(ki5Var2, Boolean.TRUE);\r\n                return dg6Var;\r\n            case 19:\r\n                int i2 = 25;\r\n                vc5 vc5Var = new vc5(new lw0(i2), new lw0(i2), false);\r\n                ba3[] ba3VarArr3 = ji5.a;\r\n                ki5 ki5Var3 = hi5.u;\r\n                ba3 ba3Var3 = ji5.a[12];\r\n                ((li5) obj).a(ki5Var3, vc5Var);\r\n                return dg6Var;\r\n            case 20:\r\n                ji5.j((li5) obj);\r\n                return dg6Var;\r\n            case 21:\r\n                List list = (List) obj;\r\n                Object obj2 = list.get(0);\r\n                obj2.getClass();\r\n                int iIntValue = ((Integer) obj2).intValue();\r\n                Object obj3 = list.get(1);\r\n                obj3.getClass();\r\n                return new up1(iIntValue, ((Float) obj3).floatValue(), new f6(2, list));\r\n            case 22:\r\n                ji5.j((li5) obj);\r\n                return dg6Var;\r\n            case 23:\r\n                Byte b = (Byte) obj;\r\n                b.byteValue();\r\n                return String.format(\"%02x\", Arrays.copyOf(new Object[]{b}, 1));\r\n            case 24:\r\n                Subdomain subdomain = (Subdomain) obj;\r\n                subdomain.getClass();\r\n                return subdomain.getPrefix();\r\n            case 25:\r\n                ((sz1) obj).getClass();\r\n                return dg6Var;\r\n            case 26:\r\n                ((sz1) obj).getClass();\r\n                return dg6Var;\r\n            case 27:\r\n                DownloadTask downloadTask = (DownloadTask) obj;\r\n                downloadTask.getClass();\r\n                return Long.valueOf(downloadTask.getId());\r\n            case 28:\r\n                vv1 vv1Var = (vv1) obj;\r\n                vv1Var.getClass();\r\n                return vv1Var.a;\r\n            default:\r\n                DownloadTask downloadTask2 = (DownloadTask) obj;\r\n                downloadTask2.getClass();\r\n                if (downloadTask2.getStatus() != DownloadStatus.DOWNLOADING && downloadTask2.getStatus() != DownloadStatus.PENDING) {\r\n                    z = false;\r\n                }\r\n                return Boolean.valueOf(z);\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

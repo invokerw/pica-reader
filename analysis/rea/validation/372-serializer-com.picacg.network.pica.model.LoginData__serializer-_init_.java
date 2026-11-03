@@ -1,0 +1,2 @@
+    private LoginData$$serializer() {
+    }

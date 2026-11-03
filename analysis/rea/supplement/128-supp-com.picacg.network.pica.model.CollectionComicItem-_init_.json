@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_2e28d6d6ebba38e690c9ff5f025b8046b3f8f94af72ce6d5e5a4503c71ea88e1",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "com.picacg.network.pica.model.CollectionComicItem",
+    "method_name": "<init>",
+    "overload_index": 2
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-7802ea5287a189237b935c294ddb9235\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":2,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.picacg.network.pica.model.CollectionComicItem"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"com.picacg.network.pica.model.CollectionComicItem\",\"fields\":[{\"def_pos\":0,\"name\":\"$childSerializers\",\"type\":\"kd3[]\"},{\"def_pos\":0,\"name\":\"$stable\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"Companion\",\"type\":\"com.picacg.network.pica.model.CollectionComicItem$Companion\"},{\"def_pos\":0,\"name\":\"author\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"categories\",\"type\":\"java.util.List\\u003cjava.lang.String\\u003e\"},{\"def_pos\":0,\"name\":\"epsCount\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"finished\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"id\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"pagesCount\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"tags\",\"type\":\"java.util.List\\u003cjava.lang.String\\u003e\"},{\"def_pos\":0,\"name\":\"thumb\",\"type\":\"com.picacg.network.pica.model.ImageInfo\"},{\"def_pos\":0,\"name\":\"title\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"totalLikes\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"totalViews\",\"type\":\"int\"}],\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;Ljava/util/List;ZIIIILfj5;)V\",\"signature\":\"\\u003cinit\\u003e(int, java.lang.String, java.lang.String, java.lang.String, com.picacg.network.pica.model.ImageInfo, java.util.List, java.util.List, boolean, int, int, int, int, fj5): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;Ljava/util/List;ZIIII)V\",\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, java.lang.String, com.picacg.network.pica.model.ImageInfo, java.util.List\\u003cjava.lang.String\\u003e, java.util.List\\u003cjava.lang.String\\u003e, boolean, int, int, int, int): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;Ljava/util/List;ZIIIIILjo1;)V\",\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, java.lang.String, com.picacg.network.pica.model.ImageInfo, java.util.List, java.util.List, boolean, int, int, int, int, int, jo1): void\",\"def_pos\":0},{\"name\":\"_childSerializers$_anonymous_\",\"is_constructor\":false,\"dex_descriptor\":\"()Lca3;\",\"signature\":\"_childSerializers$_anonymous_(): ca3\",\"def_pos\":0},{\"name\":\"_childSerializers$_anonymous_$0\",\"is_constructor\":false,\"dex_descriptor\":\"()Lca3;\",\"signature\":\"_childSerializers$_anonymous_$0(): ca3\",\"def_pos\":0},{\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"()Lca3;\",\"signature\":\"a(): ca3\",\"def_pos\":0},{\"name\":\"access$get$childSerializers$cp\",\"is_constructor\":false,\"dex_descriptor\":\"()[Lkd3;\",\"signature\":\"access$get$childSerializers$cp(): kd3[]\",\"def_pos\":0},{\"name\":\"b\",\"is_constructor\":false,\"dex_descriptor\":\"()Lca3;\",\"signature\":\"b(): ca3\",\"def_pos\":0},{\"name\":\"component1\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"component1(): java.lang.String\",\"def_pos\":0},{\"name\":\"component10\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component10(): int\",\"def_pos\":0},{\"name\":\"component11\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component11(): int\",\"def_pos\":0},{\"name\":\"component2\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"component2(): java.lang.String\",\"def_pos\":0},{\"name\":\"component3\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"component3(): java.lang.String\",\"def_pos\":0},{\"name\":\"component4\",\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/picacg/network/pica/model/ImageInfo;\",\"signature\":\"component4(): com.picacg.network.pica.model.ImageInfo\",\"def_pos\":0},{\"name\":\"component5\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/util/List;\",\"signature\":\"component5(): java.util.List\\u003cjava.lang.String\\u003e\",\"def_pos\":0},{\"name\":\"component6\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/util/List;\",\"signature\":\"component6(): java.util.List\\u003cjava.lang.String\\u003e\",\"def_pos\":0},{\"name\":\"component7\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"component7(): boolean\",\"def_pos\":0},{\"name\":\"component8\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component8(): int\",\"def_pos\":0},{\"name\":\"component9\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component9(): int\",\"def_pos\":0},{\"name\":\"copy\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;Ljava/util/List;ZIIII)Lcom/picacg/network/pica/model/CollectionComicItem;\",\"signature\":\"copy(java.lang.String, java.lang.String, java.lang.String, com.picacg.network.pica.model.ImageInfo, java.util.List\\u003cjava.lang.String\\u003e, java.util.List\\u003cjava.lang.String\\u003e, boolean, int, int, int, int): com.picacg.network.pica.model.CollectionComicItem\",\"def_pos\":0},{\"name\":\"copy$default\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/picacg/network/pica/model/CollectionComicItem;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;Ljava/util/List;ZIIIIILjava/lang/Object;)Lcom/picacg/network/pica/model/CollectionComicItem;\",\"signature\":\"copy$default(com.picacg.network.pica.model.CollectionComicItem, java.lang.String, java.lang.String, java.lang.String, com.picacg.network.pica.model.ImageInfo, java.util.List, java.util.List, boolean, int, int, int, int, int, java.lang.Object): com.picacg.network.pica.model.CollectionComicItem\",\"def_pos\":0},{\"name\":\"equals\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Z\",\"signature\":\"equals(java.lang.Object): boolean\",\"def_pos\":0},{\"name\":\"getAuthor\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getAuthor(): java.lang.String\",\"def_pos\":0},{\"name\":\"getCategories\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/util/List;\",\"signature\":\"getCategories(): java.util.List\\u003cjava.lang.String\\u003e\",\"def_pos\":0},{\"name\":\"getEpsCount\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getEpsCount(): int\",\"def_pos\":0},{\"name\":\"getFinished\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"getFinished(): boolean\",\"def_pos\":0},{\"name\":\"getId\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getId(): java.lang.String\",\"def_pos\":0},{\"name\":\"getId$annotations\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"getId$annotations(): void\",\"def_pos\":0},{\"name\":\"getPagesCount\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getPagesCount(): int\",\"def_pos\":0},{\"name\":\"getTags\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/util/List;\",\"signature\":\"getTags(): java.util.List\\u003cjava.lang.String\\u003e\",\"def_pos\":0},{\"name\":\"getThumb\",\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/picacg/network/pica/model/ImageInfo;\",\"signature\":\"getThumb(): com.picacg.network.pica.model.ImageInfo\",\"def_pos\":0},{\"name\":\"getTitle\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getTitle(): java.lang.String\",\"def_pos\":0},{\"name\":\"getTotalLikes\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getTotalLikes(): int\",\"def_pos\":0},{\"name\":\"getTotalViews\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getTotalViews(): int\",\"def_pos\":0},{\"name\":\"hashCode\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"hashCode(): int\",\"def_pos\":0},{\"name\":\"toString\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"toString(): java.lang.String\",\"def_pos\":0},{\"name\":\"write$Self$app\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/picacg/network/pica/model/CollectionComicItem;Lu91;Lzi5;)V\",\"signature\":\"write$Self$app(com.picacg.network.pica.model.CollectionComicItem, u91, zi5): void\",\"def_pos\":0}],\"inner_classes\":[\"com.picacg.network.pica.model.CollectionComicItem.Companion\"],\"inner_class_count\":1,\"name\":\"CollectionComicItem\",\"field_count\":14,\"full_name\":\"com.picacg.network.pica.model.CollectionComicItem\",\"method_count\":38}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.picacg.network.pica.model.CollectionComicItem",
+          "method_name": "<init>",
+          "overload_index": 2,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_index\":2,\"method_name\":\"\\u003cinit\\u003e\",\"overload_count\":3,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;Ljava/util/List;ZIIIIILjo1;)V\",\"class_name\":\"com.picacg.network.pica.model.CollectionComicItem\",\"mode\":\"java\",\"body\":\"    /* JADX WARN: Illegal instructions before constructor call */\\r\\n    public /* synthetic */ CollectionComicItem(String str, String str2, String str3, ImageInfo imageInfo, List list, List list2, boolean z, int i, int i2, int i3, int i4, int i5, jo1 jo1Var) {\\r\\n        int i6 \\u003d i5 \\u0026 16;\\r\\n        b42 b42Var \\u003d b42.i;\\r\\n        this(str, str2, str3, imageInfo, i6 !\\u003d 0 ? b42Var : list, (i5 \\u0026 32) !\\u003d 0 ? b42Var : list2, (i5 \\u0026 64) !\\u003d 0 ? false : z, (i5 \\u0026 128) !\\u003d 0 ? 0 : i, (i5 \\u0026 256) !\\u003d 0 ? 0 : i2, (i5 \\u0026 512) !\\u003d 0 ? 0 : i3, (i5 \\u0026 1024) !\\u003d 0 ? 0 : i4);\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"com.picacg.network.pica.model.CollectionComicItem.\\u003cinit\\u003e\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "com.picacg.network.pica.model.CollectionComicItem",
+    "method": {
+      "name": "<init>",
+      "reported_signature": "<init>(java.lang.String, java.lang.String, java.lang.String, com.picacg.network.pica.model.ImageInfo, java.util.List, java.util.List, boolean, int, int, int, int, int, jo1): void",
+      "overload_index": 2,
+      "is_constructor": true,
+      "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/ImageInfo;Ljava/util/List;Ljava/util/List;ZIIIIILjo1;)V"
+    },
+    "overload_count": 3,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Illegal instructions before constructor call */\r\n    public /* synthetic */ CollectionComicItem(String str, String str2, String str3, ImageInfo imageInfo, List list, List list2, boolean z, int i, int i2, int i3, int i4, int i5, jo1 jo1Var) {\r\n        int i6 = i5 & 16;\r\n        b42 b42Var = b42.i;\r\n        this(str, str2, str3, imageInfo, i6 != 0 ? b42Var : list, (i5 & 32) != 0 ? b42Var : list2, (i5 & 64) != 0 ? false : z, (i5 & 128) != 0 ? 0 : i, (i5 & 256) != 0 ? 0 : i2, (i5 & 512) != 0 ? 0 : i3, (i5 & 1024) != 0 ? 0 : i4);\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

@@ -1,0 +1,115 @@
+[
+  {
+    "id": "class-b83",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "b83"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\defaults\\class-b83.json",
+    "elapsed_ms": 16426,
+    "evidence_id": "ev_06e164e2384bac8ba454395b819feb1ae37c91fc649bca0989000d7e99a542e7",
+    "original_task": {
+      "id": "000-defaults-b83-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "b83",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lb83;-><clinit>()V"
+    }
+  },
+  {
+    "id": "000-defaults-b83-_clinit_",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "b83",
+      "method_name": "<clinit>",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\defaults\\000-defaults-b83-_clinit_.json",
+    "elapsed_ms": 359,
+    "evidence_id": "ev_7111293d4a5e4791a95a3cbf445cd621f4f15edcac04bc15546c935721882c9a",
+    "representation": "smali",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\defaults\\000-defaults-b83-_clinit_.smali",
+    "original_task": {
+      "id": "000-defaults-b83-_clinit_",
+      "operation": "inspect_android_method",
+      "class_name": "b83",
+      "method_name": "<clinit>",
+      "dex_descriptor": "()V",
+      "original_method_id": "Lb83;-><clinit>()V"
+    }
+  },
+  {
+    "id": "class-dx5",
+    "operation": "inspect_android_class",
+    "input": {
+      "class_name": "dx5"
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\defaults\\class-dx5.json",
+    "elapsed_ms": 234,
+    "evidence_id": "ev_cb34d274f1de506ab3f5c5bf84d5eb804fb0767a093d60154a373ab7126bc565",
+    "original_task": {
+      "id": "001-defaults-dx5-d",
+      "operation": "inspect_android_method",
+      "class_name": "dx5",
+      "method_name": "d",
+      "dex_descriptor": "()V",
+      "original_method_id": "Ldx5;->d()V"
+    }
+  },
+  {
+    "id": "001-defaults-dx5-d",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "dx5",
+      "method_name": "d",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\defaults\\001-defaults-dx5-d.json",
+    "elapsed_ms": 2801,
+    "evidence_id": "ev_b24baeccec8b1ca05ad93edf2ad654aea6cc8fe0505b2a6dca0480615d1f2cb2",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\defaults\\001-defaults-dx5-d.java",
+    "original_task": {
+      "id": "001-defaults-dx5-d",
+      "operation": "inspect_android_method",
+      "class_name": "dx5",
+      "method_name": "d",
+      "dex_descriptor": "()V",
+      "original_method_id": "Ldx5;->d()V"
+    }
+  },
+  {
+    "id": "002-defaults-dx5-e",
+    "operation": "inspect_android_method",
+    "input": {
+      "class_name": "dx5",
+      "method_name": "e",
+      "overload_index": 0
+    },
+    "ok": true,
+    "file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\defaults\\002-defaults-dx5-e.json",
+    "elapsed_ms": 268,
+    "evidence_id": "ev_d1c26ad832dbcceac16676226d4be32b4ae34046e71504cae72521a4bc4977a2",
+    "representation": "java",
+    "body_status": "available",
+    "source_status": "complete",
+    "source_file": "C:\\Users\\weife\\Desktop\\work\\picacg\\analysis\\rea\\defaults\\002-defaults-dx5-e.java",
+    "original_task": {
+      "id": "002-defaults-dx5-e",
+      "operation": "inspect_android_method",
+      "class_name": "dx5",
+      "method_name": "e",
+      "dex_descriptor": "(Lzi5;)Z",
+      "original_method_id": "Ldx5;->e(Lzi5;)Z"
+    }
+  }
+]

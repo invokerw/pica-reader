@@ -1,0 +1,374 @@
+{
+  "evidence_id": "ev_630d55edaadef1de5989a1dafd7f26f5e32376d0e366716b6dd816b065cd8db4",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "com.picacg.network.pica.model.MyCommentItem"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-7802ea5287a189237b935c294ddb9235\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":2,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.picacg.network.pica.model.MyCommentItem",
+          "dex_static_values": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"com.picacg.network.pica.model.MyCommentItem\",\"fields\":[{\"def_pos\":0,\"name\":\"$stable\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"Companion\",\"type\":\"com.picacg.network.pica.model.MyCommentItem$Companion\"},{\"def_pos\":0,\"name\":\"comic\",\"type\":\"com.picacg.network.pica.model.MyCommentComicRef\"},{\"def_pos\":0,\"name\":\"commentsCount\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"content\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"createdAt\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"hide\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"id\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"isLiked\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"likesCount\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"totalComments\",\"type\":\"int\"}],\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(ILjava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/MyCommentComicRef;IZLjava/lang/String;IIZLfj5;)V\",\"signature\":\"\\u003cinit\\u003e(int, java.lang.String, java.lang.String, com.picacg.network.pica.model.MyCommentComicRef, int, boolean, java.lang.String, int, int, boolean, fj5): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/MyCommentComicRef;IZLjava/lang/String;IIZ)V\",\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, com.picacg.network.pica.model.MyCommentComicRef, int, boolean, java.lang.String, int, int, boolean): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/MyCommentComicRef;IZLjava/lang/String;IIZILjo1;)V\",\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, com.picacg.network.pica.model.MyCommentComicRef, int, boolean, java.lang.String, int, int, boolean, int, jo1): void\",\"def_pos\":0},{\"name\":\"component1\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"component1(): java.lang.String\",\"def_pos\":0},{\"name\":\"component2\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"component2(): java.lang.String\",\"def_pos\":0},{\"name\":\"component3\",\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/picacg/network/pica/model/MyCommentComicRef;\",\"signature\":\"component3(): com.picacg.network.pica.model.MyCommentComicRef\",\"def_pos\":0},{\"name\":\"component4\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component4(): int\",\"def_pos\":0},{\"name\":\"component5\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"component5(): boolean\",\"def_pos\":0},{\"name\":\"component6\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"component6(): java.lang.String\",\"def_pos\":0},{\"name\":\"component7\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component7(): int\",\"def_pos\":0},{\"name\":\"component8\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"component8(): int\",\"def_pos\":0},{\"name\":\"component9\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"component9(): boolean\",\"def_pos\":0},{\"name\":\"copy\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/MyCommentComicRef;IZLjava/lang/String;IIZ)Lcom/picacg/network/pica/model/MyCommentItem;\",\"signature\":\"copy(java.lang.String, java.lang.String, com.picacg.network.pica.model.MyCommentComicRef, int, boolean, java.lang.String, int, int, boolean): com.picacg.network.pica.model.MyCommentItem\",\"def_pos\":0},{\"name\":\"copy$default\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/picacg/network/pica/model/MyCommentItem;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/MyCommentComicRef;IZLjava/lang/String;IIZILjava/lang/Object;)Lcom/picacg/network/pica/model/MyCommentItem;\",\"signature\":\"copy$default(com.picacg.network.pica.model.MyCommentItem, java.lang.String, java.lang.String, com.picacg.network.pica.model.MyCommentComicRef, int, boolean, java.lang.String, int, int, boolean, int, java.lang.Object): com.picacg.network.pica.model.MyCommentItem\",\"def_pos\":0},{\"name\":\"equals\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Z\",\"signature\":\"equals(java.lang.Object): boolean\",\"def_pos\":0},{\"name\":\"getComic\",\"is_constructor\":false,\"dex_descriptor\":\"()Lcom/picacg/network/pica/model/MyCommentComicRef;\",\"signature\":\"getComic(): com.picacg.network.pica.model.MyCommentComicRef\",\"def_pos\":0},{\"name\":\"getComic$annotations\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"getComic$annotations(): void\",\"def_pos\":0},{\"name\":\"getCommentsCount\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getCommentsCount(): int\",\"def_pos\":0},{\"name\":\"getContent\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getContent(): java.lang.String\",\"def_pos\":0},{\"name\":\"getCreatedAt\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getCreatedAt(): java.lang.String\",\"def_pos\":0},{\"name\":\"getCreatedAt$annotations\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"getCreatedAt$annotations(): void\",\"def_pos\":0},{\"name\":\"getHide\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"getHide(): boolean\",\"def_pos\":0},{\"name\":\"getId\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getId(): java.lang.String\",\"def_pos\":0},{\"name\":\"getId$annotations\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"getId$annotations(): void\",\"def_pos\":0},{\"name\":\"getLikesCount\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getLikesCount(): int\",\"def_pos\":0},{\"name\":\"getTotalComments\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"getTotalComments(): int\",\"def_pos\":0},{\"name\":\"hashCode\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"hashCode(): int\",\"def_pos\":0},{\"name\":\"isLiked\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\",\"signature\":\"isLiked(): boolean\",\"def_pos\":0},{\"name\":\"toString\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"toString(): java.lang.String\",\"def_pos\":0},{\"name\":\"write$Self$app\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/picacg/network/pica/model/MyCommentItem;Lu91;Lzi5;)V\",\"signature\":\"write$Self$app(com.picacg.network.pica.model.MyCommentItem, u91, zi5): void\",\"def_pos\":0}],\"inner_classes\":[\"com.picacg.network.pica.model.MyCommentItem.Companion\"],\"inner_class_count\":1,\"name\":\"MyCommentItem\",\"field_count\":11,\"full_name\":\"com.picacg.network.pica.model.MyCommentItem\",\"method_count\":31}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "com.picacg.network.pica.model.MyCommentItem",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(int, java.lang.String, java.lang.String, com.picacg.network.pica.model.MyCommentComicRef, int, boolean, java.lang.String, int, int, boolean, fj5): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": "(ILjava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/MyCommentComicRef;IZLjava/lang/String;IIZLfj5;)V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, java.lang.String, com.picacg.network.pica.model.MyCommentComicRef, int, boolean, java.lang.String, int, int, boolean): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/MyCommentComicRef;IZLjava/lang/String;IIZ)V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, java.lang.String, com.picacg.network.pica.model.MyCommentComicRef, int, boolean, java.lang.String, int, int, boolean, int, jo1): void",
+        "overload_index": 2,
+        "is_constructor": true,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/MyCommentComicRef;IZLjava/lang/String;IIZILjo1;)V"
+      },
+      {
+        "name": "component1",
+        "reported_signature": "component1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "component2",
+        "reported_signature": "component2(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "component3",
+        "reported_signature": "component3(): com.picacg.network.pica.model.MyCommentComicRef",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lcom/picacg/network/pica/model/MyCommentComicRef;"
+      },
+      {
+        "name": "component4",
+        "reported_signature": "component4(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "component5",
+        "reported_signature": "component5(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "component6",
+        "reported_signature": "component6(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "component7",
+        "reported_signature": "component7(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "component8",
+        "reported_signature": "component8(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "component9",
+        "reported_signature": "component9(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "copy",
+        "reported_signature": "copy(java.lang.String, java.lang.String, com.picacg.network.pica.model.MyCommentComicRef, int, boolean, java.lang.String, int, int, boolean): com.picacg.network.pica.model.MyCommentItem",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/MyCommentComicRef;IZLjava/lang/String;IIZ)Lcom/picacg/network/pica/model/MyCommentItem;"
+      },
+      {
+        "name": "copy$default",
+        "reported_signature": "copy$default(com.picacg.network.pica.model.MyCommentItem, java.lang.String, java.lang.String, com.picacg.network.pica.model.MyCommentComicRef, int, boolean, java.lang.String, int, int, boolean, int, java.lang.Object): com.picacg.network.pica.model.MyCommentItem",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/picacg/network/pica/model/MyCommentItem;Ljava/lang/String;Ljava/lang/String;Lcom/picacg/network/pica/model/MyCommentComicRef;IZLjava/lang/String;IIZILjava/lang/Object;)Lcom/picacg/network/pica/model/MyCommentItem;"
+      },
+      {
+        "name": "equals",
+        "reported_signature": "equals(java.lang.Object): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "name": "getComic",
+        "reported_signature": "getComic(): com.picacg.network.pica.model.MyCommentComicRef",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lcom/picacg/network/pica/model/MyCommentComicRef;"
+      },
+      {
+        "name": "getComic$annotations",
+        "reported_signature": "getComic$annotations(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "getCommentsCount",
+        "reported_signature": "getCommentsCount(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "getContent",
+        "reported_signature": "getContent(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getCreatedAt",
+        "reported_signature": "getCreatedAt(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getCreatedAt$annotations",
+        "reported_signature": "getCreatedAt$annotations(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "getHide",
+        "reported_signature": "getHide(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "getId",
+        "reported_signature": "getId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getId$annotations",
+        "reported_signature": "getId$annotations(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "getLikesCount",
+        "reported_signature": "getLikesCount(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "getTotalComments",
+        "reported_signature": "getTotalComments(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "hashCode",
+        "reported_signature": "hashCode(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "isLiked",
+        "reported_signature": "isLiked(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "toString",
+        "reported_signature": "toString(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "write$Self$app",
+        "reported_signature": "write$Self$app(com.picacg.network.pica.model.MyCommentItem, u91, zi5): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/picacg/network/pica/model/MyCommentItem;Lu91;Lzi5;)V"
+      }
+    ],
+    "fields": [
+      {
+        "name": "$stable",
+        "reported_type": "int",
+        "dex_static_value": null
+      },
+      {
+        "name": "Companion",
+        "reported_type": "com.picacg.network.pica.model.MyCommentItem$Companion",
+        "dex_static_value": null
+      },
+      {
+        "name": "comic",
+        "reported_type": "com.picacg.network.pica.model.MyCommentComicRef",
+        "dex_static_value": null
+      },
+      {
+        "name": "commentsCount",
+        "reported_type": "int",
+        "dex_static_value": null
+      },
+      {
+        "name": "content",
+        "reported_type": "java.lang.String",
+        "dex_static_value": null
+      },
+      {
+        "name": "createdAt",
+        "reported_type": "java.lang.String",
+        "dex_static_value": null
+      },
+      {
+        "name": "hide",
+        "reported_type": "boolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "id",
+        "reported_type": "java.lang.String",
+        "dex_static_value": null
+      },
+      {
+        "name": "isLiked",
+        "reported_type": "boolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "likesCount",
+        "reported_type": "int",
+        "dex_static_value": null
+      },
+      {
+        "name": "totalComments",
+        "reported_type": "int",
+        "dex_static_value": null
+      }
+    ],
+    "inner_classes": [
+      "com.picacg.network.pica.model.MyCommentItem.Companion"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

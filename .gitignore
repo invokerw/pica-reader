@@ -1,0 +1,54 @@
+# ============================================================================
+# 工具链与缓存：全部由 tools/bootstrap.ps1 从 tools/versions.json 重建。
+# 本机这两棵目录合计约 12.4 GB，绝不入库。
+# ============================================================================
+/.tools/
+/.rea-tools/
+/.cache/
+/.gradle/
+/pub-cache/
+
+# Flutter / Dart
+**/.dart_tool/
+**/.flutter-plugins-dependencies
+**/.packages
+**/build/
+/pica_reader/dist/
+/pica_reader/windows/flutter/ephemeral/
+/pica_reader/android/.gradle/
+/pica_reader/android/local.properties
+/pica_reader/android/key.properties
+/pica_reader/android/*.jks
+*.iml
+.idea/
+coverage/
+
+# ============================================================================
+# 二进制与原始样本：APK 不入库（见 README「原始样本」）。
+# ============================================================================
+*.apk
+*.aab
+*.apks
+*.jar
+*.so
+*.dex
+*.zip
+*.jks
+*.keystore
+# ...但协议基线里允许保留体积可控的证据（下面逐条放行）
+!analysis/**/*.json
+!analysis/**/*.txt
+
+# ============================================================================
+# 一次性的分析中间产物
+# ============================================================================
+__pycache__/
+*.pyc
+analysis/runs/
+# 提取结果的工作副本；入库的是 analysis/baseline/protocol.json
+/analysis/protocol.json
+/analysis/protocol.previous.json
+.PICA-*-tmp
+session.json
+device.json
+*.log

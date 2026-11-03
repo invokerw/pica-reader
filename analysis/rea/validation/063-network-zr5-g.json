@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_3089f15eb2b0a5309aec5f8ea907fa6044d07debc808e88a1a46883b57ae22cf",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "zr5",
+    "method_name": "g",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-759fa967979d135329525f4c00169f92\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.13\",\"max_heap_bytes\":2147483648}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "zr5"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"inner_classes\":[],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(tr5): void\",\"dex_descriptor\":\"(Ltr5;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"a(zr5, com.picacg.network.dns.smartdns.SmartDnsData): cs5\",\"dex_descriptor\":\"(Lzr5;Lcom/picacg/network/dns/smartdns/SmartDnsData;)Lcs5;\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0},{\"signature\":\"b(zr5): jv1\",\"dex_descriptor\":\"(Lzr5;)Ljv1;\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0},{\"signature\":\"c(zr5, java.lang.String): cs5\",\"dex_descriptor\":\"(Lzr5;Ljava/lang/String;)Lcs5;\",\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0},{\"signature\":\"d(zr5, java.lang.String, cs5, long): void\",\"dex_descriptor\":\"(Lzr5;Ljava/lang/String;Lcs5;J)V\",\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0},{\"signature\":\"e(zr5, com.picacg.network.dns.smartdns.SmartDnsData): void\",\"dex_descriptor\":\"(Lzr5;Lcom/picacg/network/dns/smartdns/SmartDnsData;)V\",\"is_constructor\":false,\"name\":\"e\",\"def_pos\":0},{\"signature\":\"f(): boolean\",\"dex_descriptor\":\"()Z\",\"is_constructor\":false,\"name\":\"f\",\"def_pos\":0},{\"signature\":\"g(java.util.List, pe1): java.lang.Object\",\"dex_descriptor\":\"(Ljava/util/List;Lpe1;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"g\",\"def_pos\":0}],\"fields\":[{\"name\":\"a\",\"def_pos\":0,\"type\":\"tr5\"},{\"name\":\"b\",\"def_pos\":0,\"type\":\"java.util.concurrent.ConcurrentHashMap\"},{\"name\":\"c\",\"def_pos\":0,\"type\":\"java.util.concurrent.ConcurrentHashMap\"},{\"name\":\"d\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"e\",\"def_pos\":0,\"type\":\"com.picacg.domain.model.SmartDnsStatusSnapshot\"}],\"raw_name\":\"zr5\",\"method_count\":8,\"full_name\":\"defpackage.zr5\",\"field_count\":5,\"name\":\"zr5\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "zr5",
+          "method_name": "g",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"body\":\"    /* JADX WARN: Code duplicated, block: B:7:0x0013  */\\r\\n    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:26:0x0067 -\\u003e B:19:0x003e). Please report as a decompilation issue!!! */\\r\\n    public final Object g(List list, pe1 pe1Var) throws Throwable {\\r\\n        yr5 yr5Var;\\r\\n        Iterator it;\\r\\n        int i;\\r\\n        String str;\\r\\n        if (pe1Var instanceof yr5) {\\r\\n            yr5Var \\u003d (yr5) pe1Var;\\r\\n            int i2 \\u003d yr5Var.n;\\r\\n            if ((i2 \\u0026 Integer.MIN_VALUE) !\\u003d 0) {\\r\\n                yr5Var.n \\u003d i2 - Integer.MIN_VALUE;\\r\\n            } else {\\r\\n                yr5Var \\u003d new yr5(this, pe1Var);\\r\\n            }\\r\\n        } else {\\r\\n            yr5Var \\u003d new yr5(this, pe1Var);\\r\\n        }\\r\\n        Object obj \\u003d yr5Var.l;\\r\\n        int i3 \\u003d yr5Var.n;\\r\\n        ne1 ne1Var \\u003d null;\\r\\n        if (i3 \\u003d\\u003d 0) {\\r\\n            sl4.N(obj);\\r\\n            it \\u003d list.iterator();\\r\\n            i \\u003d 0;\\r\\n        } else {\\r\\n            if (i3 !\\u003d 1) {\\r\\n                mz.h(\\\"call to \\u0027resume\\u0027 before \\u0027invoke\\u0027 with coroutine\\\");\\r\\n                return null;\\r\\n            }\\r\\n            i \\u003d yr5Var.k;\\r\\n            str \\u003d yr5Var.j;\\r\\n            it \\u003d yr5Var.i;\\r\\n            try {\\r\\n                sl4.N(obj);\\r\\n            } catch (Exception e) {\\r\\n                Log.w(\\\"SmartDnsRepository\\\", \\\"预热失败: \\\" + str, e);\\r\\n            }\\r\\n        }\\r\\n        while (it.hasNext()) {\\r\\n            str \\u003d (String) it.next();\\r\\n            yr5Var.i \\u003d it;\\r\\n            yr5Var.j \\u003d str;\\r\\n            yr5Var.k \\u003d i;\\r\\n            yr5Var.n \\u003d 1;\\r\\n            zp1 zp1Var \\u003d nu1.a;\\r\\n            Object objY \\u003d k64.Y(new mx4(this, str, ne1Var, 22), dp1.k, yr5Var);\\r\\n            jg1 jg1Var \\u003d jg1.i;\\r\\n            if (objY \\u003d\\u003d jg1Var) {\\r\\n                return jg1Var;\\r\\n            }\\r\\n        }\\r\\n        return dg6.a;\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"defpackage.zr5\",\"dex_descriptor\":\"(Ljava/util/List;Lpe1;)Ljava/lang/Object;\",\"overload_count\":1,\"method_name\":\"g\",\"overload_index\":0,\"full_name\":\"zr5.g\",\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.zr5",
+    "method": {
+      "name": "g",
+      "reported_signature": "g(java.util.List, pe1): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/util/List;Lpe1;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Code duplicated, block: B:7:0x0013  */\r\n    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:26:0x0067 -> B:19:0x003e). Please report as a decompilation issue!!! */\r\n    public final Object g(List list, pe1 pe1Var) throws Throwable {\r\n        yr5 yr5Var;\r\n        Iterator it;\r\n        int i;\r\n        String str;\r\n        if (pe1Var instanceof yr5) {\r\n            yr5Var = (yr5) pe1Var;\r\n            int i2 = yr5Var.n;\r\n            if ((i2 & Integer.MIN_VALUE) != 0) {\r\n                yr5Var.n = i2 - Integer.MIN_VALUE;\r\n            } else {\r\n                yr5Var = new yr5(this, pe1Var);\r\n            }\r\n        } else {\r\n            yr5Var = new yr5(this, pe1Var);\r\n        }\r\n        Object obj = yr5Var.l;\r\n        int i3 = yr5Var.n;\r\n        ne1 ne1Var = null;\r\n        if (i3 == 0) {\r\n            sl4.N(obj);\r\n            it = list.iterator();\r\n            i = 0;\r\n        } else {\r\n            if (i3 != 1) {\r\n                mz.h(\"call to 'resume' before 'invoke' with coroutine\");\r\n                return null;\r\n            }\r\n            i = yr5Var.k;\r\n            str = yr5Var.j;\r\n            it = yr5Var.i;\r\n            try {\r\n                sl4.N(obj);\r\n            } catch (Exception e) {\r\n                Log.w(\"SmartDnsRepository\", \"预热失败: \" + str, e);\r\n            }\r\n        }\r\n        while (it.hasNext()) {\r\n            str = (String) it.next();\r\n            yr5Var.i = it;\r\n            yr5Var.j = str;\r\n            yr5Var.k = i;\r\n            yr5Var.n = 1;\r\n            zp1 zp1Var = nu1.a;\r\n            Object objY = k64.Y(new mx4(this, str, ne1Var, 22), dp1.k, yr5Var);\r\n            jg1 jg1Var = jg1.i;\r\n            if (objY == jg1Var) {\r\n                return jg1Var;\r\n            }\r\n        }\r\n        return dg6.a;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

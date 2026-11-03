@@ -1,0 +1,3 @@
+    public final String toString() {
+        return "JsonConfiguration(encodeDefaults=" + this.a + ", ignoreUnknownKeys=" + this.b + ", isLenient=" + this.c + ", allowStructuredMapKeys=false, prettyPrint=false, explicitNulls=" + this.d + ", prettyPrintIndent='" + this.e + "', coerceInputValues=false, useArrayPolymorphism=false, classDiscriminator='" + this.f + "', allowSpecialFloatingPointValues=false, useAlternativeNames=" + this.g + ", namingStrategy=null, decodeEnumsCaseInsensitive=false, allowTrailingComma=false, allowComments=false, classDiscriminatorMode=" + this.h + ')';
+    }

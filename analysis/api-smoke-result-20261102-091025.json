@@ -1,0 +1,89 @@
+{
+  "host": "picaapi.picacomic.com",
+  "started_at_utc": "Mon, 02 Nov 2026 09:10:23 GMT",
+  "scope": "One authorized login plus users/profile and categories; no business writes",
+  "transport": "Direct HTTPS, CA+hostname verified; redirects and retries disabled",
+  "synthetic_device_identity": true,
+  "credentials_saved": false,
+  "token_saved": false,
+  "results": [
+    {
+      "method": "POST",
+      "path": "/auth/sign-in",
+      "http_status": 200,
+      "elapsed_ms": 313,
+      "peer_ip": "104.20.42.9",
+      "tls": "TLSv1.3",
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "date": "Mon, 02 Nov 2026 09:10:27 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a54201940c346468-NRT"
+      },
+      "response_bytes": 418,
+      "api_code": 200,
+      "message_is_success": true,
+      "json_object": true,
+      "business_success": true,
+      "token_received": true
+    },
+    {
+      "method": "GET",
+      "path": "/users/profile",
+      "http_status": 200,
+      "elapsed_ms": 282,
+      "peer_ip": "104.20.42.9",
+      "tls": "TLSv1.3",
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "date": "Mon, 02 Nov 2026 09:10:27 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a54201961f1bd5cb-NRT"
+      },
+      "response_bytes": 422,
+      "api_code": 200,
+      "message_is_success": true,
+      "json_object": true,
+      "business_success": true,
+      "profile_object_present": true
+    },
+    {
+      "method": "GET",
+      "path": "/categories",
+      "http_status": 200,
+      "elapsed_ms": 281,
+      "peer_ip": "104.20.42.9",
+      "tls": "TLSv1.3",
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "date": "Mon, 02 Nov 2026 09:10:27 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a54201981844db13-NRT"
+      },
+      "response_bytes": 14934,
+      "api_code": 200,
+      "message_is_success": true,
+      "json_object": true,
+      "business_success": true,
+      "category_count": 47
+    }
+  ],
+  "transport_probe": {
+    "method": "HEAD",
+    "path": "/",
+    "http_status": 400,
+    "elapsed_ms": 359,
+    "peer_ip": "104.20.42.9",
+    "tls": "TLSv1.3",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "date": "Mon, 02 Nov 2026 09:10:26 GMT",
+      "server": "cloudflare",
+      "cf-ray": "a54201921898c368-NRT"
+    },
+    "response_bytes": 0
+  },
+  "server_clock_delta_seconds": 1.7,
+  "signing_time_source": "HTTPS Date + elapsed time",
+  "outcome": "login_and_read_checks_passed"
+}

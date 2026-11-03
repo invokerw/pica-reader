@@ -1,0 +1,68 @@
+Android
+9519653
+__cxa_finalize
+__cxa_atexit
+__stack_chk_fail
+__stack_chk_guard
+JNI_OnLoad
+__system_property_get
+malloc
+libandroidx.graphics.path.so
+LIBANDROIDX.GRAPHICS.PATH
+libc.so
+libm.so
+libdl.so
+androidx/graphics/path/ConicConverter
+android/graphics/Path
+!(J[FI)I
+mNativePath
+internalPathIteratorHasNext
+!(J)Z
+ro.build.version.sdk
+androidx/graphics/path/PathIteratorPreApi34Impl
+internalPathIteratorRawSize
+(J[FI)I
+!(J)I
+createInternalPathIterator
+destroyInternalPathIterator
+internalConicToQuadratics
+internalPathIteratorNext
+internalPathIteratorPeek
+internalPathIteratorSize
+(Landroid/graphics/Path;IF)J
+([FI[FFF)I
+mF(F"F
+hb} h
+i0F)F
+h5J5K
+xQzD{D
+JzD1F
+F@KzD{D
+2 FAF
+F hAF
+F hQF:F
+G hAF2F
+Linker: LLD 14.0.7
+Android (9352603, based on r450784d1) clang version 14.0.7 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)
+aeabi
+C2.09
+.fini_array
+.ARM.exidx
+.text
+.comment
+.note.android.ident
+.got.plt
+.rel.plt
+.ARM.attributes
+.dynstr
+.gnu.version_r
+.data.rel.ro
+.rel.dyn
+.gnu.version
+.dynsym
+.gnu.hash
+.note.gnu.build-id
+.gnu.version_d
+.dynamic
+.shstrtab
+.rodata

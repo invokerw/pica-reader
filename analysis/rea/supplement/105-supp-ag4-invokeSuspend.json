@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_f85b4a2541ae9179ae334aefccc069b60e43cb8508302a0a09c89b60e078d5c0",
+  "subject": {
+    "name": "picacg-v2.6.73.apk",
+    "digest": {
+      "sha256": "68b1a02d634f791a673bd58935208cde8c896a6ea0912fcbf1b946d9a229c06e"
+    },
+    "local_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\weife\\Desktop\\work\\picacg\\picacg-v2.6.73.apk",
+    "class_name": "ag4",
+    "method_name": "invokeSuspend",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "7"
+    },
+    "bridge_sha256": "e5044a8312dd0731f53af3f095508b3e5cff54df6b971c95d4305e2f39b4fa30",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\weife\\Desktop\\work\\picacg\\.rea-tools\\runtime-temp\\rea-android-7802ea5287a189237b935c294ddb9235\\target.apk",
+      "class_count": 9032,
+      "resource_count": 448,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":2,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.13\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "ag4"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"raw_name\":\"ag4\",\"fields\":[{\"def_pos\":0,\"name\":\"i\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"j\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"k\",\"type\":\"om2\"},{\"def_pos\":0,\"name\":\"l\",\"type\":\"dg4\"}],\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Lom2;Ldg4;Lne1;I)V\",\"signature\":\"\\u003cinit\\u003e(om2, dg4, ne1, int): void\",\"def_pos\":0},{\"name\":\"create\",\"is_constructor\":false,\"dex_descriptor\":\"(Lne1;)Lne1;\",\"signature\":\"create(ne1): ne1\",\"def_pos\":0},{\"name\":\"invoke\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\",\"signature\":\"invoke(java.lang.Object): java.lang.Object\",\"def_pos\":0},{\"name\":\"invokeSuspend\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\",\"signature\":\"invokeSuspend(java.lang.Object): java.lang.Object\",\"def_pos\":0}],\"inner_classes\":[],\"inner_class_count\":0,\"name\":\"ag4\",\"field_count\":4,\"full_name\":\"defpackage.ag4\",\"method_count\":4}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "ag4",
+          "method_name": "invokeSuspend",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_index\":0,\"method_name\":\"invokeSuspend\",\"overload_count\":1,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\",\"class_name\":\"defpackage.ag4\",\"mode\":\"java\",\"body\":\"    @Override // defpackage.c50\\r\\n    public final Object invokeSuspend(Object obj) {\\r\\n        int i \\u003d this.i;\\r\\n        dg4 dg4Var \\u003d this.l;\\r\\n        om2 om2Var \\u003d this.k;\\r\\n        jg1 jg1Var \\u003d jg1.i;\\r\\n        switch (i) {\\r\\n            case 0:\\r\\n                int i2 \\u003d this.j;\\r\\n                if (i2 !\\u003d 0) {\\r\\n                    if (i2 \\u003d\\u003d 1) {\\r\\n                        sl4.N(obj);\\r\\n                        return obj;\\r\\n                    }\\r\\n                    mz.h(\\\"call to \\u0027resume\\u0027 before \\u0027invoke\\u0027 with coroutine\\\");\\r\\n                    return null;\\r\\n                }\\r\\n                sl4.N(obj);\\r\\n                eg4 eg4Var \\u003d dg4Var.a;\\r\\n                this.j \\u003d 1;\\r\\n                Object objInvoke \\u003d om2Var.invoke(eg4Var, this);\\r\\n                return objInvoke \\u003d\\u003d jg1Var ? jg1Var : objInvoke;\\r\\n            default:\\r\\n                int i3 \\u003d this.j;\\r\\n                if (i3 !\\u003d 0) {\\r\\n                    if (i3 \\u003d\\u003d 1) {\\r\\n                        sl4.N(obj);\\r\\n                        return obj;\\r\\n                    }\\r\\n                    mz.h(\\\"call to \\u0027resume\\u0027 before \\u0027invoke\\u0027 with coroutine\\\");\\r\\n                    return null;\\r\\n                }\\r\\n                sl4.N(obj);\\r\\n                eg4 eg4Var2 \\u003d dg4Var.a;\\r\\n                this.j \\u003d 1;\\r\\n                Object objInvoke2 \\u003d om2Var.invoke(eg4Var2, this);\\r\\n                return objInvoke2 \\u003d\\u003d jg1Var ? jg1Var : objInvoke2;\\r\\n        }\\r\\n    }\",\"markers\":[],\"fell_back\":false,\"full_name\":\"ag4.invokeSuspend\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "defpackage.ag4",
+    "method": {
+      "name": "invokeSuspend",
+      "reported_signature": "invokeSuspend(java.lang.Object): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // defpackage.c50\r\n    public final Object invokeSuspend(Object obj) {\r\n        int i = this.i;\r\n        dg4 dg4Var = this.l;\r\n        om2 om2Var = this.k;\r\n        jg1 jg1Var = jg1.i;\r\n        switch (i) {\r\n            case 0:\r\n                int i2 = this.j;\r\n                if (i2 != 0) {\r\n                    if (i2 == 1) {\r\n                        sl4.N(obj);\r\n                        return obj;\r\n                    }\r\n                    mz.h(\"call to 'resume' before 'invoke' with coroutine\");\r\n                    return null;\r\n                }\r\n                sl4.N(obj);\r\n                eg4 eg4Var = dg4Var.a;\r\n                this.j = 1;\r\n                Object objInvoke = om2Var.invoke(eg4Var, this);\r\n                return objInvoke == jg1Var ? jg1Var : objInvoke;\r\n            default:\r\n                int i3 = this.j;\r\n                if (i3 != 0) {\r\n                    if (i3 == 1) {\r\n                        sl4.N(obj);\r\n                        return obj;\r\n                    }\r\n                    mz.h(\"call to 'resume' before 'invoke' with coroutine\");\r\n                    return null;\r\n                }\r\n                sl4.N(obj);\r\n                eg4 eg4Var2 = dg4Var.a;\r\n                this.j = 1;\r\n                Object objInvoke2 = om2Var.invoke(eg4Var2, this);\r\n                return objInvoke2 == jg1Var ? jg1Var : objInvoke2;\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}
