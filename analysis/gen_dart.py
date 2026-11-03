@@ -151,7 +151,14 @@ def render_vectors(protocol):
     return '\n'.join(lines)
 
 
-STUB = "/// Protocol constants live in the generated file; run `python analysis/pipeline.py gen`.\nexport 'api_config.g.dart';\n"
+STUB = (
+    '/// Protocol constants live in the generated file.\n'
+    '///\n'
+    '/// Regenerate with `python analysis/pipeline.py gen`; do not edit by hand.\n'
+    'library;\n'
+    '\n'
+    "export 'api_config.g.dart';\n"
+)
 
 
 def render_all(protocol):
@@ -163,7 +170,12 @@ def render_all(protocol):
 
 
 def write(protocol_path=None, check=False):
-    protocol_path = Path(protocol_path) if protocol_path else Path(paths.OUT) / 'protocol.json'
+    if protocol_path:
+        protocol_path = Path(protocol_path)
+    else:
+        latest = Path(paths.OUT) / 'protocol.json'
+        baseline = paths.ROOT / 'analysis' / 'baseline' / 'protocol.json'
+        protocol_path = latest if latest.is_file() else baseline
     if not protocol_path.is_file():
         sys.exit(f'没有协议结果：{protocol_path}。先运行 `pipeline.py static`。')
     protocol = json.loads(protocol_path.read_text(encoding='utf-8'))
