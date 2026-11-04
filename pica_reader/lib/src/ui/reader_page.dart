@@ -1,4 +1,8 @@
+import 'dart:io';
+
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:photo_view/photo_view_gallery.dart';
 import 'package:provider/provider.dart';
@@ -49,6 +53,19 @@ class _ReaderPageState extends State<ReaderPage> {
 
   bool get _offline => _source?.isLocal ?? false;
 
+  /// Icon colour the rest of the app expects in the status bar, captured before
+  /// the reader overrides it, so leaving the reader cannot leave white icons on
+  /// a light page.
+  Brightness _statusIconBrightness = Brightness.light;
+
+  /// Whether the app was already drawing under the system bars when the reader
+  /// opened. Restoring the wrong one either leaves the rest of the app under
+  /// the status bar or shrinks its window by the height of the bars.
+  bool? _wasEdgeToEdge;
+
+  bool get _mobilePlatform =>
+      !kIsWeb && (Platform.isAndroid || Platform.isIOS);
+
   @override
   void initState() {
     super.initState();
@@ -59,11 +76,62 @@ class _ReaderPageState extends State<ReaderPage> {
   }
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _statusIconBrightness = Theme.of(context).brightness == Brightness.light
+        ? Brightness.dark
+        : Brightness.light;
+    if (_wasEdgeToEdge == null) {
+      // Sampled before the bars are hidden: a non-zero inset means the app is
+      // edge-to-edge, so that is what has to come back afterwards.
+      final insets = MediaQuery.viewPaddingOf(context);
+      _wasEdgeToEdge = insets.top > 0 || insets.bottom > 0;
+      _enterFullScreen();
+    }
+  }
+
+  @override
   void dispose() {
     _saveProgress();
+    _leaveFullScreen();
     _source?.dispose();
     _controller?.dispose();
     super.dispose();
+  }
+
+  /// Reading is a full-screen activity: on a phone the artwork has to reach the
+  /// edges, so both system bars go away until the reader is popped.
+  void _enterFullScreen() {
+    if (!_mobilePlatform) return;
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.light,
+      statusBarBrightness: Brightness.dark,
+      systemNavigationBarColor: Colors.transparent,
+      systemNavigationBarIconBrightness: Brightness.light,
+    ));
+  }
+
+  /// Hands the system bars back in the state the rest of the app expects.
+  void _leaveFullScreen() {
+    if (!_mobilePlatform) return;
+    if (_wasEdgeToEdge ?? false) {
+      SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+    } else {
+      SystemChrome.setEnabledSystemUIMode(
+        SystemUiMode.manual,
+        overlays: SystemUiOverlay.values,
+      );
+    }
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      systemNavigationBarColor: Colors.transparent,
+      statusBarIconBrightness: _statusIconBrightness,
+      statusBarBrightness:
+          _statusIconBrightness == Brightness.dark ? Brightness.light : Brightness.dark,
+      systemNavigationBarIconBrightness: _statusIconBrightness,
+    ));
   }
 
   Future<void> _load() async {
@@ -239,7 +307,9 @@ class _ReaderPageState extends State<ReaderPage> {
                     colors: [Colors.black87, Colors.transparent],
                   ),
                 ),
-                padding: EdgeInsets.only(top: MediaQuery.paddingOf(context).top),
+                // viewPadding, not padding: with the system bars hidden the
+                // padding collapses to zero, but the notch still needs room.
+                padding: EdgeInsets.only(top: MediaQuery.viewPaddingOf(context).top),
                 child: Row(
                   children: [
                     IconButton(
@@ -289,7 +359,9 @@ class _ReaderPageState extends State<ReaderPage> {
                   left: 12,
                   right: 12,
                   top: 8,
-                  bottom: MediaQuery.paddingOf(context).bottom + 8,
+                  // Same reason as the top bar, plus a little breathing room
+                  // so the slider stays clear of the gesture bar.
+                  bottom: MediaQuery.viewPaddingOf(context).bottom + 16,
                 ),
                 child: Row(
                   children: [

@@ -9,7 +9,9 @@ import '../api/models.dart';
 import '../platform/export_service.dart';
 import '../state/downloads.dart';
 import '../state/library.dart';
+import '../state/settings.dart';
 import '../storage/library_paths.dart';
+import 'chapter_order.dart';
 import 'reader_page.dart';
 import 'widgets/comic_card.dart';
 import 'widgets/pica_image.dart';
@@ -102,6 +104,20 @@ class _ComicPageState extends State<ComicDetailPage> {
     return Episode(id: '', title: '第 ${progress.order} 话', order: progress.order);
   }
 
+  /// The API hands chapters over newest first; flipping the list is a view
+  /// concern, so the loaded list itself stays as it came from paging.
+  List<Episode> _ordered(bool descending) =>
+      orderEpisodes(_episodes, descending: descending);
+
+  /// Where "开始阅读" goes when nothing has been read yet: the earliest chapter.
+  Episode? get _firstEpisode {
+    Episode? first;
+    for (final episode in _episodes) {
+      if (first == null || episode.order < first.order) first = episode;
+    }
+    return first;
+  }
+
   Future<void> _download(Episode episode) async {
     await context.read<DownloadManager>().enqueue(comic: _comic, episode: episode);
     if (!mounted) return;
@@ -110,12 +126,14 @@ class _ComicPageState extends State<ComicDetailPage> {
 
   Future<void> _downloadAll(DownloadManager downloads) async {
     if (_episodes.isEmpty) return;
-    await downloads.enqueueAll(comic: _comic, episodes: _episodes);
+    // Queue from chapter one onwards regardless of how the list is displayed.
+    final ordered = _ordered(false);
+    await downloads.enqueueAll(comic: _comic, episodes: ordered);
     if (!mounted) return;
     final more = _episodes.length < _episodeTotal;
     _toast(more
-        ? '已排队 ${_episodes.length} 话（还有章节未加载，可加载后再下载）'
-        : '已排队 ${_episodes.length} 话');
+        ? '已排队 ${ordered.length} 话（还有章节未加载，可加载后再下载）'
+        : '已排队 ${ordered.length} 话');
   }
 
   Future<void> _openDownloadedMenu(Episode episode) async {
@@ -194,6 +212,9 @@ class _ComicPageState extends State<ComicDetailPage> {
     final theme = Theme.of(context);
     final progress = context.watch<Library>().progressOf(_comic.id);
     final downloads = context.watch<DownloadManager>();
+    final settings = context.watch<Settings>();
+    final descending = settings.chapterDescending;
+    final episodes = _ordered(descending);
     final resume = _resumeEpisode(progress);
 
     return Scaffold(
@@ -285,8 +306,8 @@ class _ComicPageState extends State<ComicDetailPage> {
                       Expanded(
                         child: FilledButton.icon(
                           onPressed: () {
-                            final target = resume ?? _episodes.last;
-                            _open(target);
+                            final target = resume ?? _firstEpisode;
+                            if (target != null) _open(target);
                           },
                           icon: const Icon(Icons.menu_book),
                           label: Text(
@@ -308,9 +329,27 @@ class _ComicPageState extends State<ComicDetailPage> {
               ),
             SliverToBoxAdapter(
               child: Padding(
-                padding: const EdgeInsets.fromLTRB(16, 20, 16, 8),
-                child: Text('章节 (${_episodeTotal == 0 ? _episodes.length : _episodeTotal})',
-                    style: theme.textTheme.titleMedium),
+                padding: const EdgeInsets.fromLTRB(16, 12, 8, 4),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        '章节 (${_episodeTotal == 0 ? _episodes.length : _episodeTotal})',
+                        style: theme.textTheme.titleMedium,
+                      ),
+                    ),
+                    TextButton.icon(
+                      onPressed: () =>
+                          context.read<Settings>().setChapterDescending(!descending),
+                      icon: const Icon(Icons.swap_vert, size: 18),
+                      label: Text(descending ? '最新在前' : '从第 1 话开始'),
+                      style: TextButton.styleFrom(
+                        visualDensity: VisualDensity.compact,
+                        foregroundColor: theme.colorScheme.primary,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
             SliverPadding(
@@ -323,9 +362,9 @@ class _ComicPageState extends State<ComicDetailPage> {
                   mainAxisSpacing: 8,
                 ),
                 delegate: SliverChildBuilderDelegate(
-                  childCount: _episodes.length,
+                  childCount: episodes.length,
                   (context, index) {
-                    final episode = _episodes[index];
+                    final episode = episodes[index];
                     final current = progress?.order == episode.order;
                     return Material(
                       color: current

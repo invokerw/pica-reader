@@ -14,6 +14,10 @@ class Settings extends ChangeNotifier {
   int _downloadPages = 4;
   String _themeId = kDefaultThemeId;
   ThemeMode _themeMode = ThemeMode.system;
+
+  /// Whether the detail page lists the newest chapter first, which is how the
+  /// API hands them over.
+  bool _chapterDescending = true;
   bool _loaded = false;
 
   String get imageQuality => _imageQuality;
@@ -30,6 +34,7 @@ class Settings extends ChangeNotifier {
 
   String get themeId => _themeId;
   ThemeMode get themeMode => _themeMode;
+  bool get chapterDescending => _chapterDescending;
 
   Future<void> load() async {
     final stored = await AppPaths.readJson('settings.json');
@@ -50,6 +55,7 @@ class Settings extends ChangeNotifier {
     _downloadPages = pages < 1 ? 4 : pages.clamp(1, 8);
     final themeId = asString(stored['themeId']);
     if (themeId.isNotEmpty) _themeId = themeId;
+    _chapterDescending = asBool(stored['chapterDesc'], true);
     final mode = asString(stored['themeMode']);
     if (mode.isNotEmpty) {
       _themeMode = switch (mode) {
@@ -70,6 +76,7 @@ class Settings extends ChangeNotifier {
         'downloadRoot': _downloadRoot,
         'downloadPages': _downloadPages,
         'themeId': _themeId,
+        'chapterDesc': _chapterDescending,
         'themeMode': switch (_themeMode) {
           ThemeMode.light => 'light',
           ThemeMode.dark => 'dark',
@@ -131,6 +138,13 @@ class Settings extends ChangeNotifier {
   void setThemeMode(ThemeMode value) {
     if (value == _themeMode) return;
     _themeMode = value;
+    notifyListeners();
+    _persist();
+  }
+
+  void setChapterDescending(bool value) {
+    if (value == _chapterDescending) return;
+    _chapterDescending = value;
     notifyListeners();
     _persist();
   }

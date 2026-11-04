@@ -152,4 +152,37 @@ void main() {
 
     expect(_scrollOf(tester).offset, closeTo(5 * _pageHeight, 1));
   });
+
+  testWidgets('a status bar inset does not eat into the strip', (tester) async {
+    tester.view.physicalSize = _screen;
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+
+    final controller = ContinuousReaderController();
+    await tester.pumpWidget(MaterialApp(
+      home: Scaffold(
+        body: MediaQuery(
+          data: const MediaQueryData(
+            size: _screen,
+            padding: EdgeInsets.only(top: 24, bottom: 48),
+            viewPadding: EdgeInsets.only(top: 24, bottom: 48),
+          ),
+          child: ContinuousReader(
+            source: _FakeChapter(4),
+            controller: controller,
+            initialPage: 0,
+            onPageChanged: (_) {},
+            onTap: () {},
+          ),
+        ),
+      ),
+    ));
+    await _settle(tester);
+
+    // Full screen means the artwork starts at y = 0 and reaches the bottom
+    // edge; only the chrome pads itself around the notch.
+    expect(tester.getTopLeft(find.byType(ListView)), Offset.zero);
+    expect(tester.getSize(find.byType(ListView)), _screen);
+    expect(tester.getSize(find.byType(Image).first).width, _screen.width);
+  });
 }
