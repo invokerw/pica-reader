@@ -11,6 +11,7 @@ import '../state/library.dart';
 import '../state/settings.dart';
 import 'chapter_source.dart';
 import 'widgets/comic_card.dart';
+import 'widgets/continuous_reader.dart';
 
 class ReaderPage extends StatefulWidget {
   const ReaderPage({
@@ -34,13 +35,14 @@ class ReaderPage extends StatefulWidget {
 
 class _ReaderPageState extends State<ReaderPage> {
   final GlobalKey<ScaffoldState> _scaffold = GlobalKey<ScaffoldState>();
+  final ContinuousReaderController _strip = ContinuousReaderController();
   ChapterSource? _source;
   PageController? _controller;
   bool _loading = true;
   String? _error;
   int _index = 0;
   bool _chrome = true;
-  late bool _vertical;
+  late ReaderMode _mode;
   late Library _library;
 
   int get _count => _source?.length ?? 0;
@@ -50,7 +52,7 @@ class _ReaderPageState extends State<ReaderPage> {
   @override
   void initState() {
     super.initState();
-    _vertical = context.read<Settings>().verticalReader;
+    _mode = context.read<Settings>().readerMode;
     _library = context.read<Library>();
     _index = widget.initialPage;
     WidgetsBinding.instance.addPostFrameCallback((_) => _load());
@@ -144,15 +146,40 @@ class _ReaderPageState extends State<ReaderPage> {
 
   void _toggleChrome() => setState(() => _chrome = !_chrome);
 
-  void _toggleDirection() {
-    final vertical = !_vertical;
-    setState(() => _vertical = vertical);
-    context.read<Settings>().setVerticalReader(vertical);
-    // Rebuild the gallery with a controller that keeps the current page.
-    final controller = PageController(initialPage: _index);
-    final previous = _controller;
-    setState(() => _controller = controller);
-    WidgetsBinding.instance.addPostFrameCallback((_) => previous?.dispose());
+  /// The mode the toolbar button switches to.
+  ReaderMode get _nextMode {
+    const modes = ReaderMode.values;
+    return modes[(modes.indexOf(_mode) + 1) % modes.length];
+  }
+
+  static IconData _iconFor(ReaderMode mode) => switch (mode) {
+        ReaderMode.horizontal => Icons.swap_horiz,
+        ReaderMode.vertical => Icons.swap_vert,
+        ReaderMode.continuous => Icons.view_day,
+      };
+
+  void _cycleMode() {
+    final next = _nextMode;
+    setState(() => _mode = next);
+    context.read<Settings>().setReaderMode(next);
+    if (next != ReaderMode.continuous) {
+      // The gallery needs a controller pinned to the page we are on; while in
+      // continuous mode `_index` was kept up to date by the strip.
+      final controller = PageController(initialPage: _index);
+      final previous = _controller;
+      setState(() => _controller = controller);
+      WidgetsBinding.instance.addPostFrameCallback((_) => previous?.dispose());
+      _precache(_index);
+    }
+    final messenger = ScaffoldMessenger.of(context);
+    messenger.hideCurrentSnackBar();
+    messenger.showSnackBar(
+      SnackBar(
+        content: Text('阅读模式：${next.label}'),
+        duration: const Duration(milliseconds: 1200),
+        behavior: SnackBarBehavior.floating,
+      ),
+    );
   }
 
   @override
@@ -170,11 +197,20 @@ class _ReaderPageState extends State<ReaderPage> {
             ErrorRetry(message: _error!, onRetry: _load)
           else if (source == null || source.length == 0)
             const EmptyState(message: '这一话没有图片')
+          else if (_mode == ReaderMode.continuous)
+            ContinuousReader(
+              source: source,
+              controller: _strip,
+              initialPage: _index,
+              onPageChanged: _onPageChanged,
+              onTap: _toggleChrome,
+            )
           else
             PhotoViewGallery.builder(
               itemCount: source.length,
               pageController: _controller,
-              scrollDirection: _vertical ? Axis.vertical : Axis.horizontal,
+              scrollDirection:
+                  _mode == ReaderMode.vertical ? Axis.vertical : Axis.horizontal,
               backgroundDecoration: const BoxDecoration(color: Colors.black),
               loadingBuilder: (context, event) => const Center(
                 child: CircularProgressIndicator(strokeWidth: 2),
@@ -229,12 +265,9 @@ class _ReaderPageState extends State<ReaderPage> {
                       ),
                     ),
                     IconButton(
-                      tooltip: _vertical ? '横向翻页' : '纵向翻页',
-                      onPressed: _toggleDirection,
-                      icon: Icon(
-                        _vertical ? Icons.swap_horiz : Icons.swap_vert,
-                        color: Colors.white,
-                      ),
+                      tooltip: '切换到${_nextMode.label}',
+                      onPressed: _cycleMode,
+                      icon: Icon(_iconFor(_nextMode), color: Colors.white),
                     ),
                   ],
                 ),
@@ -273,7 +306,11 @@ class _ReaderPageState extends State<ReaderPage> {
                             : (value) {
                                 final target = value.round();
                                 setState(() => _index = target);
-                                _controller?.jumpToPage(target);
+                                if (_mode == ReaderMode.continuous) {
+                                  _strip.jumpToPage(target);
+                                } else {
+                                  _controller?.jumpToPage(target);
+                                }
                               },
                       ),
                     ),

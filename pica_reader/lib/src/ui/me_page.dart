@@ -182,11 +182,24 @@ class MePage extends StatelessWidget {
               ),
               const Divider(height: 1),
               const _SectionTitle('阅读设置'),
-              SwitchListTile(
-                title: const Text('纵向翻页'),
-                subtitle: const Text('关闭时按横向翻页'),
-                value: settings.verticalReader,
-                onChanged: (value) => context.read<Settings>().setVerticalReader(value),
+              ListTile(
+                title: const Text('阅读模式'),
+                subtitle: Text(switch (settings.readerMode) {
+                  ReaderMode.horizontal => '左右翻页，一屏一页',
+                  ReaderMode.vertical => '上下翻页，一屏一页',
+                  ReaderMode.continuous => '上下连续滚动（条漫/长图）',
+                }),
+                trailing: DropdownButton<ReaderMode>(
+                  value: settings.readerMode,
+                  underline: const SizedBox.shrink(),
+                  items: [
+                    for (final mode in ReaderMode.values)
+                      DropdownMenuItem(value: mode, child: Text(mode.label)),
+                  ],
+                  onChanged: (value) {
+                    if (value != null) context.read<Settings>().setReaderMode(value);
+                  },
+                ),
               ),
               ListTile(
                 title: const Text('画质'),

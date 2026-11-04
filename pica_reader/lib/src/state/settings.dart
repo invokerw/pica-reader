@@ -9,7 +9,7 @@ class Settings extends ChangeNotifier {
   String _imageQuality = ApiConfig.defaultImageQuality;
   String _sort = 'dd';
   int _columns = 0;
-  bool _verticalReader = false;
+  ReaderMode _readerMode = ReaderMode.horizontal;
   String _downloadRoot = '';
   int _downloadPages = 4;
   String _themeId = kDefaultThemeId;
@@ -19,7 +19,7 @@ class Settings extends ChangeNotifier {
   String get imageQuality => _imageQuality;
   String get sort => _sort;
   int get columns => _columns;
-  bool get verticalReader => _verticalReader;
+  ReaderMode get readerMode => _readerMode;
 
   /// Empty means "the platform default" (`LibraryPaths.defaultRoot`).
   String get downloadRoot => _downloadRoot;
@@ -38,7 +38,13 @@ class Settings extends ChangeNotifier {
     final sort = asString(stored['sort']);
     if (sort.isNotEmpty) _sort = sort;
     _columns = asInt(stored['columns']);
-    _verticalReader = asBool(stored['verticalReader']);
+    // `readerMode` replaced the old boolean. Someone who had vertical paging on
+    // was asking for downward reading, which is now the continuous strip.
+    final modeName = asString(stored['readerMode']);
+    _readerMode = _modeByName(modeName) ??
+        (asBool(stored['verticalReader'])
+            ? ReaderMode.continuous
+            : ReaderMode.horizontal);
     _downloadRoot = asString(stored['downloadRoot']);
     final pages = asInt(stored['downloadPages'], 4);
     _downloadPages = pages < 1 ? 4 : pages.clamp(1, 8);
@@ -60,7 +66,7 @@ class Settings extends ChangeNotifier {
         'imageQuality': _imageQuality,
         'sort': _sort,
         'columns': _columns,
-        'verticalReader': _verticalReader,
+        'readerMode': _readerMode.name,
         'downloadRoot': _downloadRoot,
         'downloadPages': _downloadPages,
         'themeId': _themeId,
@@ -92,9 +98,9 @@ class Settings extends ChangeNotifier {
     _persist();
   }
 
-  void setVerticalReader(bool value) {
-    if (value == _verticalReader) return;
-    _verticalReader = value;
+  void setReaderMode(ReaderMode value) {
+    if (value == _readerMode) return;
+    _readerMode = value;
     notifyListeners();
     _persist();
   }
@@ -128,6 +134,29 @@ class Settings extends ChangeNotifier {
     notifyListeners();
     _persist();
   }
+}
+
+/// How the reader turns pages.
+enum ReaderMode {
+  /// One page per screen, paged sideways.
+  horizontal('横向翻页'),
+
+  /// One page per screen, paged up and down.
+  vertical('纵向翻页'),
+
+  /// Pages stacked top to bottom, scrolled freely (webtoon / long strip).
+  continuous('纵向连续');
+
+  const ReaderMode(this.label);
+
+  final String label;
+}
+
+ReaderMode? _modeByName(String name) {
+  for (final mode in ReaderMode.values) {
+    if (mode.name == name) return mode;
+  }
+  return null;
 }
 
 /// Sort keys accepted by `GET /comics` (`s` parameter).
