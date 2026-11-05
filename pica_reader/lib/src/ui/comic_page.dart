@@ -92,6 +92,9 @@ class _ComicPageState extends State<ComicDetailPage> {
         comicTitle: _comic.title,
         thumb: _comic.thumb,
         episode: episode,
+        // The reader fetches the complete list itself; handing over what is
+        // already here keeps the first chapter switch instant.
+        episodes: _episodes,
       ),
     ));
   }

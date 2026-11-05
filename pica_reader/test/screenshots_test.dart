@@ -212,12 +212,20 @@ ThemeData _theme(Brightness brightness) {
   final chipLabel = base.chipTheme.labelStyle;
   final chipSelectedLabel = base.chipTheme.secondaryLabelStyle;
   final buttonText = base.filledButtonTheme.style?.textStyle;
+  final tileTitle = base.listTileTheme.titleTextStyle;
+  final tileSubtitle = base.listTileTheme.subtitleTextStyle;
   return base.copyWith(
     textTheme: base.textTheme.apply(fontFamily: _fontFamily),
     primaryTextTheme: base.primaryTextTheme.apply(fontFamily: _fontFamily),
     chipTheme: base.chipTheme.copyWith(
       labelStyle: chipLabel?.copyWith(fontFamily: _fontFamily),
       secondaryLabelStyle: chipSelectedLabel?.copyWith(fontFamily: _fontFamily),
+    ),
+    // The chapter list in the reader is made of ListTiles, which take their
+    // text styles from here rather than from the text theme.
+    listTileTheme: base.listTileTheme.copyWith(
+      titleTextStyle: tileTitle?.copyWith(fontFamily: _fontFamily),
+      subtitleTextStyle: tileSubtitle?.copyWith(fontFamily: _fontFamily),
     ),
     filledButtonTheme: FilledButtonThemeData(
       style: base.filledButtonTheme.style?.copyWith(
@@ -387,5 +395,34 @@ void main() {
     await tester.tap(find.text('最新在前'));
     await tester.pumpAndSettle();
     await _capture(tester, key, 'chapters_from_one');
+  });
+
+  testWidgets('reader: the end of a chapter and the chapter list',
+      (tester) async {
+    _usePhone(tester);
+    final key = GlobalKey();
+    await tester.pumpWidget(_app(
+      key: key,
+      api: _ShotApi(comic: _comic, episodes: _episodes),
+      settings: _ShotSettings(),
+      downloads: _ShotDownloads(chapterFile),
+      home: const ReaderPage(
+        comicId: 'comic-1',
+        comicTitle: '夏日回声',
+        thumb: '',
+        episode: Episode(id: 'ep-12', title: '第 12 话 · 蝉鸣', order: 12),
+        // The last of the chapter's six pages: the end card is showing.
+        initialPage: 5,
+      ),
+    ));
+    await _settle(tester);
+    await _capture(tester, key, 'reader_chapter_end');
+
+    // The title opens the chapter list without leaving the reader.
+    await tester.tap(find.text('夏日回声 · 第 12 话 · 蝉鸣'));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 400));
+    await _settle(tester);
+    await _capture(tester, key, 'reader_chapter_sheet');
   });
 }

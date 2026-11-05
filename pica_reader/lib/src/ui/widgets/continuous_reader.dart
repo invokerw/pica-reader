@@ -37,6 +37,7 @@ class ContinuousReader extends StatefulWidget {
     required this.initialPage,
     required this.onPageChanged,
     required this.onTap,
+    this.onNearEnd,
   });
 
   final ChapterSource source;
@@ -44,6 +45,12 @@ class ContinuousReader extends StatefulWidget {
   final int initialPage;
   final ValueChanged<int> onPageChanged;
   final VoidCallback onTap;
+
+  /// Called when the reader is scrolled to (or leaves) the bottom of the
+  /// chapter. The current page alone cannot tell: with pages shorter than the
+  /// screen the top of the viewport still belongs to the second-to-last page
+  /// when the bottom of the strip is reached.
+  final ValueChanged<bool>? onNearEnd;
 
   @override
   State<ContinuousReader> createState() => _ContinuousReaderState();
@@ -66,6 +73,9 @@ class _ContinuousReaderState extends State<ContinuousReader> {
   ScrollController? _scroll;
   int _current = 0;
   bool _indexCheckScheduled = false;
+
+  /// Last value handed to [ContinuousReader.onNearEnd]; null until measured.
+  bool? _nearEnd;
 
   @override
   void initState() {
@@ -91,6 +101,7 @@ class _ContinuousReaderState extends State<ContinuousReader> {
         // once the first pages are laid out.
         _settleAt(_current, attempts: 2);
         _learnAround(_current);
+        _reportNearEnd();
       });
     } else {
       // Rotation or window resize: keep the page the reader was on in place.
@@ -131,7 +142,21 @@ class _ContinuousReaderState extends State<ContinuousReader> {
       _current = index;
       widget.onPageChanged(index);
     }
+    _reportNearEnd();
     _learnAround(_current);
+  }
+
+  /// The strip is "at the end" when less than a quarter of a screen is left to
+  /// scroll; the reader shows its end-of-chapter card on that signal.
+  void _reportNearEnd() {
+    final onNearEnd = widget.onNearEnd;
+    final scroll = _scroll;
+    if (onNearEnd == null || scroll == null || !scroll.hasClients) return;
+    final position = scroll.position;
+    final near = position.extentAfter <= position.viewportDimension * 0.25;
+    if (near == _nearEnd) return;
+    _nearEnd = near;
+    onNearEnd(near);
   }
 
   /// The strip's own render box, used as the reference for "top of screen".
